@@ -1,0 +1,133 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+react_native_path = '../node_modules/react-native'
+
+target 'Active for Good' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Third party deps
+  pod 'DoubleConversion', :podspec => react_native_path + '/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => react_native_path + '/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
+
+  # Crashlytics
+  pod 'Fabric', '~> 1.7.2'
+  pod 'Crashlytics', '~> 3.9.3'
+
+  # Zendesk
+  pod 'ZendeskSDK', '~> 1.11.1.1'
+
+  # Pods for Active for Good
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [ 'Core', 'CxxBridge', 'DevSupport', 'RCTText', 'RCTNetwork', 'RCTImage', 'ART', 'RCTLinkingIOS', 'RCTAnimation']
+  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+
+  # Libraries
+  pod 'Alamofire', '~> 4.5.1'
+  pod 'SwiftyJSON', '~> 4.0.0-alpha.1'
+  pod 'AlamofireImage', '~> 3.3.0'
+  pod 'DeviceKit', '~> 1.4.0'
+
+  # RN Libraries
+  pod 'lottie-ios', :path => '../node_modules/lottie-ios'
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+end
+
+target 'Active for Good: Staging' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Third party deps
+  pod 'DoubleConversion', :podspec => react_native_path + '/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => react_native_path + '/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
+
+  # Crashlytics
+  pod 'Fabric', '~> 1.7.2'
+  pod 'Crashlytics', '~> 3.9.3'
+
+  # Zendesk
+  pod 'ZendeskSDK', '~> 1.11.1.1'
+
+  # Pods for Active for Good
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [ 'Core', 'CxxBridge', 'DevSupport', 'RCTText', 'RCTNetwork', 'RCTImage', 'ART', 'RCTLinkingIOS', 'RCTAnimation']
+  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+
+  # Libraries
+  pod 'Alamofire', '~> 4.5.1'
+  pod 'SwiftyJSON', '~> 4.0.0-alpha.1'
+  pod 'AlamofireImage', '~> 3.3.0'
+  pod 'DeviceKit', '~> 1.4.0'
+
+  # RN Libraries
+  pod 'lottie-ios', :path => '../node_modules/lottie-ios'
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+end
+
+target 'Workplace Tracker' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Third party deps
+  pod 'DoubleConversion', :podspec => react_native_path + '/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => react_native_path + '/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
+
+  # Crashlytics
+  pod 'Fabric', '~> 1.7.2'
+  pod 'Crashlytics', '~> 3.9.3'
+
+  # Zendesk
+  pod 'ZendeskSDK', '~> 1.11.1.1'
+
+  # Pods for Active for Good
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [ 'Core', 'CxxBridge', 'DevSupport', 'RCTText', 'RCTNetwork', 'RCTImage', 'ART', 'RCTLinkingIOS', 'RCTAnimation']
+  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+
+  # Libraries
+  pod 'Alamofire', '~> 4.5.1'
+  pod 'SwiftyJSON', '~> 4.0.0-alpha.1'
+  pod 'AlamofireImage', '~> 3.3.0'
+  pod 'DeviceKit', '~> 1.4.0'
+
+  # RN Libraries
+  pod 'lottie-ios', :path => '../node_modules/lottie-ios'
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+end
+
+target 'Workplace Tracker: Staging' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Third party deps
+  pod 'DoubleConversion', :podspec => react_native_path + '/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => react_native_path + '/third-party-podspecs/GLog.podspec'
+  pod 'Folly', :podspec => react_native_path + '/third-party-podspecs/Folly.podspec'
+
+  # Crashlytics
+  pod 'Fabric', '~> 1.7.2'
+  pod 'Crashlytics', '~> 3.9.3'
+
+  # Zendesk
+  pod 'ZendeskSDK', '~> 1.11.1.1'
+
+  # Pods for Active for Good
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [ 'Core', 'CxxBridge', 'DevSupport', 'RCTText', 'RCTNetwork', 'RCTImage', 'ART', 'RCTLinkingIOS', 'RCTAnimation']
+  pod "yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+
+  # Libraries
+  pod 'Alamofire', '~> 4.5.1'
+  pod 'SwiftyJSON', '~> 4.0.0-alpha.1'
+  pod 'AlamofireImage', '~> 3.3.0'
+  pod 'DeviceKit', '~> 1.4.0'
+
+  # RN Libraries
+  pod 'lottie-ios', :path => '../node_modules/lottie-ios'
+  pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+end

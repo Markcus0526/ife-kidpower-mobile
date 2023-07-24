@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">UNICEF Kid Power Program</string>
+
+	<string name="ble_not_supported">BLE is not supported</string>
+	<string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+	<!-- titles on action(?) bar -->
+	<string name="signup_title">Sign Up</string>
+	<string name="teams_title">My Teams</string>
+	<string name="teamsetup_title">Your Team</string>
+	<string name="profile_title">Profile</string>
+	<string name="coachsettings_title">Coach Settings</string>
+
+	<string name="zero_string">0</string>
+	<!-- Welcome -->
+	<string name="welcome_title">
+		Welcome to the UNICEF Kid Power\nProgram!
+    </string>
+	<string name="welcome_description">
+        Congratulations again on being selected to join the UNICEF Kid Power Team this year - we\'re
+        excited to have you!\nLet\'s set up your account to get your team ready to get active and
+        save lives. The first four steps will take about 5 minutes to complete.
+    </string>
+	<string name="get_started">Get Started</string>
+	<string name="label_alreadyhaveanaccount">Already have an account?</string>
+	<string name="log_in">Log in</string>
+	<string name="sign_in">Sign in</string>
+	<string name="log_in_underlined"><u>Log in</u></string>
+
+	<!-- Log in -->
+	<string name="email_address">email address</string>
+	<string name="password">password</string>
+	<string name="trouble_logging_in_underlined"><u>Trouble logging in?</u></string>
+	<string name="password_reset">Password Reset</string>
+	<string name="i_remember_now_underlined"><u>I remember now!</u></string>
+	<string name="password_incorrect">This password is incorrect. Please try again</string>
+
+	<!-- Team Screen -->
+	<string name="packets">Packets</string>
+	<string name="steps">Steps</string>
+	<string name="average_steps_per_day">Steps</string>
+	<string name="you_are_off_to_a_great_start">You\'re off to a great start!</string>
+	<string name="kids">Kids</string>
+	<string name="kids_number">Kids (%d)</string>
+	<string name="new_kid_title">New Kid</string>
+	<string name="new_kid">New Kid</string>
+	<string name="new_kid_note">
+		Note: Don\'t create a new profile if you just need to replace a Band.
+		Instead, unlink the Band, then link a new one.
+    </string>
+	<string name="team_name">team name</string>
+	<string name="grade">grade</string>
+	<string name="third_grade">3rd Grade</string>
+	<string name="forth_grade">4th Grade</string>
+	<string name="fifth_grade">5th Grade</string>
+	<string name="sixth_grade">6th Grade</string>
+	<string name="seventh_grade">7th Grade</string>
+	<string name="eighth_grade">8th Grade</string>
+	<string name="create_team">Create Team</string>
+	<string name="new_team">New Team</string>
+	<string name="settings_with_icon">&#xf013; Settings</string>
+	<string name="other">Other</string>
+	<string name="favorite_title">Favorite</string>
+	<string name="nearby_title">Nearby</string>
+
+	<!-- Student Screen -->
+	<string name="not_linked">Tap to type ID</string>
+	<string name="scanning">Scanning...</string>
+	<string name="link_band">Link Band</string>
+	<string name="sync">Sync</string>
+	<string name="enter_your_teachers_password_to_unlock">Enter your Coach password to unlock.\n(This is the same password you use to sign in to the app.)</string>
+	<string name="save_confirm_caption">You have unsaved changes.</string>
+	<string name="delete_student_confirm_caption"> Are you sure you want to delete?</string>
+	<string name="unlock">Unlock</string>
+
+	<string name="label_itseasysingupsteps">It\'s quick and easy</string>
+	<string name="btncreatemyprofile_title">Create My Profile</string>
+	<string name="label_nicework">Nice work!</string>
+	<string name="label_nicework_description">Your coach profile is complete</string>
+	<string name="btnsetupteam_title">Set up my team</string>
+	<string name="btnnext_title">Next</string>
+
+	<string name="sidebar_new_team">NEW TEAM</string>
+	<string name="sidebar_curriculum">CURRICULUM</string>
+	<string name="sidebar_inbox">INBOX</string>
+	<string name="sidebar_support">SUPPORT</string>
+	<string name="sidebar_account">ACCOUNT</string>
+	<string name="sidebar_logout">LOG OUT</string>
+
+	<string name="coach_string">COACH</string>
+	<string name="band_id_string">BAND ID</string>
+	<string name="band_id_lower_string">Band ID</string>
+
+	<!-- student syncing-->
+	<string name="studentsync_title_progress">Sync in progress</string>
+	<string name="studentsync_see_my_progress">SEE MY PROGRESS</string>
+
+	<string name="error_network">Connection error</string>
+	<string name="error_parse_response">Error parsing response</string>
+	<string name="error_unexpected">Unexpected</string>
+	<string name="error_unknown">Unknown error</string>
+	<string name="error_server">Server error</string>
+
+	<string name="addpowerpoints_hintfor_choose_team">1. Which team do you want to award Power Points to?</string>
+	<string name="addpowerpoints_hintfor_choose_kind">2. Award to each member of the team, or one team member?</string>
+	<string name="addpowerpoints_hintfor_choose_student">3. Which team member?</string>
+	<string name="addpowerpoints_hintfor_choose_powerpoint">How many Power Points?</string>
+
+	<string name="addpowerpoints_kind_toteam">...to all members on the Team</string>
+	<string name="addpowerpoints_kind_toindividual">...to an individual team member</string>
+
+	<!-- coach password dialog -->
+	<string name="coachpassworddlg_check_password">Please check your password</string>
+
+	<!-- coach settings fragment -->
+	<string name="app_powerpoint">Power Point</string>
+	<string name="app_powerpoints">Power Points</string>
+	<string name="app_points">Points</string>
+	<string name="app_onemoment">One moment…</string>
+	<string name="app_connecting">Connecting…</string>
+	<string name="coachsettings_progress_loadingteam">Loading team…</string>
+	<string name="coachsettings_format_for_teamcount">Coaching %d team(s)</string>
+	<string name="coachsettings_select_team">Please select a team first</string>
+	<string name="coachsettings_no_teams">There are no teams</string>
+	<string name="coachsettings_username_updated">User name updated</string>
+	<string name="coachsettings_username_update_failed">User name update failed</string>
+	<string name="coachsettings_useremail_updated">User email updated</string>
+	<string name="coachsettings_useremail_update_failed">Could not update user email</string>
+	<string name="coachsettings_userpassword_create_failed">Could not create password</string>
+	<string name="coachsettings_user_profile_update_failed">Could not update your profile</string>
+	<string name="coachsettings_getteams_failed">Could not get teams, Please check your network and try again.</string>
+	<string name="coachsettings_newteam_added">New team added</string>
+	<string name="coachsettings_newteam_added_failed">Could not add new team</string>
+	<string name="coachsettings_no_students">This team does not have any members</string>
+	<string name="coachsettings_fetch_students_failed">Could not fetch students</string>
+	<string name="coachsettings_added_powerpoints">Power points added successfully</string>
+	<string name="coachsettings_add_powerpoints_failed">Could not add power points</string>
+	<string name="coachsettings_select_grade">Please select grade</string>
+	<string name="coachsettings_email_required">Email address is required</string>
+	<string name="coachsettings_invalid_email">Invalid email address</string>
+	<string name="coachsettings_email_not_match">Email addresses do not match</string>
+	<string name="coachsettings_nothing_updated">Nothing to update</string>
+	<string name="coachsettings_firstname_required">First name is required</string>
+	<string name="coachsettings_lastname_required">Last name is required</string>
+	<string name="coachsettings_adding_powerpoints">Adding Power Points…</string>
+
+	<!-- profile activity -->
+	<string name="profile_student_notfound">Student not found</string>
+	<string name="app_yesterday">yesterday</string>
+	<string name="profile_getstudent_failed">Could not get student</string>
+	<string name="profile_delete_failed">Could not delete the student</string>
+
+	<string name="profile_name_required">Name is required</string>
+	<string name="profile_name_max_length">Username can only be 12 symbols long.</string>
+	<string name="profile_update_failed">Update failed</string>
+
+	<!-- sel city activity -->
+	<string name="app_school">School</string>
+	<string name="selcity_select_city">Please select your city first</string>
+	<string name="selcity_cityhasno_activeschools">This city has no active schools</string>
+	<string name="selcity_select_yourcity">Please select your city</string>
+	<string name="selcity_select_yourschool">Please select your school</string>
+
+	<!-- select photo activity -->
+	<string name="selectphoto_cannot_take">Cannot take a photo</string>
+	<string name="selectphoto_loadimage_failed">Loading image failed</string>
+	<string name="selectphoto_takephoto_failed">Taking photo failed</string>
+	<string name="selectphoto_saveimage_failed">Image saving failed</string>
+	<string name="selectphoto_title_selectpicture">Select Picture</string>
+
+	<!-- signup activity -->
+	<string name="signup_enter_bandid">Please enter a Kid Power Band ID</string>
+	<string name="signup_create_userfirst">Please create a user first</string>
+	<string name="signup_create_teamfirst">Please create a team first</string>
+	<string name="signup_creating_student">Creating a student…</string>
+	<string name="signup_creating_team">Creating your team…</string>
+	<string name="app_go">Go</string>
+	<string name="signup_user_not_registered">User not registered by regCode api</string>
+	<string name="signup_correct_invalid_fields">Please correct invalid fields</string>
+	<string name="signup_creating_profile">Creating your profile…</string>
+	<string name="signup_createprofile_failed">Failed to create profile</string>
+	<string name="signup_registerband_failed">Could not register Band</string>
+	<string name="signup_createstudent_succed">The student has successfully been created!</string>
+	<string name="signup_createstudent_failed">Creating a student failed</string>
+	<string name="signup_createteam_failed">Creating a team failed</string>
+	<string name="signup_band_already_claimed">That Power Band is already claimed. Please try another.</string>
+	<string name="signup_bandid_not_found">The entered device ID could not be found.</string>
+
+	<!-- team setup activity-->
+	<string name="teamsetup_createteam_failed">Could not create team</string>
+	<string name="teamsetup_register_userfirst">Please register a user first</string>
+	<string name="teamsetup_settingup_team">Setting up your team…</string>
+
+	<!-- teams fragment -->
+	<string name="teams_loading_team">Loading your team(s)…</string>
+	<string name="teams_loadingteam_failed">Could not load teams</string>
+
+	<!-- team stats content manager-->
+	<string name="teamstats_rank_first">1st</string>
+	<string name="teamstats_rank_second">2nd</string>
+	<string name="teamstats_rank_third">3rd</string>
+	<string name="teamstats_format_rank">%dth</string>
+	<string name="teamstats_load_teaminfo_failed">Could not load team info</string>
+
+	<!-- team stats fragment -->
+	<string name="teamstats_loading_team">Loading team…</string>
+	<string name="teamstats_teaminfo_updated">Team info updated</string>
+	<string name="teamstats_teaminfo_update_failed">Could not update team info</string>
+	<string name="teamstats_student_get_failed">Could not get students</string>
+	<string name="teamstats_select_grade">Please select a grade</string>
+	<string name="teamstats_has_no_students">This team has no students</string>
+	<string name="teamstats_leaderboard_get_failed">Could not get leaderboards</string>
+
+	<!-- team sync dialog -->
+	<string name="teamsync_title">Team syncing</string>
+	<string name="teamsync_ret_syncing">Syncing</string>
+	<string name="teamsync_ret_synced">Synced</string>
+	<string name="teamsync_ret_notsynced">not synced</string>
+
+	<!-- register band manager -->
+	<string name="registerband_duplication_check_failed">Checking duplication failed</string>
+	<string name="registerband_band_registered">This device is already registered. Please choose a new device.</string>
+	<string name="registerband_connecting_band">Connecting to Kid Power Band…</string>
+	<string name="registerband_connect_failed">Could not connect</string>
+	<string name="registerband_updating_name">Updating name…</string>
+	<string name="registerband_updating_configuration">Updating configuration…</string>
+	<string name="registerband_updating_message1">Updating message1…</string>
+	<string name="registerband_updating_message2">Updating message2…</string>
+	<string name="registerband_checking_duplication">Checking for Power Band duplicates…</string>
+	<string name="registerband_updating_time">Updating time…</string>
+	<string name="registerband_updating_totalpoints">Updating total points…</string>
+
+	<!-- server manager -->
+	<string name="neterror_400">The request cannot be fulfilled. Please check and try again.</string>
+	<string name="neterror_401">Unauthorized</string>
+	<string name="neterror_server">Server error</string>
+	<string name="neterror_408">The server timed out waiting for the request</string>
+	<string name="neterror_503">The server is currently unavailable. Please wait a minute and try again.</string>
+
+	<string name="sync_unknown_error">Please make sure the band is charged and available.</string>
+
+	<string name="welcome_policy">Use of this app is governed by our privacy policy</string>
+
+	<string name="teamprogress_desc_yourteam">Your Team</string>
+
+	<string name="layout_activityresetpassword_sendmeresetinstructions">Send me Reset Instructions</string>
+	<string name="layout_activityresetpassword_again">I remember now! Let\'s try again.</string>
+	<string name="layout_activityresetpassword_register">Register for Kid Power.</string>
+	<string name="layout_activityresetpassword_emailaddress">email address</string>
+
+	<string name="layout_activityselcity_whereareyoufrom">Where are you from?</string>
+	<string name="layout_activityselcity_city">City</string>
+	<string name="layout_activityselcity_school">School</string>
+
+	<string name="layout_activityselphoto_selectimage">Select image</string>
+	<string name="layout_activityselphoto_takeaphoto">Take a photo</string>
+	<string name="layout_activityselphoto_selectaphoto">Select a Image</string>
+
+	<string name="layout_activitysignup_firsttitle">1. Set up your coach profile</string>
+	<string name="layout_activitysignup_mincharacters">Min of 6 characters</string>
+	<string name="layout_activitysignup_welcomecoach">Welcome Coach Lopez!</string>
+	<string name="layout_activitysignup_secondtitle">2. Activate Your Kid Power Band</string>
+	<string name="layout_activitysignup_hereishowyoudoit">Here\'s how you do it…</string>
+	<string name="layout_activitysignup_longpress">
+        Tap your band four times to see the device ID, then enter it below.
+        (if the screen is off, plug it into the USB cradle to charge it first.)
+    </string>
+	<string name="layout_activitysignup_congratulation">
+        Congratulations! You\'ve registered your Power Band.
+        Later, you\'ll add your students in the same way.
+        And you can always see who a Power Band is assigned to by tapping through to their name screen.
+    </string>
+	<string name="layout_activitysignup_whenyouarereday">When you\'re ready, enter the code on your Kid Power Band:
+    </string>
+	<string name="layout_activitysignup_readytouse">Ready To Use!</string>
+	<string name="layout_activitysignup_or">or,</string>
+	<string name="layout_activitysignup_skipthisstep">skip this step for now</string>
+	<string name="layout_activitysignup_powerbandregistered">Power Band registered</string>
+	<string name="layout_activitysignup_thirdtitle">3. Add Your Picture (optional)</string>
+	<string name="layout_activitysignup_descs">This is your default user image. Later, you and your students will have
+        the opportunity to add a fun picture.
+    </string>
+	<string name="layout_activitysignup_nothanks">No thanks, I\'ll use the default avatar.</string>
+	<string name="layout_activitysingup_whatyouwillneed">What you\'ll need:</string>
+	<string name="layout_activitysignup_yourteam">Your team\'s Kid Power Bands nearby and charged</string>
+	<string name="layout_activitysignup_about10minutes">About 10 minutes for every 10 Kid Power Bands you need to
+        register
+    </string>
+	<string name="layout_activitysignup_whatdoyourkidscallyou">what do your kids call you? Example: Coach Brown</string>
+	<string name="layout_activitysignup_confirmemailaddress">please confirm your email address</string>
+	<string name="layout_activitysignup_password">password</string>
+	<string name="layout_activitysignup_confirmpassword">confirm password</string>
+	<string name="layout_activitysignup_powerbandcode">Power Band code</string>
+
+	<string name="layout_activityteamsetup_hint">What\'s your team name?</string>
+
+	<string name="layout_fragmentcoachsetting_coachteamsetting">Coach &amp; team settings</string>
+	<string name="layout_fragmentcoachsetting_edit">Edit</string>
+	<string name="layout_fragmentcoachsetting_editnames">Edit names</string>
+	<string name="layout_fragmentcoachsetting_wahtdothekidscallyou">What do the kids call you?</string>
+	<string name="layout_fragmentcoachsetting_editemailaddress">Edit email address</string>
+	<string name="layout_fragmentcoachsetting_confirmemailaddress">Confirm email address</string>
+	<string name="layout_fragmentcoachsetting_confirm">Confirm</string>
+	<string name="layout_fragmentcoachsetting_changepasswrd">Change Password</string>
+	<string name="layout_fragmentcoachsetting_minimum">Minimum of 6 characters</string>
+	<string name="layout_fragmentcoachsetting_addateam">Add a Team</string>
+	<string name="layout_fragmentcoachsetting_powerpoints">Power Points</string>
+	<string name="layout_fragmentcoachsetting_addpowerpoints">Add Power Points</string>
+	<string name="layout_fragmentcoachsetting_awardpoints">Award Points</string>
+	<string name="layout_fragmentcoachsetting_newpassword">new password</string>
+	<string name="layout_fragmentcoachsetting_confirmpassword">confirm password</string>
+	<string name="layout_fragmentcoachsetting_teamname">Team Name</string>
+	<string name="layout_fragmentcoachsetting_gradelevel">Grade Level</string>
+
+	<string name="layout_fragmentteams_save">Save</string>
+	<string name="layout_fragmentteams_teams">Teams</string>
+	<string name="layout_fragmentteams_edit">Edit</string>
+
+	<string name="layout_alertmessage_title">Please choose a shorter name</string>
+	<string name="layout_alertmessage_content">Please choose a shorter name (for example, a nickname or first name
+        only). Max length: 12 characters.
+    </string>
+
+	<string name="layout_bandregistering_updatename">updating name…</string>
+
+	<string name="layout_checkcoachpassword_coachpassword">coach password</string>
+
+	<string name="layout_confirmsignout_title">We hate to see you go! Are you sure you want to log out?</string>
+	<string name="layout_confirmsignout_yes">Yes, log out</string>
+
+	<string name="layout_stats_leaderboard">Leaderboard</string>
+
+	<string name="layout_team_coach">Coach</string>
+
+	<string name="layout_search">Search...</string>
+
+	<string name="team_syncing_description">Have the bands charging in the charging bricks\n- OR -\nHave the bands fully charged and nearby</string>
+
+	<string name="last_synced">Last synced</string>
+	<string name="days_ago">days ago</string>
+	<string name="today">today</string>
+	<string name="has_not_synced">Has not synced</string>
+	<string name="need_to_link">Tap to link band</string>
+
+	<string name="sync_searching_band">Searching for Kid Power Band…</string>
+	<string name="sync_stopped">Sync stopped</string>
+	<string name="sync_connecting">Connecting…</string>
+	<string name="sync_uploading">Uploading…</string>
+	<string name="sync_complete">Sync complete</string>
+	<string name="sync_all_done">All done!</string>
+	<string name="sync_no_band">(no band)</string>
+
+	<string name="sync_all_bands">Syncing all bands…</string>
+	<string name="sync_all_synced">All Bands Synced</string>
+	<string name="sync_not_synced">Bands Not Synced</string>
+	<string name="sync_synced">Bands Synced</string>
+	<string name="sync_failed">Failed</string>
+
+	<string name="sync_state_format" formatted="false">(%d of %d bands synced. %d of %d kids have bands linked)</string>
+	<string name="sync_unlinking_band">Unlinking Band...</string>
+	<string name="sync_unlink_band">Unlink Band</string>
+
+	<string name="choose_avatar_status" formatted="false">Choose 1 of %d icons</string>
+
+	<string name="male">Male</string>
+	<string name="female">Female</string>
+	<string name="skip">Skip</string>
+
+	<string name="did_not_found_band">Cannot find the Band. Please try again.</string>
+	<string name="button_scan">Scan</string>
+	<string name="button_rescan">Rescan</string>
+	<string name="band_id_guide">Tap Band twice for device ID.\nExit keyboard by tapping bottom &lt; button.</string>
+	<string name="no_band_nearby">There are no new bands.</string>
+
+	<string name="student_update_failed">Update unsuccessful</string>
+
+	<string name="bands_found_nearby">Bands found nearby...</string>
+	<string name="one_band_found">1 Band found. Select below.</string>
+	<string name="number_of_band_found">%d Bands found. Select below.</string>
+
+	<string name="dialog_unlink_title">Are you sure?</string>
+
+	<string name="band_linking">Linking band…</string>
+	<string name="band_updating">Updating name…</string>
+
+	<!-- Keyboard arrow -->
+	<string name="icon_keyboard_arrow_down">&#xe0c5;</string>
+	<string name="icon_keyboard_arrow_left">&#xe0c6;</string>
+	<string name="icon_keyboard_arrow_right">&#xe0c7;</string>
+	<string name="icon_keyboard_arrow_up">&#xe0c8;</string>
+
+	<!-- Fontawesome -->
+	<string name="icon_string_pencil"></string>
+	<string name="icon_string_check">&#xf00c;</string>
+	<string name="icon_string_information">&#xf05a;</string>
+	<string name="icon_string_exclamation">&#xf071;</string>
+	<string name="icon_string_sync">&#xf021;</string>
+	<string name="icon_string_close">&#xf00d;</string>
+	<string name="icon_string_search">&#xf002;</string>
+	<string name="icon_string_unlink">&#xf127;</string>
+	<string name="icon_string_link">&#xf01e;</string>
+	<string name="icon_string_user">&#xf007;</string>
+	<string name="icon_string_graduation_cap">&#xf19d;</string>
+	<string name="icon_string_map_marker">&#xf041;</string>
+	<string name="icon_string_bell">&#xf0a2;</string>
+	<string name="icon_string_envelope">&#xf003;</string>
+	<string name="icon_string_phone">&#xf10b;</string>
+
+	<string name="button_cancel">Cancel</string>
+	<string name="button_close">Close</string>
+	<string name="button_save">Save</string>
+	<string name="button_icon_ok">OK</string>
+	<string name="button_icon_cancel">CANCEL</string>
+	<string name="button_icon_close">CLOSE</string>
+	<string name="button_icon_discard">DISCARD</string>
+	<string name="button_icon_save">&#xf0c7; SAVE</string>
+	<string name="button_icon_sync_all">&#xf021;  SYNC ALL</string>
+	<string name="button_icon_start_sync">&#xf021; START SYNCING</string>
+	<string name="button_icon_cancel_sync">CANCEL SYNC</string>
+	<string name="button_icon_unlink">&#xf127; UNLINK</string>
+	<string name="button_icon_delete">&#xf00d; DELETE</string>
+	<string name="button_continue">Continue</string>
+
+	<string name="dialog_caution">Caution</string>
+	<string name="dialog_error">Error</string>
+	<string name="dialog_success">Success</string>
+	<string name="dialog_alert">Alert</string>
+	<string name="dialog_failed">Failed</string>
+
+	<string name="password_require">Password is required. Please put in your password.</string>
+	<string name="password_confirmation">Password you inputted is wrong</string>
+	<string name="password_does_not_match">Password does not match.</string>
+	<string name="password_length">Password length is wrong</string>
+
+	<!-- Onboarding Activity -->
+	<string-array name="onboarding_steps">
+		<item>Identity</item>
+		<item>Account</item>
+		<item>Notifications</item>
+		<item>Team</item>
+		<item>Kit</item>
+		<item>Sync Bands</item>
+	</string-array>
+
+	<string name="setup_progress">Setup Progress</string>
+	<string name="find_your_application">Find your Application</string>
+	<string name="identity_description">Type in the email address you used for your original Kid Power application. We\'ll use this email address to create your account.</string>
+	<string name="verify_identity">Verify your Identity</string>
+	<string name="verify_identity_description">We sent a text message to the mobile phone you entered on your application. Please enter that code here to verify your identity.</string>
+	<string name="five_digit_code_hint">5-digit code</string>
+	<string name="verify_identity_disclaimer">Please allow up to 2 minutes for the code to arrive. If you did not include a mobile number in your application, the security code will arrive in your email inbox.</string>
+	<string name="verify_identity_disclaimer_2">If it hasn\'t arrived within 2 minutes, you can resend it, or have it emailed instead.</string>
+	<string name="account_found">Account found!</string>
+	<string name="account_found_description">Great! We found an application. Is this you?</string>
+	<string name="thats_me">That\'s Me!</string>
+	<string name="create_your_password">Create your Password</string>
+	<string name="create_your_password_description">Glad we found you! Now let\'s create a password for your account.</string>
+	<string name="create_your_password_confirmation">Re-type your password</string>
+	<string name="confirm_account_details">Confirm Your Account Details</string>
+	<string name="confirm_account_details_description">Everything look right? (You can always access this later.)</string>
+
+	<string name="title">title</string>
+	<string name="first_name">first name</string>
+	<string name="last_name">last name</string>
+	<string name="address_line_1">address line 1</string>
+	<string name="address_line_2">address line 2</string>
+	<string name="state">state</string>
+	<string name="city">city</string>
+	<string name="zip">zip</string>
+	<string name="phone_number">phone number</string>
+	<string name="communicate_via">Communicate with me via</string>
+	<string name="sms_email">SMS &amp; Email</string>
+	<string name="email">Email</string>
+	<string name="create_team_description">What would you like your team name to be? Go ahead and be creative!</string>
+
+	<string name="add_kid_accounts">Add Kid Accounts</string>
+	<string name="add_kid_accounts_description">Let\'s set up your students\' profiles! Enter students\' first names only or have them choose their usernames.\n\n(Adding all your students here makes it easy for them to choose a profile icon and sync their bands once your classroom tablet arrives.)</string>
+	<string name="done_adding_kids">Done Adding Kids</string>
+	<string name="new_student_name">New Student Name</string>
+	<string name="return_to_add">Return to Add</string>
+
+	<string name="layout_navigation_back">back</string>
+	<string name="username">Username</string>
+
+	<string name="helper_center">Resources</string>
+	<string name="helper_search">Search...</string>
+	<string name="helper_myticket">My tickets</string>
+	<string name="helper_ticket_add">Add ticket</string>
+	<string name="helper_ticket_comment">Comment</string>
+	<string name="contact_us">Contact us</string>
+
+	<string name="app_version_number" formatted="false">Version %s (%s)</string>
+
+	<string name="title_activity_support">Support</string>
+	<string name="support_title">Support</string>
+	<string name="rate_app">Rate App</string>
+
+	<string name="create_team_first">Create your first team</string>
+
+	<string name="rate_this_app">Rate this app</string>
+	<string name="update_now">Update now</string>
+	<string name="remind_me_later">Remind me later</string>
+	<string name="ignore_this_version">Ignore this version</string>
+	<string name="not_now">Not now</string>
+	<string name="whats_new">What\'s new in this version</string>
+	<string name="rate_us">Please rate us!</string>
+	<string name="new_update_available">New Update Available</string>
+	<string name="avg_steps_day">AVG STEPS/DAY</string>
+
+	<string name="feedback_email_subject">UNICEF Kid Power Program feedback (%s for Android)</string>
+	<string name="feedback_email_body_greetings" formatted="false">
+        Hi, I\'m a UNICEF Kid Power Program user and I have a question:\n
+        \n
+        \n
+        \n
+        \n
+        \n
+        %s / Android (%s)
+    </string>
+	<string name="kid_power_feedback">Type your UNICEF Kid Power feedback or question here</string>
+	<string name="kid_power_feedback_from">UNICEF Kid Power Program feedback from</string>
+	<string name="you_don_t_have_any_favorites_yet">You don\'t have any favorites yet</string>
+	<string name="build_your_favorites">Create your own customized leaderboard!\n\nIn your Coaches Portal, follow teams by clicking on the "star" icon. Teams you follow will show up here!</string>
+	<string name="add_power_point_description">You may have a team member whose activity is not best measured by the Kid Power Band, since it mostly measures steps. If you want to make sure their points reflect the great job they\'re doing to get active and save lives, add some here.</string>
+	<string name="avg_steps">AVG STEPS</string>
+	<string name="per_kid_per_day">PER KID PER DAY</string>
+	<string name="total_packets">TOTAL PACKETS</string>
+	<string name="team">TEAM</string>
+	<string name="school">SCHOOL/ORG</string>
+	<string name="rank">RANK</string>
+
+
+</resources>

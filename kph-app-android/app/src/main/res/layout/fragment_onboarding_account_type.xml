@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    android:background="@color/kph_color_main_background">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingStart="@dimen/dimen_margin_30"
+		android:paddingTop="@dimen/dimen_margin_30"
+		android:paddingEnd="@dimen/dimen_margin_30"
+		android:paddingBottom="@dimen/dimen_margin_30">
+		<ImageView
+			android:id="@+id/ivAvatar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_avatar_size"
+			android:src="@drawable/avatar_placeholder" />
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txt_username"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/style_textview_heading"
+			android:text="Username"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/dimen_margin_5"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txt_great_job"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/style_textview_heading"
+			android:text="@string/almost_there"
+			android:textSize="@dimen/dimen_font_size_heading_count_big"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/dimen_margin_30"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txt_birthday_question"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/style_textview_heading"
+			android:text="@string/setup_your_account_with"
+			android:textSize="@dimen/dimen_font_size_base_title"
+			android:textColor="@android:color/white"
+			android:gravity="center"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/layout_buttons"
+			android:layout_marginTop="@dimen/dimen_margin_30">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:text="@string/or"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/txt_or"
+				android:layout_alignTop="@+id/btn_email"
+				android:layout_alignBottom="@+id/btn_email"
+				android:layout_centerHorizontal="true"
+				style="@style/style_textview_general"
+				android:textColor="@android:color/white"
+				android:gravity="center"
+				android:textSize="@dimen/dimen_font_size_small"
+				android:paddingStart="@dimen/dimen_margin_10"
+				android:paddingEnd="@dimen/dimen_margin_10"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:id="@+id/btn_email"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:layout_alignParentStart="true"
+				android:layout_toStartOf="@id/txt_or"
+				android:background="@drawable/kph_drawable_button_email_background"
+				android:text="@string/email"
+				android:textColor="@android:color/white"
+				android:textSize="@dimen/dimen_font_size_base"
+				android:layout_marginBottom="@dimen/dimen_20dp"
+				app:customButtonFont="@string/font_pfdindisplaypro_regular"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:id="@+id/btn_facebook"
+				android:text="@string/facebook"
+				android:textColor="@android:color/white"
+				android:background="@drawable/kph_drawable_button_facebook_background"
+				android:layout_alignParentEnd="true"
+				android:layout_toEndOf="@id/txt_or"
+				android:textSize="@dimen/dimen_font_size_base"
+				app:customButtonFont="@string/font_pfdindisplaypro_regular"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/layout_titlebar" >
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBackground"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+		</RelativeLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

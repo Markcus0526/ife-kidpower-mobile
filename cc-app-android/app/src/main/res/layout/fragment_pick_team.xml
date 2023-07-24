@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/stepper"
+        android:scaleType="fitCenter"
+        android:src="@drawable/step12s3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+    />
+
+    <ImageView
+        android:id="@+id/challengeLogo"
+        android:contentDescription="@string/challenge_logo"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:text="@string/choose_your_team"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeDisclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:text="@string/pick_team_disclaimer"
+    />
+
+    <Spinner
+        android:id="@+id/challengeRegions"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorTextGrey"
+        android:background="@drawable/cc_spinner"
+        android:prompt="@string/pick_your_region"
+    />
+
+    <Spinner
+        android:id="@+id/challengeTeams"
+        android:layout_width="294dp"
+        android:layout_marginTop="5dp"
+        android:spinnerMode="dialog"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextGrey"
+        android:background="@drawable/cc_spinner"
+        android:prompt="@string/pick_your_team"
+    />
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/joinNowButton"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:text="@string/next_join_challenge"
+        android:textAllCaps="true"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:background="@drawable/cc_button"
+        android:textColor="@color/colorFullWhite"
+        android:layout_width="294dp"
+        android:layout_height="42dp"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<org.unicefkidpower.kid_power.View.CustomControls.CustomViewPager
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="@android:color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Source Sans Pro Font -->
+    <declare-styleable name="source_sans_pro">
+        <attr name="android:fontFamily" />
+        <attr name="android:textStyle"/>
+    </declare-styleable>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarker</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorFullWhite</item>
+        <item name="android:textColor">#000</item>
+        <item name="colorControlNormal">@color/colorFullWhite</item>
+        <item name="editTextColor">#000</item>
+        <item name="colorButtonNormal">@color/colorButton</item>
+        <item name="android:textColorPrimary">@color/colorFullWhite</item>
+        <item name="android:textColorHint">@color/colorTextGrey</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Alert Dialog theme -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="editTextColor">@color/colorTextBlack</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Pre Dashboard theme -->
+    <style name="PreDashboardTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@color/colorFullWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Onboarding Theme -->
+    <style name="OnboardingTheme" parent="Theme.ReactNative.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowBackground">@color/colorFullWhite</item>
+    </style>
+
+    <!-- Register theme -->
+    <style name="RegisterTheme" parent="AppTheme">
+        <item name="android:alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+        <item name="android:windowBackground">@color/colorFullWhite</item>
+        <item name="spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+    </style>
+
+    <!-- Navigation View theme -->
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:listPreferredItemHeight">0dp</item>
+    </style>
+
+    <!-- Support theme -->
+    <style name="SupportTheme" parent="ZendeskSdkTheme.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarker</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorFullWhite</item>
+        <item name="android:textColor">#000</item>
+        <item name="colorControlNormal">@color/colorFullWhite</item>
+        <item name="editTextColor">#fff</item>
+        <item name="colorButtonNormal">@color/colorButton</item>
+        <item name="android:textColorHint">@color/colorTextGrey</item>
+    </style>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kidpower_background"
+    android:id="@+id/layout_root"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:gravity="center"
+        android:id="@+id/layout_logo"
+        android:layout_above="@+id/txt_find_your_application_title">
+
+        <org.unicefkidpower.schools.ui.KPResizableImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kp_logo"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_find_your_application_title"
+        style="@style/style_textview_heading"
+        android:text="@string/find_your_application"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/txt_find_your_application_description" />
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_find_your_application_description"
+        style="@style/style_textview_general"
+        android:text="@string/identity_description"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:layout_marginTop="25dp"
+        android:layout_above="@+id/edit_email" />
+
+    <org.unicefkidpower.schools.ui.KPEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_input_height"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/edit_email"
+        android:hint="@string/email_address"
+        android:textSize="13dp"
+        android:textColor="@color/kidpower_brownish_grey"
+        style="@style/style_edittext_general"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_marginTop="60dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_bottom"
+        android:layout_marginTop="@dimen/dimen_button_height"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_height"
+            android:text="@string/layout_navigation_back"
+            android:id="@+id/btn_back"
+            style="@style/kidpower_secondarytext"
+            app:customButtonFont="@string/font_mikado_bold"
+            android:textAllCaps="true"
+            android:textSize="14dp"
+            android:background="@color/kidpower_light_gray"
+            android:layout_weight="1" />
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_height"
+            android:text="@string/button_continue"
+            android:id="@+id/btn_continue"
+            style="@style/style_button_general"
+            app:customButtonFont="@string/font_mikado_bold"
+            android:textAllCaps="true"
+            android:textSize="14dp"
+            android:background="@color/kidpower_light_blue"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp" />
+    </LinearLayout>
+</RelativeLayout>

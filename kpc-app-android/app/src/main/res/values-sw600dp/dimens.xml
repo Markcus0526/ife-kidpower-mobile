@@ -1,0 +1,157 @@
+<resources>
+
+	<!-- round corner for welcome screen -->
+
+	<dimen name="cornerround_edittext">5dp</dimen>
+
+	<dimen name="fontsize_for_header">53dp</dimen>
+	<dimen name="fontsize_normal">35dp</dimen>
+	<dimen name="fontsize_large">40dp</dimen>
+	<dimen name="fontsize_small">30dp</dimen>
+	<dimen name="fontsize_tiny">25dp</dimen>
+	<dimen name="fontsize_extra_tiny">13dp</dimen>
+
+	<dimen name="kidpower_navbarheight">56dp</dimen>
+	<dimen name="kidpower_navbar_padding">16dp</dimen>
+
+	<dimen name="margin_4">7dp</dimen>
+	<dimen name="margin_8">15dp</dimen>
+	<dimen name="margin_10">19dp</dimen>
+	<dimen name="margin_12">22dp</dimen>
+	<dimen name="margin_16">30dp</dimen>
+	<dimen name="margin_30">56dp</dimen>
+
+	<dimen name="imagesize_normal">32dp</dimen>
+
+	<!-- New style value -->
+	<!-- edittext dimensions -->
+	<dimen name="kidpower_inputboxheight">56dp</dimen>
+	<dimen name="kidpower_inputboxcorner">6dp</dimen>
+	<dimen name="kidpower_inputboxpadding">10dp</dimen>
+	<dimen name="kidpower_inputboxfontsize">14dp</dimen>
+	<dimen name="kidpower_inputboxsecondaryhintfontsize">11dp</dimen>
+	<dimen name="kidpower_generalroundcorner">7dp</dimen>
+
+	<!-- button dimensions -->
+	<dimen name="kidpower_buttonfontsize">21dp</dimen>
+	<dimen name="kidpower_smallbuttonfontsize">14dp</dimen>
+	<dimen name="kidpower_secondarybuttonfontsize">21dp</dimen>
+	<dimen name="kidpower_buttonheight">56dp</dimen>
+	<dimen name="kidpower_smallbuttonheight">32dp</dimen>
+
+	<dimen name="kidpower_team_marker_width">90dp</dimen>
+
+	<!-- textview dimensions -->
+	<dimen name="kidpower_your_team_fontsize">10sp</dimen>
+	<dimen name="kidpower_primarytextviewfontsize">14dp</dimen>
+	<dimen name="kidpower_secondarytextviewfontsize">14dp</dimen>
+
+	<dimen name="kidpower_errortextviewfontsize">14dp</dimen>
+	<dimen name="kidpower_statustextviewfontsize">14dp</dimen>
+	<dimen name="kidpower_paragraphheadfontsize">16dp</dimen>
+
+	<dimen name="kidpower_tabtextfontsize">18dp</dimen>
+
+	<dimen name="kidpower_progresstextfontsize">12dp</dimen>
+
+	<dimen name="kidpower_textlinkfontsize">14dp</dimen>
+	<dimen name="kidpower_textlinksmallfontsize">12dp</dimen>
+	<dimen name="kidpower_texthoverfontsize">14dp</dimen>
+
+	<!-- for welcome screen's : Already have an account? Signin -->
+	<dimen name="kidpower_textlinkfontsize_large">21dp</dimen>
+	<dimen name="kidpower_secondarytextviewfontsize_large">21dp</dimen>
+
+	<dimen name="kidpower_hinttextfontsize">16dp</dimen>
+
+	<dimen name="kidpower_namefontsize">21dp</dimen>
+
+	<dimen name="kidpower_pageheadingfontsize">28dp</dimen>
+	<dimen name="kidpower_pagesubheadfontsize">19dp</dimen>
+
+	<dimen name="kidpower_teamgradefontsize">21dp</dimen>
+
+	<dimen name="kidpower_cloudtextfontsize">21dp</dimen>
+	<dimen name="kidpower_backbuttonfontsize">20dp</dimen>
+
+	<dimen name="kidpower_desctitlefontsize">24dp</dimen>
+	<dimen name="kidpower_descfontsize">18dp</dimen>
+
+	<dimen name="radius_pageindicator">10dp</dimen>
+	<dimen name="halfradius_pageindicator">5dp</dimen>
+
+	<dimen name="kidpower_powerpointvaluefontsize">27dp</dimen>
+	<dimen name="kidpower_dashboardvaluefontsize">25dp</dimen>
+	<dimen name="kidpower_dashboardlabelfontsize">17dp</dimen>
+
+	<dimen name="radius_activecode">94dp</dimen>
+	<dimen name="halfradius_activecode">47dp</dimen>
+
+	<dimen name="kidpower_activecodetextfontsize">50dp</dimen>
+
+	<dimen name="kidpower_teamprogressfontsize">16dp</dimen>
+
+	<dimen name="cornerround_teamnameedittext">10dp</dimen>
+
+	<dimen name="radius_dlgtopcircle">54dp</dimen>
+	<dimen name="halfradius_dlgtopcircle">27dp</dimen>
+	<dimen name="cornerround_dlg">5dp</dimen>
+
+	<dimen name="cornerround_hintbox">10dp</dimen>
+
+	<dimen name="kidpower_sidemenufontsize">16dp</dimen>
+
+	<dimen name="cornerround_teamprogress">10dp</dimen>
+
+	<dimen name="kidpower_teamitemheight">25dp</dimen>
+
+	<dimen name="kidpower_dialogtitle">24dp</dimen>
+
+	<dimen name="unlock_student_profile_background_radius">15dp</dimen>
+	<dimen name="unlock_student_profile_background_dash_width">10dp</dimen>
+	<dimen name="unlock_student_profile_background_stroke_width">3dp</dimen>
+
+	<!-- Segmented Group dimensions -->
+	<dimen name="dimen_radio_button_conner_radius">9dp</dimen>
+	<dimen name="dimen_radio_button_stroke_border">2dp</dimen>
+
+	<dimen name="student_button_fontsize">28dp</dimen>
+	<dimen name="student_profile_activity_value">38dp</dimen>
+
+	<dimen name="student_profile_status">27sp</dimen>
+	<dimen name="student_profile_name">23dp</dimen>
+
+	<dimen name="font_sync_mark">72sp</dimen>
+	<dimen name="font_nav_title">28sp</dimen>
+	<dimen name="font_nav_description">24sp</dimen>
+	<dimen name="font_band_code">21sp</dimen>
+
+	<dimen name="dimen_text_desc">19sp</dimen>
+	<dimen name="dimen_text_small">18sp</dimen>
+	<dimen name="dimen_text_normal">24sp</dimen>
+	<dimen name="dimen_text_medium">30sp</dimen>
+	<dimen name="dimen_text_large">38sp</dimen>
+
+	<dimen name="dimen_button_height">56dp</dimen>
+	<dimen name="dimen_sync_item_width">80dp</dimen>
+	<dimen name="dimen_dialog_padding">30dp</dimen>
+
+	<dimen name="dimen_sidebar_width">300dp</dimen>
+	<dimen name="dimen_sidebar_padding">24dp</dimen>
+	<dimen name="dimen_sidebar_image">24dp</dimen>
+	<dimen name="dimen_sidebar_textsize">24dp</dimen>
+
+	<dimen name="dimen_avatar_grid_height">150dp</dimen>
+	<dimen name="dimen_avatar_grid_margin">8dp</dimen>
+	<dimen name="dimen_band_width">320dp</dimen>
+	<dimen name="dimen_band_height">95dp</dimen>
+	<dimen name="dimen_band_margin">11dp</dimen>
+	<dimen name="dimen_input_height">56dp</dimen>
+	<dimen name="dimen_create_margin">12dp</dimen>
+	<dimen name="dimen_create_top_margin">38dp</dimen>
+	<dimen name="dimen_band_code_height">45dp</dimen>
+	<dimen name="dimen_band_code_padding">9dp</dimen>
+	<dimen name="dimen_band_candidate_height">386dp</dimen>
+
+	<dimen name="dimen_button_unlock">128dp</dimen>
+</resources>

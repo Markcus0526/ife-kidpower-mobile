@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+	<!-- app style -->
+	<style name="KidPowerStyle" parent="Theme.AppCompat.NoActionBar">
+		<item name="android:textViewStyle">@style/KidPowerTextViewStyle</item>
+		<item name="android:buttonStyle">@style/KidPowerButtonStyle</item>
+		<item name="android:editTextStyle">@style/KidPowerEditTextStyle</item>
+	</style>
+
+	<!-- parent styles -->
+	<style name="KidPowerTextViewStyle" parent="@style/TextAppearance.AppCompat">
+		<item name="android:fontFamily">helvetica</item>
+	</style>
+
+	<style name="KidPowerButtonStyle" parent="Widget.AppCompat.Button">
+		<item name="android:fontFamily">helvetica</item>
+	</style>
+
+	<style name="KidPowerEditTextStyle" parent="Widget.AppCompat.EditText">
+		<item name="android:fontFamily">helvetica</item>
+	</style>
+
+	<style name="KidPowerRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+	</style>
+
+	<!-- activity style -->
+	<style name="KidPowerStyle_NoActionBar" parent="Theme.AppCompat.NoActionBar">
+	</style>
+
+	<style name="KidPowerImageTextButtonStyle">
+	</style>
+
+	<!-- edit text styles -->
+	<style name="style_edittext_general" parent="KidPowerEditTextStyle">
+		<item name="android:background">@drawable/kp_drawable_edittext_general_background</item>
+		<item name="android:textSize">@dimen/kidpower_inputboxfontsize</item>
+		<item name="android:textColorHint">@color/kidpower_light_grey</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:paddingLeft">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:paddingRight">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:layout_height">@dimen/kidpower_inputboxheight</item>
+		<item name="customEditTextFont">@string/font_pfdindisplaypro_regular</item>
+	</style>
+
+	<style name="kidpower_inputboxnormal" parent="KidPowerEditTextStyle">
+		<item name="android:background">@drawable/kidpower_inputboxbg</item>
+		<item name="android:textSize">@dimen/kidpower_inputboxfontsize</item>
+		<item name="android:textColorHint">@color/kidpower_hint</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:paddingLeft">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:paddingRight">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:layout_height">@dimen/kidpower_inputboxheight</item>
+	</style>
+
+	<style name="kidpower_inputboxnormal_invalidate" parent="kidpower_inputboxnormal">
+		<item name="android:background">@drawable/kidpower_inputbox_invalid_bg</item>>
+	</style>
+
+	<style name="kidpower_inputboxbandcode" parent="KidPowerEditTextStyle">
+		<item name="android:textSize">@dimen/kidpower_inputboxfontsize</item>
+		<item name="android:textColorHint">@color/kidpower_hint</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:paddingLeft">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:paddingRight">@dimen/kidpower_inputboxpadding</item>
+	</style>
+
+	<style name="style_edittext_multiline" parent="KidPowerEditTextStyle">
+		<item name="android:background">@drawable/kp_drawable_edittext_general_background</item>
+		<item name="android:textColorHint">@color/kidpower_light_grey</item>
+		<item name="android:gravity">left|top</item>
+		<item name="android:paddingLeft">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:paddingRight">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:layout_height">@dimen/kidpower_inputboxheight</item>
+		<item name="customEditTextFont">@string/font_pfdindisplaypro_regular</item>
+		<item name="android:inputType">textCapSentences|textMultiLine</item>
+	</style>
+
+	<!-- button styles -->
+	<style name="kidpower_buttonnormal" parent="KidPowerButtonStyle">
+		<item name="android:background">@drawable/kidpower_buttonnormalbg</item>
+		<item name="android:textSize">@dimen/kidpower_buttonfontsize</item>
+		<item name="android:layout_height">@dimen/kidpower_buttonheight</item>
+		<item name="android:textColor">@color/kidpower_buttontext</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="style_button_general" parent="KidPowerButtonStyle">
+		<item name="android:background">@drawable/kidpower_buttonnormalbg</item>
+		<item name="android:textSize">@dimen/kidpower_buttonfontsize</item>
+		<item name="android:layout_height">@dimen/kidpower_buttonheight</item>
+		<item name="android:textColor">@color/kidpower_buttontext</item>
+		<item name="customButtonFont">@string/font_mikado_bold</item>
+	</style>
+
+	<style name="kidpower_smallbuttonnormal" parent="KidPowerButtonStyle">
+		<item name="android:background">@drawable/kidpower_buttonnormalbg</item>
+		<item name="android:textSize">@dimen/kidpower_smallbuttonfontsize</item>
+		<item name="android:layout_height">@dimen/kidpower_smallbuttonheight</item>
+		<item name="android:textColor">@color/kidpower_buttontext</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="kidpower_buttoncancel" parent="KidPowerButtonStyle">
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:textColor">@color/kidpower_enabledbuttonbg</item>
+		<item name="android:textSize">@dimen/kidpower_buttonfontsize</item>
+	</style>
+
+	<style name="kidpower_smallbuttoncancel" parent="KidPowerButtonStyle">
+		<item name="android:background">@color/transparent</item>
+		<item name="android:textColor">@color/kidpower_enabledbuttonbg</item>
+		<item name="android:textSize">@dimen/kidpower_smallbuttonfontsize</item>
+	</style>
+
+	<style name="kidpower_buttonsecondary" parent="KidPowerButtonStyle">
+		<item name="android:background">@drawable/kidpower_secondarybuttonbg</item>
+		<item name="android:layout_height">@dimen/kidpower_buttonheight</item>
+		<item name="android:textColor">@color/kidpower_secondarytext</item>
+		<item name="android:textSize">@dimen/kidpower_secondarybuttonfontsize</item>
+	</style>
+
+	<style name="kidpower_buttondisable" parent="KidPowerButtonStyle">
+		<item name="android:background">@drawable/kidpower_disablebuttonbg</item>
+		<item name="android:layout_height">@dimen/kidpower_buttonheight</item>
+		<item name="android:textColor">@color/kidpower_disabledbuttontext</item>
+		<item name="android:textSize">@dimen/kidpower_inputboxfontsize</item>
+	</style>
+
+	<!-- text styles -->
+	<style name="style_textview_general" parent="KidPowerTextViewStyle">
+		<item name="customTextViewFont">@string/font_pfdindisplaypro_regular</item>
+		<item name="android:textColor">@color/kidpower_brownish_grey</item>
+	</style>
+
+	<style name="style_textview_heading" parent="KidPowerTextViewStyle">
+		<item name="customTextViewFont">@string/font_mikado_bold</item>
+		<item name="android:textColor">@color/kidpower_brownish_grey</item>
+	</style>
+
+	<style name="style_textview_italic" parent="KidPowerTextViewStyle">
+		<item name="customTextViewFont">@string/font_pfdindisplaypro_italic</item>
+		<item name="android:textColor">@color/kidpower_brownish_grey</item>
+	</style>
+
+	<style name="kidpower_textlink" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_textlink</item>
+		<item name="android:textSize">@dimen/kidpower_textlinkfontsize</item>
+	</style>
+
+	<style name="kidpower_textlink_large" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_textlink</item>
+		<item name="android:textSize">@dimen/kidpower_textlinkfontsize_large</item>
+	</style>
+
+	<style name="kidpower_textlinksmall" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_textlink</item>
+		<item name="android:textSize">@dimen/kidpower_textlinksmallfontsize</item>
+	</style>
+
+	<style name="kidpower_texthover" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_textlink</item>
+		<item name="android:textSize">@dimen/kidpower_texthoverfontsize</item>
+	</style>
+
+	<style name="kidpower_studentname" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/kidpower_namefontsize</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="kidpower_primarytext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textSize">@dimen/kidpower_primarytextviewfontsize</item>
+		<item name="android:background">@color/transparent</item>
+	</style>
+
+	<style name="kidpower_secondarytext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_secondarytext</item>
+		<item name="android:textSize">@dimen/kidpower_secondarytextviewfontsize</item>
+	</style>
+
+	<style name="kidpower_secondarytext_large" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_secondarytext</item>
+		<item name="android:textSize">@dimen/kidpower_secondarytextviewfontsize_large</item>
+	</style>
+
+	<style name="kidpower_hinttext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/hintbox_text</item>
+		<item name="android:textSize">@dimen/kidpower_hinttextfontsize</item>
+	</style>
+
+	<style name="kidpower_errortext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_hearterrortext</item>
+		<item name="android:textSize">@dimen/kidpower_errortextviewfontsize</item>
+	</style>
+
+	<style name="kidpower_statustext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_statustext</item>
+		<item name="android:textSize">@dimen/kidpower_statustextviewfontsize</item>
+	</style>
+
+	<style name="kidpower_progresstext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textSize">@dimen/kidpower_progresstextfontsize</item>
+	</style>
+
+	<style name="kidpower_paragraphheadtext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_header</item>
+		<item name="android:textSize">@dimen/kidpower_paragraphheadfontsize</item>
+	</style>
+
+	<style name="kidpower_tabtext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_tabtext</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:textSize">@dimen/kidpower_tabtextfontsize</item>
+	</style>
+
+	<style name="kidpower_dialogtitletext" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_primarytext</item>
+		<item name="android:textSize">@dimen/kidpower_dialogtitle</item>
+	</style>
+
+	<style name="kidpower_dropdowntextview" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textSize">@dimen/kidpower_inputboxfontsize</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:paddingLeft">@dimen/kidpower_inputboxpadding</item>
+		<item name="android:paddingRight">@dimen/kidpower_inputboxpadding</item>
+	</style>
+
+	<style name="kidpower_pageheading" parent="KidPowerTextViewStyle">
+		<item name="android:textSize">@dimen/kidpower_pageheadingfontsize</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="kidpower_subhead" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textSize">@dimen/kidpower_pagesubheadfontsize</item>
+	</style>
+
+	<style name="kidpower_rosterteamgrade" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_teamgradetext</item>
+		<item name="android:textSize">@dimen/kidpower_teamgradefontsize</item>
+	</style>
+
+	<style name="kidpower_subhead_nonselected" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_secondarytext</item>
+		<item name="android:textSize">@dimen/kidpower_pagesubheadfontsize</item>
+	</style>
+
+	<style name="kidpower_desctitle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/kidpower_desctitlefontsize</item>
+	</style>
+
+	<style name="kidpower_desc" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/kidpower_descfontsize</item>
+	</style>
+
+	<style name="kidpower_descnormal" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_desc</item>
+		<item name="android:textSize">@dimen/kidpower_primarytextviewfontsize</item>
+	</style>
+
+	<!-- foodpacket value : Food Packets=>36,500, etc -->
+	<style name="kidpower_foodpacketsvalue" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/student_profile_activity_value</item>
+	</style>
+
+	<!-- powerpoint value : Food Packets=>36,500, etc -->
+	<style name="kidpower_powerpointvalue" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/kidpower_powerpointvaluefontsize</item>
+	</style>
+
+	<!-- dashboard value : Food Packets=>36,500, etc -->
+	<style name="kidpower_dashboardvalue" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/kidpower_dashboardvaluefontsize</item>
+	</style>
+
+	<!-- dashboard label : Food Packets, Power Points, etc -->
+	<style name="kidpower_dashboardlabel" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/kidpower_dashboardlabelfontsize</item>
+	</style>
+
+
+	<style name="kidpower_generalframe">
+		<item name="android:background">@drawable/kidpower_generalroundframe</item>
+	</style>
+
+	<style name="kidpower_generalgrayframe">
+		<item name="android:background">@drawable/kidpower_generalroundgrayframe</item>
+	</style>
+
+	<style name="kidpower_generalblueframe">
+		<item name="android:background">@drawable/kidpower_generalroundblueframe</item>
+	</style>
+
+	<style name="kidpower_cloudtextstyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/kidpower_cloudtextfontsize</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="kidpower_activecodetextstyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_activecodetext</item>
+		<item name="android:textSize">@dimen/kidpower_activecodetextfontsize</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="kidpower_teamnameedit" parent="KidPowerEditTextStyle">
+		<item name="android:textColor">@color/black</item>
+		<item name="android:textSize">@dimen/kidpower_inputboxfontsize</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:textColorHint">@color/kidpower_teamnameplaceholder</item>
+		<item name="android:maxLines">1</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:background">@drawable/teamnameeditbg</item>
+		<item name="android:paddingLeft">10dp</item>
+		<item name="android:paddingRight">10dp</item>
+	</style>
+
+	<style name="kidpower_teamprogress" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_teamprogress</item>
+		<item name="android:textSize">@dimen/kidpower_teamprogressfontsize</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+
+	<style name="WelcomeButtonStyle" parent="KidPowerButtonStyle">
+		<item name="android:textColor">#ffffff</item>
+		<item name="android:background">@drawable/welcome_btnbg</item>
+		<item name="android:textSize">50dp</item>
+	</style>
+
+	<style name="CloudTextStyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:textSize">43dp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="WelcomeHeaderTextStyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:textSize">@dimen/fontsize_for_header</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="WelcomeDescriptionTextStyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:textSize">@dimen/fontsize_small</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="WelcomeDescriptionDeemphasizedTextStyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/label_deemphasized</item>
+		<item name="android:textSize">@dimen/fontsize_small</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+
+	<style name="WelcomeSubtitleTextStyle" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@android:color/darker_gray</item>
+		<item name="android:textSize">@dimen/fontsize_normal</item>
+	</style>
+
+	<style name="DropDownAnimation">
+		<item name="android:windowEnterAnimation">@anim/drop_down</item>
+		<item name="android:windowExitAnimation">@anim/drop_up</item>
+	</style>
+
+	<style name="KidPowerDialog" parent="Theme.AppCompat.Dialog">
+		<item name="android:windowBackground">@color/transparent</item>
+	</style>
+
+
+	<style name="kidpower_student_button" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">@dimen/student_button_fontsize</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="kidpower_student_state" parent="KidPowerTextViewStyle">
+		<item name="android:textColor">@color/kidpower_azure</item>
+		<item name="android:textSize">@dimen/student_profile_status</item>
+	</style>
+
+	<style name="kidpower_student_name" parent="KidPowerTextViewStyle">
+		<item name="android:textSize">@dimen/student_profile_name</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+	<style name="kidpower_style_radiobutton_general" parent="KidPowerRadioButtonStyle">
+		<item name="customRadioButtonFont">@string/font_pfdindisplaypro_regular</item>
+	</style>
+
+	<style name="style_image_text_button_general" parent="KidPowerImageTextButtonStyle">
+		<item name="customImageSize">20dp</item>
+		<item name="customTextColor">@color/white</item>
+		<item name="customTextSize">@dimen/fontsize_normal</item>
+		<item name="customImageTextButtonFont">@string/font_mikado_bold</item>
+		<item name="customImageResourceId">@drawable/sync_white</item>
+		<item name="android:background">@color/kidpower_light_blue</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+	<style name="kidpower_student_progressdialog" parent="Theme.AppCompat.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+	</style>
+
+</resources>

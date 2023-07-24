@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:background="#60000000" android:id="@+id/parent_layout">
+
+    <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlMenu"
+            android:layout_centerInParent="true"
+            style="@style/kidpower_generalgrayframe"
+            >
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:id="@+id/rlMenuTitle">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/layout_activityselphoto_selectimage"
+                    style="@style/kidpower_desctitle"
+                    android:id="@+id/txt_title"
+                    android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" android:id="@+id/takephoto" android:layout_below="@+id/rlMenuTitle"
+                android:background="@android:color/transparent">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/layout_activityselphoto_takeaphoto"
+                    android:id="@+id/txt_takephoto"
+                    style="@style/kidpower_buttonnormal"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="30dp"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn_take_photo"
+                    android:textColor="#00FFFFFF" android:background="@android:color/transparent"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" android:id="@+id/selectphoto" android:layout_below="@+id/takephoto">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/layout_activityselphoto_selectaphoto"
+                    android:id="@+id/txt_selphoto"
+                    style="@style/kidpower_buttonnormal"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="30dp"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn_sel_image"
+                    android:background="@android:color/transparent"/>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#a7a7a7"
+                    android:id="@+id/sep_layout1">
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:id="@+id/cancelphoto"
+                android:layout_below="@+id/selectphoto">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/button_cancel"
+                    android:id="@+id/txt_cancel"
+                    style="@style/kidpower_buttonnormal"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="30dp"/>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/btn_cancel"
+                    android:background="@android:color/transparent"/>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="1dp" android:background="#a7a7a7"
+                            android:id="@+id/sel_layout2"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/crop_layout" android:background="#FF000000"
+            android:visibility="visible">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/image_layout" android:layout_above="@+id/oper_layout"
+                >
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/img_sel" android:scaleType="matrix"/>
+            <view android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  class="org.unicefkidpower.schools.ui.ClipView" android:id="@+id/clipview"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp" android:layout_alignParentBottom="true" android:id="@+id/oper_layout">
+            <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent" android:layout_marginLeft="50dp"
+                    android:gravity="center" android:id="@+id/rlConfirm">
+                <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/buttonConfirm" android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" android:background="@drawable/icon_ok"
+                        />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="fill_parent" android:layout_marginRight="50dp"
+                    android:layout_alignParentRight="true" android:id="@+id/rlCancel" android:gravity="center"
+                    >
+                <Button
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/buttonCancel" android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" android:background="@drawable/icon_cancel"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+apply plugin: 'io.fabric'
+apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'CalorieCloud'
+            keyPassword 'f33dK!d$C@l0r!3$'
+            storePassword 'f33dK!d$C@l0r!3$'
+            v2SigningEnabled false
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "org.caloriecloud.android"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 52
+        versionName "2.0"
+        buildConfigField("String", "ENV", "\"https://get.activeforgood.com\"")
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            useProguard false
+        }
+        release {
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+        production {
+            buildConfigField("String", "ENV", "\"https://get.activeforgood.com\"")
+        }
+        staging {
+            applicationIdSuffix ".staging"
+            buildConfigField("String", "ENV", "\"https://staging.activeforgood.com\"")
+        }
+        kpwProduction {
+            applicationIdSuffix ".workplace"
+            buildConfigField("String", "ENV", "\"https://get.activeforgood.com\"")
+        }
+        kpwStaging {
+            applicationIdSuffix ".workplace.staging"
+            buildConfigField("String", "ENV", "\"https://staging.activeforgood.com\"")
+        }
+    }
+}
+
+dependencies {
+    compile project(':lottie-react-native')
+    compile project(':react-native-code-push')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.evernote:android-job:1.1.11'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.google.android.gms:play-services-fitness:11.0.4'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    apt 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.zendesk:sdk:1.11.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.0@aar') {
+        transitive = true;
+    }
+    compile 'com.facebook.react:react-native:0.49.3'
+}

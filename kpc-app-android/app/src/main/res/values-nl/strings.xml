@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UNICEF Kid Power Program</string>
+
+    <string name="ble_not_supported">Bluetooth LE wordt niet ondersteund</string>
+    <string name="error_bluetooth_not_supported">Bluetooth wordt niet ondersteund.</string>
+
+    <!-- titles on action(?) bar -->
+    <string name="signup_title">Aanmelden</string>
+    <string name="teams_title">Mijn Teams</string>
+    <string name="teamsetup_title">Jouw Team</string>
+    <string name="profile_title">Profiel</string>
+    <string name="coachsettings_title">Coachinstellingen</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">
+        Welkom bij UNICEF Kid Power!
+    </string>
+    <string name="welcome_description">
+        Super dat jullie deze maand gaan bewegen om ondervoede kinderen wereldwijd te helpen. Door een account aan te maken kunnen jullie zo snel mogelijk aan de slag. Het aanmaken van een account kost ongeveer 5 - 10 minuten.
+    </string>
+    <string name="get_started">Aan de slag</string>
+    <string name="label_alreadyhaveanaccount">Heb je al een account?</string>
+    <string name="log_in">Inloggen</string>
+    <string name="sign_in">Inloggen</string>
+    <string name="log_in_underlined"><u>Inloggen</u></string>
+
+    <!-- Log in -->
+    <string name="email_address">E-mailadres</string>
+    <string name="password">wachtwoord</string>
+    <string name="trouble_logging_in_underlined"><u>Problemen met inloggen?</u></string>
+    <string name="password_reset">Wachtwoord herstellen</string>
+    <string name="i_remember_now_underlined"><u>Ik weet het weer!</u></string>
+
+    <!-- Team Screen -->
+    <string name="packets">Pakketten</string>
+    <string name="steps">Stappen</string>
+    <string name="average_steps_per_day">Stappen</string>
+    <string name="you_are_off_to_a_great_start">Je staat klaar voor een goed begin!</string>
+    <string name="kids">Kinderen</string>
+    <string name="kids_number">Gebruiker (%d)</string>
+	<string name="new_kid_title">Nieuwe deelnemer</string>
+    <string name="new_kid">Nieuwe gebruiker</string>
+    <string name="new_kid_note">
+		Opmerking: maak geen nieuwe gebruikers aan wanneer enkel het bandje vervangen moet worden.
+		Ontkoppel in dat geval het bandje en voeg een nieuw bandje toe.
+    </string>
+
+    <string name="team_name">teamnaam</string>
+
+    <string name="grade">jaarlaag</string>
+    <string name="third_grade">Groep 5</string>
+    <string name="forth_grade">Groep 6</string>
+    <string name="fifth_grade">Groep 7</string>
+	<string name="sixth_grade">Groep 8</string>
+	<string name="seventh_grade">Groep 9</string>
+	<string name="eighth_grade">Groep 10</string>
+
+    <string name="create_team">Team aanmaken</string>
+    <string name="new_team">Nieuw team</string>
+    <string name="settings_with_icon">&#xf013; Instellingen</string>
+    <string name="other">Overig</string>
+    <string name="favorite_title">Favoriet</string>
+    <string name="nearby_title">Naburig</string>
+    
+    <!-- Student Screen -->
+    <string name="not_linked">Tik om ID in te voeren</string>
+    <string name="scanning">Aan het scannen…</string>
+    <string name="link_band">Band koppelen</string>
+    <string name="sync">Synchroniseren</string>
+    <string name="enter_your_teachers_password_to_unlock">Voer wachtwoord in om in te loggen.</string>
+    <string name="save_confirm_caption">Er zijn wijzigingen die niet opgeslagen zijn!</string>
+    <string name="delete_student_confirm_caption">Weet je zeker dat je deze wilt verwijderen?</string>
+    <string name="unlock">inloggen</string>
+
+    <string name="label_itseasysingupsteps">Het is snel en makkelijk</string>
+    <string name="btncreatemyprofile_title">Mijn Profiel aanmaken</string>
+    <string name="label_nicework">Goed bezig!</string>
+    <string name="label_nicework_description">Je coachprofiel is klaar</string>
+    <string name="btnsetupteam_title">Mijn team opzetten</string>
+    <string name="btnnext_title">Volgende</string>
+
+    <string name="sidebar_new_team">NIEUW TEAM</string>
+    <string name="sidebar_curriculum">LESMATERIAAL</string>
+    <string name="sidebar_inbox">INBOX</string>
+    <string name="sidebar_support">ONDERSTEUNING</string>
+    <string name="sidebar_account">ACCOUNT</string>
+    <string name="sidebar_logout">UITLOGGEN</string>
+
+    <string name="coach_string">COACH</string>
+    <string name="band_id_string">BAND ID</string>
+    <string name="band_id_lower_string">Band ID</string>
+
+    <!-- student syncing-->
+    <string name="studentsync_title_progress">Aan het synchroniseren</string>
+    <string name="studentsync_see_my_progress">Voortgang</string>
+
+    <string name="error_network">Verbindingsfout</string>
+    <string name="error_parse_response">Fout bij het verwerken van antwoord</string>
+    <string name="error_unexpected">Onverwachte</string>
+    <string name="error_unknown">Onbekende fout</string>
+    <string name="error_server">Serverfout</string>
+
+    <string name="addpowerpoints_hintfor_choose_team">1. Aan welk team wil je UNICEF Kid Power punten toekennen?</string>
+    <string name="addpowerpoints_hintfor_choose_kind">2. Toewijzen aan alle teamleden, of aan één leerling?</string>
+    <string name="addpowerpoints_hintfor_choose_student">3. Welke leerling?</string>
+    <string name="addpowerpoints_hintfor_choose_powerpoint">Hoeveel UNICEF Kid Power punten?</string>
+
+    <string name="addpowerpoints_kind_toteam">…aan alle leerlingen in een Team</string>
+    <string name="addpowerpoints_kind_toindividual">...aan een individuele leerling</string>
+
+    <!-- coach password dialog -->
+    <string name="coachpassworddlg_check_password">Controleer je wachtwoord</string>
+
+    <!-- coach settings fragment -->
+    <string name="app_powerpoint">Power Point</string>
+    <string name="app_powerpoints">UNICEF Kid Power punten</string>
+	<string name="app_points">UNICEF Kid Power punten</string>
+    <string name="app_onemoment">Een ogenblik geduld a.u.b...</string>
+    <string name="app_connecting">Bezig met verbinden...</string>
+    <string name="coachsettings_progress_loadingteam">Team aan het laden…</string>
+    <string name="coachsettings_format_for_teamcount">Coach van %d team(s)</string>
+    <string name="coachsettings_select_team">Selecteer a.u.b. eerst een team</string>
+    <string name="coachsettings_no_teams">Er zijn geen teams</string>
+    <string name="coachsettings_username_updated">Gebruikersnaam bijgewerkt</string>
+    <string name="coachsettings_username_update_failed">Fout bij het bijwerken van gebruikersnaam</string>
+    <string name="coachsettings_useremail_updated">E-mailadres van gebruiker bijgewerkt</string>
+    <string name="coachsettings_useremail_update_failed">Bijwerken van e-mailadres gebruiker mislukt</string>
+    <string name="coachsettings_userpassword_create_failed">Aanmaken wachtwoord mislukt</string>
+    <string name="coachsettings_user_profile_update_failed">Bijwerken van je profiel mislukt</string>
+    <string name="coachsettings_getteams_failed">Ophalen van teams mislukt. Check a.u.b. je netwerkverbinding en probeer het opnieuw.</string>
+    <string name="coachsettings_newteam_added">Nieuw team toegevoegd</string>
+    <string name="coachsettings_newteam_added_failed">Toevoegen van nieuw team mislukt</string>
+    <string name="coachsettings_no_students">Er zitten geen leerlingen in dit team</string>
+    <string name="coachsettings_fetch_students_failed">Ophalen van leerlingen mislukt</string>
+    <string name="coachsettings_added_powerpoints">UNICEF Kid Power punten succesvol toegevoegd</string>
+    <string name="coachsettings_add_powerpoints_failed">Toevoegen van UNICEF Kid Power punten mislukt</string>
+    <string name="coachsettings_select_grade">Selecteer a.u.b. de juiste groep</string>
+    <string name="coachsettings_email_required">E-mailadres is verplicht</string>
+    <string name="coachsettings_invalid_email">Ongeldig e-mailadres</string>
+    <string name="coachsettings_email_not_match">E-mailadressen komen niet overeen</string>
+    <string name="coachsettings_nothing_updated">Niets om bij te werken</string>
+    <string name="coachsettings_firstname_required">Voornaam is verplicht</string>
+    <string name="coachsettings_lastname_required">Achternaam is verplicht</string>
+    <string name="coachsettings_adding_powerpoints">UNICEF Kid Power punten aan het toevoegen...</string>
+
+    <!-- profile activity -->
+    <string name="profile_student_notfound">Leerling niet gevonden</string>
+    <string name="app_yesterday">gisteren</string>
+    <string name="profile_getstudent_failed">Ophalen leerling mislukt</string>
+    <string name="profile_delete_failed">Verwijderen van de leerling mislukt</string>
+
+    <string name="profile_name_required">Naam is vereist</string>
+    <string name="profile_name_max_length">Gebruikersnaam mag maximaal 12 tekens lang zijn.</string>
+    <string name="profile_update_failed">Update mislukt</string>
+
+    <!-- sel city activity -->
+    <string name="app_school">School</string>
+    <string name="selcity_select_city">Selecteer a.u.b. eerst je stad</string>
+    <string name="selcity_cityhasno_activeschools">Deze stad heeft geen actieve scholen</string>
+    <string name="selcity_select_yourcity">Selecteer je stad</string>
+    <string name="selcity_select_yourschool">Selecteer je school</string>
+
+    <!-- select photo activity -->
+    <string name="selectphoto_cannot_take">Kan geen foto nemen</string>
+    <string name="selectphoto_loadimage_failed">Fout bij laden afbeelding</string>
+    <string name="selectphoto_takephoto_failed">Nemen van foto mislukt</string>
+    <string name="selectphoto_saveimage_failed">Fout bij opslaan afbeelding</string>
+    <string name="selectphoto_title_selectpicture">Foto selecteren</string>
+
+    <!-- signup activity -->
+    <string name="signup_enter_bandid">Voer a.u.b. een Kid Power Band ID in</string>
+    <string name="signup_create_userfirst">Maak eerst een gebruiker aan</string>
+    <string name="signup_create_teamfirst">Maak eerst een team aan</string>
+    <string name="signup_creating_student">Leerling aan het aanmaken...</string>
+    <string name="signup_creating_team">Team aan het aanmaken...</string>
+    <string name="app_go">Ga</string>
+    <string name="signup_user_not_registered">Gebruiker niet geregistreerd</string>
+    <string name="signup_correct_invalid_fields">Corrigeer a.u.b. de ongeldige velden</string>
+    <string name="signup_creating_profile">Je profiel aan het aanmaken...</string>
+    <string name="signup_createprofile_failed">Aanmaken profiel mislukt</string>
+    <string name="signup_registerband_failed">Registeren van Kid Power Band mislukt</string>
+    <string name="signup_createstudent_succed">De leerling is succesvol aangemaakt!</string>
+    <string name="signup_createstudent_failed">Aanmaken leerling mislukt</string>
+    <string name="signup_createteam_failed">Aanmaken team mislukt</string>
+    <string name="signup_band_already_claimed">Deze Kid Power Band is al geclaimd. Probeer het met een andere.</string>
+    <string name="signup_bandid_not_found">De ingevoerde code kan niet worden gevonden.</string>
+
+    <!-- team setup activity-->
+    <string name="teamsetup_createteam_failed">Aanmaken van team mislukt</string>
+    <string name="teamsetup_register_userfirst">Registreer a.u.b. eerst een gebruiker</string>
+    <string name="teamsetup_settingup_team">Je team aan het opzetten...</string>
+
+    <!-- teams fragment -->
+    <string name="teams_loading_team">Je team(s) aan het laden...</string>
+    <string name="teams_loadingteam_failed">Fout bij laden teams</string>
+
+    <!-- team stats content manager-->
+    <string name="teamstats_rank_first">1st</string>
+    <string name="teamstats_rank_second">2nd</string>
+    <string name="teamstats_rank_third">3th</string>
+    <string name="teamstats_format_rank">%dth</string>
+    <string name="teamstats_load_teaminfo_failed">Fout bij laden teaminfo</string>
+	<string name="teamstats_leaderboard_get_failed">Fout bij het laden leaderboard info</string>
+
+    <!-- team stats fragment -->
+    <string name="teamstats_loading_team">Je team(s) aan het laden...</string>
+    <string name="teamstats_teaminfo_updated">Teaminfo bijgewerkt</string>
+    <string name="teamstats_teaminfo_update_failed">Fout bij bijwerken teaminfo</string>
+    <string name="teamstats_student_get_failed">Fout bij laden leerlingen</string>
+    <string name="teamstats_select_grade">Selecteer a.u.b. de juiste groep</string>
+    <string name="teamstats_has_no_students">Dit team heeft geen leerlingen.</string>
+
+    <!-- team sync dialog -->
+    <string name="teamsync_title">Aan het synchroniseren</string>
+    <string name="teamsync_ret_syncing">Aan het synchroniseren</string>
+    <string name="teamsync_ret_synced">Gesynchroniseerd</string>
+    <string name="teamsync_ret_notsynced">niet gesynchroniseerd</string>
+
+    <!-- register band manager -->
+    <string name="registerband_duplication_check_failed">Controleren van duplicatie mislukt</string>
+    <string name="registerband_band_registered">Dit apparaat is al geregistreerd. Kies een nieuw apparaat.</string>
+    <string name="registerband_connecting_band">Aan het verbinden met Kid Power Band…</string>
+    <string name="registerband_connect_failed">Verbinding maken mislukt</string>
+    <string name="registerband_updating_name">Naam aan het bijwerken...</string>
+    <string name="registerband_updating_configuration">Configuratie aan het bijwerken...</string>
+    <string name="registerband_updating_message1">Bericht 1 aan het bijwerken...</string>
+    <string name="registerband_updating_message2">Bericht 2 aan het bijwerken...</string>
+    <string name="registerband_checking_duplication">Aan het controleren op Power Band-duplicaten...</string>
+    <string name="registerband_updating_time">Tijd aan het bijwerken...</string>
+	<string name="registerband_updating_totalpoints">UNICEF Kid Power punten aan het bijwerken…</string>
+
+    <!-- server manager -->
+    <string name="neterror_400">Het verzoek kan niet worden verwerkt. Controleer en probeer het opnieuw aub.</string>
+    <string name="neterror_401">Onbevoegd</string>
+    <string name="neterror_server">Serverfout</string>
+    <string name="neterror_408">Server-time-out tijdens het wachten op het verzoek</string>
+    <string name="neterror_503">De server is momenteel niet beschikbaar. Wacht a.u.b. een minuut en probeer het opnieuw.</string>
+
+    <string name="sync_unknown_error">Controleer a.u.b. of de band opgeladen en beschikbaar is.</string>
+
+    <string name="welcome_policy">Het gebruik van deze app is onderworpen aan ons privacybeleid</string>
+
+    <string name="teamprogress_desc_yourteam">Je Team</string>
+
+    <string name="layout_activityresetpassword_sendmeresetinstructions">Stuur me Instructies voor het resetten</string>
+    <string name="layout_activityresetpassword_again">Ik weet het weer! Opnieuw proberen.</string>
+    <string name="layout_activityresetpassword_register">Registreren voor Kid Power.</string>
+
+    <string name="layout_activityselcity_whereareyoufrom">Waar kom je vandaan?</string>
+    <string name="layout_activityselcity_city">Stad</string>
+    <string name="layout_activityselcity_school">School</string>
+
+    <string name="layout_activityselphoto_selectimage">Afbeelding selecteren</string>
+    <string name="layout_activityselphoto_takeaphoto">Een foto nemen</string>
+    <string name="layout_activityselphoto_selectaphoto">Een afbeelding selecteren</string>
+
+    <string name="layout_activitysignup_firsttitle">1. Je coachprofiel instellen</string>
+    <string name="layout_activitysignup_mincharacters">Minimaal 6 tekens</string>
+    <string name="layout_activitysignup_welcomecoach">Welkom Coach Lopez!</string>
+    <string name="layout_activitysignup_secondtitle">2. Je Kid Power Band Activeren</string>
+    <string name="layout_activitysignup_hereishowyoudoit">Zo doe je dat...</string>
+    <string name="layout_activitysignup_longpress">
+        Tik vier keer op je band om het apparaat-ID te tonen, en vul dit daarna hieronder in.
+        (als het scherm uit staat, doe de band dan eerst in de USB-houder om hem op te laden.)
+    </string>
+    <string name="layout_activitysignup_congratulation">
+        Gefeliciteerd! Je hebt je Power Band geregistreerd.
+        Later ga je je leerlingen op dezelfde manier toevoegen.
+        En je kunt altijd bekijken aan wie een Power Band is toegewezen, door erop te blijven tikken, totdat je bij de schermnaam komt.    </string>
+    <string name="layout_activitysignup_whenyouarereday">Voer nu de code in op je Kid Power Band:</string>
+    <string name="layout_activitysignup_readytouse">Klaar voor Gebruik!</string>
+    <string name="layout_activitysignup_or">of,</string>
+    <string name="layout_activitysignup_skipthisstep">deze stap overslaan voor dit moment</string>
+    <string name="layout_activitysignup_powerbandregistered">Kid Power Band geregistreerd</string>
+    <string name="layout_activitysignup_thirdtitle">3. Je foto toevoegen (optioneel)</string>
+    <string name="layout_activitysignup_descs">
+        Dit is je standaard gebruikersafbeelding. Later hebben jij en je leerlingen
+        de mogelijkheid om een leuke foto toe te voegen.
+    </string>
+    <string name="layout_activitysignup_nothanks">Nee dankje, ik gebruik de standaard avatar.</string>
+    <string name="layout_activitysingup_whatyouwillneed">Wat je nodig hebt:</string>
+    <string name="layout_activitysignup_yourteam">Je opgeladen Kid Power Bands, in de buurt</string>
+    <string name="layout_activitysignup_about10minutes">Ongeveer 10 minuten voor elke 10 Kid Power Bands die je wilt registreren
+    </string>
+    <string name="layout_activitysignup_whatdoyourkidscallyou">hoe noemen je kinderen jou? Voorbeeld: Coach Brown</string>
+    <string name="layout_activitysignup_confirmemailaddress">bevestig a.u.b. je e-mailadres</string>
+    <string name="layout_activitysignup_password">wachtwoord</string>
+    <string name="layout_activitysignup_confirmpassword">wachtwoord bevestigen</string>
+    <string name="layout_activitysignup_powerbandcode">Code van Power Band</string>
+
+    <string name="layout_activityteamsetup_hint">Wat is de naam van je team?</string>
+
+    <string name="layout_fragmentcoachsetting_coachteamsetting">Coach- &amp; teaminstellingen</string>
+    <string name="layout_fragmentcoachsetting_edit">Bewerken</string>
+    <string name="layout_fragmentcoachsetting_editnames">Naam bewerken</string>
+    <string name="layout_fragmentcoachsetting_wahtdothekidscallyou">bijnaam</string>
+    <string name="layout_fragmentcoachsetting_editemailaddress">E-mailadres bewerken</string>
+    <string name="layout_fragmentcoachsetting_confirmemailaddress">E-mailadres bevestigen</string>
+    <string name="layout_fragmentcoachsetting_confirm">Bevestigen</string>
+    <string name="layout_fragmentcoachsetting_changepasswrd">Wachtwoord wijzigen</string>
+    <string name="layout_fragmentcoachsetting_minimum">Minimaal 6 tekens</string>
+    <string name="layout_fragmentcoachsetting_addateam">Een team toevoegen</string>
+    <string name="layout_fragmentcoachsetting_powerpoints">UNICEF Kid Power punten</string>
+    <string name="layout_fragmentcoachsetting_addpowerpoints">UNICEF Kid Power punten toevoegen</string>
+    <string name="layout_fragmentcoachsetting_awardpoints">Punten toekennen</string>
+    <string name="layout_fragmentcoachsetting_newpassword">nieuw wachtwoord</string>
+    <string name="layout_fragmentcoachsetting_confirmpassword">wachtwoord bevestigen</string>
+    <string name="layout_fragmentcoachsetting_teamname">Teamnaam</string>
+    <string name="layout_fragmentcoachsetting_gradelevel">Groep</string>
+
+    <string name="layout_fragmentteams_save">Opslaan</string>
+    <string name="layout_fragmentteams_teams">Teams</string>
+    <string name="layout_fragmentteams_edit">Bewerken</string>
+
+    <string name="layout_alertmessage_title">Kies a.u.b. een kortere naam</string>
+    <string name="layout_alertmessage_content">Kies a.u.b. een kortere naam (bijv. een bijnaam of alleen een
+        voornaam). Max. lengte: 12 tekens.
+    </string>
+
+    <string name="layout_bandregistering_updatename">Naam aan het bijwerken...</string>
+
+    <string name="layout_checkcoachpassword_coachpassword">wachtwoord</string>
+
+    <string name="layout_confirmsignout_title">Weet je zeker dat je je wilt afmelden?</string>
+    <string name="layout_confirmsignout_yes">Ja, afmelden</string>
+
+    <string name="layout_stats_leaderboard">Scorebord</string>
+
+    <string name="layout_team_coach">Coach</string>
+
+    <string name="layout_search">Search...</string>
+
+    <string name="team_syncing_description">Laat de bandjes op in de oplader\n- OF -\nZorg ervoor dat de banden volledig zijn opgeladen, en houd ze in de buurt</string>
+
+    <string name="last_synced">Laatst gesynchroniseerd</string>
+    <string name="days_ago">dagen geleden</string>
+    <string name="today">vandaag</string>
+    <string name="has_not_synced">Is niet gesynchroniseerd</string>
+    <string name="need_to_link">Tik om het bandje te koppelen</string>
+
+    <string name="sync_searching_band">Aan het zoeken naar Kid Power Band...</string>
+    <string name="sync_stopped">Synchroniseren gestopt</string>
+    <string name="sync_connecting">Bezig met verbinden...</string>
+    <string name="sync_uploading">Uploading...</string>
+    <string name="sync_complete">Synchronisatie voltooid</string>
+    <string name="sync_all_done">Gereed!</string>
+    <string name="sync_no_band">(geen band)</string>
+
+    <string name="sync_all_bands">Alle bandjes aan het synchroniseren...</string>
+    <string name="sync_all_synced">Alle Bandjes gesynchroniseerd</string>
+    <string name="sync_not_synced">Bandjes niet gesynchroniseerd</string>
+    <string name="sync_synced">Bandjes gesynchroniseerd</string>
+    <string name="sync_failed">Mislukt</string>
+
+    <string name="sync_state_format" formatted="false">
+    (%d van %d bandjes gesynchroniseerd. %d van de %d kinderen hebben gekoppelde bandjes)
+    </string>
+    <string name="sync_unlinking_band">Band aan het ontkoppelen...</string>
+    <string name="sync_unlink_band">Ontkoppelen Band</string>
+
+    <string name="choose_avatar_status" formatted="false">Kies 1 van %d icoontjes</string>
+
+    <string name="male">Jongen</string>
+    <string name="female">Meisje</string>
+    <string name="skip">Overslaan</string>
+
+    <string name="did_not_found_band">Kan de Band niet vinden. Probeer het a.u.b. opnieuw.</string>
+    <string name="button_scan">Scannen</string>
+    <string name="button_rescan">Opnieuw scannen</string>
+    <string name="band_id_guide">Tik 2 keer op het bandje om de code te tonen.\nVerlaat toetsenbord door te klikken op &lt;.</string>
+    <string name="no_band_nearby">Er zijn geen nieuwe bandjes.</string>
+
+    <string name="student_update_failed">Update mislukt</string>
+
+    <string name="bands_found_nearby">Banden gevonden…</string>
+    <string name="one_band_found">1 Bandje gevonden. Selecteer hieronder.</string>
+    <string name="number_of_band_found">%d Bandjes gevonden. Selecteer hieronder.</string>
+
+    <string name="dialog_unlink_title">Weet je het zeker?</string>
+
+    <string name="band_linking">Band aan het koppelen...</string>
+    <string name="band_updating">Naam aan het bijwerken...</string>
+
+    <!-- Keyboard arrow -->
+    <string name="icon_keyboard_arrow_down">&#xe0c5;</string>
+    <string name="icon_keyboard_arrow_left">&#xe0c6;</string>
+    <string name="icon_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="icon_keyboard_arrow_up">&#xe0c8;</string>
+
+    <!-- Fontawesome -->
+    <string name="icon_string_pencil"></string>
+    <string name="icon_string_check">&#xf00c;</string>
+    <string name="icon_string_information">&#xf05a;</string>
+    <string name="icon_string_exclamation">&#xf071;</string>
+    <string name="icon_string_sync">&#xf021;</string>
+    <string name="icon_string_close">&#xf00d;</string>
+    <string name="icon_string_search">&#xf002;</string>
+    <string name="icon_string_unlink">&#xf127;</string>
+    <string name="icon_string_link">&#xf01e;</string>
+    <string name="icon_string_user">&#xf007;</string>
+    <string name="icon_string_graduation_cap">&#xf19d;</string>
+    <string name="icon_string_map_marker">&#xf041;</string>
+    <string name="icon_string_bell">&#xf0a2;</string>
+    <string name="icon_string_envelope">&#xf003;</string>
+    <string name="icon_string_phone">&#xf10b;</string>
+
+    <string name="button_cancel">Annuleren</string>
+    <string name="button_close">Sluiten</string>
+    <string name="button_save">Opslaan</string>
+    <string name="button_icon_ok">OK</string>
+    <string name="button_icon_cancel">ANNULEREN</string>
+    <string name="button_icon_close">SLUITEN</string>
+    <string name="button_icon_discard">VERWERPEN</string>
+    <string name="button_icon_save">&#xf0c7; OPSLAAN</string>
+    <string name="button_icon_sync_all">&#xf021;  Bandjes Synchroniseren</string>
+    <string name="button_icon_start_sync">&#xf021; Banden Synchroniseren</string>
+    <string name="button_icon_cancel_sync">Annuleren</string>
+    <string name="button_icon_unlink">&#xf127; ONTKOPPELEN</string>
+    <string name="button_icon_delete">&#xf00d; VERWIJDEREN</string>
+    <string name="button_continue">Doorgaan</string>
+
+    <string name="dialog_caution">Let op</string>
+    <string name="dialog_error">Fout</string>
+    <string name="dialog_success">Gelukt</string>
+    <string name="dialog_alert">Melding</string>
+    <string name="dialog_failed">Failed</string>
+
+    <string name="password_require">PVerkeerd wachtwoord</string>
+    <string name="password_confirmation">PVerkeerd wachtwoord</string>
+    <string name="password_does_not_match">Wachtwoord komt niet overeen</string>
+    <string name="password_length">Lengte wachtwoord is onjuist</string>
+
+    <!-- Onboarding Activity -->
+    <string-array name="onboarding_steps">
+        <item>Identiteit</item>
+        <item>Account</item>
+        <item>Meldingen</item>
+        <item>Teamnaam</item>
+        <item>Kit</item>
+        <item>Bandjes synchroniseren</item>
+    </string-array>
+
+    <string name="setup_progress">Voortgang</string>
+    <string name="find_your_application">Aanmelden</string>
+    <string name="identity_description">Vul hier het e-mailadres in dat je hebt gebruikt bij je aanmelding voor UNICEF Kid Power. We gebruiken dit e-mailadres om je account aan te maken.</string>
+    <string name="verify_identity">Verifiëren</string>
+    <string name="verify_identity_description">We hebben een tekstbericht verzonden naar het e-mailadres die je bij je aanmelding hebt opgegeven. Vul de code uit dit bericht hieronder ter bevestiging in.</string>
+    <string name="five_digit_code_hint">5-cijferige code</string>
+    <string name="verify_identity_disclaimer">Het kan tot twee minuten duren voordat je de code hebt ontvangen. Als je bij je aanmelding geen mobiel nummer hebt opgegeven, wordt de code verstuurd naar je e-mailadres.</string>
+    <string name="verify_identity_disclaimer_2">Als de code na twee minuten nog niet binnen is kan je deze opnieuw laten verzenden via e-mail.</string>
+    <string name="account_found">Gevonden!</string>
+    <string name="account_found_description">We hebben je aanmelding gevonden. Ben jij dit?</string>
+    <string name="thats_me">Dat ben ik</string>
+    <string name="create_your_password">Kies een wachtwoord</string>
+    <string name="create_your_password_description">Maak hier een wachtwoord aan en onthoud deze goed.</string>
+    <string name="create_your_password_confirmation">Herhaal je wachtwoord</string>
+    <string name="confirm_account_details">Bevestig je gegevens</string>
+    <string name="confirm_account_details_description">Klopt alles? (Je kunt hier altijd later terugkeren.)</string>
+
+    <string name="title">Aanhef</string>
+    <string name="first_name">voornaam</string>
+    <string name="last_name">achternaam</string>
+    <string name="address_line_1">straatnaam</string>
+    <string name="address_line_2">huisnummer</string>
+    <string name="state">provincie</string>
+    <string name="city">stad</string>
+    <string name="zip">postcode</string>
+    <string name="phone_number">telefoonnummer</string>
+    <string name="communicate_via">Communiceer met mij via</string>
+    <string name="sms_email">SMS &amp; E-mail</string>
+    <string name="email">E-mailadres</string>
+    <string name="create_team_description">Welke teamnaam wil je gaan gebruiken? Wees creatief!</string>
+
+    <string name="add_kid_accounts">Leerling accounts toevoegen</string>
+    <string name="add_kid_accounts_description">Laten we profielen instellen voor je leerlingen! Voer enkel de voornamen van je leerlingen in. Het toevoegen van al je leerlingen maakt het voor hen makkelijk om een profielplaatje te kiezen, en om hun bandjes straks snel te synchroniseren op de tablet.</string>
+    <string name="done_adding_kids">Klaar met toevoegen van leerlingen</string>
+    <string name="new_student_name">Naam nieuwe leerlingen</string>
+    <string name="return_to_add">Terug naar Toevoegen</string>
+
+    <string name="layout_navigation_back">terug</string>
+    <string name="username">Gebruikersnaam</string>
+
+	<string name="helper_center">Middelen</string>
+	<string name="helper_search">Search...</string>
+	<string name="helper_myticket">My tickets</string>
+	<string name="helper_ticket_add">Add ticket</string>
+	<string name="helper_ticket_comment">Comment</string>
+	<string name="contact_us">Contact opnemen met Support</string>
+
+	<string name="app_version_number" formatted="false">Versie %s (%s)</string>
+
+	<string name="title_activity_support">ONDERSTEUNING</string>
+	<string name="support_title">ONDERSTEUNING</string>
+
+	<string name="rate_app">Beoordeel App</string>
+
+	<string name="create_team_first">Maak uw eerste team</string>
+
+	<string name="rate_this_app">Beoordeel deze app</string>
+	<string name="update_now">Nu updaten</string>
+	<string name="remind_me_later">Herninner me later</string>
+	<string name="ignore_this_version">Negeer deze versie</string>
+	<string name="not_now">Niet nu</string>
+	<string name="whats_new">Wat is nieuw in deze versie</string>
+	<string name="rate_us">Beoordeel ons!</string>
+	<string name="new_update_available">Nieuwe update beschikbaar</string>
+    <string name="avg_steps_day">GEM. STAPPEN/DAG</string>
+
+
+	<string name="feedback_email_subject">Kid Power scholen terugkoppeling (%s voor Android)</string>
+	<string name="feedback_email_body_greetings" formatted="false">
+		Hallo, ik ben een Kid Power scholen gebruiker en ik heb een vraag:\n
+        \n
+        \n
+        \n
+        \n
+        \n
+        %s / Android (%s)
+    </string>
+	<string name="kid_power_feedback">Kid Power scholen terugkoppeling</string>
+	<string name="kid_power_feedback_from">Kid Power scholen terugkoppeling van</string>
+	<string name="you_don_t_have_any_favorites_yet">Je hebt nog geen band gesynchroniseerd</string>
+	<string name="build_your_favorites"></string>
+	<string name="add_power_point_description"></string>
+	<string name="avg_steps">GEM.STAPPEN</string>
+	<string name="per_kid_per_day">PER KIND PER DAG</string>
+	<string name="total_packets">TOTALE PAKKETTEN</string>
+	<string name="team">TEAM</string>
+	<string name="school">SCHOOL/ORG</string>
+	<string name="rank">RANKING</string>
+</resources>

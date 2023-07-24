@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/dimen_navigation_bar_height"
+    android:id="@+id/layout_notification">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_font_size_base_subtitle"
+            android:layout_height="@dimen/dimen_font_size_base_subtitle"
+            android:id="@+id/iv_success_check"
+            android:src="@drawable/check_white_small"
+            android:scaleType="fitCenter" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_notification"
+            style="@style/style_textview_general"
+            android:textSize="@dimen/dimen_font_size_base_title"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="@dimen/dimen_margin_5" />
+    </LinearLayout>
+</RelativeLayout>

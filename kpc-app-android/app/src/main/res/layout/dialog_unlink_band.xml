@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kidpower_background"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_unlink_title"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tvTitle"
+            android:textColor="@color/kidpower_brownish_grey"
+            android:textSize="@dimen/dimen_text_normal" />
+
+        <org.unicefkidpower.schools.helper.FontView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fvSyncMark"
+            android:text="@string/icon_string_unlink"
+            android:textSize="@dimen/font_sync_mark"
+            android:textColor="@color/kidpower_light_blue"
+            android:layout_margin="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_button_height"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/button_cancel"
+                android:gravity="center"
+                android:textColor="@color/kidpower_brownish_grey"
+                android:textSize="@dimen/dimen_text_normal"
+                android:background="@color/kidpower_light_gray"
+                android:layout_marginRight="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOK"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/sync_unlink_band"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_text_normal"
+                android:background="@color/kidpower_light_blue"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

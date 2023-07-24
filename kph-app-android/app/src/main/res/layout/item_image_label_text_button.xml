@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/layout_subcontent">
+
+		<ImageView
+			android:id="@+id/ivItem"
+			android:layout_width="30dp"
+			android:layout_height="match_parent"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="@dimen/dimen_margin_3"
+			android:scaleType="fitCenter"
+			android:src="@drawable/packet"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/ivItem"
+            >
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:id="@+id/lblValue"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+				android:maxLines="1"
+                android:textSize="@dimen/dimen_font_size_heading_count"
+                style="@style/style_textview_heading"
+                android:layout_alignParentTop="true" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:id="@+id/lblLabel"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+				android:maxLines="1"
+                android:textSize="@dimen/dimen_font_size_base_small"
+                style="@style/style_textview_heading"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

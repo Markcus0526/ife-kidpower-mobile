@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/layout_item"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/kph_color_main_background"
+				android:clipChildren="false">
+
+	<LinearLayout
+		android:id="@+id/layout_user_stats"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clipChildren="false"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/dimen_margin_15">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/dimen_margin_15"
+			android:paddingTop="@dimen/dimen_margin_15">
+
+			<ImageView
+				android:id="@+id/ivAvatarBackground"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/ivAvatar"
+				android:layout_alignEnd="@+id/ivAvatar"
+				android:layout_alignStart="@+id/ivAvatar"
+				android:layout_alignTop="@+id/ivAvatar"
+				android:layout_centerVertical="true"
+				android:scaleType="fitCenter"
+				android:src="@drawable/alien_background"/>
+
+			<ImageView
+				android:id="@+id/ivAvatar"
+				android:layout_width="@dimen/dimen_avatar_smaller_size"
+				android:layout_height="@dimen/dimen_avatar_smaller_size"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="10dp"
+				android:padding="@dimen/dimen_2dp"
+				android:src="@drawable/avatar_placeholder"/>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toEndOf="@+id/ivAvatarBackground">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:orientation="vertical"
+					android:paddingStart="@dimen/dimen_8dp">
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/txtUsername"
+						style="@style/style_textview_heading"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Shock Shark"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/dimen_font_size_base_subtitle"/>
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/txtMissionState"
+						style="@style/style_textview_italic"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/dimen_margin_5"
+						android:ellipsize="end"
+						android:text="MISSION_COUNTRY"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/dimen_font_size_base"/>
+
+					<HorizontalScrollView
+						android:id="@+id/main_info_horscrollview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/dimen_10dp"
+						android:layout_marginTop="@dimen/dimen_4dp">
+
+						<LinearLayout
+							android:id="@+id/main_info_horscrollview_content_layout"
+							android:layout_width="match_parent"
+							android:layout_height="30dp"
+							android:layout_marginBottom="@dimen/dimen_8dp"
+							android:orientation="horizontal">
+
+							<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+								android:id="@+id/ivPacket"
+								style="@style/kph_style_image_text_button_general"
+								android:layout_width="70dp"
+								android:layout_height="match_parent"
+								app:customImageResourceId="@drawable/packet"
+								app:customImageSize="30dp"
+								app:customImageTextButtonFont="@string/font_mikado_bold"
+								app:customText="0"/>
+
+							<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+								android:id="@+id/ivMission"
+								style="@style/kph_style_image_text_button_general"
+								android:layout_width="70dp"
+								android:layout_height="match_parent"
+								app:customImageResourceId="@drawable/mission"
+								app:customImageSize="30dp"
+								app:customImageTextButtonFont="@string/font_mikado_bold"
+								app:customText="0"/>
+
+							<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+								android:id="@+id/ivPowerpoint"
+								style="@style/kph_style_image_text_button_general"
+								android:layout_width="70dp"
+								android:layout_height="match_parent"
+								app:customImageResourceId="@drawable/powerpoint"
+								app:customImageSize="30dp"
+								app:customImageTextButtonFont="@string/font_mikado_bold"
+								app:customText="0"/>
+
+						</LinearLayout>
+					</HorizontalScrollView>
+				</LinearLayout>
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:id="@+id/layout_follow_cheer"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_button_general_height"
+			android:layout_marginEnd="@dimen/dimen_20dp"
+			android:layout_marginStart="@dimen/dimen_20dp"
+			android:clipChildren="false"
+			android:orientation="horizontal">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+				android:id="@+id/btnFollow"
+				style="@style/kph_style_image_text_button_band"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="2"
+				app:customImageResourceId="@drawable/ic_green_check"
+				app:customText="@string/follow"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextImageButton
+				android:id="@+id/btnCheer"
+				style="@style/kph_style_image_text_button_band"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_marginStart="@dimen/dimen_margin_15"
+				android:layout_weight="1"
+				android:background="@drawable/kph_drawable_button_orange_background"
+				app:customImageResourceId="@drawable/down_arrow"
+				app:customText="@string/cheer"
+				app:customTextColor="@color/kph_color_white_clickable"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/img_separator"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_1dp"
+		android:layout_below="@+id/layout_user_stats"
+		android:background="@color/color_list_divider"/>
+</RelativeLayout>

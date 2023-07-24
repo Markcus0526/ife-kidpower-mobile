@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:background="@drawable/cc_login_background"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    
+    <ImageView
+        android:src="@drawable/cc_app_icon_alternate"
+        android:contentDescription="@string/calorie_cloud_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:text="@string/authorization_needed"
+        android:textColor="@color/colorFullWhite"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:text="@string/authorization_description"
+        android:layout_width="245dp"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/colorFullWhite"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/authorizeButton"
+        android:text="@string/authorize"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="50dp"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:background="@drawable/cc_button"
+        android:layout_width="280dp"
+        android:layout_height="42dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_marginTop="20dp"
+        android:text="@string/authorization_note"
+        android:textColor="@color/colorFullWhite"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:textSize="14sp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

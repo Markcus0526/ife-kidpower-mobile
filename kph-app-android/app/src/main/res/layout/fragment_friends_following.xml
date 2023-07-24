@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:segmentedgroup="http://schemas.android.com/tools"
+    android:id="@+id/layout_parent"
+    android:background="@color/kph_color_main_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/layout_no_following"
+        android:visibility="gone">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_started"
+            android:id="@+id/txtNoFollowingTitle"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_font_size_base_title"
+            android:layout_marginBottom="5dp" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/following_empty_string"
+            android:id="@+id/txtNoFollowingContent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_font_size_base" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_button_general_height"
+            android:text="@string/follow_someone"
+            android:id="@+id/btnFollowSomeone1"
+            style="@style/style_button_general"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_following_list"
+        android:layout_alignParentTop="true">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHSegmentedGroup
+            android:id="@+id/segmentedSort"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_radio_button_general_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_margin_15"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            segmentedgroup:sc_border_radius="@dimen/dimen_margin_5"
+            segmentedgroup:sc_border_width="@dimen/dimen_margin_1"
+            android:layout_marginStart="@dimen/dimen_margin_60"
+            android:layout_marginEnd="@dimen/dimen_margin_60"
+            android:layout_marginBottom="@dimen/dimen_margin_10">
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHRadioButton
+                android:id="@+id/radioAZ"
+                style="@style/kph_style_radiobutton_general"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/a_to_z"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHRadioButton
+                android:id="@+id/radioRank"
+                style="@style/kph_style_radiobutton_general"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="@string/rank"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base" />
+
+        </org.unicefkidpower.kid_power.View.CustomControls.KPHSegmentedGroup>
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:id="@+id/txt_rank_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/family_account_rank_description"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_below="@+id/segmentedSort"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:id="@+id/iv_splitter"
+            android:layout_below="@+id/txt_rank_description"
+            android:background="@color/kph_color_dark_blue_30"
+            android:layout_marginTop="@dimen/dimen_margin_5" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:scrollbars="vertical"
+            android:id="@+id/listview_following"
+            android:layout_above="@+id/btnFollowSomeone2"
+            android:layout_below="@+id/iv_splitter" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_button_general_height"
+            android:text="@string/follow_someone"
+            android:id="@+id/btnFollowSomeone2"
+            android:layout_centerHorizontal="true"
+            style="@style/style_button_general"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

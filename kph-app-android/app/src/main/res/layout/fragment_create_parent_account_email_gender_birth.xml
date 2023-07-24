@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				xmlns:segmentedgroup="http://schemas.android.com/tools"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:paddingEnd="@dimen/dimen_margin_30"
+				android:paddingStart="@dimen/dimen_margin_30">
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:id="@+id/dialog_title"
+				style="@style/style_textview_general"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/create_a_parent_account"
+				android:textColor="@color/kph_color_grey"
+				android:textSize="@dimen/dimen_font_size_base_title"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:paddingBottom="@dimen/dimen_4dp">
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					style="@style/style_textview_general"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_30"
+					android:text="@string/email_address_dialog_frame"
+					android:textColor="@color/kph_color_grey"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+				<RelativeLayout
+					android:id="@+id/rlEmail"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp">
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHEditText
+						android:id="@+id/edit_email"
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/dimen_edittext_general_height"
+						android:background="@color/kph_color_edittext_lightgray"
+						android:inputType="textEmailAddress"
+						android:paddingEnd="10dp"
+						android:paddingStart="10dp"
+						android:textColor="@color/kph_color_dark_grey"/>
+
+					<ImageView
+						android:id="@+id/ivClearCircle"
+						android:layout_width="@dimen/dimen_edittext_general_height"
+						android:layout_height="@dimen/dimen_edittext_general_height"
+						android:layout_alignEnd="@+id/edit_email"
+						android:padding="@dimen/dimen_margin_10"
+						android:src="@drawable/clear_circle"/>
+
+					<ImageView
+						android:id="@+id/ivRotateCircle"
+						android:layout_width="@dimen/dimen_edittext_general_height"
+						android:layout_height="@dimen/dimen_edittext_general_height"
+						android:layout_alignEnd="@+id/edit_email"
+						android:padding="@dimen/dimen_margin_10"
+						android:src="@drawable/rotate_circle"
+						android:visibility="invisible"/>
+				</RelativeLayout>
+
+				<LinearLayout
+					android:id="@+id/layout_email_error"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_5"
+					android:orientation="horizontal">
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/email_error_mark"
+						style="@style/style_textview_general"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/icon_string_close"
+						android:textColor="@color/kph_color_grey"
+						android:textSize="@dimen/dimen_font_size_base_subtitle"
+						app:customTextViewFont="@string/font_awesome"/>
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/email_error_text"
+						style="@style/style_textview_general"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_margin_5"
+						android:text="@string/account_name_exist"
+						android:textColor="@color/kph_color_grey"
+						android:textSize="@dimen/dimen_font_size_base"/>
+
+				</LinearLayout>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					style="@style/style_textview_general"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_10"
+					android:text="@string/gender"
+					android:textColor="@color/kph_color_grey"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHSegmentedGroup
+					android:id="@+id/segmented_gender"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:layout_marginTop="@dimen/dimen_margin_5"
+					android:orientation="horizontal"
+					android:weightSum="3"
+					app:sc_checked_text_color="@android:color/white"
+					app:sc_tint_color="@color/kph_color_greyish"
+					app:sc_unchecked_background="@drawable/radio_unchecked_white"
+					segmentedgroup:sc_border_radius="@dimen/dimen_margin_5"
+					segmentedgroup:sc_border_width="@dimen/dimen_margin_1">
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHRadioButton
+						android:id="@+id/radio_female"
+						style="@style/kph_style_radiobutton_general"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:background="@android:color/white"
+						android:button="@null"
+						android:checked="false"
+						android:gravity="center"
+						android:text="@string/female"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/dimen_font_size_base"/>
+
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHRadioButton
+						android:id="@+id/radio_male"
+						style="@style/kph_style_radiobutton_general"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:background="@android:color/white"
+						android:button="@null"
+						android:checked="false"
+						android:gravity="center"
+						android:text="@string/male"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/dimen_font_size_base"/>
+
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHRadioButton
+						android:id="@+id/radio_skip"
+						style="@style/kph_style_radiobutton_general"
+						android:layout_width="0dp"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:background="@android:color/white"
+						android:button="@null"
+						android:checked="true"
+						android:gravity="center"
+						android:text="@string/skip"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/dimen_font_size_base"/>
+
+				</org.unicefkidpower.kid_power.View.CustomControls.KPHSegmentedGroup>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					style="@style/style_textview_general"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_10"
+					android:text="@string/date_of_birth_date_format"
+					android:textColor="@color/kph_color_grey"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHDateEditText
+					android:id="@+id/edit_birthday"
+					style="@style/style_edittext_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_edittext_general_height"
+					android:layout_marginTop="@dimen/dimen_margin_10"
+					android:background="@color/kph_color_edittext_lightgray"
+					android:hint="@string/dob_format"
+					android:textColor="@color/kph_color_dark_grey"/>
+
+				<LinearLayout
+					android:id="@+id/layout_dob_error"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_5"
+					android:orientation="horizontal">
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/dob_error_mark"
+						style="@style/style_textview_general"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/icon_string_close"
+						android:textColor="@color/kph_color_grey"
+						android:textSize="@dimen/dimen_font_size_base_subtitle"
+						app:customTextViewFont="@string/font_awesome"/>
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/dob_error_text"
+						style="@style/style_textview_general"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/dimen_margin_5"
+						android:text="@string/no_dob_inputted_1"
+						android:textColor="@color/kph_color_grey"
+						android:textSize="@dimen/dimen_font_size_base"/>
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/layout_buttons"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_20">
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+						android:id="@+id/btn_back"
+						style="@style/style_button_general"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/dimen_button_general_height"
+						android:layout_weight="1"
+						android:background="@drawable/kph_drawable_button_gray_background"
+						android:text="@string/back"
+						android:textColor="@android:color/white"/>
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+						android:id="@+id/btn_next"
+						style="@style/style_button_general"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/dimen_button_general_height"
+						android:layout_marginStart="@dimen/dimen_margin_30"
+						android:layout_weight="1"
+						android:background="@drawable/kph_drawable_button_orange_background"
+						android:text="@string/button_next"
+						android:textColor="@android:color/white"/>
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

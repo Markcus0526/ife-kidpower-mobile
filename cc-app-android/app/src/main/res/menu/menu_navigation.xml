@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/dashboard"
+            android:checked="false"
+            android:icon="@drawable/ic_favorite_border_white"
+            android:orderInCategory="0"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/tracker"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_white"
+            android:orderInCategory="1"
+            android:title="@string/tracker" />
+
+        <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:icon="@drawable/ic_info_outline_white"
+            android:orderInCategory="2"
+            android:title="@string/about" />
+
+        <item
+            android:id="@+id/support"
+            android:checked="false"
+            android:icon="@drawable/ic_help_outline_white"
+            android:title="@string/support"
+            android:orderInCategory="3"/>
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_subdirectory_arrow_left_white"
+            android:orderInCategory="4"
+            android:title="@string/logout" />
+
+</menu>

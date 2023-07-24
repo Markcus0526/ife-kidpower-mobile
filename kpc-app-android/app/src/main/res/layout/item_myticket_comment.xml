@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:paddingRight="10dp"
+			  android:paddingLeft="10dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal">
+
+		<ImageButton
+			android:id="@+id/image_user"
+			android:layout_width="50dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentStart="true"
+			android:background="@null"
+			android:padding="6dp"
+			android:scaleType="centerInside"
+			android:src="@drawable/user_default"/>
+
+		<org.unicefkidpower.schools.ui.KPTextView
+			android:id="@+id/text_user"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_toRightOf="@+id/image_user"
+			android:textColor="@color/label_step_selected"
+			android:textSize="@dimen/dimen_text_desc"
+			android:gravity="left|center_vertical"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"/>
+
+		<org.unicefkidpower.schools.ui.KPTextView
+			android:id="@+id/text_date"
+			android:layout_width="150dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentEnd="true"
+			android:textColor="@color/label_step_selected"
+			android:textSize="@dimen/dimen_text_desc"
+			android:gravity="left|center_vertical"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"/>
+
+	</RelativeLayout>
+
+	<org.unicefkidpower.schools.ui.KPTextView
+		style="@style/style_textview_general"
+		android:id="@+id/text_comment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/label_step_nonselected"
+		android:textSize="@dimen/dimen_text_small"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="10dp"/>
+
+	<View
+		android:id="@+id/view_ticket_seperator"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/kidpower_light_grey"/>
+
+</LinearLayout>

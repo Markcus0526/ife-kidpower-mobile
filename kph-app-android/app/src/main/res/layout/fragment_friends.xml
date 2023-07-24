@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/layout_parent"
+				android:background="@color/kph_color_main_background">
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_navigation_bar_height"
+		android:background="@color/kph_color_dark_blue">
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtTitle"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+			android:textColor="@color/kph_color_navigation_bar_title"
+			android:textSize="@dimen/dimen_font_size_heading_base"
+			android:text="@string/friends"
+			style="@style/style_textview_heading"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_titlebar">
+
+		<android.support.design.widget.TabLayout
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_sliding_tab_height"
+			android:id="@+id/sliding_tab_bar"
+			app:tabMode="fixed"
+			app:tabGravity="fill"
+			app:tabTextColor="#FFA0A0A0"
+			app:tabSelectedTextColor="#FF606060"
+			android:textSize="@dimen/dimen_font_size_base_small"
+			android:background="@android:color/white">
+		</android.support.design.widget.TabLayout>
+
+		<android.support.v4.view.ViewPager
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/content_pager"
+			android:layout_alignParentStart="true"
+			android:layout_below="@+id/sliding_tab_bar" />
+	</RelativeLayout>
+
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/shadow_height"
+		android:background="@drawable/shadow_bottom"
+		android:layout_below="@+id/layout_titlebar"
+		android:id="@+id/title_bar_shadow"/>
+</RelativeLayout>

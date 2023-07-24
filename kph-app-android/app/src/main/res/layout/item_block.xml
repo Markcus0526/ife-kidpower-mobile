@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:id="@+id/item_content"
+				android:background="@color/kph_color_main_background"
+				android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:id="@+id/content_layout">
+
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="40dp"
+			android:id="@+id/ivAvatar"
+			android:layout_marginStart="@dimen/dimen_margin_15"
+			android:src="@drawable/avatar_placeholder"
+			android:padding="@dimen/dimen_margin_5"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="Soccer Dude"
+			android:id="@+id/txt_username"
+			android:layout_toEndOf="@+id/ivAvatar"
+			android:gravity="center_vertical|left"
+			android:layout_toStartOf="@+id/btn_unblock"
+			style="@style/style_textview_heading"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"
+			android:paddingStart="@dimen/dimen_margin_5"
+			android:paddingEnd="@dimen/dimen_margin_5"
+			android:ellipsize="end" />
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="@string/unblock_capitalized"
+			android:id="@+id/btn_unblock"
+			android:layout_alignParentEnd="true"
+			android:textColor="@android:color/white"
+			android:layout_marginStart="@dimen/dimen_margin_5"
+			android:layout_marginEnd="@dimen/dimen_margin_5"
+			android:layout_marginTop="@dimen/dimen_margin_15"
+			android:layout_marginBottom="@dimen/dimen_margin_15"
+			android:background="@drawable/kph_drawable_white_border_button_background"
+			android:paddingStart="@dimen/dimen_margin_10"
+			android:paddingEnd="@dimen/dimen_margin_10"
+			android:textSize="@dimen/dimen_font_size_base" />
+	</RelativeLayout>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_1dp"
+		android:background="@color/color_list_divider"
+		android:layout_below="@+id/content_layout"/>
+</RelativeLayout>

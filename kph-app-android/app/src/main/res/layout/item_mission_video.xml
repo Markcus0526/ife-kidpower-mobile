@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layout_item">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/item_content"
+        android:padding="@dimen/dimen_margin_30">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtStartTime"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Mission started July 20, 2015 at 5:01pm"
+            android:textSize="@dimen/dimen_font_size_base_small"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="@dimen/dimen_8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_video_view_general_height"
+            android:id="@+id/rlVideoView"
+            android:layout_below="@+id/txtStartTime"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivVideoPlaceholder"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_generic_black_overlay"
+                android:alpha="0.8" />
+
+            <ImageButton
+                android:layout_width="@dimen/dimen_play_button_width"
+                android:layout_height="@dimen/dimen_play_button_height"
+                android:paddingStart="@dimen/dimen_play_button_padding"
+                android:paddingEnd="@dimen/dimen_play_button_padding"
+                android:paddingTop="@dimen/dimen_play_button_padding"
+                android:paddingBottom="@dimen/dimen_play_button_padding"
+                android:scaleType="fitCenter"
+                android:id="@+id/btnPlay"
+                android:background="@null"
+                android:src="@drawable/video_play"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMissionStatus"
+            android:layout_below="@+id/rlVideoView"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/MissionStatusStartedString"
+            android:textSize="@dimen/dimen_font_size_base_small"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textColor="@android:color/white" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMissionName"
+            android:layout_below="@+id/txtMissionStatus"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Far Eastern Nepal"
+            android:textSize="@dimen/dimen_font_size_heading_base"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            app:customTextViewFont="@string/font_mikado_bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/kph_color_dark_blue_30">
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHEditText
+        android:id="@+id/edit_main"
+        style="@style/style_edittext_general"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_edittext_general_height"
+        android:paddingStart="@dimen/dimen_margin_10"
+        android:paddingEnd="@dimen/dimen_margin_10"
+        android:textSize="@dimen/dimen_font_size_base"
+        android:ems="10"
+        android:hint="@string/username"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:maxLength="25"
+        android:background="@drawable/kph_drawable_check_default"/>
+
+    <ImageButton
+        android:id="@+id/btn_clear"
+        android:layout_width="@dimen/dimen_edittext_general_height"
+        android:layout_height="@dimen/dimen_edittext_general_height"
+        android:src="@drawable/clear_circle"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_alignEnd="@+id/edit_main"/>
+
+    <ImageView
+        android:id="@+id/iv_progress_indicator"
+        android:layout_width="@dimen/dimen_edittext_general_height"
+        android:layout_height="@dimen/dimen_edittext_general_height"
+        android:src="@drawable/rotate_circle"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_alignEnd="@+id/edit_main"/>
+
+</RelativeLayout>

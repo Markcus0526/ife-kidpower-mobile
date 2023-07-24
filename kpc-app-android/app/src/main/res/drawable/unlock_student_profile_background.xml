@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- background -->
+    <stroke
+        android:color="@color/kidpower_tangerine"
+        android:dashWidth="@dimen/unlock_student_profile_background_dash_width"
+        android:dashGap="@dimen/unlock_student_profile_background_dash_width"
+        android:width="@dimen/unlock_student_profile_background_stroke_width"
+        />
+
+    <corners android:radius="@dimen/unlock_student_profile_background_radius"/>
+</shape>

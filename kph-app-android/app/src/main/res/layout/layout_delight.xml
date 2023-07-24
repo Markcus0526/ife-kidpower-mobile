@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutPackets"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_avatar_size"
+        android:layout_height="@dimen/dimen_avatar_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:src="@drawable/souvenir_placeholder"
+        android:id="@+id/ivDelight"
+        />
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/tvState"
+        android:text="STAMP UNLOCKED"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_size_base_small"
+        />
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_stamp_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvName"
+        android:text="Baseball Fan sent  you a cheer"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_size_heading_base"
+        app:customTextViewFont="@string/font_mikado_bold"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

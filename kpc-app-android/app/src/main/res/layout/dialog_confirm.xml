@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_parent"
+    android:background="@color/kidpower_background"
+    android:layout_margin="@dimen/dimen_create_margin"
+    android:padding="@dimen/dimen_dialog_padding">
+
+    <!-- contents -->
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_confirm_caption"
+        style="@style/style_textview_general"
+        android:textSize="@dimen/dimen_text_normal"
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_height"
+        android:layout_marginTop="@dimen/dimen_dialog_padding"
+        >
+
+        <org.unicefkidpower.schools.helper.FontView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/button_icon_discard"
+            android:background="@color/kidpower_light_grey"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dimen_dialog_padding"
+            android:textSize="@dimen/dimen_text_small"
+            />
+
+        <org.unicefkidpower.schools.helper.FontView
+            android:id="@+id/btnOK"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/button_icon_save"
+            android:background="@color/kidpower_azure"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_text_small"
+            />
+    </LinearLayout>
+
+</LinearLayout>

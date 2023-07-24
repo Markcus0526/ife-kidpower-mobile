@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_content"
+    android:paddingStart="@dimen/dimen_16dp"
+    android:paddingEnd="@dimen/dimen_16dp"
+    android:paddingTop="@dimen/dimen_4dp"
+    android:paddingBottom="@dimen/dimen_4dp"
+    android:layout_marginTop="@dimen/dimen_1dp"
+    >
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_general_height"
+        android:text="@string/sync_start_searching_caption"
+        android:id="@+id/btnSearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        style="@style/style_button_general" />
+
+</LinearLayout>

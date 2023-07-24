@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:id="@+id/layout_parent"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kidpower_background"
+				android:padding="25dp"
+				android:weightSum="1">
+
+	<org.unicefkidpower.schools.ui.KPButton
+		android:id="@+id/btn_helpcenter"
+		style="@style/style_button_general"
+		android:layout_width="@dimen/dimen_band_width"
+		android:layout_height="@dimen/dimen_button_height"
+		android:layout_gravity="center"
+		android:layout_marginBottom="@dimen/activity_vertical_margin"
+		android:layout_marginTop="@dimen/activity_vertical_margin"
+		android:layout_centerHorizontal="true"
+		android:layout_weight="0.02"
+		android:background="@color/kidpower_light_blue"
+		android:text="@string/helper_center"
+		android:textAllCaps="true"
+		android:textSize="14dp"
+		app:customButtonFont="@string/font_mikado_bold"/>
+
+	<org.unicefkidpower.schools.ui.KPButton
+		android:id="@+id/btn_contactus"
+		android:layout_below="@+id/btn_helpcenter"
+		style="@style/style_button_general"
+		android:layout_width="@dimen/dimen_band_width"
+		android:layout_height="@dimen/dimen_button_height"
+		android:layout_centerHorizontal="true"
+		android:layout_gravity="center"
+		android:layout_marginBottom="@dimen/activity_vertical_margin"
+		android:layout_marginTop="@dimen/activity_vertical_margin"
+		android:layout_weight="0.02"
+		android:background="@color/kidpower_light_blue"
+		android:text="@string/contact_us"
+		android:textAllCaps="true"
+		android:textSize="14dp"
+		app:customButtonFont="@string/font_mikado_bold"/>
+
+	<RelativeLayout
+		android:id="@+id/rlAppVersion"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_gravity="center_horizontal"
+		android:visibility="visible">
+
+		<org.unicefkidpower.schools.ui.KPTextView
+			android:id="@+id/txt_app_version"
+			style="@style/style_textview_general"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_alignParentBottom="false"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			android:text="@string/app_version_number"
+			android:textSize="@dimen/kidpower_primarytextviewfontsize"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

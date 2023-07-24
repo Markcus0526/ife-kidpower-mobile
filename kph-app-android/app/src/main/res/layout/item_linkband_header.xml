@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_content"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/dimen_16dp"
+        android:paddingEnd="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_48dp"
+        android:background="@color/kph_color_main_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivBand"
+            android:src="@drawable/band_link"
+            android:contentDescription="band"
+            android:paddingBottom="@dimen/dimen_48dp"
+            />
+
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sync_band_not_found"
+            android:id="@+id/txtStatus"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/ivBand"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ivEnclose"
+            android:textColor="@android:color/white"
+            style="@style/FONT_BASE_TITLE"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

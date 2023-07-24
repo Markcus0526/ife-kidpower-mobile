@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_edittext_general_padding"
+        android:paddingBottom="@dimen/dimen_edittext_general_padding"
+        android:paddingStart="@dimen/dimen_edittext_general_padding"
+        android:paddingEnd="@dimen/dimen_edittext_general_padding">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/layout_headerview">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_font_size_base_subtitle"
+                android:layout_height="@dimen/dimen_font_size_base_subtitle"
+                android:id="@+id/img_timeline"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/timeline_powerpoint" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_goal"
+                android:layout_toEndOf="@+id/img_timeline"
+                android:text="213"
+                android:textColor="@android:color/white"
+                android:layout_alignTop="@+id/img_timeline"
+                android:layout_alignBottom="@+id/img_timeline"
+                android:layout_marginStart="3dp"
+                android:textSize="@dimen/dimen_font_size_base_subtitle"
+                app:customTextViewFont="@string/font_mikado_bold"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_stamp_time"
+                android:layout_toEndOf="@+id/txt_goal"
+                android:text="July 23, 2015 at 2.15 pm in Far Eastern Nepalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:layout_marginStart="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base"
+                android:layout_alignTop="@+id/txt_goal"
+                android:layout_alignParentTop="true"
+                android:lines="2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_avatar_size"
+            android:layout_height="@dimen/dimen_avatar_size"
+            android:layout_below="@+id/layout_headerview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/avatar_placeholder"
+            android:id="@+id/img_stamp"
+            />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_stamp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_stamp_state"
+            android:text="STAMP UNLOCKED"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_font_size_base"
+            />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_stamp_state"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt_stamp_name"
+            android:text="Baseball Fan sent  you a cheer"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_font_size_base_title"
+            app:customTextViewFont="@string/font_mikado_bold"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/kph_color_dark_blue_30">
+
+    </LinearLayout>
+
+</LinearLayout>

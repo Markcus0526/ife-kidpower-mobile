@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_headerview"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+		<android.support.v7.widget.AppCompatRadioButton
+			android:id="@+id/rdActive"
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:layout_gravity="center_vertical"
+			android:checked="true"
+			android:enabled="true"/>
+
+		<ImageView
+			android:id="@+id/ivRadio"
+			android:layout_width="23dp"
+			android:layout_height="23dp"
+			android:layout_gravity="center_vertical"
+			android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_buy_avatar"
+            android:layout_height="@dimen/dimen_buy_avatar"
+            android:id="@+id/ivAvatar"
+            android:src="@drawable/avatar_placeholder"
+            android:layout_marginStart="10dp"/>
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtUsername"
+            android:text="HubbyBill(me)"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_font_size_heading_base"
+            style="@style/FONT_HEADING_BASE"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

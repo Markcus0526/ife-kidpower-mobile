@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_parent" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="@color/kidpower_background" >
+
+        <!-- title -->
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/studentsync_title_progress"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_normal"
+            android:gravity="center_horizontal"
+            android:id="@+id/textTitle" />
+
+        <org.unicefkidpower.schools.helper.FontView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/fvRefresh"
+            android:text="@string/icon_string_sync"
+            android:textSize="@dimen/font_sync_mark"
+            android:textStyle="bold"
+            android:textColor="@color/kidpower_light_blue" />
+
+        <!-- description -->
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_bandregistering_updatename"
+            android:textColor="@color/kidpower_secondarytext"
+            android:textSize="@dimen/dimen_text_desc"
+            android:gravity="center_horizontal"
+            android:id="@+id/textDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/btnCancelSync"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_button_height"
+                android:gravity="center"
+                android:text="@string/button_icon_cancel_sync"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_text_normal"
+                android:textColor="@color/kidpower_brownish_grey"
+                android:background="@color/kidpower_light_gray" />
+
+            <TextView
+                android:id="@+id/btnSyncDone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_button_height"
+                android:gravity="center"
+                android:text="@string/studentsync_see_my_progress"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_text_normal"
+                android:textColor="@color/white"
+                android:background="@color/kidpower_light_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

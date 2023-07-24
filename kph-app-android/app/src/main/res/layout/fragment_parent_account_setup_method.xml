@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="@dimen/dimen_margin_30">
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:id="@+id/txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/parent_account_setup_method_description"
+        android:textColor="@color/kph_color_dark_grey"
+        style="@style/style_textview_general"
+        android:textSize="@dimen/dimen_font_size_base_title"
+        android:layout_marginTop="@dimen/dimen_margin_30"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_buttons"
+        android:layout_marginTop="@dimen/dimen_margin_30">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:text="@string/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_or"
+            android:layout_centerHorizontal="true"
+			android:gravity="center"
+			android:layout_alignTop="@+id/btn_email"
+			android:layout_alignBottom="@+id/btn_email"
+            style="@style/style_textview_general"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_font_size_small"
+            android:paddingStart="@dimen/dimen_margin_10"
+            android:paddingEnd="@dimen/dimen_margin_10"/>
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_general_height"
+            android:id="@+id/btn_email"
+            android:text="@string/email"
+            android:textColor="@android:color/white"
+            android:background="@drawable/kph_drawable_button_email_background"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/txt_or"
+			android:layout_marginBottom="@dimen/dimen_20dp"
+            android:textSize="@dimen/dimen_font_size_base"
+            app:customButtonFont="@string/font_pfdindisplaypro_regular"/>
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_button_general_height"
+            android:id="@+id/btn_facebook"
+            android:text="@string/facebook"
+            android:textColor="@android:color/white"
+            android:background="@drawable/kph_drawable_button_facebook_background"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/txt_or"
+            android:textSize="@dimen/dimen_font_size_base"
+            app:customButtonFont="@string/font_pfdindisplaypro_regular"/>
+    </RelativeLayout>
+
+</LinearLayout>

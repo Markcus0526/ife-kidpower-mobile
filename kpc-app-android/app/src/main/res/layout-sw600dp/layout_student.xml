@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_parent">
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlNormal"
+        android:visibility="visible">
+
+        <!-- contents -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- center -->
+            <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                    >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ivAvatar"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/no_avatar"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp" />
+
+                <org.unicefkidpower.schools.ui.KPTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="Ms. Nancy"
+                    android:gravity="center"
+                    android:id="@+id/textName"
+                    style="@style/style_textview_general"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/kidpower_namefontsize"
+                    android:layout_marginBottom="4dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/linearLayout2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:id="@+id/iv_sync_status"
+                        android:src="@drawable/checkmark"
+                        android:scaleType="fitEnd" />
+
+                    <org.unicefkidpower.schools.ui.KPTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_sync_status"
+                        style="@style/style_textview_general"
+                        android:text="Last synced today"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="4dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- add a student -->
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlAddStudent"
+        android:visibility="visible">
+
+        <!-- contents -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- center -->
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/icon_new_kid"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp" />
+
+                    <org.unicefkidpower.schools.ui.KPTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_kid"
+                        style="@style/style_textview_general"
+                        android:textSize="@dimen/kidpower_primarytextviewfontsize"
+                        android:gravity="center"
+                        android:textColor="@color/kidpower_brownish_grey" />
+
+                </LinearLayout>
+
+                <!-- bottom -->
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- adding a student -->
+
+</LinearLayout>

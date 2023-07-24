@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:paddingRight="10dp"
+			  android:paddingLeft="10dp">
+
+	<org.unicefkidpower.schools.ui.KPTextView
+		style="@style/style_textview_general"
+		android:id="@+id/text_article"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/label_step_selected"
+		android:textSize="@dimen/dimen_text_desc"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="5dp"/>
+
+	<org.unicefkidpower.schools.ui.KPTextView
+		style="@style/style_textview_general"
+		android:id="@+id/text_section"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/label_step_nonselected"
+		android:textSize="@dimen/dimen_text_small"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

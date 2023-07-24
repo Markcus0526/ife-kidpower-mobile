@@ -1,0 +1,17 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorButtonGreyPressed" />
+            <corners
+                android:radius="5dp"/>
+        </shape>
+    </item>
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorButtonGrey" />
+            <corners
+                android:radius="5dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,91 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.21.2'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+	mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+    jcenter{ url = 'http://dl.bintray.com/swrve-inc/android'}
+}
+
+
+android {
+	signingConfigs {
+		signing_config {
+			keyAlias 'UNICEF Kid Power Home'
+			keyPassword 'caloriecloud!1'
+			storeFile file('../KeyStore by Android Studio/UNICEF_Kid_Power_Home.jks')
+			storePassword 'caloriecloud!1'
+		}
+	}
+	compileSdkVersion 25
+	buildToolsVersion '25.0.2'
+	defaultConfig {
+		applicationId 'org.unicefkidpower.kph'
+		minSdkVersion 24
+		targetSdkVersion 25
+		versionCode 45
+		versionName '1.6.3'
+		multiDexEnabled true
+	}
+	buildTypes {
+		staging {
+			signingConfig signingConfigs.signing_config
+			buildConfigField "boolean", "IS_PRODUCTION", "false"
+			minifyEnabled false
+			debuggable true
+		}
+		production {
+			signingConfig signingConfigs.signing_config
+			buildConfigField "boolean", "IS_PRODUCTION", "true"
+			minifyEnabled false
+			debuggable false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+			jniDebuggable false
+		}
+	}
+	productFlavors {
+	}
+	lintOptions {
+		checkReleaseBuilds false
+		abortOnError
+	}
+	packagingOptions {
+		exclude 'META-INF/LICENSE'
+		exclude 'META-INF/DEPENDENCIES'
+		exclude 'META-INF/NOTICE'
+	}
+	dexOptions {
+		jumboMode true
+		javaMaxHeapSize "4g"
+	}
+}
+
+dependencies {
+	compile fileTree(include: ['*.jar'], dir: 'libs')
+	compile 'com.android.support:appcompat-v7:25.2.0'
+	compile 'com.android.support:support-v4:25.2.0'
+	compile 'com.android.support:design:25.2.0'
+	compile 'com.squareup.retrofit:retrofit:1.9.0'
+	compile 'com.squareup.okhttp:okhttp:2.2.0'
+	compile 'org.greenrobot:eventbus:+'
+	compile 'com.stripe:stripe-android:1.0.4'
+	compile 'com.facebook.android:facebook-android-sdk:4.20.0'
+	compile('com.twitter.sdk.android:twitter:1.6.0@aar') { transitive = true; }
+	compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') { transitive = true; }
+	compile 'com.jaredrummler:android-device-names:1.0.7'
+	compile 'com.swrve.sdk.android:swrve:4.6.1'
+	compile 'com.google.android.gms:play-services-fitness:10.2.1'
+	compile 'com.google.android.gms:play-services:10.2.1'
+	compile 'com.wang.avi:library:+'
+	compile 'com.appsflyer:af-android-sdk:4.7.1@aar'
+	compile 'com.android.support:multidex:1.0.1'
+}

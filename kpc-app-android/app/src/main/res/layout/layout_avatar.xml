@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_avatar_grid_height"
+    android:layout_height="@dimen/dimen_avatar_grid_height"
+    android:layout_marginLeft="@dimen/dimen_avatar_grid_margin"
+    android:layout_marginRight="@dimen/dimen_avatar_grid_margin"
+    android:id="@+id/layout_content"
+    android:background="@drawable/avatar_selected_background">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_avatar_grid_margin"
+        android:layout_centerInParent="true"
+        android:src="@drawable/no_avatar"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

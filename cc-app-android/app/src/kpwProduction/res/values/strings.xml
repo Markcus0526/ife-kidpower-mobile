@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Application/Misc Strings -->
+    <string name="app_name">Workplace Tracker</string>
+    <string name="ZENDESK_URL">https://unicefkidpowerworkplace.zendesk.com</string>
+    <string name="ZENDESK_APP_ID">860ca53492da9c30497ec11ec44c8a46aa531477b231b36f</string>
+    <string name="ZENDESK_CLIENT_ID">mobile_sdk_client_de4242c53346a34b54f7</string>
+    <string name="ZENDESK_FAQ_ID">207346167</string>
+
+    <!-- Onboarding Authorization Fragment -->
+    <string name="onboarding_auth_header">Calorie Cloud uses Google Fit\nto collect your active calories</string>
+    <string name="onboarding_auth_description">On the next screen you will need to choose\nan account and allow Calorie Cloud to read data</string>
+
+</resources>

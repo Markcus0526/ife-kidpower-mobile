@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="214" android:tag="parentView">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Dutch (NL)"
+            android:id="@+id/textView" android:layout_weight="156" android:gravity="center" android:tag="language"
+            android:textColor="@android:color/white" android:textSize="@dimen/kidpower_backbuttonfontsize"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView" android:layout_gravity="center_vertical" android:layout_weight="48"
+            android:src="@drawable/netherlands" android:tag="flag"/>
+</LinearLayout>

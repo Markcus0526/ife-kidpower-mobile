@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/item_content"
+				android:background="@drawable/kph_drawable_list_item_general_background">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:id="@+id/content_layout"
+		android:paddingStart="@dimen/dimen_margin_15"
+		android:paddingEnd="@dimen/dimen_margin_15">
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="@string/blocked"
+			android:id="@+id/txt_blocked"
+			android:gravity="center_vertical|left"
+			style="@style/style_textview_general"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"
+			android:paddingStart="@dimen/dimen_margin_5"
+			android:paddingEnd="@dimen/dimen_margin_5"
+			android:ellipsize="end"
+			android:layout_alignParentStart="true"
+			android:layout_toStartOf="@+id/txt_blocked_number" />
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="(0)"
+			android:id="@+id/txt_blocked_number"
+			android:gravity="center_vertical|left"
+			style="@style/style_textview_general"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"
+			android:paddingStart="@dimen/dimen_margin_5"
+			android:paddingEnd="@dimen/dimen_margin_10"
+			android:layout_toStartOf="@+id/iv_list_arrow" />
+
+		<ImageView
+			android:layout_width="@dimen/dimen_right_arrow_width"
+			android:layout_height="@dimen/dimen_right_arrow_height"
+			android:id="@+id/iv_list_arrow"
+			android:layout_centerVertical="true"
+			android:layout_alignParentEnd="true"
+			android:src="@drawable/right_arrow_white" />
+	</RelativeLayout>
+
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_1dp"
+		android:layout_below="@+id/content_layout"
+		android:background="@color/kph_color_dark_blue_30"/>
+
+</RelativeLayout>

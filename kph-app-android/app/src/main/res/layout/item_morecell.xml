@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/item_content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/kph_drawable_list_item_general_background">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="60dp">
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txtItemName"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="false"
+			android:layout_centerVertical="true"
+			android:layout_toStartOf="@+id/imgDisclosure"
+			android:gravity="center_vertical"
+			android:text="Profile"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/dimen_font_size_base_title"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="4dp"/>
+
+		<ImageView
+			android:id="@+id/imgDisclosure"
+			android:layout_width="@dimen/dimen_right_arrow_width"
+			android:layout_height="@dimen/dimen_right_arrow_height"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentTop="false"
+			android:layout_centerVertical="true"
+			android:layout_marginEnd="20dp"
+			android:src="@drawable/right_arrow_white"/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:id="@+id/img_sep"
+			android:background="@color/color_list_divider"
+			android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+
+</RelativeLayout>

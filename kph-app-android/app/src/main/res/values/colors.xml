@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Alert Dialog Colors -->
+    <color name="MSG_LIGHT_GRAY">#E1E1E1</color>
+    <color name="MSG_NORMAL_TEXT">#000000</color>
+    <color name="MSG_DARK_BLUE">#2c8df9</color>
+    <color name="MSG_TEXT_RED">#eb3d3b</color>
+    <color name="MSG_WHITE_BACK">#f8f8f8</color>
+
+    <!-- Unicef Kid Power Color Constant -->
+    <color name="kph_color_main_background">#00adef</color>
+    <color name="kph_color_share_background">#FF33BDF2</color>
+
+    <color name="kph_color_red">#FFFF0000</color>
+    <color name="kph_color_light_red">#FFFF2020</color>
+    <color name="kph_color_dark_blue">#FF005CB8</color>
+    <color name="kph_color_dark_blue_30">#FFB2CEEA</color>
+    <color name="kph_color_blue">#FF009FE3</color>
+    <color name="kph_color_light_blue">#FF00ADEF</color>
+    <color name="kph_color_green">#FFA3D55D</color>
+    <color name="kph_color_success_green">#FF63D65C</color>
+    <color name="kph_color_orange">#FFF38A00</color>
+    <color name="kph_color_orange_pressed">#80F38A00</color>
+    <color name="kph_color_light_grey">#a7a7a7</color>
+    <color name="kph_color_pinkish_grey">#CCCCCC</color>
+	<color name="kph_color_grey">#FF808080</color>
+	<color name="kph_color_dim_grey">#70000000</color>
+    <color name="kph_color_dark_grey">#ff333333</color>
+    <color name="kph_color_brownish_grey">#666666</color>
+    <color name="kph_color_greyish">#AAAAAA</color>
+    <color name="kph_color_email_button_normal">#0DA1DA</color>
+	<color name="kph_color_email_button_pressed">#0061AA</color>
+    <color name="kph_color_disabled_button">#BBFFFFFF</color>
+	<color name="kph_color_facebook">#2D7AC5</color>
+	<color name="kph_color_facebook_pressed">#004A95</color>
+
+    <!-- Navigation Bar Colors -->
+    <color name="kph_color_navigation_bar_title">#FFFFFFFF</color>
+
+    <!-- Button Color -->
+	<color name="kph_color_button_normal_background_normal">#FFFFFFFF</color>
+    <color name="kph_color_button_normal_background_disabled">#FF99DEF9</color>
+    <color name="kph_color_button_normal_background_pressed">#99FFFFFF</color>
+
+    <!-- Edit Text Color -->
+    <color name="kph_color_edittext_hint">#FF808080</color>
+
+    <!-- Segmented Group Color -->
+    <color name="radio_button_selected_color">@android:color/white</color>
+    <color name="radio_button_unselected_color">@color/kph_color_light_blue</color>
+
+    <!-- Balloon Color -->
+    <color name="kph_color_balloon_background">#80000000</color>
+
+    <color name="color_list_divider">#66CEF5</color>
+
+    <color name="PROGRESS_BACKGROUND">#18000000</color>
+    <color name="PROGRESS_FOREGROUND">#40000000</color>
+
+    <color name="credit_card_text_helper_color">#a8a8a8</color>
+    <color name="kph_color_translucent_blue">#CC00ADEF</color>
+
+    <color name="kph_color_translucent_gray">#80444444</color>
+    <color name="kph_color_translucent_nocolor">#00444444</color>
+
+	<color name="kph_color_edittext_lightgray">#eaeaea</color>
+
+	<color name="kph_color_googlefitmask_disabled">#700090F0</color>
+	<color name="kph_color_googlefitmask_enabled">#00000000</color>
+	<color name="kph_color_googlefittext_disabled">#FF99DEF9</color>
+	<color name="kph_color_googlefittext_enabled">#FFFFFFFF</color>
+
+	<color name="kph_color_dialog_background">#40000000</color>
+
+</resources>

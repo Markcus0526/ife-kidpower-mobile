@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/item_content"
+    android:padding="@dimen/dimen_margin_30">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layout_headerview">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_timeline"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/timeline_powerpoint" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_badge"
+            android:layout_alignParentTop="false"
+            android:layout_toEndOf="@+id/img_timeline"
+            android:text="213"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@+id/img_timeline"
+            android:layout_alignBottom="@+id/img_timeline"
+            android:gravity="center_vertical"
+            android:layout_marginStart="3dp"
+            android:textSize="@dimen/dimen_font_size_base" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_cheertime"
+            android:layout_toEndOf="@+id/txt_badge"
+            android:text="July 23, 2015 at 2.15 pm in Far Eastern Nepal"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="false"
+            android:layout_alignBottom="@+id/txt_badge" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_commoncell">
+    </LinearLayout>
+
+</RelativeLayout>

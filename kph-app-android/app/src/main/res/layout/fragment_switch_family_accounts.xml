@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    android:background="@color/kph_color_main_background">
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_navigation_bar_height"
+		android:background="@color/kph_color_dark_blue">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_backarrow_width"
+				android:layout_height="match_parent"
+				android:id="@+id/ivBackground"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+		</RelativeLayout>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtTitle"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"
+			android:textColor="@color/kph_color_navigation_bar_title"
+			android:textSize="@dimen/dimen_font_size_heading_base"
+			android:text="@string/family_accounts"
+			style="@style/style_textview_heading"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			style="@style/style_textview_general"
+			android:textSize="@dimen/dimen_font_size_heading_base"
+			android:textColor="@android:color/white"
+			android:text="@string/kph_new"
+			android:layout_alignParentEnd="true"
+			android:background="@null"
+			android:paddingStart="@dimen/dimen_20dp"
+			android:paddingEnd="@dimen/dimen_20dp"
+			android:id="@+id/btn_new"/>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_titlebar"
+		android:id="@+id/layout_contents">
+
+		<RelativeLayout
+			android:id="@+id/layout_no_family_account"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="gone">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/dimen_margin_30"
+				android:layout_marginStart="@dimen/dimen_margin_30"
+				android:orientation="vertical">
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_no_family_account"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/no_family_accounts"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base_title"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_no_family_account_description"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_5"
+					android:gravity="center"
+					android:text="@string/new_family_account_description"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+					android:id="@+id/btn_new_family_account"
+					style="@style/style_button_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:layout_marginTop="@dimen/dimen_margin_15"
+					android:text="@string/new_family_account"/>
+			</LinearLayout>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/layout_family_accounts">
+
+			<android.support.v7.widget.RecyclerView
+				android:layout_width="match_parent"
+				android:scrollbars="vertical"
+				android:layout_height="match_parent"
+				android:id="@+id/lv_family_accounts" />
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/shadow_height"
+		android:background="@drawable/shadow_bottom"
+		android:layout_below="@+id/layout_titlebar"
+		android:id="@+id/title_bar_shadow"/>
+</RelativeLayout>

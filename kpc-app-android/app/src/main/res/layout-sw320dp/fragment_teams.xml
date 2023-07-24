@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            >
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <!-- center -->
+        <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kidpower_generalroundgrayframe"
+                android:id="@+id/rlCenter"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                <!-- profile -->
+                <RelativeLayout android:layout_width="match_parent"
+                                android:layout_height="85dp" android:visibility="gone">
+
+                    <!-- profiles -->
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                        <!-- avatar -->
+                        <ImageView
+                                android:layout_marginLeft="75dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="43dp"
+                                android:layout_height="43dp"
+                                android:src="@drawable/avatar_default"
+                                android:background="@drawable/avatarbg"
+                                android:id="@+id/ivAvatar"
+                                />
+
+                        <!-- change avatar -->
+                        <RelativeLayout
+                                android:layout_alignLeft="@id/ivAvatar"
+                                android:layout_marginTop="37dp"
+                                android:layout_width="43dp"
+                                android:layout_height="27dp"
+                                android:id="@+id/rlChangeAvatar"
+                                android:gravity="center"
+                                >
+                            <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="12dp"
+                                    android:id="@+id/ivChangeAvatar"
+                                    android:background="@drawable/camera_blue"
+                                    />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                                android:layout_marginLeft="13dp"
+                                android:layout_toRightOf="@id/ivAvatar"
+                                android:layout_alignTop="@id/ivAvatar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+                            <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="19dp"
+                                    style="@style/kidpower_pageheading"
+                                    android:text="Ashley"
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/textName"
+                                    android:visibility="visible"
+                                    />
+                            <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="13dp"
+                                    style="@style/kidpower_secondarytext"
+                                    android:text="3 days since last sync"
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/textLastSyncDate"
+                                    />
+                            <RelativeLayout
+                                    android:layout_width="82dp"
+                                    android:layout_height="24dp">
+                                <ImageView android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:background="@drawable/bandwithoutflash"
+                                        />
+                                <ImageView
+                                        android:layout_marginLeft="21dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_width="13dp"
+                                        android:layout_height="11dp"
+                                        android:background="@drawable/sync_white"
+                                        android:id="@+id/ivSync"
+                                        />
+                                <TextView
+                                        android:layout_toRightOf="@id/ivSync"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/kidpower_statustext"
+                                        android:text="@string/sync"
+                                        android:gravity="center_vertical"
+                                        android:id="@+id/textSync"
+                                        android:layout_centerVertical="true"
+                                        />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout android:layout_marginLeft="13dp"
+                                      android:layout_toRightOf="@id/ivAvatar"
+                                      android:layout_alignTop="@id/ivAvatar"
+                                      android:layout_marginTop="-5dp"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:orientation="horizontal"
+                                      android:id="@+id/llEditControls"
+                                      android:visibility="invisible"
+                                >
+                            <EditText
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="64dp"
+                                    android:layout_height="24dp"
+                                    android:textSize="@dimen/kidpower_pageheadingfontsize"
+                                    android:text="Ashley"
+									android:textColor="@color/kidpower_brownish_grey"
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/editName"
+                                    android:singleLine="true"
+                                    android:background="@drawable/kidpower_inputboxbg"
+                                    />
+                            <Button
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="43dp"
+                                    android:layout_height="21dp"
+                                    style="@style/kidpower_buttonnormal"
+                                    android:text="@string/layout_fragmentteams_save"
+                                    android:id="@+id/btnSave"
+                                    />
+                            <Button
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="43dp"
+                                    android:layout_height="21dp"
+                                    style="@style/kidpower_buttoncancel"
+                                    android:text="@string/button_cancel"
+                                    android:id="@+id/btnCancel"
+                                    />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                    <!-- your state -->
+                    <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/kidpower_paragraphheadtext"
+                            android:text="@string/layout_fragmentteams_teams"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                </RelativeLayout>
+
+                <!-- space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+                    <ImageView android:layout_width="match_parent" android:layout_height="1dp"
+                               android:background="@color/kidpower_outline"
+                            />
+                </LinearLayout>
+
+                <!-- space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="11dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        >
+                </LinearLayout>
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                              android:orientation="vertical"
+                              android:layout_width="307dp"
+                              android:layout_height="wrap_content"
+                        >
+
+                    <!-- teams -->
+                    <LinearLayout android:layout_width="293dp"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:layout_gravity="center_horizontal"
+                                  android:id="@+id/llTeamsContainer"
+                            >
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="13dp"
+                        android:orientation="vertical"
+                        >
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!-- edit button-->
+        <RelativeLayout
+                android:layout_alignTop="@id/rlCenter"
+                android:layout_width="43dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/rlEdit"
+                android:visibility="invisible">
+
+            <!-- contents -->
+            <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    >
+                <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/pencil_blue"
+                        android:id="@+id/ivPencil"
+                        android:layout_centerVertical="true"
+                        />
+                <TextView android:layout_width="20dp" android:layout_height="13dp"
+                          android:text="@string/layout_fragmentteams_edit"
+                          android:layout_toRightOf="@id/ivPencil"
+                          style="@style/kidpower_textlink"
+
+                          android:gravity="center_vertical"
+                        />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- navigation bar-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlNavigationBar"
+            >
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,2675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>delightId</key>
+		<integer>1</integer>
+		<key>missionId</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Greetings from the UNICEF Kid Power Team</string>
+		<key>description</key>
+		<string>I joined the UNICEF Kid Power Team! I&apos;m getting active and saving lives with kids and grown-ups around the world. Join the team working to end global malnutrition.
+Find out more at unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>I joined the UNICEF Kid Power Team! We’re getting active &amp; saving lives. Join us! #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>001-icon-1</string>
+		<key>detailImageName</key>
+		<string>001-postcard</string>
+		<key>shareImage</key>
+		<string>001-share</string>
+		<key>bgTopColor</key>
+		<string>#F38A00</string>
+		<key>bgBottomColor</key>
+		<string>#A3D55D</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>101</integer>
+		<key>missionId</key>
+		<integer>901</integer>
+		<key>name</key>
+		<string>Greetings from the UNICEF Kid Power Team</string>
+		<key>description</key>
+		<string>I joined the UNICEF Kid Power Team! I&apos;m getting active and saving lives with kids and grown-ups around the world. Join the team working to end global malnutrition.
+			Find out more at unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>I joined the UNICEF Kid Power Team! We’re getting active &amp; saving lives. Join us! #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>901-icon-1</string>
+		<key>detailImageName</key>
+		<string>901-postcard</string>
+		<key>shareImage</key>
+		<string>901-share</string>
+		<key>bgTopColor</key>
+		<string>#F38A00</string>
+		<key>bgBottomColor</key>
+		<string>#A3D55D</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>178</integer>
+		<key>missionId</key>
+		<integer>902</integer>
+		<key>name</key>
+		<string>Greetings from the UNICEF Kid Power Team</string>
+		<key>description</key>
+		<string>I joined the UNICEF Kid Power Team! I&apos;m getting active and saving lives with kids and grown-ups around the world. Join the team working to end global malnutrition.
+			Find out more at unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>I joined the UNICEF Kid Power Team! We’re getting active &amp; saving lives. Join us! #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>902-icon-1</string>
+		<key>detailImageName</key>
+		<string>902-postcard</string>
+		<key>shareImage</key>
+		<string>902-share</string>
+		<key>bgTopColor</key>
+		<string>#F38A00</string>
+		<key>bgBottomColor</key>
+		<string>#A3D55D</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>2</integer>
+		<key>missionId</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>UNICEF Kid Power Band</string>
+		<key>description</key>
+		<string>Get Active, Save Lives! Remember to sync daily so every step counts.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>001-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>102</integer>
+		<key>missionId</key>
+		<integer>901</integer>
+		<key>name</key>
+		<string>UNICEF Kid Power Band</string>
+		<key>description</key>
+		<string>Get Active, Save Lives! Remember to sync daily so every step counts.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>901-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>179</integer>
+		<key>missionId</key>
+		<integer>902</integer>
+		<key>name</key>
+		<string>UNICEF Kid Power Band</string>
+		<key>description</key>
+		<string>Get Active, Save Lives! Remember to sync daily so every step counts.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>902-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>3</integer>
+		<key>missionId</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>RUTF Packet</string>
+		<key>description</key>
+		<string>RUTF packets help children with severe malnutrition.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>001-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>103</integer>
+		<key>missionId</key>
+		<integer>901</integer>
+		<key>name</key>
+		<string>RUTF Packet</string>
+		<key>description</key>
+		<string>RUTF packets help children with severe malnutrition.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>901-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>180</integer>
+		<key>missionId</key>
+		<integer>902</integer>
+		<key>name</key>
+		<string>RUTF Packet</string>
+		<key>description</key>
+		<string>RUTF packets help children with severe malnutrition.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>902-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>4</integer>
+		<key>missionId</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>GOAL!</string>
+		<key>description</key>
+		<string>You&apos;re almost there! Keep getting active to save lives, just like Alex Morgan!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>001-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>104</integer>
+		<key>missionId</key>
+		<integer>901</integer>
+		<key>name</key>
+		<string>GOAL!</string>
+		<key>description</key>
+		<string>You&apos;re almost there! Keep getting active to save lives, just like Alex Morgan!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>901-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>181</integer>
+		<key>missionId</key>
+		<integer>902</integer>
+		<key>name</key>
+		<string>GOAL!</string>
+		<key>description</key>
+		<string>You&apos;re almost there! Keep getting active to save lives, just like Alex Morgan!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>902-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>5</integer>
+		<key>missionId</key>
+		<integer>1</integer>
+		<key>name</key>
+		<string>Kids At Play</string>
+		<key>description</key>
+		<string>Kids around the world get active and play, just like you!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>001-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>105</integer>
+		<key>missionId</key>
+		<integer>901</integer>
+		<key>name</key>
+		<string>Kids At Play</string>
+		<key>description</key>
+		<string>Kids around the world get active and play, just like you!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>901-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>182</integer>
+		<key>missionId</key>
+		<integer>902</integer>
+		<key>name</key>
+		<string>Kids At Play</string>
+		<key>description</key>
+		<string>Kids around the world get active and play, just like you!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>902-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>6</integer>
+		<key>missionId</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Greetings from Haiti</string>
+		<key>description</key>
+		<string>I&apos;m making an impact in Haiti! With every step I take I earn Kid Power Points to help severely malnourished kids in Haiti. Help the UNICEF Kid Power Team get active and save lives! Find out more at: www.unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>With every step I take, I earn Kid Power Points to help severely malnourished kids in Haiti. #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>002-icon-1</string>
+		<key>shareImage</key>
+		<string>002-share</string>
+		<key>detailImageName</key>
+		<string>002-postcard</string>
+		<key>bgTopColor</key>
+		<string>#A3D55D</string>
+		<key>bgBottomColor</key>
+		<string>#00ADEF</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>7</integer>
+		<key>missionId</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Haitian Bean Plant</string>
+		<key>description</key>
+		<string>Derlus and Sendy plant beans in their garden to make sure they have a healthy diet.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>002-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/002_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>8</integer>
+		<key>missionId</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>Shoot and score with Maya</string>
+		<key>description</key>
+		<string>You&apos;re on the Team with Maya Moore! Get active and save lives together.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>002-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/002_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>9</integer>
+		<key>missionId</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>Greetings from Uganda</string>
+		<key>description</key>
+		<string>Visit Uganda with me! I&apos;m earning 50 Kid Power Points for malnourished kids in Uganda. Help the UNICEF Kid Power Team get active and save lives! Find out more at: www.unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>Visit Uganda with me! I’m earning 50 Kid Power Points for malnourished kids in Uganda #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>003-icon-1</string>
+		<key>detailImageName</key>
+		<string>003-postcard</string>
+		<key>shareImage</key>
+		<string>003-share</string>
+		<key>bgTopColor</key>
+		<string>#00ADEF</string>
+		<key>bgBottomColor</key>
+		<string>#005CBB</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>10</integer>
+		<key>missionId</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>Get active. Save Lives.</string>
+		<key>description</key>
+		<string>You&apos;re earning Points to help kids all over the world!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>003-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/003_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>11</integer>
+		<key>missionId</key>
+		<integer>3</integer>
+		<key>name</key>
+		<string>Jump rope!</string>
+		<key>description</key>
+		<string>Gloria gets active with her friends, sisters and brother</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>003-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/003_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>12</integer>
+		<key>missionId</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>Greetings from Burkina Faso</string>
+		<key>description</key>
+		<string>I&apos;m on a mission to Burkina Faso! By getting active, I’m helping unlock RUTF Packets to treat severely malnourished kids. Help the UNICEF Kid Power Team get active and save lives! Find out more at: www.unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>I’m on a Mission to Burkina Faso! I’m helping unlock RUTF Packets for severely malnourished kids. #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>004-icon-1</string>
+		<key>detailImageName</key>
+		<string>004-postcard</string>
+		<key>shareImage</key>
+		<string>004-share</string>
+		<key>bgTopColor</key>
+		<string>#005CBB</string>
+		<key>bgBottomColor</key>
+		<string>#F38A00</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>13</integer>
+		<key>missionId</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>Siaka reads at home</string>
+		<key>description</key>
+		<string>Siaka reads to his little brothers and helps them learn at home</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>004-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/004_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>14</integer>
+		<key>missionId</key>
+		<integer>4</integer>
+		<key>name</key>
+		<string>Home run!</string>
+		<key>description</key>
+		<string>David Ortiz gets active with his team, and with you on the UNICEF Kid Power Team.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>004-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/004_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Team Unlocks 1,000 RUTF Packets</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has unlocked 1,000 RUTF packets!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-1k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-1k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Team Unlocks 5,000 RUTF Packets</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has unlocked 5,000 RUTF packets! Go Team!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-5k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-5k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Team Unlocks 10,000 RUTF Packets</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has unlocked 10,000 more RUTF packets.</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-10k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-10k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>18</integer>
+		<key>name</key>
+		<string>Team Unlocks 40,000 RUTF Packets</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has unlocked 40,000 more RUTF packets!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-40k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-40k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>19</integer>
+		<key>name</key>
+		<string>Team Unlocks 50,000 RUTF Packets</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has unlocked 50,000 RUTF packets! Go Team!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-50k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-50k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>20</integer>
+		<key>name</key>
+		<string>Team Unlocks 60,000 RUTF Packets</string>
+		<key>description</key>
+		<string>This is enough for 400 full course treatments of RUTF!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-60k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-60k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>21</integer>
+		<key>name</key>
+		<string>Team Unlocks 70,000 RUTF Packets</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has unlocked 70,000 more packets of RUTF! Go Team!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-70k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-70k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>22</integer>
+		<key>name</key>
+		<string>Team Unlocks 80,000 RUTF Packets</string>
+		<key>description</key>
+		<string>Go Team, Go! The UNICEF Kid Power Team has unlocked 80,000 more RUTF packets for kids around the world.</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-80k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-80k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>23</integer>
+		<key>name</key>
+		<string>Team Unlocks 90,000 RUTF Packets</string>
+		<key>description</key>
+		<string>This is enough for 600 full course treatments of RUTF!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-90k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-90k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>24</integer>
+		<key>name</key>
+		<string>Team Unlocks 100,000 RUTF Packets</string>
+		<key>description</key>
+		<string>100,000 RUTF Packets! Keep getting active and the UNICEF Kid Power Team can end global malnutrition.</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-team-rutf-100k</string>
+		<key>detailImageName</key>
+		<string>bl-team-rutf-100k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>25</integer>
+		<key>name</key>
+		<string>First 100,000 Power Points</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has earned 100,000 Kid Power Points!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-100k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-100k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>26</integer>
+		<key>name</key>
+		<string>First 200,000 Power Points</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has earned 200,000 Kid Power Points!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-200k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-200k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>27</integer>
+		<key>name</key>
+		<string>First 300,000 Power Points</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has earned 300,000 Kid Power Points!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-300k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-300k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>28</integer>
+		<key>name</key>
+		<string>First 400,000 Power Points</string>
+		<key>description</key>
+		<string>400,000 Kid Power Points is quite a feat! The UNICEF Kid Power Team is taking steps to save lives.</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-400k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-400k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>29</integer>
+		<key>name</key>
+		<string>First 500,000 Power Points</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has earned 500,000 Kid Power Points! Great Job, Everyone!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-500k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-500k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>30</integer>
+		<key>name</key>
+		<string>First 600,000 Power Points</string>
+		<key>description</key>
+		<string>Every step counts, and the UNICEF Kid Power Team has stepped up to the plate, earning 600,000 Kid Power Points.</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-600k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-600k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>31</integer>
+		<key>name</key>
+		<string>First 700,000 Power Points</string>
+		<key>description</key>
+		<string>700,000 Kid Power Points is the result of a lot of kids getting active! Thanks for being part of the UNICEF Kid Power Team!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-700k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-700k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>32</integer>
+		<key>name</key>
+		<string>First 800,000 Power Points</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has earned 800,000 Kid Power Points!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-800k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-800k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>33</integer>
+		<key>name</key>
+		<string>First 900,000 Power Points</string>
+		<key>description</key>
+		<string>900,000 Kid Power Points couldn’t happen without every UNICEF Kid Power Team member! Thanks for doing your part.</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-900k</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-900k-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>34</integer>
+		<key>name</key>
+		<string>First Million Power Points</string>
+		<key>description</key>
+		<string>1 Million Kid Power Points have been earned by members of the UNICEF Kid Power Team! How did you get active?</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string>bl-team-points-1m</string>
+		<key>detailImageName</key>
+		<string>bl-team-points-1m-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>35</integer>
+		<key>name</key>
+		<string>First Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world! That&apos;s %i Steps.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>36</integer>
+		<key>name</key>
+		<string>Second Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world twice! That&apos;s %i Steps.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>37</integer>
+		<key>name</key>
+		<string>Fifth Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world five times! That&apos;s %i Steps.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>38</integer>
+		<key>name</key>
+		<string>10th Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world ten times! That&apos;s %i Steps.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>39</integer>
+		<key>name</key>
+		<string>20th Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world twenty times! That&apos;s %i Steps.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>40</integer>
+		<key>name</key>
+		<string>50th Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world fifty times! That&apos;s %i Steps.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>41</integer>
+		<key>name</key>
+		<string>100th Trip Around the World</string>
+		<key>description</key>
+		<string>The UNICEF Kid Power Team has walked around the world one hundred times! That&apos;s %i Steps. Get Active, Save Lives!</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>42</integer>
+		<key>name</key>
+		<string>First 100 Power Points</string>
+		<key>description</key>
+		<string>Great Job! You&apos;ve earned 100 Kid Power Points!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>43</integer>
+		<key>name</key>
+		<string>First 200 Power Points</string>
+		<key>description</key>
+		<string>You&apos;ve earned 200 Kid Power Points! Keep going and do your part to end global malnutrition.</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>44</integer>
+		<key>name</key>
+		<string>First 500 Power Points</string>
+		<key>description</key>
+		<string>Congratulations on your first 500 Power Points! You&apos;re getting active and making a difference in the lives of kids around the world.</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>45</integer>
+		<key>name</key>
+		<string>First 1000 Power Points</string>
+		<key>description</key>
+		<string>Can you believe you&apos;ve earned 1000 Power Points!  You&apos;re an MVP on the UNICEF Kid Power Team!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>46</integer>
+		<key>name</key>
+		<string>First 2000 Power Points</string>
+		<key>description</key>
+		<string>You&apos;re on a roll! You&apos;ve earned 2000 Power Points! Way to get active! Way to keep at it! </string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>47</integer>
+		<key>name</key>
+		<string>First 5000 Power Points</string>
+		<key>description</key>
+		<string>You&apos;ve earned 5000 Power Points! You&apos;re a super team member!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>48</integer>
+		<key>name</key>
+		<string>First 10000 Power Points</string>
+		<key>description</key>
+		<string>You&apos;re one of the UNICEF Kid Power Team member who have earned 10000 Power Points! Congratulations!</string>
+		<key>type</key>
+		<string>kpp</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>49</integer>
+		<key>name</key>
+		<string>First RUTF Packet!</string>
+		<key>description</key>
+		<string>Congratulations! You just unlocked your first RUTF packet. This nutrient packed paste helps kids with severe advanced malnutrition grow and thrive.</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-rutf-1st</string>
+		<key>detailImageName</key>
+		<string>bl-rutf-1st-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>50</integer>
+		<key>name</key>
+		<string>Three RUTF packets unlocked!</string>
+		<key>description</key>
+		<string>Congratulations! You just unocked your 3rd RUTF packet. You&apos;re doing your part to end global malnutrition!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-rutf-3rd</string>
+		<key>detailImageName</key>
+		<string>bl-rutf-3rd-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>51</integer>
+		<key>name</key>
+		<string>21 RUTF packets unlocked!</string>
+		<key>description</key>
+		<string>Congratulations! You just unlocked your 21th RUTF packet. This is one week of treatment for a severely malnourished child.</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-rutf-21st</string>
+		<key>detailImageName</key>
+		<string>bl-rutf-21st-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>52</integer>
+		<key>name</key>
+		<string>90 RUTF packets unlocked!</string>
+		<key>description</key>
+		<string>Congratulations! You just unlocked your 90th RUTF packet. This is one month of treatment for a severely malnourished child.</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-rutf-90th</string>
+		<key>detailImageName</key>
+		<string>bl-rutf-90th-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>53</integer>
+		<key>name</key>
+		<string>150 RUTF packets unlocked!</string>
+		<key>description</key>
+		<string>Congratulations! You just unlocked your 150th RUTF packet. This is a full course of treatment for a severely malnouished child!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-rutf-150th</string>
+		<key>detailImageName</key>
+		<string>bl-rutf-150th-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>54</integer>
+		<key>name</key>
+		<string>300 RUTF packets unlocked!</string>
+		<key>description</key>
+		<string>Congratulations! You just earned your 300th RUTF packet. This is two full courses of treatment for a severely malnourished child!</string>
+		<key>type</key>
+		<string>rutf</string>
+		<key>imageName</key>
+		<string>bl-rutf-300th</string>
+		<key>detailImageName</key>
+		<string>bl-rutf-300th-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>55</integer>
+		<key>name</key>
+		<string>1 mile</string>
+		<key>description</key>
+		<string>You did it! You walked your first mile. That&apos;s the same as 17.6 football fields!</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>56</integer>
+		<key>name</key>
+		<string>5 miles</string>
+		<key>description</key>
+		<string>Can you believe it? Five whole miles are behind you. That&apos;s 74 home runs!</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>57</integer>
+		<key>name</key>
+		<string>20 miles</string>
+		<key>description</key>
+		<string>You&apos;ve walked 20 miles! That&apos;s almost 300 soccer fields! Keep it up to earn more awards!</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>58</integer>
+		<key>name</key>
+		<string>50 miles</string>
+		<key>description</key>
+		<string>You&apos;ve walked 50 miles! Every step gets us closer to ending global malnutrition.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>59</integer>
+		<key>name</key>
+		<string>75 miles</string>
+		<key>description</key>
+		<string>You&apos;ve walked 75 Miles! When you tell everyone, make sure they know that every step was helping unlock RUTF packets for kids around the world</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>60</integer>
+		<key>name</key>
+		<string>100 miles</string>
+		<key>description</key>
+		<string>Can you believe it? One hundred miles are behind you! That&apos;s the same as a dragonfly migrates in a day!  You&apos;re saving lives one step at a time! Keep it up to earn more awards!</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>61</integer>
+		<key>name</key>
+		<string>150 miles</string>
+		<key>description</key>
+		<string>You&apos;ve walked 150 miles! That&apos;s more than the distance between Washington DC and Philidelphia</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>62</integer>
+		<key>name</key>
+		<string>200 miles</string>
+		<key>description</key>
+		<string>That&apos;s about the distance between San Fransisco, California and Reno, Nevada.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>63</integer>
+		<key>name</key>
+		<string>250 miles</string>
+		<key>description</key>
+		<string>You&apos;ve walked 250 miles! That&apos;s futher than the distance between New York City and Boston, Massachusetts!</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>64</integer>
+		<key>name</key>
+		<string>300 miles</string>
+		<key>description</key>
+		<string>That&apos;s almost the distance between Phoenix, Arizona and Albuquerque, New Mexico.</string>
+		<key>type</key>
+		<string>distance</string>
+		<key>imageName</key>
+		<string></string>
+		<key>detailImageName</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>78</integer>
+		<key>name</key>
+		<string>Your first week has been great!</string>
+		<key>description</key>
+		<string>You&apos;ve been part of the UNICEF Kid Power Team for a week already! Every step you take helps malnourished kids around the world.</string>
+		<key>type</key>
+		<string>time-week</string>
+		<key>imageName</key>
+		<string>bl-time-week</string>
+		<key>detailImageName</key>
+		<string>bl-time-week-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>79</integer>
+		<key>name</key>
+		<string>You&apos;ve done a whole month!</string>
+		<key>description</key>
+		<string>You&apos;ve been part of the UNICEF Kid Power Team for a month! Get Active and keep syncing, the fight to end severe acute malnutrition worldwide is just beginning.</string>
+		<key>type</key>
+		<string>time-month</string>
+		<key>imageName</key>
+		<string>bl-time-month</string>
+		<key>detailImageName</key>
+		<string>bl-time-month-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>80</integer>
+		<key>name</key>
+		<string>Happy anniversary!</string>
+		<key>description</key>
+		<string>You&apos;ve been part of the UNICEF Kid Power Team for a whole year! Happy anniversary! See how much the UNICEF Kid Power Team has accomplished at unicefkidpower.org</string>
+		<key>type</key>
+		<string>time-year</string>
+		<key>imageName</key>
+		<string>bl-time-year</string>
+		<key>detailImageName</key>
+		<string>bl-time-year-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>81</integer>
+		<key>name</key>
+		<string>Getting active in winter</string>
+		<key>description</key>
+		<string>You&apos;re  a part of the UNICEF Kid Power Team during Winter 2016! You&apos;re getting active to save lives! See how much the Team has accomplished at unicefkidpower.org</string>
+		<key>type</key>
+		<string>season-winter</string>
+		<key>imageName</key>
+		<string>bl-time-winter</string>
+		<key>detailImageName</key>
+		<string>bl-time-winter-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>82</integer>
+		<key>name</key>
+		<string>Getting active in spring</string>
+		<key>description</key>
+		<string>You&apos;re a part of the UNICEF Kid Power Team during Spring 2016! You&apos;re getting active to save lives! See how much the Team accomplished at unicefkidpower.org</string>
+		<key>type</key>
+		<string>season-spring</string>
+		<key>imageName</key>
+		<string>bl-time-spring</string>
+		<key>detailImageName</key>
+		<string>bl-time-spring-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>83</integer>
+		<key>name</key>
+		<string>Getting active in summer</string>
+		<key>description</key>
+		<string>You&apos;re a part of the UNICEF Kid Power Team during Summer 2016! You got active to save lives! Find out how much the team earned at unicefkidpower.org</string>
+		<key>type</key>
+		<string>season-summer</string>
+		<key>imageName</key>
+		<string>bl-time-summer</string>
+		<key>detailImageName</key>
+		<string>bl-time-summer-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>84</integer>
+		<key>name</key>
+		<string>Getting active in fall</string>
+		<key>description</key>
+		<string>You&apos;re a part of the UNICEF Kid Power Team during Fall 2016! You got active to save lives! Find out how much the team earned at unicefkidpower.org</string>
+		<key>type</key>
+		<string>season-fall</string>
+		<key>imageName</key>
+		<string>bl-time-fall</string>
+		<key>detailImageName</key>
+		<string>bl-time-fall-detail</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>85</integer>
+		<key>name</key>
+		<string>Trick or Treat!</string>
+		<key>description</key>
+		<string>Did you know you can help even more kids by Trick or Treating for UNICEF? Find out more at http://www.unicefusa.org/trick-or-treat and don&apos;t forget to sync on Halloween.</string>
+		<key>type</key>
+		<string>event-halloween</string>
+		<key>imageName</key>
+		<string>bl-time-halloween</string>
+		<key>detailImageName</key>
+		<string>bl-time-halloween-detail</string>
+	</dict>
+
+	<!-- Mission 5 -->
+	<dict>
+		<key>delightId</key>
+		<integer>86</integer>
+		<key>missionId</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>Uganda Stamp</string>
+		<key>description</key>
+		<string>Visit Uganda with me! I’m earning 50 Kid Power Points for malnourished kids in Uganda. Help the UNICEF Kid Power Team get active and save lives!
+Find out more at: www.unicefkidpower.org
+		</string>
+		<key>twitter_desc</key>
+		<string>Visit Uganda with me! I’m earning 50 Kid Power Points for malnourished kids in Uganda. #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>005-icon-1</string>
+		<key>shareImage</key>
+		<string>005-share</string>
+		<key>detailImageName</key>
+		<string>005-postcard</string>
+		<key>bgTopColor</key>
+		<string>#42DBB4</string>
+		<key>bgBottomColor</key>
+		<string>#9964C8</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>87</integer>
+		<key>missionId</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>Big Brother Mugisha Does His Part</string>
+		<key>description</key>
+		<string>Mugisha put his whole life on hold to care for his brother with severe malnutrition. They still try to find time for fun.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>005-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/005_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>88</integer>
+		<key>missionId</key>
+		<integer>5</integer>
+		<key>name</key>
+		<string>Meryl Gets Active to Save Lives!</string>
+		<key>description</key>
+		<string>Meryl Davis practices every day to go for the gold.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>005-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/005_souvenir_2.mp4</string>
+	</dict>
+	<!-- Mission 6 -->
+	<dict>
+		<key>delightId</key>
+		<integer>89</integer>
+		<key>missionId</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>Global stamp</string>
+		<key>description</key>
+		<string>
+I joined the UNICEF Kid Power Team! I’m getting active and saving lives with kids and grown-ups around the world. Join the team working to end global malnutrition.
+Find out more at unicefkidpower.org
+		</string>
+		<key>twitter_desc</key>
+		<string>I joined the UNICEF Kid Power Team! We’re getting active &amp; saving lives. Join us! #unicefkidpower</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>006-icon-1</string>
+		<key>shareImage</key>
+		<string>006-share</string>
+		<key>detailImageName</key>
+		<string>006-postcard</string>
+		<key>bgTopColor</key>
+		<string>#E86A56</string>
+		<key>bgBottomColor</key>
+		<string>#54E1AC</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>90</integer>
+		<key>missionId</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>Every Kid Loves to Play</string>
+		<key>description</key>
+		<string>Running, volleyball, dancing--kids around the world have lots in common with the ways they play</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>006-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/006_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>91</integer>
+		<key>missionId</key>
+		<integer>6</integer>
+		<key>name</key>
+		<string>Mobile Playgrounds Mean Play Anywhere</string>
+		<key>description</key>
+		<string>When kids get a chance to play, they focus better in school.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>006-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/006_souvenir_2.mp4</string>
+	</dict>
+	<!-- Mission 7 Star Wars-->
+	<dict>
+		<key>delightId</key>
+		<integer>92</integer>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Greetings from aboard the Ghost</string>
+		<key>description</key>
+		<string>Join Star Wars: Force for Change 
+to get active and save lives!
+
+Find out more at unicefkidpower.org
+		</string>
+		<key>twitter_desc</key>
+		<string>Join, me Star Wars: Force for Change, and the UNICEF Kid Power Team to #getactivesavelives !</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>007-icon-1</string>
+		<key>detailImageName</key>
+		<string>007-postcard</string>
+		<key>shareImage</key>
+		<string>007-share.jpg</string>
+		<key>bgTopColor</key>
+		<string>#000000</string>
+		<key>bgBottomColor</key>
+		<string>#000000</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>93</integer>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Be a Force for Change!</string>
+		<key>description</key>
+		<string>Star Wars: Force for Change is about being a hero to the world around you, just like these fans are doing.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>007-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_souvenir_1.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>94</integer>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Ahsoka Tano, the Padawan</string>
+		<key>description</key>
+		<string></string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>007-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>95</integer>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Chopper</string>
+		<key>description</key>
+		<string></string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>007-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>96</integer>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Hera takes off!</string>
+		<key>description</key>
+		<string>Hera perfects her pilot skills.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>007-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>97</integer>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>name</key>
+		<string>Ezra, practicing his Jedi moves</string>
+		<key>description</key>
+		<string></string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>007-icon-6</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_souvenir_5.mp4</string>
+	</dict>
+	<!-- Mission 8 P!nk -->
+	<dict>
+		<key>delightId</key>
+		<integer>106</integer>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>Greetings from Haiti with P!nk</string>
+		<key>description</key>
+		<string>Join UNICEF Kid Power national spokesperson
+P!nk on a special Mission to Haiti!
+
+Find out more at unicefkidpower.org
+		</string>
+		<key>twitter_desc</key>
+		<string>Join me, GRAMMY®-winning Recording Artist P!nk, and the #UNICEFKidPower Team to #getactivesavelives !</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>008-icon-1</string>
+		<key>detailImageName</key>
+		<string>008-postcard</string>
+		<key>shareImage</key>
+		<string>008-share.png</string>
+		<key>bgTopColor</key>
+		<string>#F9C1CE</string>
+		<key>bgBottomColor</key>
+		<string>#E86A56</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>107</integer>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>P!nk Gets Active, Rocks Out and Saves Lives!</string>
+		<key>description</key>
+		<string>How does P!nk nail her moves in every performance? Practice!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>008-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/008_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>108</integer>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>Youri takes the mike</string>
+		<key>description</key>
+		<string>Youri and P!nk both know how importance practice is to make awesome music.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>008-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/008_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>109</integer>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>Jamal’s got moves</string>
+		<key>description</key>
+		<string>Try dancing to Nap Decide to earn enough points and complete your special Mission to Haiti!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>008-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/008_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>110</integer>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>P!nk visits Haiti</string>
+		<key>description</key>
+		<string>P!nk visits kids in Haiti do dance and make music--an important part of growing up healthy and strong</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>008-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/008_souvenir_5.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>111</integer>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>name</key>
+		<string>Teamwork</string>
+		<key>description</key>
+		<string>Youri and his friends work together, just like the members of the UNICEF Kid Power Team.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>008-icon-6</string>
+	</dict>
+	<!-- Mission 9 -->
+	<dict>
+		<key>delightId</key>
+		<integer>112</integer>
+		<key>missionId</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>Greetings from the UNICEF Kid Power Team</string>
+		<key>description</key>
+		<string>Aly Raisman and the #UNICEFKidPower Team help all kids suffering from severe malnutrition, even refugees.
+			Find out more at unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>Aly Raisman and the #UNICEFKidPower Team help all kids suffering from severe malnutrition, even refugees.
+			Find out more at unicefkidpower.org</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>009-icon-1</string>
+		<key>detailImageName</key>
+		<string>009-postcard</string>
+		<key>shareImage</key>
+		<string>009-share</string>
+		<key>bgTopColor</key>
+		<string>#E86A56</string>
+		<key>bgBottomColor</key>
+		<string>#54E1AC</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>113</integer>
+		<key>missionId</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>Airdrop!</string>
+		<key>description</key>
+		<string>In areas without roads, supplies are parachuted to the people who need them.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>009-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/009_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>114</integer>
+		<key>missionId</key>
+		<integer>9</integer>
+		<key>name</key>
+		<string>Living your dreams</string>
+		<key>description</key>
+		<string>Aly Raisman pushes herself to stay active and work hard to achieve her dreams. </string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>009-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/009_souvenir_3.mp4</string>
+	</dict>
+	<!-- Mission 10 -->
+	<dict>
+		<key>delightId</key>
+		<integer>118</integer>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>Greetings from Burkina Faso</string>
+		<key>description</key>
+		<string>Visit Burkina Faso with Paralympic Bronze Medalist Dartanyon Crockett. #GetActiveSaveLives
+			Find out more at unicefkidpower.org</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>010-icon-1</string>
+		<key>detailImageName</key>
+		<string>010-postcard</string>
+		<key>shareImage</key>
+		<string>010-share</string>
+		<key>bgTopColor</key>
+		<string>#005CBB</string>
+		<key>bgBottomColor</key>
+		<string>#F38A00</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>119</integer>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>Dartanyon Pushes Himself</string>
+		<key>description</key>
+		<string>Paralympic athlete Dartanyon Crockett doesn&apos;t let anything stop him from reaching his goals.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>010-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>120</integer>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>Planting seeds </string>
+		<key>description</key>
+		<string>In Burkina Faso, families farm a variety of crops.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>010-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>121</integer>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>Dramatic lessons</string>
+		<key>description</key>
+		<string>Theatre troupes put on shows to teach about health and nutrition. </string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>010-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>122</integer>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>Dartanyon Flips</string>
+		<key>description</key>
+		<string>Get active in your own way: summersault, flip, or spin and earn points too!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>010-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_souvenir_5.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>123</integer>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>name</key>
+		<string>Helping each other</string>
+		<key>description</key>
+		<string>When farmers grow different kinds of food, they can build a healthy community</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>010-icon-6</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_souvenir_6.mp4</string>
+	</dict>
+	<!-- Mission 11 -->
+	<dict>
+		<key>delightId</key>
+		<integer>124</integer>
+		<key>missionId</key>
+		<integer>11</integer>
+		<key>name</key>
+		<string>Greetings from the UNICEF Kid Power Team</string>
+		<key>description</key>
+		<string>See how RUTF Packets are made and delivered to children all over the world so they can survive and thrive</string>
+		<key>twitter_desc</key>
+		<string>See how RUTF food packets are made #UNICEFKidPower global mission http://bit.ly/RUTFmisn</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>011-icon-1</string>
+		<key>detailImageName</key>
+		<string>011-postcard</string>
+		<key>shareImage</key>
+		<string>011-share</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>125</integer>
+		<key>missionId</key>
+		<integer>11</integer>
+		<key>name</key>
+		<string>RUTF in production</string>
+		<key>description</key>
+		<string>The closer RUTF is made to the kids who need it, the faster they are treated.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>011-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/011_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>126</integer>
+		<key>missionId</key>
+		<integer>11</integer>
+		<key>name</key>
+		<string>Community health workers make a difference</string>
+		<key>description</key>
+		<string>UNICEF community health workers all around the world are on the Kid Power Team, ending global malnutrition.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>011-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/011_souvenir_3.mp4</string>
+	</dict>
+	<!-- Mission 12 -->
+	<dict>
+		<key>delightId</key>
+		<integer>127</integer>
+		<key>missionId</key>
+		<integer>12</integer>
+		<key>name</key>
+		<string>Greetings from Uganda</string>
+		<key>description</key>
+		<string>UNICEF Staff member Laurent Duvillier works every day to help children around the world. Today, he shares the story of Hassan, a boy in Uganda who is surviving and thriving thanks to RUTF.</string>
+		<key>twitter_desc</key>
+		<string>Learn about a boy who is thriving in life on Laurent’s #UNICEFKidPower mission at http://bit.ly/LaurentU</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>012-icon-1</string>
+		<key>detailImageName</key>
+		<string>012-postcard</string>
+		<key>shareImage</key>
+		<string>012-share</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>128</integer>
+		<key>missionId</key>
+		<integer>12</integer>
+		<key>name</key>
+		<string>Hassan the artist!</string>
+		<key>description</key>
+		<string>When Hassan isn’t playing ball, he loves to draw his favorite ball players. Artist, athlete, student—Hassan can do it all!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>012-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/012_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>129</integer>
+		<key>missionId</key>
+		<integer>12</integer>
+		<key>name</key>
+		<string>What’s for dinner in Uganda?</string>
+		<key>description</key>
+		<string>Making a healthy dinner is a group effort for Hassan and his family.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>012-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/012_souvenir_3.mp4</string>
+	</dict>
+	<!-- Mission 13 -->
+	<dict>
+		<key>delightId</key>
+		<integer>130</integer>
+		<key>missionId</key>
+		<integer>13</integer>
+		<key>name</key>
+		<string>Greetings from Haiti</string>
+		<key>description</key>
+		<string>Cheer on Haiti in the Friendship Games!</string>
+		<key>twitter_desc</key>
+		<string>Cheer Haiti in the Friendship Games on this #UNICEFKidPower mission at http://bit.ly/UKPHaiti</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>013-icon-1</string>
+		<key>detailImageName</key>
+		<string>013-postcard</string>
+		<key>shareImage</key>
+		<string>013-share</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>131</integer>
+		<key>missionId</key>
+		<integer>13</integer>
+		<key>name</key>
+		<string>Score!</string>
+		<key>description</key>
+		<string>Check out all the ways players score points during the Friendship Games.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>013-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/013_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>132</integer>
+		<key>missionId</key>
+		<integer>13</integer>
+		<key>name</key>
+		<string>Two Countries Come together</string>
+		<key>description</key>
+		<string>Haitians and Domincans crossed their border to compete in the Friendship Games.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>013-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/013_souvenir_3.mp4</string>
+	</dict>
+	<!-- Mission 14 -->
+	<dict>
+		<key>delightId</key>
+		<integer>133</integer>
+		<key>missionId</key>
+		<integer>14</integer>
+		<key>name</key>
+		<string>Greetings from The UNICEF Kid Power Team</string>
+		<key>description</key>
+		<string>Learn how UNICEF gives many girls the chance to attend school, and grow healthy minds and bodies. #GetActiveSaveLives. Find out more at unicefkidpower.org</string>
+		<key>twitter_desc</key>
+		<string>See the girls growing healthy minds &apos; bodies with #UNICEFKidPower at http://bit.ly/UKPgirls</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>014-icon-1</string>
+		<key>detailImageName</key>
+		<string>014-postcard</string>
+		<key>shareImage</key>
+		<string>014-share</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>134</integer>
+		<key>missionId</key>
+		<integer>14</integer>
+		<key>name</key>
+		<string>Check out Kailita’s Moves on the Field</string>
+		<key>description</key>
+		<string>Getting active is a big part of school for girls around the world, like Kailita.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>014-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/014_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>135</integer>
+		<key>missionId</key>
+		<integer>14</integer>
+		<key>name</key>
+		<string>Classrooms Around the World</string>
+		<key>description</key>
+		<string>What’s familiar and what’s different about how girls around the world learn?</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>014-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/014_souvenir_3.mp4</string>
+	</dict>
+	<!-- Mission 15 -->
+	<dict>
+		<key>delightId</key>
+		<integer>136</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Send a Postcard</string>
+		<key>description</key>
+		<string>Share this postcard with your friends, and invite them to join you on the Trick-or-Treat UNICEF Kid Power Mission</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>015-icon-1</string>
+		<key>detailImageName</key>
+		<string>015-postcard</string>
+		<key>shareImage</key>
+		<string>015-share</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>137</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Kermit the Frog</string>
+		<key>description</key>
+		<string>Famous Muppet Kermit the Frog was the Trick-or-Treat for UNICEF Ambassador in 1980 and 1981.</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-2</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-2</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>138</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Lassie helps!</string>
+		<key>description</key>
+		<string>Famous TV Dog Lassie was a Trick-or-Treat with UNICEF Ambassador in the 1950s</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-3</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_3.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>139</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>A Look Back</string>
+		<key>description</key>
+		<string>See how Trick-or-Treat for UNICEF began over 65 years ago</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>140</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Jeopardy!</string>
+		<key>description</key>
+		<string>In 2010, Trick-or-Treat for UNICEF was its own clue on Jeopardy. Watch it here!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_5.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>141</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>What is UNICEF?</string>
+		<key>description</key>
+		<string>Trick-or-Treat for UNICEF and UNICEF Kid Power support UNICEF’s work world wide to help kids survive and thrive.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-6</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_6.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>142</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Kiwanis, Key Club, and you!</string>
+		<key>description</key>
+		<string>You’re part of a team that includes decades’ worth of kids taking on global challenges with UNICEF.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-7</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_7.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>143</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Change for UNICEF</string>
+		<key>description</key>
+		<string>Starting in the 1950s, kids collected coins to help kids around the world.</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-8</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-8</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>144</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Trick-or-Treat for UNICEF in the 1960s</string>
+		<key>description</key>
+		<string>Do you see your grandparents in this video of Trick-or-Treat for UNICEF kids in the 1960s?</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-9</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_9.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>145</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Trick-or-Treat for UNICEF in the 1970s</string>
+		<key>description</key>
+		<string>There were some awesome celebrations and parades in support of Trick-or-Treat for UNICEF in the 1970s.</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-10</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-10</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>146</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Lights, Camera, Trick-or-treat for UNICEF!</string>
+		<key>description</key>
+		<string>Some of America’s most famous celebrities have been a part of Trick-or-Treat for UNICEF.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-11</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_11.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>147</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>The Brady Bunch</string>
+		<key>description</key>
+		<string>The Brady Bunch was a popular TV family from the 1970s, and they also Trick-or-Treated for UNICEF</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-12</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-12</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>148</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Little Orange Box</string>
+		<key>description</key>
+		<string>There have been many iconic "little orange boxes" over the years.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-13</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_13.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>149</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Zendaya</string>
+		<key>description</key>
+		<string>In 2014, singer and actress Zendaya told us all that some kids need more than candy.</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-14</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-14</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>150</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Trick-or-Treat for UNICEF in the 1980s</string>
+		<key>description</key>
+		<string>Check out the 1980s style of these Trick-or-Treat for UNICEF kids. (Do you see your parents?)</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-15</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-15</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>151</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Spreading the News</string>
+		<key>description</key>
+		<string>When the Allison family first collected pennies for UNICEF, they made this flyer.</string>
+		<key>twitter_desc</key>
+		<string>Check out what I’m up to this Halloween!! #UNICEFKidPower http://bit.ly/2dhGB8l</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-16</string>
+		<key>detailImageName</key>
+		<string>015-souvenir-16</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>152</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Challenge</string>
+		<key>description</key>
+		<string>Halloween is almost here! Your challenge: get active and save lives by moving at least two miles on October 31st to unlock this challenge achievement!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-17</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_17.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>153</integer>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>name</key>
+		<string>Challenge Complete!</string>
+		<key>description</key>
+		<string>You did it! You got active and saved lives to complete this Trick-or-Treat for UNICEF challenge. Have we mentioned how awesome it is to have you on the UNICEF Kid Power Team? Great job!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>015-icon-18</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_souvenir_18.mp4</string>
+	</dict>
+	<!-- Mission 16 Star Wars 2-->
+	<dict>
+		<key>delightId</key>
+		<integer>154</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Greetings from aboard the Ghost</string>
+		<key>description</key>
+		<string>Share this postcard with your friends, and invite them to join you on this Star Wars: Force for Change Kid Power Mission!
+		</string>
+		<key>twitter_desc</key>
+		<string>I’ve teamed up with Star Wars and UNICEF Kid Power to be a Force For Change! http://bit.ly/2exnXKs</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>016-icon-1</string>
+		<key>detailImageName</key>
+		<string>016-postcard</string>
+		<key>shareImage</key>
+		<string>016-share</string>
+		<key>bgTopColor</key>
+		<string>#000000</string>
+		<key>bgBottomColor</key>
+		<string>#000000</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>155</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Ezra and His Friends</string>
+		<key>description</key>
+		<string>Ezra appreciates his friends when they come to his rescue.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>156</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Jetting like Sabine!</string>
+		<key>description</key>
+		<string>You are doing awesome getting active on this Mission! Do you have Sabine’s jetpack on?!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-3</string>
+		<key>detailImageName</key>
+		<string>016-souvenir-3</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>157</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Hera’s Crew</string>
+		<key>description</key>
+		<string>Hera’s crew always has her back.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>158</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Kanan’s New Friend</string>
+		<key>description</key>
+		<string>Kanan finds solace in new friends.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_5.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>159</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Sabine Lends a Hand</string>
+		<key>description</key>
+		<string>Sabine knows how to help others in need.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-6</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_6.mp4</string>
+	</dict>	
+	<dict>
+		<key>delightId</key>
+		<integer>160</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Chopper Helps</string>
+		<key>description</key>
+		<string>Chopper helps his friends in times of need.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-7</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_7.mp4</string>
+	</dict>		
+	<dict>
+		<key>delightId</key>
+		<integer>161</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Zeb to the Rescue!</string>
+		<key>description</key>
+		<string>Zeb comes to the rescue when his friends are in trouble.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-8</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_8.mp4</string>
+	</dict>		
+	<dict>
+		<key>delightId</key>
+		<integer>162</integer>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>name</key>
+		<string>Rex</string>
+		<key>description</key>
+		<string>Rex: hero, captain, loyal, brave, leader.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>016-icon-9</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_souvenir_9.mp4</string>
+	</dict>		
+	<!-- Mission 17 Holidays-->
+	<dict>
+		<key>delightId</key>
+		<integer>163</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Send a Postcard</string>
+		<key>description</key>
+		<string>Share this postcard with your friends to wish them a happy holiday and to join you on the Global Mission: Together for Holidays
+		</string>
+		<key>twitter_desc</key>
+		<string>Check out Bethany Mota's new #UNICEFKidPower Holiday Mission! http://bit.ly/2gCAKgy</string>
+		<key>type</key>
+		<string>postcard</string>
+		<key>imageName</key>
+		<string>017-icon-1</string>
+		<key>detailImageName</key>
+		<string>017-postcard</string>
+		<key>shareImage</key>
+		<string>017-share</string>
+		<key>bgTopColor</key>
+		<string>#F38A00</string>
+		<key>bgBottomColor</key>
+		<string>#A3D55D</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>164</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Bethany Mota</string>
+		<key>description</key>
+		<string>Bethany is on the UNICEF Kid Power Team!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-2</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_2.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>165</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Dia de Todos los Santos in Guatemala</string>
+		<key>description</key>
+		<string>In Guatemala, on All Saints' Day, communities create gigantic kites to fly messages to loved ones who have passed away.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-3</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-3</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>166</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Reuniting in Guatemala</string>
+		<key>description</key>
+		<string>Families migrate across great distances to reunite. In Guatemala, UNICEF helps keep them healthy.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-4</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_4.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>167</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Together at last!</string>
+		<key>description</key>
+		<string>Some moments of reunification in Guatemala.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-5</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_5.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>168</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Carnival in Haiti</string>
+		<key>description</key>
+		<string>In Haiti, Carnival is a huge festival right before Lent, a period of fasting and reflection. To celebrate, people dress in costumes for parades called "défilés".</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-6</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-6</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>169</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Diwali</string>
+		<key>description</key>
+		<string>Diwali is the Hindu Festival of Lights, which celebrates the triumph of light over darkness. To celebrate, families come together and light candles placed in beautiful shapes.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-7</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-7</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>170</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Family Centers</string>
+		<key>description</key>
+		<string>UNICEF finds many ways to help families on the move, like these centers in Greece and Montenegro.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-8</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_8.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>171</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Play Happens Everywhere</string>
+		<key>description</key>
+		<string>Kids and Families may face hardship, but when they have a chance to rest, kids love to play and create. </string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-9</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_9.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>172</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Eid al-Adha</string>
+		<key>description</key>
+		<string>To celebrate the end of Ramadan, the Islamic month of fasting, Muslim families around the world celebrate Eid al-Adha with feasting, celebration, and charity.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-10</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-10</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>173</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Christmas in Ghana</string>
+		<key>description</key>
+		<string>In Ghana, in the weeks before Christmas, communities dress in festive costumes at family gatherings, parades, and parties, and decorate their churches and houses.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-11</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-11</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>174</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Families from South Sudan</string>
+		<key>description</key>
+		<string>For many families in South Sudan, the conflicts of the past decade meant that many people left grandmothers, uncles, aunts, and even parents, thinking they might never see them again.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-12</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_12.mp4</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>175</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Reunited</string>
+		<key>description</key>
+		<string>Even though Nyachol, Akobo, and Nyaneada's families were torn apart by conflict, UNICEF helped them find their way back together.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-13</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-13</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>176</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Lunar New Year</string>
+		<key>description</key>
+		<string>Many Asian cultures celebrate the Lunar New Year, usually in January or February, by gathering with families and exchanging gifts.</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-14</string>
+		<key>detailImageName</key>
+		<string>017-souvenir-14</string>
+	</dict>
+	<dict>
+		<key>delightId</key>
+		<integer>177</integer>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>name</key>
+		<string>Get Active!</string>
+		<key>description</key>
+		<string>You're almost done! Have a four legged friend like Bethany? Go for a walk to earn your final points!</string>
+		<key>type</key>
+		<string>stamp</string>
+		<key>imageName</key>
+		<string>017-icon-15</string>
+		<key>videoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_souvenir_15.mp4</string>
+	</dict>
+</array>
+</plist>

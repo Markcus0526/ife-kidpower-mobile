@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_parent"
+	>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dimen_margin_30"
+        android:background="@color/kph_color_main_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_video_view_general_height"
+            android:id="@+id/rlVideoView"
+            android:layout_below="@+id/btnClose">
+
+			<ImageView
+				android:id="@+id/ivBackground"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentBottom="false"
+				android:layout_alignParentEnd="false"
+				android:layout_alignParentStart="false"
+				android:layout_alignParentTop="false"/>
+
+			<ImageView
+				android:id="@+id/ivVideoPlaceholder"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="false"
+				android:scaleType="fitXY"
+				android:src="@drawable/video_generic_black_overlay"/>
+
+            <ImageButton
+				android:layout_width="@dimen/dimen_play_button_width"
+				android:layout_height="@dimen/dimen_play_button_height"
+				android:paddingStart="@dimen/dimen_play_button_padding"
+				android:paddingEnd="@dimen/dimen_play_button_padding"
+				android:paddingTop="@dimen/dimen_play_button_padding"
+				android:paddingBottom="@dimen/dimen_play_button_padding"
+                android:id="@+id/btnPlay"
+                android:background="@null"
+				android:scaleType="fitCenter"
+                android:src="@drawable/video_play"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+		<ImageButton
+			android:layout_width="@dimen/dimen_48dp"
+			android:layout_height="@dimen/dimen_48dp"
+			android:id="@+id/btnClose"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:background="@null"
+			android:src="@drawable/lightbox_close_white"
+			android:scaleType="fitCenter"
+			android:padding="@dimen/dimen_16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlVideoView"
+            android:layout_above="@+id/btnSyncToStartNow">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivCountry"
+                android:src="@drawable/country"
+                android:paddingTop="@dimen/dimen_padding_size_medium"
+                android:scaleType="fitCenter"
+                android:paddingStart="@dimen/dimen_padding_size_medium"
+                android:paddingEnd="@dimen/dimen_padding_size_medium" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="@dimen/dimen_8dp"
+                    android:paddingStart="@dimen/dimen_8dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ivStarStart"
+                        android:src="@drawable/star"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_vertical" />
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MISSION UGANDA WITH TYSON CHANER SDFSDFSDFSD"
+                        android:id="@+id/lblCountryName"
+                        android:textColor="@android:color/white"
+                        style="@style/FONT_BASE_TITLE"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:maxWidth="250dp"
+                        android:textStyle="bold"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ivStarEnd"
+                        android:src="@drawable/star"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/far_eastern_nepal_description"
+                    android:id="@+id/lblMissionDescription"
+                    android:textColor="@android:color/white"
+                    android:paddingEnd="@dimen/dimen_16dp"
+                    android:paddingStart="@dimen/dimen_16dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </RelativeLayout>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+			android:id="@+id/btnSyncToStartNow"
+			style="@style/kph_style_image_text_button_band"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_button_general_height"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginEnd="@dimen/dimen_margin_30"
+			android:layout_marginStart="@dimen/dimen_margin_30"
+			android:layout_marginTop="@dimen/dimen_20dp"
+			android:orientation="horizontal"
+			app:customImageResourceId="@drawable/sync"
+			app:customText="@string/sync_mission_start"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

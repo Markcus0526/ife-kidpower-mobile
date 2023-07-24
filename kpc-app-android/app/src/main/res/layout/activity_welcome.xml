@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    android:background="@color/kidpower_light_grey_1"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:gravity="center"
+        android:id="@+id/layout_logo">
+
+        <org.unicefkidpower.schools.ui.KPResizableImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/kp_logo"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_welcome_title"
+        style="@style/style_textview_heading"
+        android:text="@string/welcome_title"
+        android:gravity="center"
+        android:textSize="19dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp" />
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_welcome_description"
+        style="@style/style_textview_general"
+        android:text="@string/welcome_description"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_get_started"
+            android:text="@string/get_started"
+            style="@style/style_button_general"
+            android:background="@color/kidpower_light_blue"
+            app:customButtonFont="@string/font_mikado_bold"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <org.unicefkidpower.schools.ui.KPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_already_have_account_description"
+            android:text="@string/label_alreadyhaveanaccount"
+            style="@style/style_textview_general"
+            android:textColor="@color/kidpower_warm_grey"
+            android:textSize="19dp" />
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_underlined"
+            android:id="@+id/btn_login"
+            android:background="@null"
+            android:textSize="19dp"
+			android:textAllCaps="false"
+            android:textColor="@color/kidpower_warm_grey"
+            android:layout_marginLeft="5dp"
+            style="@style/style_button_general"
+            app:customButtonFont="@string/font_pfdindisplaypro_regular"
+            android:paddingTop="10dp"
+            android:paddingBottom="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

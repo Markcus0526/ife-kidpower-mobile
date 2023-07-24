@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    >
+
+    <!-- center -->
+    <RelativeLayout
+		android:layout_centerHorizontal="true"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/transparent" android:layout_marginTop="43dp"
+		android:layout_above="@+id/rlAppVersion">
+
+        <!-- center -->
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlCenter"
+            >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+				style="@style/kidpower_generalgrayframe">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- profile -->
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="85dp" android:visibility="gone">
+
+                        <!-- profiles -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!-- avatar -->
+                            <ImageView
+                                android:layout_marginLeft="75dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="43dp" android:layout_height="43dp"
+                                android:src="@drawable/avatar_default"
+                                android:background="@drawable/avatarbg"
+                                android:id="@+id/ivAvatar"
+                                />
+
+                            <!-- change avatar -->
+                            <RelativeLayout
+                                android:layout_alignLeft="@id/ivAvatar"
+                                android:layout_marginTop="37dp"
+                                android:layout_width="43dp" android:layout_height="27dp"
+                                android:id="@+id/rlChangeAvatar"
+                                android:gravity="center"
+                                >
+                                <ImageView
+                                    android:layout_width="14dp"
+                                    android:layout_height="12dp"
+                                    android:id="@+id/ivChangeAvatar"
+                                    android:background="@drawable/camera_blue"
+                                    />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="13dp"
+                                android:layout_toRightOf="@id/ivAvatar"
+                                android:layout_alignTop="@id/ivAvatar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="86dp"
+                                    android:layout_height="19dp"
+                                    style="@style/kidpower_pageheading"
+                                    android:text="Ashley"
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/textName"
+                                    android:background="@color/transparentwhite"
+                                    />
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="13dp"
+                                    android:textColor="@color/kidpower_icon"
+                                    android:textSize="8dp"
+                                    android:text="3 days since last sync"
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/textLastSyncDate"
+                                    />
+                                <RelativeLayout android:layout_width="82dp" android:layout_height="24dp">
+                                    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+                                        android:background="@drawable/bandwithoutflash"
+                                        />
+                                    <ImageView
+                                        android:layout_marginLeft="21dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_width="13dp" android:layout_height="11dp"
+                                        android:background="@drawable/sync_white"
+                                        android:id="@+id/ivSync"
+                                        />
+                                    <TextView
+                                        android:layout_toRightOf="@id/ivSync"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:textSize="8dp"
+                                        android:text="@string/sync"
+                                        android:gravity="center_vertical"
+                                        android:id="@+id/textSync"
+                                        android:layout_centerVertical="true"
+                                        />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <!-- edit controls -->
+                            <LinearLayout android:layout_marginLeft="13dp"
+                                android:layout_toRightOf="@id/ivAvatar"
+                                android:layout_alignTop="@id/ivAvatar"
+                                android:layout_marginTop="-5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/llEditControls"
+                                android:visibility="invisible"
+                                >
+                                <EditText
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="64dp"
+                                    android:layout_height="24dp"
+                                    android:textSize="@dimen/kidpower_pageheadingfontsize"
+                                    android:text="Ashley"
+                                    android:gravity="center_vertical"
+                                    android:id="@+id/editName"
+                                    android:singleLine="true"
+									android:textColor="@color/black"
+                                    android:background="@drawable/kidpower_inputboxbg"
+                                    />
+                                <Button
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="43dp"
+                                    android:layout_height="21dp"
+                                    style="@style/kidpower_buttonnormal"
+                                    android:text="@string/button_save"
+                                    android:id="@+id/btnSave"
+                                    />
+                                <Button
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="43dp"
+                                    android:layout_height="21dp"
+                                    style="@style/kidpower_buttoncancel"
+                                    android:text="@string/button_cancel"
+                                    android:id="@+id/btnCancel"
+                                    android:background="@android:color/transparent"/>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <!-- your state -->
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/kidpower_header"
+                            android:textSize="@dimen/kidpower_inputboxfontsize"
+                            android:text="@string/layout_fragmentcoachsetting_coachteamsetting"
+                            android:textStyle="bold"
+                            android:gravity="center_vertical"
+                            android:layout_alignParentBottom="true"
+                            />
+                        <RelativeLayout
+                            android:layout_width="43dp"
+                            android:layout_height="27dp"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/rlEdit"
+                            >
+
+                            <!-- contents -->
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true">
+                                <ImageView
+                                    android:layout_width="8dp"
+                                    android:layout_height="8dp"
+                                    android:background="@drawable/pencil_blue"
+                                    android:id="@+id/ivPencil"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="4dp"/>
+                                <TextView android:layout_width="20dp" android:layout_height="13dp"
+                                    android:text="@string/layout_fragmentcoachsetting_edit"
+                                    android:layout_toRightOf="@id/ivPencil"
+                                    android:gravity="center_vertical"
+                                    style="@style/kidpower_textlink"/>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <!-- space -->
+                    <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="@color/kidpower_outline"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_centerHorizontal="true" android:layout_width="match_parent"
+                        android:layout_height="8dp" android:orientation="vertical"
+                        android:visibility="visible" android:id="@+id/linearLayout">
+                    </LinearLayout>
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical"
+                        android:layout_width="307dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <!-- Linear Layout Name -->
+                        <RelativeLayout
+                            android:layout_width="293dp" android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/rlName"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/llNameBeforeEdit"
+                                android:orientation="vertical" style="@style/kidpower_generalgrayframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="27dp">
+                                    <ImageView
+                                        android:layout_width="17dp"
+                                        android:layout_height="17dp"
+                                        android:id="@+id/ivUserName" android:src="@drawable/icon_username"
+                                        android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    <LinearLayout
+                                        android:layout_width="133dp"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llName"
+                                        android:layout_marginLeft="11dp">
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:id="@+id/textRealName" android:layout_weight="1"
+                                            android:gravity="left|center_vertical"
+                                            style="@style/kidpower_primarytext"/>
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:id="@+id/textAlias" android:layout_weight="1"
+                                            android:gravity="left|center_vertical"
+                                            style="@style/kidpower_primarytext"/>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent" android:id="@+id/rlEditName">
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="11dp" android:id="@+id/rlSubEditName">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_editnames"
+                                                android:id="@+id/labelEditName"
+                                                android:gravity="center_vertical|right"
+                                                style="@style/kidpower_textlink"/>
+                                        </RelativeLayout>
+                                        <ImageView
+                                            android:layout_width="8dp"
+                                            android:layout_height="fill_parent"
+                                            android:id="@+id/ivEditName" android:layout_centerVertical="true"
+                                            android:layout_marginRight="4dp" android:src="@drawable/pencil_blue"
+                                            android:scaleType="fitCenter"
+                                            android:layout_toLeftOf="@+id/rlSubEditName"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" android:layout_below="@+id/llNameBeforeEdit"
+                                android:id="@+id/llNameEditing"
+                                android:orientation="vertical"
+                                android:visibility="gone" style="@style/kidpower_generalblueframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="38dp"
+                                        android:layout_height="fill_parent" android:layout_gravity="center">
+                                        <ImageView
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"
+                                            android:id="@+id/ivEditingUserName"
+                                            android:src="@drawable/icon_username"
+                                            android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="217dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llEditingName"
+                                        >
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="27dp">
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="104dp"
+                                                android:layout_height="fill_parent"
+                                                style="@style/kidpower_inputboxnormal">
+                                                <TextView
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="12dp"
+                                                    android:text="@string/first_name"
+                                                    android:gravity="left|center_vertical"
+                                                    android:textColor="@color/kidpower_secondarytext"
+                                                    android:textSize="@dimen/kidpower_inputboxsecondaryhintfontsize"/>
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:id="@+id/editFirstName"
+													android:textColor="@color/black"
+                                                    android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                    android:gravity="left|center_vertical"
+                                                    android:background="@android:color/transparent"
+                                                    android:text="Nancy"
+                                                    android:singleLine="true"
+                                                    android:nextFocusDown="@+id/editLastName"
+                                                    android:focusable="true"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="8dp"
+                                                android:layout_height="match_parent">
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="104dp"
+                                                android:layout_height="match_parent"
+                                                style="@style/kidpower_inputboxnormal">
+                                                <TextView
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="12dp"
+                                                    android:text="@string/last_name"
+                                                    android:gravity="left|center_vertical"
+                                                    android:textColor="@color/kidpower_secondarytext"
+                                                    android:textSize="@dimen/kidpower_inputboxsecondaryhintfontsize"/>
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:id="@+id/editLastName" android:textColor="@color/black"
+                                                    android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                    android:gravity="left|center_vertical"
+                                                    android:background="@android:color/transparent"
+                                                    android:text="Watkins"
+                                                    android:singleLine="true"
+                                                    android:nextFocusDown="@+id/editAlias"/>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="27dp"
+                                            style="@style/kidpower_generalgrayframe">
+
+                                            <TextView
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="12dp"
+                                                android:text="@string/layout_fragmentcoachsetting_wahtdothekidscallyou"
+                                                android:layout_marginLeft="3dp"
+                                                android:gravity="left|center_vertical"
+                                                android:textColor="@color/kidpower_secondarytext"
+                                                android:textSize="@dimen/kidpower_inputboxfontsize"/>
+                                            <EditText
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:id="@+id/editAlias" android:textColor="@color/black"
+                                                android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                android:gravity="left|center_vertical"
+                                                android:layout_marginLeft="3dp"
+                                                android:background="@android:color/transparent"
+                                                android:text="Ms. Nancy"
+                                                android:singleLine="true" android:imeOptions="actionDone"/>
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="17dp">
+                                            <Button
+                                                android:layout_width="38dp"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/button_save"
+                                                android:id="@+id/btnSaveName"
+                                                style="@style/kidpower_smallbuttonnormal"/>
+											<Button
+												android:layout_width="38dp"
+												android:layout_marginLeft="5dp"
+												android:layout_height="match_parent"
+												android:text="@string/button_cancel"
+												android:id="@+id/btnCancelName"
+												android:layout_gravity="bottom"
+												style="@style/kidpower_smallbuttoncancel"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="77dp"
+                                        android:layout_height="fill_parent">
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <!-- Linear Layout Name -->
+
+                        <!-- space -->
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="vertical"
+                            >
+                        </LinearLayout>
+
+                        <!-- Email -->
+                        <RelativeLayout
+                            android:layout_width="293dp" android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/rlEmail"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/llEmailBeforeEdit"
+                                android:orientation="vertical" style="@style/kidpower_generalgrayframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="27dp">
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="17dp"
+                                        android:id="@+id/ivEmail" android:src="@drawable/icon_email"
+                                        android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    <LinearLayout
+                                        android:layout_width="133dp"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llEmail"
+                                        android:layout_marginLeft="11dp">
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:id="@+id/textEmail" android:layout_weight="1"
+                                            android:gravity="left|center_vertical"
+                                            style="@style/kidpower_primarytext"/>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:id="@+id/rlEditEmail"
+                                        >
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:id="@+id/rlSubEditEmail" android:layout_marginRight="11dp">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_editemailaddress"
+                                                android:id="@+id/labelEditEmail"
+                                                android:gravity="center_vertical|right"
+                                                style="@style/kidpower_textlink"/>
+                                        </RelativeLayout>
+                                        <ImageView
+                                            android:layout_width="8dp"
+                                            android:layout_height="fill_parent"
+                                            android:id="@+id/ivEditEmail" android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@+id/rlSubEditEmail"
+                                            android:layout_marginRight="4dp" android:src="@drawable/pencil_blue"
+                                            android:scaleType="fitCenter"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" android:layout_below="@+id/llEmailBeforeEdit"
+                                android:id="@+id/llEmailEditing"
+                                android:orientation="vertical"
+                                android:visibility="gone" style="@style/kidpower_generalblueframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="38dp"
+                                        android:layout_height="fill_parent" android:layout_gravity="center">
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="17dp"
+                                            android:id="@+id/ivEditingEmail" android:src="@drawable/icon_email"
+                                            android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="217dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llEditingEmail"
+                                        >
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="27dp" style="@style/kidpower_inputboxnormal">
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                >
+                                                <TextView
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="12dp"
+                                                    android:text="@string/email_address"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:gravity="left|center_vertical"
+                                                    style="@style/kidpower_secondarytext"/>
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:id="@+id/editEmail"
+                                                    android:gravity="left|center_vertical"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:background="@android:color/transparent"
+                                                    android:inputType="textEmailAddress"
+                                                    style="@style/kidpower_primarytext"
+                                                    android:nextFocusDown="@+id/editConfirmEmail"
+													android:textColor="@color/black"
+                                                    android:singleLine="true"/>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="27dp"
+                                            style="@style/kidpower_inputboxnormal">
+
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="160dp"
+                                                android:layout_height="fill_parent">
+                                                <TextView
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="12dp"
+                                                    android:text="@string/layout_fragmentcoachsetting_confirmemailaddress"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:gravity="left|center_vertical"
+                                                    style="@style/kidpower_secondarytext"/>
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:id="@+id/editConfirmEmail"
+                                                    android:gravity="left|center_vertical"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:background="@android:color/transparent"
+                                                    android:inputType="textEmailAddress"
+                                                    style="@style/kidpower_primarytext"
+                                                    android:imeOptions="actionDone"
+													android:textColor="@color/black"
+                                                    android:singleLine="true"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:gravity="center"
+                                                android:visibility="gone">
+                                                <Button
+                                                    android:layout_width="43dp"
+                                                    android:layout_height="19dp"
+                                                    android:text="@string/layout_fragmentcoachsetting_confirm"
+                                                    android:id="@+id/buttonConfirmEmail"
+                                                    style="@style/kidpower_smallbuttonnormal"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="17dp">
+                                            <Button
+                                                android:layout_width="38dp"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/button_save"
+                                                android:enabled="false"
+                                                android:id="@+id/buttonSaveEmail"
+                                                style="@style/kidpower_smallbuttonnormal"/>
+											<Button
+												android:layout_width="38dp"
+												android:layout_height="match_parent"
+												android:layout_marginLeft="5dp"
+												android:text="@string/button_cancel"
+												android:id="@+id/buttonCancelEmail"
+												android:layout_gravity="bottom"
+												style="@style/kidpower_smallbuttoncancel"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="38dp"
+                                        android:layout_height="fill_parent">
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <!-- Email -->
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="vertical"
+                            >
+                        </LinearLayout>
+
+                        <!-- Password -->
+                        <RelativeLayout
+                            android:layout_width="293dp" android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/rlPassword"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/llPasswordBeforeEdit"
+                                android:orientation="vertical"
+                                android:background="@drawable/kidpower_generalroundgrayframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="13dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="53dp">
+                                    <ImageView
+                                        android:layout_width="42dp"
+                                        android:layout_height="34dp"
+                                        android:id="@+id/ivPassword" android:src="@drawable/icon_key"
+                                        android:layout_marginLeft="21dp" android:layout_marginTop="9dp"/>
+                                    <LinearLayout
+                                        android:layout_width="267dp"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llPassword"
+                                        android:layout_marginLeft="21dp">
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:text="**************"
+                                            android:id="@+id/textPassword" android:layout_weight="1"
+                                            android:gravity="left|center_vertical"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/kidpower_inputboxfontsize"/>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent">
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:id="@+id/rlEditPassword" android:layout_marginRight="21dp">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_changepasswrd"
+                                                android:id="@+id/labelEditPassword"
+                                                android:gravity="center_vertical|right"
+                                                android:textColor="@color/linkbtn_tint"
+                                                android:textSize="@dimen/kidpower_inputboxfontsize"/>
+                                        </RelativeLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="13dp">
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/llPasswordBeforeEdit"
+                                android:id="@+id/llPasswordEditing"
+                                android:orientation="vertical" android:background="@drawable/roundbluewhite"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="13dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="77dp"
+                                        android:layout_height="fill_parent" android:layout_gravity="center">
+                                        <ImageView
+                                            android:layout_width="42dp"
+                                            android:layout_height="34dp"
+                                            android:id="@+id/ivEditingPassword"
+                                            android:src="@drawable/icon_key"
+                                            android:layout_marginLeft="21dp" android:layout_marginTop="9dp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="217dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llEditingPassword"
+                                        >
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="27dp">
+                                            <TextView android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:gravity="top|left"
+                                                android:textColor="@color/label_deemphasized"
+                                                android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                android:text="@string/layout_fragmentcoachsetting_minimum"/>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="53dp">
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:background="@drawable/roundblackwhite">
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:id="@+id/editPassword" android:textColor="@color/black"
+                                                    android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                    android:gravity="left|center_vertical"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:background="@android:color/transparent"
+                                                    android:inputType="textPassword"
+                                                    android:hint="@string/layout_fragmentcoachsetting_newpassword"
+                                                    android:textColorHint="@color/black"/>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="16dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="53dp"
+                                            android:background="@drawable/roundblackwhite">
+
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent">
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:id="@+id/editConfirmPassword"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                    android:gravity="left|center_vertical"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:background="@android:color/transparent"
+                                                    android:hint="@string/layout_fragmentcoachsetting_confirmpassword"
+                                                    android:inputType="textPassword"
+                                                    android:textColorHint="@color/black"/>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="16dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="34dp">
+                                            <Button
+                                                android:layout_width="77dp"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/button_save"
+                                                android:id="@+id/buttonSavePassword"
+                                                android:background="@color/btnsignup_bg"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/kidpower_inputboxfontsize"
+                                                android:textStyle="bold"/>
+											<Button
+												android:layout_width="77dp"
+												android:layout_height="match_parent"
+												android:text="@string/button_cancel"
+												android:id="@+id/buttonCancelPassword"
+												android:layout_marginLeft="11dp"
+												android:layout_gravity="bottom"
+												android:textColor="@color/btnsignup_bg"
+												android:textSize="@dimen/kidpower_inputboxfontsize"
+												android:background="@android:color/transparent"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="77dp"
+                                        android:layout_height="fill_parent">
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="13dp">
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <!-- Password -->
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+                        </LinearLayout>
+
+                        <!-- Linear Layout Add Team -->
+                        <RelativeLayout
+                            android:layout_width="293dp" android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/rlAddTeam"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/llAddTeamBeforeEdit"
+                                android:orientation="vertical"
+                                style="@style/kidpower_inputboxnormal">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="19dp"
+                                        android:layout_height="19dp"
+                                        android:id="@+id/ivAddTeam" android:src="@drawable/icon_rank"
+                                        android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    <LinearLayout
+                                        android:layout_width="133dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llAddTeam"
+                                        android:layout_marginLeft="11dp">
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="13dp"
+                                            android:text="Coaching 1 team"
+                                            android:id="@+id/textTeamCount"
+                                            android:gravity="left|center_vertical"
+                                            style="@style/kidpower_primarytext"/>
+                                        <LinearLayout android:layout_width="fill_parent"
+                                            android:orientation="vertical"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/llTeamList">
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:id="@+id/rlEditAddTeam">
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:id="@+id/rlSubEditAddTeam" android:layout_marginRight="11dp">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_addateam"
+                                                android:id="@+id/labelEditAddTeam"
+                                                android:gravity="center_vertical|right"
+                                                style="@style/kidpower_textlink"/>
+                                        </RelativeLayout>
+                                        <ImageView
+                                            android:layout_width="13dp"
+                                            android:layout_height="fill_parent"
+                                            android:id="@+id/ivEditAddTeam" android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@+id/rlSubEditAddTeam"
+                                            android:layout_marginRight="4dp"
+                                            android:src="@drawable/icon_plus"
+                                            android:scaleType="fitCenter"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+								android:layout_width="fill_parent"
+								android:layout_height="wrap_content"
+								android:layout_below="@+id/llAddTeamBeforeEdit"
+								android:id="@+id/llAddTeamEditing"
+								android:orientation="vertical"
+								android:visibility="visible" style="@style/kidpower_generalblueframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="38dp"
+                                        android:layout_height="fill_parent" android:layout_gravity="center">
+                                        <ImageView
+                                            android:layout_width="19dp"
+                                            android:layout_height="19dp"
+                                            android:id="@+id/ivEditingAddTeam"
+                                            android:src="@drawable/icon_rank"
+                                            android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="217dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llEditingAddTeam"
+                                        >
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="15dp">
+                                            <TextView
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_addateam"
+                                                android:gravity="left|center_vertical"
+                                                style="@style/kidpower_primarytext"/>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="3dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="27dp" style="@style/kidpower_generalgrayframe">
+                                            <LinearLayout
+                                                android:orientation="vertical"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                >
+                                                <EditText
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:hint="@string/layout_fragmentcoachsetting_teamname"
+                                                    android:id="@+id/editTeamName"
+                                                    android:gravity="left|center_vertical"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:background="@android:color/transparent"
+													android:textColor="@color/black"
+                                                    style="@style/kidpower_primarytext"
+                                                    android:imeOptions="actionDone" android:singleLine="true"/>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="108dp"
+                                            android:layout_height="27dp"
+                                            style="@style/kidpower_generalgrayframe">
+
+                                            <LinearLayout android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:orientation="horizontal"
+                                                android:layout_gravity="center_horizontal"
+                                                android:id="@+id/llChooseGrade"
+                                                >
+                                                <TextView android:layout_width="90dp"
+                                                    android:layout_height="match_parent"
+                                                    android:hint="@string/layout_fragmentcoachsetting_gradelevel"
+                                                    android:id="@+id/textGrade"
+                                                    style="@style/kidpower_dropdowntextview"/>
+                                                <ImageView android:layout_width="13dp"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/downarrow"
+                                                    android:scaleType="fitCenter"/>
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="5dp"
+                                                    android:layout_height="fill_parent">
+                                                </LinearLayout>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="19dp">
+                                            <Button
+                                                android:layout_width="38dp"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/button_save"
+                                                android:enabled="false"
+                                                android:id="@+id/buttonSaveAddTeam"
+                                                style="@style/kidpower_smallbuttonnormal"/>
+											<Button
+												android:layout_width="38dp"
+												android:layout_height="match_parent"
+												android:layout_marginLeft="5dp"
+												android:text="@string/button_cancel"
+												android:id="@+id/buttonCancelAddTeam"
+												android:layout_gravity="bottom"
+												style="@style/kidpower_smallbuttoncancel"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="39dp"
+                                        android:layout_height="fill_parent">
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <!-- Linear Layout Add Team -->
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="vertical"
+                            >
+                        </LinearLayout>
+
+                        <!-- Linear Layout Add Power Points -->
+                        <RelativeLayout
+                            android:layout_width="293dp" android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/rlAddPowerPoints"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/llAddPowerPointsBeforeEdit"
+                                android:orientation="vertical"
+                                style="@style/kidpower_generalgrayframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="27dp">
+                                    <ImageView
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:id="@+id/ivAddPowerPoints"
+                                        android:src="@drawable/icon_points_"
+                                        android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    <LinearLayout
+                                        android:layout_width="133dp"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llAddPowerPoints"
+                                        android:layout_marginLeft="11dp">
+                                        <TextView
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="0dp"
+                                            android:text="@string/layout_fragmentcoachsetting_powerpoints"
+                                            android:layout_weight="1"
+                                            android:gravity="left|center_vertical"
+                                            style="@style/kidpower_primarytext"/>
+                                    </LinearLayout>
+                                    <RelativeLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:id="@+id/rlEditAddPowerPoints">
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:id="@+id/rlSubEditAddPowerPoints"
+                                            android:layout_marginRight="11dp">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_addpowerpoints"
+                                                android:id="@+id/labelEditAddPowerPoints"
+                                                android:gravity="center_vertical|right"
+                                                style="@style/kidpower_textlink"/>
+                                        </RelativeLayout>
+                                        <ImageView
+                                            android:layout_width="13dp"
+                                            android:layout_height="fill_parent"
+                                            android:id="@+id/ivEditAddPowerPoints"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toLeftOf="@+id/rlSubEditAddPowerPoints"
+                                            android:layout_marginRight="4dp"
+                                            android:src="@drawable/icon_plus"
+                                            android:scaleType="fitCenter"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/llAddPowerPointsBeforeEdit"
+                                android:id="@+id/llAddPowerPointsEditing"
+                                android:orientation="vertical"
+                                android:visibility="visible" style="@style/kidpower_generalblueframe">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="38dp"
+                                        android:layout_height="fill_parent" android:layout_gravity="center">
+                                        <ImageView
+                                            android:layout_width="21dp"
+                                            android:layout_height="21dp"
+                                            android:id="@+id/ivEditingAddPowerPoints"
+                                            android:src="@drawable/icon_points_"
+                                            android:layout_marginLeft="11dp" android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="217dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:id="@+id/llEditingAddPowerPoints"
+                                        >
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/layout_fragmentcoachsetting_addpowerpoints"
+												android:layout_marginBottom="@dimen/margin_10"
+                                                android:gravity="left|center_vertical"
+                                                style="@style/kidpower_primarytext"/>
+
+											<TextView
+												android:layout_width="fill_parent"
+												android:layout_height="wrap_content"
+												android:text="@string/add_power_point_description"
+												android:textSize="@dimen/kidpower_inputboxfontsize"
+												android:gravity="left|center_vertical"
+												style="@style/kidpower_primarytext"/>
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout android:layout_width="fill_parent"
+                                            android:layout_height="35dp"
+                                            android:orientation="vertical"
+                                            android:id="@+id/llAddPowerPointsTeamSelect"
+                                            >
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="8dp">
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="27dp"
+                                                style="@style/kidpower_generalframe"
+                                                >
+                                                <TextView android:layout_width="202dp"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/addpowerpoints_hintfor_choose_team"
+                                                    android:id="@+id/textAddPowerPointsTeam"
+                                                    style="@style/kidpower_dropdowntextview"/>
+
+                                                <ImageView android:layout_width="11dp"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/downarrow"
+                                                    android:scaleType="fitCenter"/>
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="5dp"
+                                                    android:layout_height="fill_parent">
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout android:layout_width="fill_parent"
+                                            android:layout_height="35dp"
+                                            android:orientation="vertical"
+                                            android:visibility="visible"
+                                            android:id="@+id/llAddPowerPointsKindSelect"
+                                            >
+
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="8dp">
+                                            </LinearLayout>
+
+
+                                            <LinearLayout android:layout_width="fill_parent"
+                                                android:layout_height="fill_parent"
+                                                android:orientation="horizontal"
+                                                style="@style/kidpower_generalframe">
+
+                                                <TextView android:layout_width="202dp"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/addpowerpoints_hintfor_choose_kind"
+                                                    android:id="@+id/textAddPowerPointsKind"
+                                                    style="@style/kidpower_dropdowntextview"/>
+
+                                                <ImageView android:layout_width="11dp"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/downarrow"
+                                                    android:scaleType="fitCenter"/>
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="5dp"
+                                                    android:layout_height="fill_parent">
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="35dp"
+                                            android:id="@+id/llAddPowerPointsStudentSelect"
+                                            >
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="8dp">
+                                            </LinearLayout>
+
+                                            <LinearLayout android:layout_width="fill_parent"
+                                                android:layout_height="27dp"
+                                                android:orientation="horizontal"
+                                                style="@style/kidpower_generalframe">
+
+                                                <TextView android:layout_width="202dp"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/addpowerpoints_hintfor_choose_student"
+                                                    android:id="@+id/textAddPowerPointsStudent"
+                                                    style="@style/kidpower_dropdowntextview"/>
+
+                                                <ImageView android:layout_width="11dp"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/downarrow"
+                                                    android:scaleType="fitCenter"/>
+
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="5dp"
+                                                    android:layout_height="fill_parent">
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="35dp"
+                                            android:id="@+id/llAddPowerPointsPointSelect"
+                                            >
+                                            <LinearLayout
+                                                android:orientation="horizontal"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="8dp">
+                                            </LinearLayout>
+
+                                            <LinearLayout android:layout_width="fill_parent"
+                                                android:layout_height="27dp"
+                                                android:orientation="horizontal"
+                                                style="@style/kidpower_generalframe">
+
+                                                <TextView android:layout_width="202dp"
+                                                    android:layout_height="match_parent"
+                                                    android:text="@string/addpowerpoints_hintfor_choose_powerpoint"
+                                                    android:id="@+id/textAddPowerPointsPoint"
+                                                    style="@style/kidpower_dropdowntextview"/>
+
+                                                <ImageView android:layout_width="11dp"
+                                                    android:layout_height="match_parent"
+                                                    android:src="@drawable/downarrow"
+                                                    android:scaleType="fitCenter"/>
+
+                                                <LinearLayout
+                                                    android:orientation="horizontal"
+                                                    android:layout_width="5dp"
+                                                    android:layout_height="fill_parent">
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="8dp">
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="17dp">
+
+											<Button
+												android:layout_width="38dp"
+												android:layout_height="match_parent"
+												android:layout_marginLeft="5dp"
+												android:text="@string/button_cancel"
+												android:id="@+id/buttonCancelAddPowerPoints"
+												android:layout_gravity="center"
+												style="@style/kidpower_smallbuttoncancel"/>
+
+                                            <Button
+                                                android:layout_width="64dp"
+                                                android:layout_height="fill_parent"
+                                                android:text="@string/layout_fragmentcoachsetting_awardpoints"
+                                                android:id="@+id/buttonSaveAddPowerPoints"
+                                                style="@style/kidpower_smallbuttonnormal"/>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="38dp"
+                                        android:layout_height="fill_parent">
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="7dp">
+                                </LinearLayout>
+
+
+							</LinearLayout>
+                        </RelativeLayout>
+                        <!-- Linear Layout Add Power Points -->
+
+                        <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <!-- edit button-->
+
+    </RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/rlAppVersion"
+		android:visibility="visible"
+		android:layout_alignParentBottom="true">
+
+		<org.unicefkidpower.schools.ui.KPTextView
+			android:layout_width="wrap_content"
+			android:text="@string/app_version_number"
+			android:id="@+id/txt_app_version"
+			style="@style/style_textview_general"
+			android:gravity="center"
+			android:layout_alignParentBottom="false"
+			android:textSize="@dimen/kidpower_primarytextviewfontsize"
+			android:layout_centerInParent="true"
+			android:layout_height="40dp"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

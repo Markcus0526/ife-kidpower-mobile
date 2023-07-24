@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Support button -->
+    <item android:id="@+id/support"
+          android:icon="@drawable/cc_app_icon_alternate"
+          app:showAsAction="always"/>
+
+</menu>

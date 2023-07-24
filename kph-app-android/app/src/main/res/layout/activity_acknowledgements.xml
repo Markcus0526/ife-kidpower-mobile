@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/layout_parent"
+				android:background="@color/kph_color_main_background">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/main_scrollview"
+		android:layout_below="@+id/layout_navigation_bar">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="@dimen/dimen_10dp">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/txt_contents"
+				android:textColor="@android:color/white"
+				android:layout_marginStart="@dimen/dimen_10dp"
+				android:layout_marginEnd="@dimen/dimen_10dp"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:lineSpacingMultiplier="1.2"
+				style="@style/style_textview_general"
+				android:layout_marginTop="@dimen/dimen_margin_30"/>
+		</RelativeLayout>
+	</ScrollView>
+
+	<RelativeLayout
+		android:id="@+id/layout_navigation_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:id="@+id/ivBackground"
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:layout_centerVertical="true"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:scaleType="fitCenter"
+				android:src="@drawable/back_arrow"/>
+		</RelativeLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

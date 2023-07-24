@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextGrey"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:text="@string/create_account_header"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/createAccountInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:text="@string/create_account_info"
+        android:layout_marginTop="0dp"
+    />
+
+    <org.caloriecloud.android.ui.CCEditText
+        android:id="@+id/usernameField"
+        android:hint="@string/username_placeholder"
+        android:alpha="0.9"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:drawablePadding="6dp"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:inputType="textNoSuggestions"
+        android:background="@drawable/cc_input_alt"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/colorTextGrey"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_person_outline_gray"
+        android:drawableLeft="@drawable/ic_person_outline_gray"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content" />
+
+    <org.caloriecloud.android.ui.CCEditText
+        android:id="@+id/emailField"
+        android:hint="@string/email_placeholder"
+        android:alpha="0.9"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:drawablePadding="6dp"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/cc_input_alt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorTextGrey"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_mail_outline_gray"
+        android:drawableLeft="@drawable/ic_mail_outline_gray"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCEditText
+        android:id="@+id/passwordField"
+        android:hint="@string/password_placeholder"
+        android:alpha="0.9"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:drawablePadding="6dp"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:inputType="textPassword|textNoSuggestions"
+        android:background="@drawable/cc_input_alt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorTextGrey"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/ic_lock_outline_gray"
+        android:drawableLeft="@drawable/ic_lock_outline_gray"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/createAccountButton"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:textAllCaps="true"
+        android:text="@string/create_account"
+        android:background="@drawable/cc_button_alt"
+        android:textColor="@color/colorFullWhite"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:layout_width="294dp"
+        android:layout_height="42dp"
+    />
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/already_have_account"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/already_have_account"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="SourceSansPro_BoldIt.otf"
+        android:textColor="@color/colorTextGrey"
+    />
+
+    <ImageView
+        android:contentDescription="@string/calorie_cloud_logo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/kpw_logostack"
+        android:layout_height="120dp"/>
+
+</LinearLayout>

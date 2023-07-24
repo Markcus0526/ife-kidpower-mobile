@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Unicef Kid Power Color Constant -->
+    <color name="kidpower_enabledbuttonbg">#FFF47E28</color>
+
+    <color name="kidpower_hearterrortext">#FFD74656</color>
+    <color name="kidpower_textlink">#FF00ADEF</color>
+    <color name="kidpower_header">#FF02374F</color>
+
+    <color name="kidpower_tabtext">#009DE6</color>
+
+    <color name="kidpower_icon">#333333</color>
+
+    <color name="kidpower_primarytext">#FF000000</color>
+    <color name="kidpower_secondarytext">#666666</color>
+    <color name="kidpower_statustext">#FFFFFF</color>
+
+    <color name="kidpower_disabledbuttonbg">#CCCCCC</color>
+    <color name="kidpower_disabledbuttontext">#FFFFFF</color>
+    <color name="kidpower_hint">#666666</color>
+    <color name="kidpower_outline">#CCCCCC</color>
+    <color name="kidpower_outline_invalidate">#FF0000</color>
+    <color name="kidpower_transwhite">#E6FFFFFF</color>
+
+    <color name="kidpower_desc">#484848</color>
+
+    <color name="kidpower_activecorner">#1693D0</color>
+    <color name="kidpower_activefill">#301693D0</color>
+    <color name="kidpower_activecodetext">#1693D0</color>
+
+    <color name="kidpower_teamnameplaceholder">#535353</color>
+    <color name="kidpower_teamnameeditborder">#1586C8</color>
+
+
+    <color name="kidpower_teamprogress">#FFFFFF</color>
+
+    <color name="kidpower_sidemenubarbg">#CC08293E</color>
+
+    <color name="kidpower_teamgradetext">#666666</color>
+
+    <!-- Unicef Kid Power Color Constant -->
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="lightgray">#88DDDDDD</color>
+    <color name="transparentwhite">#EEFFFFFF</color>
+    <color name="nav_bg">#05293E</color>
+
+    <color name="btnsignup_bg">#DC5E2A</color>
+    <color name="btnsignup_pressed_bg">#FD804C</color>
+    <color name="btnsignup_disabled_bg">#E5E5E5</color>
+
+    <color name="linkbtn_tint">#1586C8</color>
+
+    <color name="label_deemphasized">#666666</color>
+
+
+    <color name="label_step_selected">#000000</color>
+    <color name="label_step_nonselected">#666666</color>
+
+    <color name="lightblue">#9DD4E6</color>
+
+    <color name="hintbox_fill">#F8DFD6</color>
+    <color name="hintbox_corner">#FF7200</color>
+    <color name="hintbox_text">#FF7200</color>
+
+    <color name="pageindicator_tint">#1C92CF</color>
+    <color name="desctitle">#FD814D</color>
+
+    <color name="label_teamrank">#E5E5E5</color>
+
+    <color name="teamprogress_selected_rank">#00374f</color>
+
+    <color name="frameborder_bluecolor">#3DA2D5</color>
+
+    <color name="tint">#DC5E2A</color>
+
+    <color name="kidpower_menu_item_normal_bg">#05293e</color>
+    <color name="kidpower_menu_item_selected_bg">#0c4c72</color>
+
+    <color name="kidpower_tangerine">#f38a00</color>
+    <color name="kidpower_lightbox_background">#e5ffffff</color>
+
+    <color name="kidpower_light_grey">#aaaaaa</color>
+    <color name="kidpower_light_grey_1">#ECF0F5</color>
+    <color name="kidpower_light_grey_2">#dfe3e8</color>
+
+    <color name="kidpower_light_red">#e50b0b</color>
+    <color name="kidpower_brownish_grey">#666666</color>
+    <color name="kidpower_warm_grey">#999999</color>
+    <color name="kidpower_azure">#33bdf2</color>
+    <color name="kidpower_light_sky_blue">#cefaff</color>
+    <color name="kidpower_light_blue">#009ee3</color>
+    <color name="kidpower_dark_blue">#008fce</color>
+    <color name="kidpower_color_orange">#FFF38A00</color>
+    <color name="kidpower_light_gray">#DADADA</color>
+
+    <!-- Segmented Group Color -->
+    <color name="radio_button_selected_color">@color/kidpower_azure</color>
+    <color name="radio_button_unselected_color">@android:color/white</color>
+    <color name="radio_button_stroke_color">@android:color/white</color>
+
+    <color name="kidpower_orange">#f38a00</color>
+    <color name="kidpower_darkgray">#99777777</color>
+    <color name="kidpower_background">#ecf0f5</color>
+
+    <color name="sidebar_background_inactive">#373841</color>
+    <color name="sidebar_background_active">#1C1C21</color>
+    <color name="sidebar_divider">#4A4B53</color>
+    <color name="sidebar_text_inactive">#999999</color>
+    <color name="sidebar_text_active">#ffffff</color>
+
+    <color name="progress_step_highlight">#5CD65C</color>
+    <color name="unlock_background">#7fffffff</color>
+    <color name="fallback_text_color">#89000000</color>
+
+</resources>

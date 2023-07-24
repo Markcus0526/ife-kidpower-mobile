@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  xmlns:tools="http://schemas.android.com/tools"
+		  package="org.unicefkidpower.kid_power">
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.NETWORK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/KidPowerStyle"
+        android:name=".Application.KPHApplication"
+        android:largeHeap="true"
+        android:screenOrientation="portrait">
+
+        <activity
+            android:name=".View.Activities.Onboarding.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tl-8457c848"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".View.Activities.Onboarding.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Onboarding.OnboardingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Onboarding.AccountCreatedActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Onboarding.ChildRestrictionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Onboarding.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Main.More.HelpMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Main.More.FAQActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Onboarding.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".View.Activities.Main.MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:theme="@style/KidPowerStyle_NoActionBar"
+            android:configChanges="orientation|screenSize"
+			android:windowSoftInputMode="stateHidden"
+			android:screenOrientation="portrait"/>
+
+        <activity android:name=".View.Activities.Onboarding.GoogleFitWrapperActivity"
+				  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+				  android:theme="@style/KidPowerTransActivityStyle"
+				  android:label="@string/app_name"
+				  android:windowSoftInputMode="stateHidden"
+				  android:screenOrientation="portrait"/>
+
+		<activity android:name=".View.Activities.Onboarding.AcknowledgementsActivity"
+				  android:theme="@style/KidPowerStyle_NoActionBar"
+				  android:windowSoftInputMode="stateHidden"
+				  android:screenOrientation="portrait"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                  android:label="@string/app_name"
+				  android:windowSoftInputMode="stateHidden"
+				  tools:replace="android:theme"
+				  android:theme="@style/KidPowerTransActivityStyle"
+				  android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <receiver
+            android:name=".Model.MicroService.Bluetooth.Ble.BluetoothAdapterListener"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+		<receiver
+			android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d177fb244cfbf946f4d4ec04bde1687061b91fee" />
+
+        <provider
+            android:name=".Misc.AssetsProvider"
+            android:authorities="org.unicefkidpower.kid_power"
+            android:grantUriPermissions="true"
+            android:exported="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/file_provider_paths" />
+		</provider>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider72861540052FEDC"
+            android:exported="true" />
+
+		<meta-data android:name="com.google.android.gms.version"
+				   android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

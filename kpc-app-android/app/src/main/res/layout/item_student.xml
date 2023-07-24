@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layout_item">
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/style_textview_general"
+
+        android:id="@+id/txt_student_name"
+        android:layout_alignBottom="@+id/btn_remove"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btn_remove"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:textSize="13dp"
+        android:singleLine="true" />
+
+    <ImageButton
+        android:layout_width="@dimen/dimen_button_height"
+        android:layout_height="@dimen/dimen_button_height"
+        android:id="@+id/btn_remove"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/close_grey"
+        android:layout_alignParentRight="true"
+        android:paddingRight="30dp" />
+</RelativeLayout>

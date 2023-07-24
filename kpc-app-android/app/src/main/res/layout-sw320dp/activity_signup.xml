@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/white"
+                android:id="@+id/layout_parent"
+        >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            >
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_marginTop="@dimen/kidpower_navbarheight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/welcome_background"
+            />
+
+    <ScrollView
+            android:layout_marginTop="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollview"
+            >
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <!-- center -->
+            <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="307dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/kidpower_generalroundgrayframe"
+                    >
+                <!-- sign up contents -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="288dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/llSignup"
+                        android:visibility="visible"
+                        >
+                    <!-- space -->
+                    <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="13dp"
+                            android:orientation="vertical"
+                            >
+                    </LinearLayout>
+
+                    <!-- header -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                            >
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="19dp"
+
+                                style="@style/kidpower_pageheading"
+
+                                android:text="@string/label_itseasysingupsteps"
+
+                                android:gravity="center"
+                                />
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="19dp"
+                                android:visibility="invisible"
+                                >
+
+                            <TextView
+                                    android:layout_width="107dp"
+                                    android:layout_height="19dp"
+                                    style="@style/kidpower_secondarytext"
+                                    android:text="We "
+                                    android:gravity="right|center_vertical"
+                                    />
+                            <ImageView
+                                    android:layout_height="12dp"
+                                    android:layout_width="12dp"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/heart"/>
+                            <TextView android:layout_width="169dp"
+                                      android:layout_height="fill_parent"
+                                      style="@style/kidpower_secondarytext"
+                                      android:text="St. Peter High School"
+                                      android:layout_marginLeft="3dp"
+                                      android:gravity="left|center_vertical"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- step1 title -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content">
+                        <TextView
+                                android:id="@+id/textStep1Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="21dp"
+                                android:text="@string/layout_activitysignup_firsttitle"
+                                android:gravity="center_vertical"
+                                style="@style/kidpower_subhead"
+                                />
+                    </LinearLayout>
+
+                    <!-- step1 contents -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:id="@+id/llStep1Contents"
+                                  android:visibility="gone"
+                            >
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                            <EditText
+                                    android:id="@+id/editFirstName"
+									android:textColor="@color/kidpower_brownish_grey"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    style="@style/kidpower_inputboxnormal"
+                                    android:inputType="textPersonName|textCapWords"
+                                    android:hint="@string/first_name"
+                                    android:nextFocusDown="@+id/editLastName"/>
+
+                            <EditText
+                                    android:id="@+id/editLastName"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_width="0dp"
+									android:textColor="@color/kidpower_brownish_grey"
+                                    android:layout_weight="0.5"
+                                    style="@style/kidpower_inputboxnormal"
+                                    android:inputType="textPersonName|textCapWords"
+                                    android:hint="@string/last_name"/>
+                        </LinearLayout>
+
+                        <EditText
+                                android:id="@+id/editAlias"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.5"
+								android:textColor="@color/kidpower_brownish_grey"
+                                style="@style/kidpower_inputboxnormal"
+                                android:inputType="textPersonName|textCapWords"
+                                android:hint="@string/layout_activitysignup_whatdoyourkidscallyou"/>
+
+                        <EditText
+                                android:id="@+id/editEmail"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+								android:textColor="@color/kidpower_brownish_grey"
+                                android:layout_weight="0.5"
+                                style="@style/kidpower_inputboxnormal"
+                                android:inputType="textEmailAddress"
+                                android:hint="@string/email_address"/>
+
+                        <EditText
+                                android:id="@+id/editEmailConfirm"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+								android:textColor="@color/kidpower_brownish_grey"
+                                android:layout_weight="0.5"
+                                style="@style/kidpower_inputboxnormal"
+                                android:inputType="textEmailAddress"
+                                android:hint="@string/layout_activitysignup_confirmemailaddress"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                            <EditText
+                                    android:id="@+id/editPassword"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="0dp"
+									android:textColor="@color/kidpower_brownish_grey"
+                                    android:layout_weight="0.5"
+                                    style="@style/kidpower_inputboxnormal"
+                                    android:inputType="textPassword"
+                                    android:hint="@string/layout_activitysignup_password"
+                                    android:nextFocusDown="@+id/editPasswordConfirm"/>
+                            <EditText
+                                    android:id="@+id/editPasswordConfirm"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="0dp"
+									android:textColor="@color/kidpower_brownish_grey"
+                                    android:layout_weight="0.5"
+                                    style="@style/kidpower_inputboxnormal"
+                                    android:inputType="textPassword"
+                                    android:hint="@string/layout_activitysignup_confirmpassword"/>
+                        </LinearLayout>
+                        <TextView
+                                android:layout_width="match_parent"
+                                style="@style/kidpower_secondarytext"
+                                android:layout_height="13dp"
+                                android:layout_marginLeft="11dp"
+                                android:text="@string/layout_activitysignup_mincharacters"
+                                android:layout_marginBottom="5dp"
+                                />
+
+                        <RelativeLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                            <Button
+                                    android:layout_width="match_parent"
+
+                                    android:text="@string/btncreatemyprofile_title"
+                                    style="@style/kidpower_buttonnormal"
+                                    android:id="@+id/btnCreateProfile"
+                                    android:enabled="true"
+                                    />
+                        </RelativeLayout>
+
+                        <!-- space -->
+                        <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="16dp"
+                                android:orientation="vertical"
+                                >
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                            android:id="@+id/textStep1Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+                            android:text="@string/layout_activitysignup_welcomecoach"
+                            android:paddingLeft="16dp"
+                            style="@style/kidpower_secondarytext"
+                            android:visibility="gone"
+                            />
+
+                    <!-- step2 title -->
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView
+                                android:id="@+id/textStep2Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="21dp"
+                                android:text="@string/layout_activitysignup_secondtitle"
+                                android:gravity="center_vertical"
+                                style="@style/kidpower_subhead"
+
+                                />
+                    </LinearLayout>
+
+                    <!-- step2 contents -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:id="@+id/llStep2Contents"
+                                  android:visibility="visible"
+                            >
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                            <!-- first part -->
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="vertical"
+                                          android:visibility="visible"
+                                          android:id="@+id/llStep2ContentsFirstPart"
+                                    >
+                                <LinearLayout
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_width="179dp"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/roundtransblue"
+                                        android:orientation="vertical"
+                                        >
+                                    <TextView
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="16dp"
+                                            android:layout_marginTop="5dp"
+
+                                            android:text="@string/layout_activitysignup_hereishowyoudoit"
+                                            style="@style/kidpower_primarytext"
+                                            />
+                                    <TextView
+                                            android:gravity="center_horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/layout_activitysignup_longpress"
+                                            style="@style/kidpower_primarytext"
+                                            android:paddingBottom="5dp"
+                                            android:paddingLeft="3dp"
+                                            android:paddingRight="3dp"
+                                            />
+                                    <ImageView android:layout_width="116dp"
+                                               android:layout_height="30dp"
+                                               android:layout_gravity="center_horizontal"
+                                               android:src="@drawable/guideband"
+                                            />
+                                    <LinearLayout android:layout_width="match_parent"
+                                                  android:layout_height="8dp">
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                                <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="24dp"
+                                        style="@style/kidpower_secondarytext"
+                                        android:text="@string/layout_activitysignup_whenyouarereday"
+
+                                        />
+
+
+                                <RelativeLayout android:layout_width="188dp" android:layout_height="34dp"
+                                                android:layout_gravity="center_horizontal"
+                                                android:background="@drawable/bandcode_bg"
+                                        >
+                                    <EditText
+                                            android:id="@+id/editWristbandCode"
+                                            android:layout_width="95dp" android:layout_height="19dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:background="@android:color/transparent"
+                                            style="@style/kidpower_inputboxbandcode"
+											android:textColor="@color/kidpower_brownish_grey"
+                                            android:text=""
+                                            android:hint="@string/layout_activitysignup_powerbandcode"
+                                            android:inputType="textCapWords"/>
+                                </RelativeLayout>
+
+                                <!-- bottom space -->
+                                <LinearLayout
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="16dp"
+                                        android:orientation="vertical"
+                                        >
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <!-- second  part -->
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:orientation="vertical"
+                                          android:id="@+id/llStep2ContentsSecondPart"
+                                          android:visibility="invisible"
+                                    >
+
+                                <TextView
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="24dp"
+                                        android:layout_marginTop="10dp"
+                                        style="@style/kidpower_primarytext"
+                                        android:text="@string/layout_activitysignup_readytouse"
+                                        android:textStyle="bold"
+                                        />
+
+                                <RelativeLayout android:layout_width="188dp"
+                                                android:layout_height="34dp"
+                                                android:layout_gravity="center_horizontal"
+                                                android:background="@drawable/bandwithflash"
+                                        >
+                                    <TextView
+                                            android:gravity="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="24dp"
+                                            android:layout_marginTop="5dp"
+                                            android:text="Go Nancy"
+                                            style="@style/kidpower_statustext"
+                                            android:id="@+id/textGoName"
+                                            />
+                                </RelativeLayout>
+
+                                <TextView
+                                        android:gravity="left"
+                                        android:layout_gravity="center"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Congratulations! You’ve registered your Power Band. Later, you’ll add your students in the same way. And you can always see who a Power Band is assigned to with a long-press on the lightning bolt button."
+                                        style="@style/kidpower_secondarytext"
+                                        />
+
+                                <!-- bottom space -->
+                                <LinearLayout
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="16dp"
+                                        android:orientation="vertical"
+                                        >
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible">
+                            <Button
+                                    android:layout_width="match_parent"
+
+                                    style="@style/kidpower_buttonnormal"
+                                    android:text="@string/btnnext_title"
+
+
+                                    android:id="@+id/btnNextWristband"
+                                    android:enabled="true"
+                                    />
+                        </RelativeLayout>
+
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="29dp">
+
+                            <LinearLayout android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          android:orientation="horizontal">
+
+                                <TextView
+                                        android:layout_marginLeft="0dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_width="112dp"
+                                        android:layout_height="19dp"
+                                        style="@style/kidpower_secondarytext_large"
+                                        android:text="@string/layout_activitysignup_or"
+                                        android:gravity="right|center_vertical"
+                                        android:id="@+id/textAlreadyAccount"
+                                        />
+                                <TextView
+                                        android:layout_marginLeft="1dp"
+                                        android:layout_toRightOf="@id/textAlreadyAccount"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="19dp"
+                                        android:gravity="left|center_vertical"
+                                        style="@style/kidpower_textlink_large"
+
+                                        android:text="@string/layout_activitysignup_skipthisstep"
+                                        android:padding="0dp"
+                                        android:id="@+id/textSkip"
+                                        />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <!-- bottom space -->
+                        <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="16dp"
+                                android:orientation="vertical"
+                                >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/textStep2Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+
+                            android:text="@string/layout_activitysignup_powerbandregistered"
+                            android:paddingLeft="16dp"
+                            style="@style/kidpower_secondarytext"
+                            android:visibility="visible"/>
+
+                    <!-- step3 title -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content" android:id="@+id/llStep3Title"
+                            >
+                        <TextView
+                                android:id="@+id/textStep3Title"
+                                android:layout_width="match_parent"
+                                android:layout_height="21dp"
+                                android:text="@string/layout_activitysignup_thirdtitle"
+                                android:gravity="center_vertical"
+                                style="@style/kidpower_subhead"
+                                />
+                    </LinearLayout>
+
+                    <!-- step3 contents -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:id="@+id/llStep3Contents"
+                                  android:visibility="invisible"
+                            >
+                        <LinearLayout
+                                android:layout_width="249dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_horizontal"
+                                >
+                            <RelativeLayout
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_width="match_parent"
+                                    style="@style/kidpower_generalgrayframe"
+                                    android:layout_height="146dp"
+                                    >
+                                <ImageView
+                                        android:layout_width="85dp"
+                                        android:layout_height="85dp"
+                                        android:src="@drawable/avatar_default"
+                                        android:layout_centerHorizontal="true"
+                                        android:background="@drawable/avatarbg"
+                                        android:layout_marginTop="8dp"
+                                        android:id="@+id/imgAvatar"
+                                        />
+                                <TextView
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/layout_activitysignup_descs"
+                                        android:gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        style="@style/kidpower_primarytext"
+                                        android:id="@+id/textUserName"
+                                        android:layout_below="@+id/imgAvatar"/>
+                                <Button
+                                        android:layout_width="match_parent"
+                                        android:layout_below="@+id/textUserName"
+                                        android:text="@string/btnnext_title"
+                                        style="@style/kidpower_buttonnormal"
+                                        android:layout_marginTop="2dp"
+                                        android:id="@+id/btnTakeAvatar"
+                                        android:enabled="true"
+                                        />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                    android:layout_gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="21dp"
+                                    android:id="@+id/rlSkipAvatar"
+                                    >
+                                <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="16dp"
+                                        android:text="@string/layout_activitysignup_nothanks"
+                                        android:layout_marginTop="5dp"
+                                        style="@style/kidpower_textlink"
+                                        android:visibility="gone"
+                                        />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <!-- bottom space -->
+                        <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="16dp"
+                                android:orientation="vertical"
+                                >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- bottom space -->
+                    <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+                            android:orientation="vertical"
+                            >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- nice work -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="248dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/llSetupTeam"
+                        android:visibility="gone"
+                        >
+                    <!-- space -->
+                    <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="13dp"
+                            android:orientation="vertical"
+                            >
+                    </LinearLayout>
+
+                    <!-- header -->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                            >
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/smile"
+                                android:layout_gravity="center_horizontal"
+                                />
+                        <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:orientation="vertical"
+                                >
+                        </LinearLayout>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="19dp"
+
+                                style="@style/kidpower_pageheading"
+
+                                android:text="@string/label_nicework"
+
+                                android:gravity="center"
+                                />
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="19dp"
+                                style="@style/kidpower_secondarytext"
+                                android:text="@string/label_nicework_description"
+                                android:gravity="center"
+                                />
+                    </LinearLayout>
+
+                    <!--- space -->
+                    <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:orientation="vertical"
+                            >
+                    </LinearLayout>
+
+                    <!-- button -->
+                    <RelativeLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                        <Button
+                                android:layout_width="match_parent"
+
+                                android:text="@string/btnsetupteam_title"
+                                style="@style/kidpower_buttonnormal"
+                                android:id="@+id/btnSetupTeam"
+                                android:enabled="true"
+                                />
+                    </RelativeLayout>
+
+                    <!--- space -->
+                    <LinearLayout
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:orientation="vertical"
+                            >
+                    </LinearLayout>
+
+
+                    <!-- what you will need-->
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                            >
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="21dp"
+                                android:text="@string/layout_activitysingup_whatyouwillneed"
+                                android:gravity="center_vertical"
+                                android:textStyle="bold"
+                                style="@style/kidpower_primarytext"
+                                />
+                        <!--- space -->
+                        <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:orientation="vertical"
+                                >
+                        </LinearLayout>
+                        <!--- checklist1 -->
+                        <LinearLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="187dp"
+                                android:layout_height="32dp"
+                                android:orientation="horizontal"
+                                >
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:src="@drawable/checkmark"
+                                       android:layout_gravity="center_vertical"
+                                    />
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:text="@string/layout_activitysignup_yourteam"
+                                      style="@style/kidpower_primarytext"
+                                      android:layout_marginLeft="5dp"
+                                      android:gravity="center_vertical"
+                                    />
+                        </LinearLayout>
+
+                        <!--- checklist2 -->
+                        <LinearLayout
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="187dp"
+                                android:layout_height="32dp"
+                                android:orientation="horizontal"
+                                >
+                            <ImageView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:src="@drawable/checkmark"
+                                       android:layout_gravity="center_vertical"
+                                    />
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="match_parent"
+                                      android:text="@string/layout_activitysignup_about10minutes"
+                                      android:layout_marginLeft="5dp"
+                                      style="@style/kidpower_primarytext"
+                                      android:gravity="center_vertical"
+                                    />
+                        </LinearLayout>
+
+                        <!--- space -->
+                        <LinearLayout
+                                android:layout_centerHorizontal="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="11dp"
+                                android:orientation="vertical"
+                                >
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- list view for items-->
+            <RelativeLayout android:layout_width="116dp"
+                            android:layout_height="95dp"
+                            android:id="@+id/rlScannedItems"
+                            android:visibility="gone"
+                    >
+                <ListView android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/listScannedItems"
+                        >
+                </ListView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- navigation bar-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlNavigationBar"
+            >
+    </RelativeLayout>
+
+</RelativeLayout>
+

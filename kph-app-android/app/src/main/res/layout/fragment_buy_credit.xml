@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kph_color_main_background"
+    android:id="@+id/layout_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+		<ImageButton
+			android:layout_width="@dimen/dimen_48dp"
+			android:layout_height="@dimen/dimen_48dp"
+			android:id="@+id/btnClose"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:background="@null"
+			android:src="@drawable/lightbox_close_white"
+			android:scaleType="fitCenter"
+			android:padding="@dimen/dimen_16dp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/dimen_48dp"
+			android:layout_marginBottom="@dimen/dimen_margin_20"
+			android:layout_marginStart="@dimen/dimen_16dp"
+			android:layout_marginEnd="@dimen/dimen_16dp">
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You have 0 Credits"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_heading_count_medium"
+                style="@style/FONT_BASE_TITLE"
+                android:id="@+id/tvState"
+				android:gravity="center"
+                android:layout_centerHorizontal="true" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:id="@+id/tvPriceDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/unlock_credit_default_price"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                style="@style/FONT_BASE_TITLE"
+				android:layout_marginTop="@dimen/dimen_8dp"
+				android:layout_below="@+id/tvState"
+				android:layout_centerHorizontal="true"/>
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Buy a credit for..."
+                android:textColor="@android:color/white"
+                style="@style/FONT_BASE_TITLE"
+                android:id="@+id/tvDescription"
+                android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/dimen_24dp"
+				android:layout_below="@+id/tvPriceDesc"
+				android:layout_centerHorizontal="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/familyAccountsListView"
+                android:background="#66ffffff"
+				android:layout_below="@+id/tvDescription"
+				android:layout_above="@+id/btnBuyCredit"
+				android:scrollbars="vertical"
+				android:layout_marginTop="@dimen/dimen_4dp"/>
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_button_general_height"
+                android:text="@string/buy_credits"
+                android:id="@+id/btnBuyCredit"
+                android:layout_centerHorizontal="true"
+                style="@style/style_button_general"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20dp"
+				android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kph_color_main_background">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/btn_check_step_tracking">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingStart="@dimen/dimen_12dp"
+			android:paddingEnd="@dimen/dimen_12dp"
+			android:orientation="vertical"
+			android:layout_centerVertical="true">
+			<RelativeLayout
+				android:layout_width="@dimen/dimen_avatar_size"
+				android:layout_height="@dimen/dimen_avatar_size"
+				android:layout_gravity="center_horizontal">
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="@drawable/kph_drawable_red_ring_background"
+					android:padding="@dimen/dimen_4dp"
+					android:scaleType="fitCenter"
+					android:id="@+id/avatar_imageview"
+					android:src="@drawable/avatar_placeholder"/>
+				<ImageView
+					android:layout_width="@dimen/dimen_32dp"
+					android:layout_height="@dimen/dimen_32dp"
+					android:layout_alignParentEnd="true"
+					android:layout_marginEnd="@dimen/dimen_4dp"
+					android:scaleType="centerInside"
+					android:src="@drawable/google_fit"/>
+			</RelativeLayout>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dimen_margin_10"
+				android:id="@+id/username_text"
+				style="@style/style_textview_heading"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:textColor="@android:color/white"
+				android:gravity="center"
+				android:text="@string/percent_s_synced"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				style="@style/style_textview_general"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:textColor="@android:color/white"
+				android:gravity="center"
+				android:text="@string/sync_googlefit_there_are_no_new_steps"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/dimen_margin_10"
+				android:layout_marginEnd="@dimen/dimen_margin_10"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				android:id="@+id/read_more_text"
+				style="@style/style_textview_general"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:textColor="@android:color/white"
+				android:gravity="center"
+				android:text="@string/sync_googlefit_not_seem_right_read_more"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+	<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_button_general_height"
+		android:layout_marginStart="@dimen/dimen_margin_15"
+		android:layout_marginEnd="@dimen/dimen_margin_15"
+		android:layout_marginBottom="@dimen/dimen_12dp"
+		android:layout_above="@+id/text_link"
+		android:id="@+id/btn_check_step_tracking"
+		style="@style/style_button_general"
+		android:text="Check Step Tracking"/>
+
+	<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+		android:id="@+id/text_link"
+		style="@style/style_textview_general"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="@dimen/dimen_12dp"
+		android:gravity="center"
+		android:paddingBottom="@dimen/dimen_10dp"
+		android:paddingTop="@dimen/dimen_10dp"
+		android:text="@string/my_passport"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/dimen_font_size_heading_count"/>
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBack"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+		</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

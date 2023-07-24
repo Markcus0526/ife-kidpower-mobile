@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kidpower_light_grey_2">
+
+	<View
+		android:id="@+id/view_seperator"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/kidpower_light_grey"/>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<org.unicefkidpower.schools.ui.KPTextView
+			android:id="@+id/text_filename"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="left|center_vertical"
+			android:layout_weight="1"
+			android:paddingStart="15dp"
+			android:paddingEnd="15dp"
+			android:paddingBottom="15dp"
+			android:paddingTop="15dp"
+			android:textColor="@color/kidpower_brownish_grey"
+			android:textSize="@dimen/dimen_text_small"/>
+
+		<org.unicefkidpower.schools.ui.KPTextView
+			android:id="@+id/text_filesize"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:gravity="right|center_vertical"
+			android:paddingStart="15dp"
+			android:paddingEnd="15dp"
+			android:paddingBottom="15dp"
+			android:paddingTop="15dp"
+			android:textColor="@color/kidpower_brownish_grey"
+			android:textSize="@dimen/dimen_text_small"/>
+	</LinearLayout>
+
+</RelativeLayout>

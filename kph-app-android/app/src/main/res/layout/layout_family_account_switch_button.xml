@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="match_parent"
+    android:id="@+id/layout_root"
+    android:paddingBottom="@dimen/dimen_margin_5"
+    android:paddingTop="@dimen/dimen_margin_6">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_avatar"
+        android:layout_marginEnd="@dimen/dimen_margin_6">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_avatar_background"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/alien_background_sel" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivSmallAvatar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dimen_margin_2"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar_placeholder" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/dimen_margin_13"
+        android:layout_height="@dimen/dimen_margin_8"
+        android:id="@+id/iv_down_arrow"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/down_triangle"
+        android:scaleType="fitStart" />
+</RelativeLayout>

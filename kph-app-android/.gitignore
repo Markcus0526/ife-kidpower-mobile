@@ -1,0 +1,14 @@
+.gradle
+.idea
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+app/app.iml
+app/*.apk
+kph-app-android.iml
+httpclient-4.0/httpclient-4.0.iml
+httpcore-4.0/httpcore-4.0.iml
+kph_app_android.iml

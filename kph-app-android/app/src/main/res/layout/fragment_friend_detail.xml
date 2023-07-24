@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/layout_parent"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kph_color_main_background">
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_navigation_bar_height"
+		android:background="@color/kph_color_dark_blue">
+
+		<RelativeLayout
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:id="@+id/ivBackground"
+				android:layout_width="@dimen/dimen_navigation_bar_backarrow_width"
+				android:layout_height="match_parent"
+				android:layout_centerVertical="true"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingStart="@dimen/dimen_navigation_bar_back_arrow_padding_start"
+				android:paddingTop="@dimen/dimen_navigation_bar_back_arrow_padding_top"
+				android:scaleType="fitCenter"
+				android:src="@drawable/back_arrow"/>
+
+		</RelativeLayout>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txtTitle"
+			style="@style/style_textview_heading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:text="@string/friends"
+			android:textColor="@color/kph_color_navigation_bar_title"
+			android:textSize="@dimen/dimen_font_size_heading_base"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+			android:id="@+id/btn_block"
+			style="@style/style_textview_general"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentEnd="true"
+			android:background="@null"
+			android:paddingEnd="@dimen/dimen_margin_10"
+			android:paddingStart="@dimen/dimen_margin_10"
+			android:text="@string/block"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/dimen_font_size_heading_base"/>
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_titlebar">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/lv_follow_detail"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scrollbars="vertical"
+			android:visibility="gone"/>
+
+		<ProgressBar
+			android:id="@+id/progressBar"
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/dimen_margin_30"/>
+	</RelativeLayout>
+
+
+	<ImageView
+		android:id="@+id/title_bar_shadow"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/shadow_height"
+		android:layout_below="@+id/layout_titlebar"
+		android:background="@drawable/shadow_bottom"/>
+</RelativeLayout>

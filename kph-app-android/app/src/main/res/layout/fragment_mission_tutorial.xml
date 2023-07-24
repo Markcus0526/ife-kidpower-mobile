@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kph_color_main_background"
+				android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:weightSum="2">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/ivTutorialImage"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:padding="@dimen/dimen_8dp">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:id="@+id/tvTutorialText"
+				style="@style/style_textview_general"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_gravity="center_horizontal"
+				android:layout_margin="20dp"
+				android:layout_weight="1"
+				android:gravity="top|center_horizontal"
+				android:text="@string/get_yours_band"
+				android:textColor="@android:color/white"
+				android:textSize="@dimen/dimen_font_size_heading_button"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:id="@+id/btnTutorialButton"
+				style="@style/style_button_general"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:layout_centerHorizontal="true"
+				android:layout_gravity="bottom"
+				android:layout_margin="@dimen/dimen_margin_10"
+				android:text="@string/button_next"
+				android:visibility="visible"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/pager_indicator_dimen"
+		android:layout_centerInParent="true"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/indicator1"
+			android:layout_width="@dimen/pager_indicator_dimen"
+			android:layout_height="match_parent"
+			android:padding="@dimen/pager_indicator_padding"
+			android:src="@drawable/ic_dot_off"/>
+
+		<ImageView
+			android:id="@+id/indicator2"
+			android:layout_width="@dimen/pager_indicator_dimen"
+			android:layout_height="match_parent"
+			android:padding="@dimen/pager_indicator_padding"
+			android:src="@drawable/ic_dot_off"/>
+
+		<ImageView
+			android:id="@+id/indicator3"
+			android:layout_width="@dimen/pager_indicator_dimen"
+			android:layout_height="match_parent"
+			android:padding="@dimen/pager_indicator_padding"
+			android:src="@drawable/ic_dot_off"/>
+
+		<ImageView
+			android:id="@+id/indicator4"
+			android:layout_width="@dimen/pager_indicator_dimen"
+			android:layout_height="match_parent"
+			android:padding="@dimen/pager_indicator_padding"
+			android:src="@drawable/ic_dot_off"/>
+
+		<ImageView
+			android:id="@+id/indicator5"
+			android:layout_width="@dimen/pager_indicator_dimen"
+			android:layout_height="match_parent"
+			android:padding="@dimen/pager_indicator_padding"
+			android:src="@drawable/ic_dot_off"/>
+	</LinearLayout>
+</RelativeLayout>

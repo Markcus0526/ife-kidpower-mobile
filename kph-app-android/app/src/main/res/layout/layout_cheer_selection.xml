@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_root"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_margin_20"
+        android:paddingEnd="@dimen/dimen_margin_20">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dimen_margin_15">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_margin_15"
+                android:layout_height="@dimen/dimen_margin_10"
+                android:id="@+id/iv_triangle"
+                android:background="@drawable/popup_triangle"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kph_drawable_white_all_corner"
+        android:id="@+id/layout_cheer_icons">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_navigation_bar_height"
+            android:id="@+id/txt_choose_cheer"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/choose_cheer_to_send"
+            android:gravity="center"
+            style="@style/style_textview_heading"
+            android:textSize="@dimen/dimen_font_size_heading_base"
+            android:textColor="@color/kph_color_brownish_grey" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_margin_1"
+            android:id="@+id/iv_split_line"
+            android:background="@android:color/black"
+            android:alpha="0.2" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gv_cheer_icon_list"
+            android:numColumns="3"
+            android:choiceMode="singleChoice"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="@dimen/dimen_margin_30"
+            android:scrollbarStyle="outsideInset"/>
+    </LinearLayout>
+</LinearLayout>

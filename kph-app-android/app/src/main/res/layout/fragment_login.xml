@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+<RelativeLayout
+				android:id="@+id/layout_parent"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kph_color_light_blue">
+
+	<ScrollView
+		android:id="@+id/svContent"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="false">
+
+		<RelativeLayout
+			android:id="@+id/main_scrollcontent_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:id="@+id/main_content_layout"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/dimen_margin_30"
+				android:layout_marginStart="@dimen/dimen_margin_30"
+				android:orientation="vertical"
+				android:paddingTop="100dp">
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_header"
+					style="@style/style_textview_heading"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/dimen_onboarding_margin"
+					android:gravity="center"
+					android:text="@string/log_in_to_kid_power"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base_title"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHEditText
+					android:id="@+id/editUsername"
+					style="@style/style_edittext_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:layout_marginBottom="@dimen/dimen_margin_15"
+					android:hint="@string/username"
+					android:inputType="textEmailAddress"
+					android:maxLines="1"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHEditText
+					android:id="@+id/editPassword"
+					style="@style/style_edittext_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:layout_marginBottom="@dimen/dimen_margin_15"
+					android:hint="@string/password"
+					android:imeOptions="actionDone"
+					android:inputType="textPassword"
+					android:maxLines="1"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+					android:id="@+id/btnLogin"
+					style="@style/style_button_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:text="@string/log_in"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_reset_password"
+					style="@style/style_textview_general"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_10dp"
+					android:gravity="center"
+					android:paddingBottom="@dimen/dimen_10dp"
+					android:paddingTop="@dimen/dimen_10dp"
+					android:text="@string/trouble_logging_in_reset_your_password"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_created_with_facebook"
+					style="@style/style_textview_general"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_30"
+					android:gravity="center"
+					android:text="@string/if_you_created_your_account_with_facebook"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+					android:id="@+id/btn_facebook_login"
+					style="@style/style_button_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:layout_marginBottom="@dimen/dimen_20dp"
+					android:layout_marginTop="@dimen/dimen_margin_15"
+					android:background="@drawable/kph_drawable_button_facebook_background"
+					android:text="@string/login_with_facebook"
+					android:textColor="@android:color/white"/>
+			</LinearLayout>
+
+		</RelativeLayout>
+	</ScrollView>
+
+	<ImageButton
+		android:layout_width="@dimen/dimen_48dp"
+		android:layout_height="@dimen/dimen_48dp"
+		android:id="@+id/btnClose"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:background="@null"
+		android:src="@drawable/lightbox_close_white"
+		android:scaleType="fitCenter"
+		android:padding="@dimen/dimen_16dp" />
+</RelativeLayout>
+</RelativeLayout>

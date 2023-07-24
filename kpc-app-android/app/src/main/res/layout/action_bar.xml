@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/kidpower_navbarheight"
+    android:id="@+id/layout_action_bar"
+    android:background="@color/kidpower_light_blue">
+
+
+    <org.unicefkidpower.schools.ui.KPTextView
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:text="@string/title"
+		android:id="@+id/txt_title"
+		style="@style/style_textview_heading"
+		android:gravity="center"
+		android:textSize="@dimen/font_nav_title"
+		android:textColor="@android:color/white"
+		android:layout_centerHorizontal="true"
+		android:ellipsize="end"
+		android:layout_centerInParent="false"
+		android:singleLine="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_left_action_item">
+
+        <ImageButton
+            android:layout_width="@dimen/kidpower_navbarheight"
+            android:layout_height="@dimen/kidpower_navbarheight"
+            android:padding="@dimen/kidpower_navbar_padding"
+            android:id="@+id/btn_menu"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_hamburger"
+            android:background="@null" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/layout_back"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_back_arrow" />
+
+            <org.unicefkidpower.schools.ui.KPTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/layout_navigation_back"
+                style="@style/style_textview_general"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="@dimen/kidpower_inputboxpadding"
+                android:layout_marginTop="1dp"
+                android:textSize="@dimen/font_nav_description" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/layout_right_action_item"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="@dimen/margin_4"
+		android:layout_marginRight="@dimen/margin_8"
+		android:layout_marginTop="@dimen/margin_4"
+		android:layout_toRightOf="@+id/txt_title"/>
+</RelativeLayout>

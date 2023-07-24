@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_videocontrols"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="#cccccccc"
+    android:keepScreenOn="true">
+
+    <ImageButton
+        android:id="@+id/vcv_img_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/fvl_selector_play" />
+
+    <TextView
+        android:id="@+id/vcv_txt_elapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/vcv_img_play"
+        android:text="00:00"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/vcv_img_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/fvl_selector_fullscreen" />
+
+    <TextView
+        android:id="@+id/vcv_txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/vcv_img_fullscreen"
+        android:text="00:00"
+        android:textColor="@android:color/black" />
+
+    <SeekBar
+        android:id="@+id/vcv_seekbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@+id/vcv_txt_total"
+        android:layout_toEndOf="@+id/vcv_txt_elapsed"
+        android:indeterminateDrawable="@drawable/fvl_progress"
+        android:maxHeight="13dp"
+        android:minHeight="13dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:progressDrawable="@drawable/fvl_progress"
+        android:thumb="@drawable/fvl_control_normal"
+        android:thumbOffset="16dp" />
+
+
+</RelativeLayout>

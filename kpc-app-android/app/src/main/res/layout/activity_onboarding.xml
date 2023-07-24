@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:id="@+id/layout_root">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/iv_dummy"
+            android:layout_height="550dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/kidpower_navbarheight"
+            android:id="@+id/rlNavigationBar"
+            android:layout_alignParentTop="true" />
+
+        <org.unicefkidpower.schools.ui.KPStepperIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stepper_indicator"
+            android:layout_below="@+id/rlNavigationBar" />
+
+        <org.unicefkidpower.schools.ui.KPViewPager
+            android:id="@+id/onboarding_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/stepper_indicator"
+            android:layout_alignBottom="@+id/iv_dummy" />
+    </RelativeLayout>
+</ScrollView>

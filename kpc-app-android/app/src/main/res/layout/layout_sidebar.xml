@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sidebar_background_inactive">
+    
+    <ListView
+        android:id="@+id/lvTeam"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/sidebar_divider"
+        android:dividerHeight="@dimen/dimen_sidebar_divider_height"
+        android:layout_above="@+id/llSideMenu"
+        />
+
+    <LinearLayout
+        android:id="@+id/llSideMenu"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sidebar_divider"
+        android:paddingTop="@dimen/dimen_sidebar_divider_height">
+
+        <org.unicefkidpower.schools.ui.KPSideMenu
+            android:id="@+id/llCurriculum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smIsActive="true"
+            app:smImage="@drawable/icon_curriculum"
+            app:smText="@string/sidebar_curriculum"
+            android:layout_marginBottom="@dimen/dimen_sidebar_divider_height"
+            android:visibility="gone"
+            />
+
+        <org.unicefkidpower.schools.ui.KPSideMenu
+            android:id="@+id/llInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smImage="@drawable/icon_inbox"
+            app:smActiveImage="@drawable/icon_inbox_active"
+            app:smText="@string/sidebar_inbox"
+            android:layout_marginBottom="@dimen/dimen_sidebar_divider_height"
+            android:visibility="gone"
+            />
+
+        <org.unicefkidpower.schools.ui.KPSideMenu
+            android:id="@+id/llSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smImage="@drawable/icon_support"
+            app:smActiveImage="@drawable/icon_support_active"
+            app:smText="@string/sidebar_support"
+            android:layout_marginBottom="@dimen/dimen_sidebar_divider_height"
+            android:visibility="visible"
+            />
+
+        <org.unicefkidpower.schools.ui.KPSideMenu
+            android:id="@+id/llAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smImage="@drawable/icon_account"
+            app:smActiveImage="@drawable/icon_account_active"
+            app:smText="@string/sidebar_account"
+            android:layout_marginBottom="@dimen/dimen_sidebar_divider_height"
+            />
+
+        <org.unicefkidpower.schools.ui.KPSideMenu
+            android:id="@+id/llLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:smImage="@drawable/icon_log_out"
+            app:smText="@string/sidebar_logout"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_centerInParent="true"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:background="@color/MSG_LIGHT_GRAY">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="16dp"
+			android:textSize="20dp"
+			android:textStyle="bold"
+			android:textColor="@android:color/black"
+			android:gravity="center_vertical"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:paddingStart="@dimen/dimen_20dp"
+			android:visibility="visible"
+			android:id="@+id/title_textview"
+			android:text="Alert"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/content_layout">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="@android:color/black"
+			android:gravity="start|top"
+			android:visibility="visible"
+			android:id="@+id/contents_textview"
+			android:paddingStart="20dp"
+			android:paddingEnd="20dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="@dimen/dimen_20dp"
+			android:text="AlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlertAlert"/>
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="10dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_alignParentEnd="true">
+
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:background="@android:color/transparent"
+				android:textColor="@android:color/black"
+				android:textSize="14dp"
+				android:textStyle="bold"
+				android:layout_marginEnd="6dp"
+				android:text="@string/cancel"
+				android:paddingStart="10dp"
+				android:paddingEnd="10dp"
+				android:id="@+id/btn_other"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:background="@android:color/transparent"
+				android:textColor="@android:color/black"
+				android:textSize="14dp"
+				android:textStyle="bold"
+				android:text="@string/ok"
+				android:paddingStart="10dp"
+				android:paddingEnd="10dp"
+				android:layout_marginEnd="10dp"
+				android:id="@+id/btn_default"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</LinearLayout>

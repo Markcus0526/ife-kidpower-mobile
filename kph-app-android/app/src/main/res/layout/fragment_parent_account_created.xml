@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:layout_marginStart="@dimen/dimen_margin_30"
+		android:layout_marginEnd="@dimen/dimen_margin_30">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/contents_layout">
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:id="@+id/img_check"
+				android:scaleType="centerInside"
+				android:src="@drawable/ic_green_check"
+				android:layout_height="80dp"/>
+
+			<view
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				class="org.unicefkidpower.kid_power.View.CustomControls.KPHTextView"
+				android:id="@+id/txt_parent_account_created"
+				android:gravity="center"
+				android:text="@string/parent_account_created"
+				android:textSize="@dimen/dimen_font_size_base_title"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				android:textColor="@android:color/black"/>
+
+			<view
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				class="org.unicefkidpower.kid_power.View.CustomControls.KPHTextView"
+				android:id="@+id/txt_description"
+				android:gravity="center"
+				android:text="@string/finish_setting_up_account"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				android:textColor="@android:color/black"/>
+
+			<view
+
+				class="org.unicefkidpower.kid_power.View.CustomControls.KPHButton"
+				android:id="@+id/btnFinish"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:layout_weight="1"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				style="@style/style_button_general"
+				android:background="@drawable/kph_drawable_button_orange_background"
+				android:text="@string/finish"
+				android:textColor="@android:color/white"/>
+
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

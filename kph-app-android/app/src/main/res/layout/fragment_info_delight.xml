@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kph_color_main_background"
+    android:id="@+id/layout_parent">
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBackground"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/back_title_textview"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/ivBackground"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_title_top_padding"
+				android:textColor="@color/kph_color_navigation_bar_title"
+				android:textSize="@dimen/dimen_font_size_heading_base"
+				android:text="@string/souvenir"
+				style="@style/style_textview_heading"/>
+		</RelativeLayout>
+	</RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+		android:layout_below="@+id/layout_titlebar"
+        android:layout_alignParentTop="false">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/ivDelight"
+            android:src="@drawable/souvenir_placeholder"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/rlVideoView">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivVideoBackground"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivVideoPlaceholder"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/video_generic_black_overlay" />
+
+            <ImageButton
+                android:layout_width="@dimen/dimen_play_button_width"
+                android:layout_height="@dimen/dimen_play_button_height"
+				android:paddingStart="@dimen/dimen_play_button_padding"
+				android:paddingEnd="@dimen/dimen_play_button_padding"
+				android:paddingTop="@dimen/dimen_play_button_padding"
+				android:paddingBottom="@dimen/dimen_play_button_padding"
+				android:scaleType="fitCenter"
+                android:id="@+id/btnPlay"
+                android:background="@null"
+                android:src="@drawable/video_play"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_16dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/style_textview_heading"
+                android:id="@+id/tvMissionName"
+                android:textSize="@dimen/dimen_font_size_base_subtitle"
+                android:text="UNICEF KID POWER BAND"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_16dp"
+                android:id="@+id/tvDescription"
+                android:text="Get Active, Save Lives! Remember to sync daily so every step counts."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

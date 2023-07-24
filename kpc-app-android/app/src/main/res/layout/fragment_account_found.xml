@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:background="@color/kidpower_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_header"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:gravity="center"
+            android:id="@+id/layout_logo">
+
+            <org.unicefkidpower.schools.ui.KPResizableImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kp_logo"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <org.unicefkidpower.schools.ui.KPTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_account_found"
+            style="@style/style_textview_heading"
+            android:text="@string/account_found"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp" />
+
+        <org.unicefkidpower.schools.ui.KPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_account_found_description"
+            style="@style/style_textview_general"
+            android:text="@string/account_found_description"
+            android:gravity="center"
+            android:textSize="13dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_header"
+        android:layout_above="@+id/layout_bottom"
+        android:gravity="center_vertical"
+        android:id="@+id/layout_user_info"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <org.unicefkidpower.schools.helper.FontView
+                android:id="@+id/user_icon"
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                style="@style/style_textview_general"
+                android:gravity="center"
+                android:text="@string/icon_string_user" />
+
+            <org.unicefkidpower.schools.ui.KPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_user_name"
+                style="@style/style_textview_general"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <org.unicefkidpower.schools.helper.FontView
+                android:id="@+id/school_icon"
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:textSize="16sp"
+                style="@style/style_textview_general"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/icon_string_graduation_cap" />
+
+            <org.unicefkidpower.schools.ui.KPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_user_school"
+                style="@style/style_textview_general"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <org.unicefkidpower.schools.helper.FontView
+                android:id="@+id/user_email_icon"
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:gravity="center"
+                style="@style/style_textview_general"
+                android:text="@string/icon_string_envelope" />
+
+            <org.unicefkidpower.schools.ui.KPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_user_email"
+                style="@style/style_textview_general"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <org.unicefkidpower.schools.helper.FontView
+                android:id="@+id/user_phone_icon"
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:gravity="center"
+                style="@style/style_textview_general"
+                android:textSize="16sp"
+                android:text="@string/icon_string_phone" />
+
+            <org.unicefkidpower.schools.ui.KPTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_user_phone"
+                style="@style/style_textview_general"
+                android:textSize="14sp"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_bottom"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_button_height"
+            android:text="@string/layout_navigation_back"
+            android:id="@+id/btn_back"
+            style="@style/kidpower_secondarytext"
+            app:customButtonFont="@string/font_mikado_bold"
+            android:textAllCaps="true"
+            android:textSize="14dp"
+            android:background="@color/kidpower_light_gray"
+            android:layout_weight="1" />
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_button_height"
+            android:text="@string/thats_me"
+            android:id="@+id/btn_thats_me"
+            style="@style/style_button_general"
+            app:customButtonFont="@string/font_mikado_bold"
+            android:textAllCaps="true"
+            android:textSize="14dp"
+            android:background="@color/kidpower_light_blue"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp" />
+    </LinearLayout>
+</RelativeLayout>

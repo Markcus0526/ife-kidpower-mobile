@@ -1,0 +1,187 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="KidPowerStyle" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <!-- activity style -->
+    <style name="KidPowerStyle_NoActionBar" parent="Theme.AppCompat.NoActionBar">
+    </style>
+
+    <style name="KidPowerDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+		<item name="android:colorBackgroundCacheHint">@null</item>
+	</style>
+
+    <style name="KidPowerTransActivityStyle" parent="KidPowerStyle_NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- parent styles -->
+    <style name="KidPowerButtonStyle" parent="Widget.AppCompat.Button">
+    </style>
+
+    <style name="KidPowerEditTextStyle" parent="Widget.AppCompat.EditText">
+    </style>
+
+    <!-- parent text view styles -->
+    <style name="KidPowerTextViewStyle" parent="android:Widget.TextView">
+    </style>
+
+    <!-- parent radio button styles -->
+    <style name="KidPowerRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+    </style>
+
+    <!-- parent image text button styles-->
+    <style name="KidPowerImageTextButtonStyle">
+    </style>
+
+    <!-- parent image text button styles-->
+    <style name="KidPowerAdvancedEditTextStyle" parent="Widget.AppCompat.EditText">
+    </style>
+
+    <!-- navigation bar style -->
+
+    <!-- text view style -->
+    <style name="style_textview_general" parent="KidPowerTextViewStyle">
+        <item name="customTextViewFont">@string/font_pfdindisplaypro_regular</item>
+    </style>
+
+    <style name="style_textview_heading" parent="KidPowerTextViewStyle">
+        <item name="customTextViewFont">@string/font_mikado_bold</item>
+    </style>
+
+    <style name="style_textview_italic" parent="KidPowerTextViewStyle">
+        <item name="customTextViewFont">@string/font_pfdindisplaypro_italic</item>
+    </style>
+
+    <!-- button style -->
+    <style name="style_button_general" parent="KidPowerButtonStyle">
+        <item name="android:background">@drawable/kph_drawable_button_general_background</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_button</item>
+        <item name="android:layout_height">@dimen/dimen_button_general_height</item>
+        <item name="android:textColor">@color/kph_color_orange</item>
+        <item name="customButtonFont">@string/font_mikado_bold</item>
+		<item name="android:textAllCaps">false</item>
+	</style>
+
+    <!-- edit text style -->
+    <style name="style_edittext_general" parent="KidPowerEditTextStyle">
+        <item name="android:background">@drawable/kph_drawable_edittext_general_background</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/dimen_font_size_base</item>
+        <item name="android:textColorHint">@color/kph_color_edittext_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/dimen_edittext_general_padding</item>
+        <item name="android:paddingEnd">@dimen/dimen_edittext_general_padding</item>
+        <item name="android:layout_height">@dimen/dimen_edittext_general_height</item>
+        <item name="customEditTextFont">@string/font_pfdindisplaypro_regular</item>
+    </style>
+
+    <!-- font styles -->
+    <style name="FONT_BASE">
+        <item name="customFont">@string/font_pfdindisplaypro_regular</item>
+        <item name="android:textSize">@dimen/dimen_font_size_base</item>
+    </style>
+    <style name="FONT_BASE_ITALIC">
+        <item name="customFont">@string/font_pfdindisplaypro_italic</item>
+        <item name="android:textSize">@dimen/dimen_font_size_base</item>
+    </style>
+    <style name="FONT_BASE_TITLE">
+        <item name="customFont">@string/font_pfdindisplaypro_regular</item>
+        <item name="android:textSize">@dimen/dimen_font_size_base_title</item>
+    </style>
+    <style name="FONT_BASE_SUBTITLE">
+        <item name="customFont"/>
+        <item name="android:textSize">@dimen/dimen_font_size_base_subtitle</item>
+    </style>
+    <style name="FONT_BASE_SMALL">
+        <item name="customFont"/>
+        <item name="android:textSize">@dimen/dimen_font_size_base_small</item>
+    </style>
+    <style name="FONT_HEADING_BASE">
+        <item name="customFont">@string/font_mikado_bold</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_base</item>
+    </style>
+    <style name="FONT_HEADING_BASE_UPPERCASE">
+        <item name="customFont">@string/font_mikado_bold</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_base</item>
+        <item name="android:capitalize">sentences</item>
+    </style>
+    <style name="FONT_HEADING_COUNT">
+        <item name="customFont">@string/font_mikado_bold</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_count</item>
+    </style>
+    <style name="FONT_HEADING_COUNT_BIG">
+        <item name="customFont">@string/font_mikado_bold</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_count_big</item>
+    </style>
+    <style name="FONT_HEADING_BUTTON">
+        <item name="customFont">@string/font_mikado_bold</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_button</item>
+    </style>
+
+    <style name="kph_style_radiobutton_general" parent="KidPowerRadioButtonStyle">
+        <item name="customRadioButtonFont">@string/font_pfdindisplaypro_regular</item>
+    </style>
+
+    <style name="kph_style_image_text_button_general" parent="KidPowerImageTextButtonStyle">
+        <item name="customImageSize">30dp</item>
+        <item name="customTextColor">@android:color/white</item>
+        <item name="customImageTextButtonFont">@string/font_pfdindisplaypro_regular</item>
+    </style>
+
+    <style name="kph_style_image_text_button_band" parent="KidPowerImageTextButtonStyle">
+        <item name="customImageSize">20dp</item>
+        <item name="customTextColor">@color/kph_color_orange</item>
+        <item name="customTextSize">@dimen/dimen_font_size_heading_button</item>
+        <item name="customImageTextButtonFont">@string/font_mikado_bold</item>
+        <item name="customImageResourceId">@drawable/sync</item>
+        <item name="android:background">@drawable/kph_drawable_button_general_background</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="kph_style_icon_button" parent="KidPowerButtonStyle">
+        <item name="android:background">@drawable/kph_drawable_button_general_background</item>
+        <item name="android:textSize">@dimen/dimen_font_size_heading_button</item>
+        <item name="android:layout_height">@dimen/dimen_button_general_height</item>
+        <item name="android:textColor">@color/kph_color_orange</item>
+        <item name="customButtonFont">@string/font_mikado_bold</item>
+    </style>
+
+    <style name="kph_style_advanced_edittext_general" parent="KidPowerAdvancedEditTextStyle">
+        <item name="android:background">@drawable/kph_drawable_edittext_general_background</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/dimen_font_size_base</item>
+        <item name="android:textColorHint">@color/kph_color_edittext_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/dimen_edittext_general_padding</item>
+        <item name="android:paddingEnd">@dimen/dimen_edittext_general_padding</item>
+        <item name="android:layout_height">@dimen/dimen_edittext_general_height</item>
+        <item name="aet_font">@string/font_pfdindisplaypro_regular</item>
+    </style>
+
+    <style name="SheetTitleStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/kph_color_dark_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="kph_style_popup_from_top_left_to_bottom_right">
+        <item name="android:windowEnterAnimation">@anim/scale_up_from_upper_left</item>
+        <item name="android:windowExitAnimation">@anim/scale_down_to_upper_left</item>
+    </style>
+
+    <style name="kph_style_popup_for_cheer_popup">
+        <item name="android:windowEnterAnimation">@anim/scale_up_for_cheer_popup</item>
+        <item name="android:windowExitAnimation">@anim/scale_down_for_cheer_popup</item>
+    </style>
+</resources>

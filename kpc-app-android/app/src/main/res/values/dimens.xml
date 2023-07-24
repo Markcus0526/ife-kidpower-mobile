@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- round corner for welcome screen -->
+
+    <dimen name="cornerround_edittext">5dp</dimen>
+
+    <dimen name="fontsize_for_header">53dp</dimen>
+    <dimen name="fontsize_normal">35dp</dimen>
+    <dimen name="fontsize_large">40dp</dimen>
+    <dimen name="fontsize_extralarge">50dp</dimen>
+    <dimen name="fontsize_small">30dp</dimen>
+    <dimen name="fontsize_tiny">25dp</dimen>
+
+	<dimen name="imagesize_normal">36dp</dimen>
+
+    <!-- New style value -->
+    <!-- edittext dimensions -->
+    <dimen name="kidpower_inputboxheight">56dp</dimen>
+    <dimen name="kidpower_inputboxcorner">6dp</dimen>
+    <dimen name="kidpower_inputboxpadding">10dp</dimen>
+    <dimen name="kidpower_inputboxfontsize">14dp</dimen>
+    <dimen name="kidpower_inputboxsecondaryhintfontsize">11dp</dimen>
+
+    <!-- button dimensions -->
+    <dimen name="kidpower_buttonfontsize">21dp</dimen>
+    <dimen name="kidpower_smallbuttonfontsize">14dp</dimen>
+    <dimen name="kidpower_secondarybuttonfontsize">21dp</dimen>
+    <dimen name="kidpower_buttonheight">56dp</dimen>
+    <dimen name="kidpower_smallbuttonheight">32dp</dimen>
+
+    <!-- textview dimensions -->
+    <dimen name="kidpower_smallsize">12sp</dimen>
+
+    <dimen name="kidpower_primarytextviewfontsize">14dp</dimen>
+    <dimen name="kidpower_secondarytextviewfontsize">14dp</dimen>
+    <dimen name="kidpower_errortextviewfontsize">14dp</dimen>
+    <dimen name="kidpower_statustextviewfontsize">14dp</dimen>
+    <dimen name="kidpower_paragraphheadfontsize">16dp</dimen>
+
+    <dimen name="kidpower_progresstextfontsize">12dp</dimen>
+
+    <dimen name="kidpower_textlinkfontsize">8dp</dimen>
+    <dimen name="kidpower_textlinksmallfontsize">12dp</dimen>
+    <dimen name="kidpower_texthoverfontsize">14dp</dimen>
+
+    <dimen name="kidpower_pageheadingfontsize">28dp</dimen>
+    <dimen name="kidpower_pagesubheadfontsize">19dp</dimen>
+
+    <dimen name="kidpower_cloudtextfontsize">21dp</dimen>
+    <dimen name="kidpower_backbuttonfontsize">20dp</dimen>
+
+    <dimen name="kidpower_desctitlefontsize">24dp</dimen>
+    <dimen name="kidpower_descfontsize">18dp</dimen>
+
+    <dimen name="radius_pageindicator">10dp</dimen>
+    <dimen name="halfradius_pageindicator">5dp</dimen>
+
+    <dimen name="kidpower_powerpointvaluefontsize">27dp</dimen>
+    <dimen name="kidpower_dashboardlabelfontsize">17dp</dimen>
+
+    <dimen name="radius_activecode">94dp</dimen>
+    <dimen name="halfradius_activecode">47dp</dimen>
+
+    <dimen name="kidpower_activecodetextfontsize">50dp</dimen>
+
+    <dimen name="kidpower_teamprogressfontsize">16dp</dimen>
+
+    <dimen name="cornerround_teamnameedittext">10dp</dimen>
+
+    <dimen name="radius_dlgtopcircle">54dp</dimen>
+    <dimen name="halfradius_dlgtopcircle">27dp</dimen>
+    <dimen name="cornerround_dlg">5dp</dimen>
+
+    <dimen name="radius_savebutton">60dp</dimen>
+    <dimen name="cornerround_hintbox">10dp</dimen>
+
+    <dimen name="kidpower_sidemenufontsize">16dp</dimen>
+
+    <dimen name="cornerround_teamprogress">10dp</dimen>
+
+    <dimen name="kidpower_teamitemheight">25dp</dimen>
+
+    <dimen name="font_sync_mark">56sp</dimen>
+    <dimen name="font_nav_title">20sp</dimen>
+    <dimen name="font_nav_description">18sp</dimen>
+    <dimen name="font_band_code">14sp</dimen>
+
+    <dimen name="dimen_text_desc">13sp</dimen>
+	<dimen name="dimen_text_tiny">10sp</dimen>
+    <dimen name="dimen_text_small">12sp</dimen>
+    <dimen name="dimen_text_normal">16sp</dimen>
+    <dimen name="dimen_text_medium">24sp</dimen>
+    <dimen name="dimen_text_large">36sp</dimen>
+
+    <dimen name="dimen_button_height">42dp</dimen>
+    <dimen name="dimen_sync_item_width">50dp</dimen>
+    <dimen name="dimen_dialog_padding">20dp</dimen>
+
+    <dimen name="dimen_sidebar_divider_height">0.5dp</dimen>
+    <dimen name="dimen_sidebar_width">200dp</dimen>
+    <dimen name="dimen_sidebar_padding">16dp</dimen>
+    <dimen name="dimen_sidebar_image">16dp</dimen>
+    <dimen name="dimen_sidebar_textsize">16dp</dimen>
+
+    <dimen name="dimen_avatar_grid_height">100dp</dimen>
+    <dimen name="dimen_avatar_grid_margin">5dp</dimen>
+    <dimen name="dimen_band_width">200dp</dimen>
+    <dimen name="dimen_band_height">75dp</dimen>
+    <dimen name="dimen_band_margin">9dp</dimen>
+    <dimen name="dimen_input_height">34dp</dimen>
+    <dimen name="dimen_create_margin">8dp</dimen>
+    <dimen name="dimen_create_top_margin">19dp</dimen>
+    <dimen name="dimen_band_code_height">30dp</dimen>
+    <dimen name="dimen_band_code_padding">6dp</dimen>
+    <dimen name="dimen_band_candidate_height">242dp</dimen>
+
+    <dimen name="dimen_button_unlock">96dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

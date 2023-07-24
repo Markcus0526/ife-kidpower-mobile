@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/kph_color_main_background">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/dimen_margin_30"
+				android:layout_marginTop="@dimen/dimen_margin_30"
+				android:orientation="vertical"
+				android:paddingEnd="@dimen/dimen_margin_30"
+				android:paddingStart="@dimen/dimen_margin_30">
+
+				<ImageView
+					android:id="@+id/ivAvatar"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_avatar_size"
+					android:src="@drawable/avatar_placeholder"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_username"
+					style="@style/style_textview_heading"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_5"
+					android:gravity="center"
+					android:text="Username"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base_subtitle"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_great_job"
+					style="@style/style_textview_heading"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dimen_margin_20"
+					android:gravity="center"
+					android:text="@string/great_job"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_heading_count_big"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_birthday_question"
+					style="@style/style_textview_heading"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/now_when_is_your_birthday"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base_title"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+					android:id="@+id/txt_birthday_format"
+					style="@style/style_textview_general"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30dp"
+					android:text="@string/date_of_birth_date_format"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/dimen_font_size_base"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHDateEditText
+					android:id="@+id/edit_birthday"
+					style="@style/style_edittext_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_edittext_general_height"
+					android:layout_marginTop="@dimen/dimen_margin_10"
+					android:hint="@string/dob_format"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+					android:id="@+id/btn_next"
+					style="@style/style_button_general"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/dimen_button_general_height"
+					android:layout_marginTop="@dimen/dimen_margin_15"
+					android:text="@string/button_next"/>
+			</LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:id="@+id/ivBackground"
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:layout_centerVertical="true"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:scaleType="fitCenter"
+				android:src="@drawable/back_arrow"/>
+
+		</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

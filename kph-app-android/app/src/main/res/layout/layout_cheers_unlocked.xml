@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    android:background="@color/kph_color_main_background"
+    android:paddingBottom="@dimen/dimen_32dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_got_it"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/you_unlocked_new_cheers"
+            android:id="@+id/txt_unlocked_cheers_title"
+            style="@style/style_textview_heading"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_font_size_base_title"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/dimen_32dp"
+            android:layout_marginEnd="@dimen/dimen_32dp"
+            android:layout_marginTop="@dimen/dimen_32dp" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unlocked_cheers_description"
+            android:id="@+id/txt_unlocked_cheers_description"
+            style="@style/style_textview_general"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/dimen_margin_8"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/dimen_32dp"
+            android:layout_marginEnd="@dimen/dimen_32dp" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gv_cheer_icon_list"
+            android:numColumns="3"
+            android:choiceMode="singleChoice"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="@dimen/dimen_margin_30"
+            android:scrollbarStyle="outsideInset"
+            android:paddingStart="@dimen/dimen_margin_5" />
+    </LinearLayout>
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_general_height"
+        android:text="@string/got_it"
+        android:id="@+id/btn_got_it"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        style="@style/style_button_general"
+        android:layout_marginStart="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_32dp" />
+</RelativeLayout>
+</RelativeLayout>

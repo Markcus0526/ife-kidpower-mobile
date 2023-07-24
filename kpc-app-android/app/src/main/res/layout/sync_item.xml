@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+    >
+
+    <org.unicefkidpower.schools.helper.FontView
+        android:id="@+id/syncedMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_string_check"
+        android:textSize="@dimen/dimen_text_normal"
+        android:textColor="@color/black"
+        android:layout_margin="6dp"
+        />
+
+    <TextView android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="Evan"
+        android:textColor="@color/kidpower_darkgray"
+        android:textSize="@dimen/dimen_text_desc"
+        android:gravity="center_vertical"
+        android:id="@+id/tvName" />
+
+    <TextView android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="state"
+        android:textColor="@color/kidpower_darkgray"
+        android:textSize="@dimen/dimen_text_desc"
+        android:gravity="center_vertical"
+        android:id="@+id/tvStatus" />
+
+    <TextView android:layout_width="@dimen/dimen_sync_item_width"
+        android:layout_height="match_parent"
+        android:text="FFFFF"
+        android:textColor="@color/kidpower_darkgray"
+        android:textSize="@dimen/dimen_text_desc"
+        android:gravity="center_vertical"
+        android:id="@+id/tvDeviceId" />
+
+</LinearLayout>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@color/colorFullWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.caloriecloud.android.ui.CCButton
+            android:id="@+id/skipButton"
+            android:textColor="@color/colorTextGrey"
+            android:layout_gravity="start"
+            android:text="@string/skip"
+            android:textSize="16sp"
+            android:fontFamily="SourceSansPro_Regular.otf"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <org.caloriecloud.android.ui.CCButton
+            android:id="@+id/nextButton"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="end"
+            android:text="@string/next"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:fontFamily="SourceSansPro_Regular.otf"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
+

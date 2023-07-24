@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/challengeLogo"
+        android:contentDescription="@string/challenge_logo"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextGrey"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeDates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:layout_marginTop="5dp"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeDisclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:layout_marginTop="10dp"
+        android:text="@string/challenge_disclaimer"
+    />
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/joinNowButton"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:textAllCaps="true"
+        android:text="@string/yes_lets_get_started"
+        android:background="@drawable/cc_button_alt"
+        android:textColor="@color/colorFullWhite"
+        android:layout_width="294dp"
+        android:layout_height="42dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeDonationRateValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_BoldIt.otf"
+        android:text="@string/donation_rate"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeSponsor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:layout_marginTop="0dp"
+        android:text="@string/challenge_sponsor"
+    />
+
+    <ImageView
+        android:contentDescription="@string/calorie_cloud_logo"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/kpw_logostack"
+        android:layout_height="120dp"/>
+
+</LinearLayout>

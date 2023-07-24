@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="96dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlNormal"
+    android:visibility="visible" >
+
+    <!-- contents -->
+    <LinearLayout
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/kidpower_generalroundgrayframe"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_marginTop="13dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <org.unicefkidpower.schools.ui.RoundedImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_roundcircle1"
+                android:id="@+id/ivAvatarBg"
+                />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_rank"
+                android:id="@+id/ivAvatar"
+                />
+        </RelativeLayout>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:text="Active Eights"
+            style="@style/kidpower_primarytext"
+            android:gravity="center"
+            android:id="@+id/textName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="8dp"
+            />
+
+    </LinearLayout>
+
+    <!-- coach flag -->
+    <RelativeLayout android:layout_width="40dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/rlCoachFlag"
+        >
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/coachflag"
+            />
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:text="@string/layout_team_coach"
+            android:layout_marginLeft="2dp"
+            android:textSize="8dp"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

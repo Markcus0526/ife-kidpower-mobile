@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="customFont" format="string"/>
+
+	<array name="mycolors">
+		<item>#FF000000</item>
+		<item>#FF000000</item>
+		<item>#FF000000</item>
+		<item>#FF000000</item>
+	</array>
+
+    <declare-styleable name="KPHTextView">
+        <attr name="customTextViewFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHButton">
+        <attr name="customButtonFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHEditText">
+        <attr name="customEditTextFont" format="string"/>
+        <attr name="customCornerRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHRadioButton">
+        <attr name="customRadioButtonFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHTabItem">
+        <attr name="customTabItemImage" format="reference"/>
+        <attr name="customTabItemLabel" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHImageTextButton">
+        <attr name="customImageSize" format="dimension"/>
+        <attr name="customTextSize" format="dimension"/>
+        <attr name="customText" format="string"/>
+        <attr name="customTextColor" format="color"/>
+        <attr name="customImageTextButtonFont" format="string"/>
+        <attr name="customImageResourceId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHImageLabelTextButton">
+        <attr name="ILTImageSize" format="dimension"/>
+        <attr name="ILTImageResourceId" format="reference"/>
+
+        <attr name="ILTLabelSize" format="dimension"/>
+        <attr name="ILTLabel" format="string"/>
+        <attr name="ILTLabelColor" format="color"/>
+        <attr name="ILTLabelFont" format="string"/>
+        <attr name="ILTValueSize" format="dimension"/>
+        <attr name="ILTValue" format="string"/>
+        <attr name="ILTValueColor" format="color"/>
+        <attr name="ILTValueFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHSyncMark">
+        <attr name="syncAvatar" format="reference"/>
+        <attr name="syncStatus" format="string"/>
+        <attr name="syncName" format="string"/>
+        <attr name="isAnimating" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHPacketView">
+        <attr name="packetImage" format="reference"/>
+        <attr name="packetStatus" format="string"/>
+        <attr name="packetBadge" format="integer"/>
+        <attr name="convertAnimating" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHDelightView">
+        <attr name="delightImage" format="reference"/>
+        <attr name="delightStatus" format="string"/>
+        <attr name="delightName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHCheerView">
+        <attr name="avatarImage" format="reference"/>
+        <attr name="avatarStatus" format="string"/>
+        <attr name="avatarName" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBarView">
+        <attr name="initPercent" format="integer" />
+        <attr name="foregroundResId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="KPHSegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+        <attr name="sc_unchecked_background" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPHAdvancedEditText">
+        <attr name="aet_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CreditCardForm">
+        <attr name="include_exp"        format="boolean"/>
+        <attr name="include_security"   format="boolean"/>
+        <attr name="include_zip"        format="boolean"/>
+        <attr name="include_helper"     format="boolean"/>
+
+        <attr name="helper_text_color"  format="color"/>
+        <attr name="text_color"         format="color"/>
+        <attr name="hint_text_color"    format="color"/>
+        <attr name="cursor_color"       format="color"/>
+        <attr name="card_number_hint"   format="string"/>
+        <attr name="input_background"   format="reference"/>
+        <attr name="default_text_colors" format="boolean"/>
+    </declare-styleable>
+
+</resources>

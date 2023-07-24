@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/cc_login_background"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:text="@string/first_time_launch_text"
+        android:textColor="@color/colorFullWhite"
+        android:layout_width="280dp"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/joinWithEventCodeButton"
+        android:text="@string/register_event_code"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cc_button_alt"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:stateListAnimator="@null"
+        android:textSize="18sp"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+    />
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/firstLaunchButton"
+        android:text="@string/login_to_account"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cc_button"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:stateListAnimator="@null"
+        android:textSize="18sp"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+    />
+
+    <ImageView
+        android:contentDescription="@string/calorie_cloud_logo"
+        android:src="@drawable/cc_app_icon_alternate"
+        android:layout_marginTop="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorFullWhite"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:text="@string/login_header"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorFullWhite"
+        android:text="@string/login_subheader"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:textSize="16sp"
+        android:layout_marginTop="0dp"
+    />
+
+</LinearLayout>

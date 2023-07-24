@@ -1,0 +1,77 @@
+buildscript {
+	repositories {
+		maven { url 'https://maven.fabric.io/public' }
+	}
+
+	dependencies {
+		classpath 'io.fabric.tools:gradle:1.21.4'
+	}
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+	maven { url 'https://maven.fabric.io/public' }
+	jcenter { url = 'http://dl.bintray.com/swrve-inc/android' }
+	maven { url 'https://zendesk.artifactoryonline.com/zendesk/repo' }
+}
+
+android {
+	signingConfigs {
+		config {
+			keyAlias 'UNICEF Kid Power'
+			keyPassword 'caloriecloud!1'
+			storeFile file('D:/1.WORK/CalorieCloud_Workshop/Source/kpc-app-android/KeyStore by Intellij/UNICEF_Kid_Power.jks')
+			storePassword 'caloriecloud!1'
+		}
+	}
+	compileSdkVersion 25
+	buildToolsVersion '25.0.2'
+	defaultConfig {
+		applicationId "org.unicefkidpower.schools"
+		minSdkVersion 18
+		targetSdkVersion 25
+		versionCode 98
+		versionName '2.0.13'
+		multiDexEnabled true
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+			signingConfig signingConfigs.config
+		}
+		debug {
+			signingConfig signingConfigs.config
+		}
+	}
+	productFlavors {}
+	lintOptions {
+		checkReleaseBuilds false
+		abortOnError
+	}
+}
+
+dependencies {
+	compile files('libs/FlurryAnalytics-6.2.0.jar')
+	compile files('libs/kidsplace_sdk.jar')
+	compile(name: 'kidsplace', ext: 'aar')
+	compile 'com.squareup.retrofit:retrofit:1.9.0'
+	compile 'com.squareup.okhttp:okhttp:2.2.0'
+	compile 'com.android.support:support-v4:25.2.0'
+	compile 'com.android.support:appcompat-v7:25.2.0'
+	compile 'com.android.support:palette-v7:25.2.0'
+	compile 'com.android.support:leanback-v17:25.2.0'
+	compile 'com.android.support:design:25.2.0'
+	compile 'com.google.code.gson:gson:2.4'
+	compile 'com.google.android.gms:play-services-ads:8.4.0'
+	compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+		transitive = true;
+	}
+	compile 'com.swrve.sdk.android:swrve:4.6.1'
+	compile 'com.zendesk:sdk-providers:1.9.1.1'
+	compile 'org.greenrobot:eventbus:3.0.0'
+	compile 'com.jaredrummler:android-device-names:1.0.7'
+	compile 'com.wang.avi:library:+'
+	compile 'com.android.support:multidex:1.0.1'
+}

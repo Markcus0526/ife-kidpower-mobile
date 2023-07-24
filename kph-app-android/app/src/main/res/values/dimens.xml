@@ -1,0 +1,142 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+	<dimen name="dimen_20dp">20dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_buy_avatar">40dp</dimen>
+    <dimen name="margin_dialog_horizontal">24dp</dimen>
+
+    <integer name="bs_grid_column">3</integer>
+
+    <dimen name="pager_indicator_dimen">20dp</dimen>
+    <dimen name="pager_indicator_padding">6dp</dimen>
+	<dimen name="dimen_40dp">40dp</dimen>
+
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_tab_bar_height">70dp</dimen>
+	<dimen name="shadow_height">10dp</dimen>
+	<dimen name="tab_indicator_height">5dp</dimen>
+
+	<!-- Padding Sizes -->
+	<dimen name="dimen_padding_size_small">8dp</dimen>
+	<dimen name="dimen_padding_size_medium">16dp</dimen>
+	<dimen name="dimen_padding_size_large">32dp</dimen>
+
+	<dimen name="dimen_right_arrow_width">18dp</dimen>
+	<dimen name="dimen_right_arrow_height">18dp</dimen>
+
+	<dimen name="dimen_play_button_width">80dp</dimen>
+	<dimen name="dimen_play_button_height">80dp</dimen>
+	<dimen name="dimen_play_button_padding">10dp</dimen>
+
+	<!-- Navigation bar dimensions -->
+	<dimen name="dimen_navigation_bar_backarrow_width">50dp</dimen>
+	<dimen name="dimen_navigation_bar_backarrow_height">50dp</dimen>
+	<dimen name="dimen_navigation_bar_transparent_backarrow_width">65dp</dimen>
+	<dimen name="dimen_navigation_bar_transparent_backarrow_height">65dp</dimen>
+
+	<dimen name="dimen_navigation_bar_height">50dp</dimen>
+	<dimen name="dimen_navigation_bar_back_arrow_size">50dp</dimen>
+
+	<dimen name="dimen_navigation_bar_back_arrow_padding_start">15dp</dimen>
+	<dimen name="dimen_navigation_bar_back_arrow_padding_end">15dp</dimen>
+	<dimen name="dimen_navigation_bar_back_arrow_padding_top">15dp</dimen>
+	<dimen name="dimen_navigation_bar_back_arrow_padding_bottom">15dp</dimen>
+
+	<dimen name="dimen_navigation_bar_transparent_back_arrow_padding_start">30dp</dimen>
+	<dimen name="dimen_navigation_bar_transparent_back_arrow_padding_top">30dp</dimen>
+
+	<dimen name="dimen_navigation_bar_transparent_title_top_padding">15dp</dimen>
+
+	<!-- Font Sizes -->
+	<dimen name="dimen_font_size_small">13dp</dimen>
+	<dimen name="dimen_font_size_base">14dp</dimen>
+	<dimen name="dimen_font_size_base_title">20dp</dimen>
+	<dimen name="dimen_font_size_base_subtitle">17dp</dimen>
+	<dimen name="dimen_font_size_base_small">10dp</dimen>
+	<dimen name="dimen_font_size_heading_base">17dp</dimen>
+	<dimen name="dimen_font_size_heading_count">15dp</dimen>
+	<dimen name="dimen_font_size_heading_count_sub_medium">18dp</dimen>
+	<dimen name="dimen_font_size_heading_count_medium">24dp</dimen>
+	<dimen name="dimen_font_size_heading_count_big">30dp</dimen>
+	<dimen name="dimen_font_size_heading_count_bigger">34dp</dimen>
+	<dimen name="dimen_font_size_heading_count_extra_big">60dp</dimen>
+	<dimen name="dimen_font_size_heading_button">20dp</dimen>
+
+	<!-- Button dimensions -->
+	<dimen name="dimen_button_general_height">40dp</dimen>
+	<dimen name="dimen_button_general_radius">3dp</dimen>
+
+	<!-- Edit Text dimensions -->
+	<dimen name="dimen_edittext_general_height">45dp</dimen>
+	<dimen name="dimen_edittext_general_padding">15dp</dimen>
+	<dimen name="dimen_edittext_general_first_hint_font_size">16dp</dimen>
+	<dimen name="dimen_edittext_general_secondary_hint_font_size">12dp</dimen>
+	<dimen name="dimen_edittext_general_radius">0dp</dimen>
+
+	<!-- Segmented Group dimensions -->
+	<dimen name="dimen_radio_button_conner_radius">5dp</dimen>
+	<dimen name="dimen_radio_button_stroke_border">1dp</dimen>
+	<dimen name="dimen_radio_button_general_height">30dp</dimen>
+
+	<!-- Miscellaneous -->
+	<dimen name="dimen_band_input_height">50dp</dimen>
+	<dimen name="dimen_avatar_size">100dp</dimen>
+	<dimen name="dimen_avatar_smaller_size">70dp</dimen>
+	<dimen name="dimen_avatar_small_size">90dp</dimen>
+	<dimen name="dimen_avatar_size_large">150dp</dimen>
+
+	<!-- Balloon dimensions -->
+	<dimen name="dimen_balloon_general_radius">10dp</dimen>
+
+	<dimen name="dimen_sliding_tab_height">50dp</dimen>
+
+	<dimen name="dimen_delight_icon_large_size">200dp</dimen>
+	<dimen name="dimen_delight_icon_small_size">100dp</dimen>
+	<dimen name="dimen_delight_stamp_height">75dp</dimen>
+	<dimen name="dimen_delight_stamp_halfheight">38dp</dimen>
+
+	<dimen name="dimen_country_stamp_height">110dp</dimen>
+	<dimen name="dimen_country_shape_max_width_height">520dp</dimen>
+
+	<!-- Avatar dimensions -->
+	<dimen name="avatar_radius">72dp</dimen>
+	<dimen name="avatar_border_radius">80dp</dimen>
+	<dimen name="avatar_border_selected_radius">88dp</dimen>
+
+	<!-- Margin Sizes -->
+	<dimen name="dimen_margin_1">1dp</dimen>
+	<dimen name="dimen_margin_2">2dp</dimen>
+	<dimen name="dimen_margin_3">3dp</dimen>
+	<dimen name="dimen_margin_5">5dp</dimen>
+	<dimen name="dimen_margin_6">6dp</dimen>
+	<dimen name="dimen_margin_8">8dp</dimen>
+	<dimen name="dimen_margin_10">10dp</dimen>
+	<dimen name="dimen_margin_13">13dp</dimen>
+	<dimen name="dimen_margin_15">15dp</dimen>
+	<dimen name="dimen_margin_20">20dp</dimen>
+	<dimen name="dimen_margin_30">30dp</dimen>
+	<dimen name="dimen_margin_40">40dp</dimen>
+	<dimen name="dimen_margin_50">50dp</dimen>
+	<dimen name="dimen_margin_60">60dp</dimen>
+	<dimen name="dimen_margin_65">65dp</dimen>
+
+	<!-- General Video View Dimensions -->
+	<dimen name="dimen_video_view_general_height">250dp</dimen>
+
+	<!-- Welcome Screen -->
+	<dimen name="dimen_onboarding_margin">30dp</dimen>
+	<dimen name="dimen_onboarding_double">60dp</dimen>
+</resources>

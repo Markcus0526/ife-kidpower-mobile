@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontPath" format="string"/>
+
+    <attr name="statusbarBackground" format="color"/>
+
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="insertForeground" format="reference|color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_stroke_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+        <attr name="sc_unchecked_text_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="KPButton">
+        <attr name="customButtonFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPEditText">
+        <attr name="customEditTextFont" format="string"/>
+        <attr name="customCornerRadius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPTextView">
+        <attr name="customTextViewFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPRadioButton">
+        <attr name="customRadioButtonFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPImageTextButton">
+        <attr name="customImageSize" format="dimension"/>
+        <attr name="customTextSize" format="dimension"/>
+        <attr name="customText" format="string"/>
+        <attr name="customTextColor" format="color"/>
+        <attr name="customImageTextButtonFont" format="string"/>
+        <attr name="customImageResourceId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPSideMenu">
+        <attr name="smIsActive" format="boolean" />
+        <attr name="smActiveImage" format="reference"/>
+        <attr name="smImage" format="reference"/>
+        <attr name="smText" format="string"/>
+        <attr name="smFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="KPToggleIcon">
+        <attr name="iconText" format="string"/>
+        <attr name="iconColor" format="color"/>
+    </declare-styleable>
+
+</resources>

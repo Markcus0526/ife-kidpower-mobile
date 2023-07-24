@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+<RelativeLayout
+			  android:id="@+id/layout_parent"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/kph_color_main_background">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center"
+			android:padding="16dp"
+			android:layout_below="@+id/btnClose">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:id="@+id/txtHeader"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/style_textview_heading"
+				android:text="@string/whose_steps_are_we_counting"
+				android:textSize="@dimen/dimen_font_size_heading_count_big"
+				android:textColor="@android:color/white"
+				android:gravity="center" />
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:id="@+id/btnParent"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:text="@string/band_is_parent"
+				style="@style/style_button_general"
+				android:layout_marginTop="@dimen/dimen_margin_15"
+				android:layout_marginBottom="@dimen/dimen_margin_15"
+				android:visibility="visible"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:id="@+id/btnChild"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:text="@string/band_is_child"
+				style="@style/style_button_general"
+				android:layout_marginTop="@dimen/dimen_margin_15"
+				android:layout_marginBottom="@dimen/dimen_margin_15"
+				/>
+		</LinearLayout>
+	</FrameLayout>
+
+	<ImageButton
+		android:layout_width="@dimen/dimen_48dp"
+		android:layout_height="@dimen/dimen_48dp"
+		android:id="@+id/btnClose"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:background="@null"
+		android:src="@drawable/lightbox_close_white"
+		android:scaleType="fitCenter"
+		android:padding="@dimen/dimen_16dp" />
+
+</RelativeLayout>
+</RelativeLayout>

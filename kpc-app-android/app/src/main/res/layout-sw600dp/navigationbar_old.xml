@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+    <RelativeLayout
+            android:id="@+id/rlNavBg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/nav_bg"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"
+                android:text=""
+                android:id="@+id/textTitle" android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="78dp"
+            android:layout_height="69dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="13dp"
+            >
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mark"
+                android:id="@+id/ivLogo"
+                />
+    </RelativeLayout>
+
+    <!-- menu -->
+    <RelativeLayout android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/rlBtnMenu"
+            >
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/menu"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- home -->
+    <RelativeLayout android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@id/rlBtnMenu"
+                    android:id="@+id/rlBtnHome"
+            >
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                >
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/home"
+                       android:layout_centerHorizontal="true"
+                       android:layout_centerVertical="true"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- back -->
+    <RelativeLayout android:layout_width="105dp" android:layout_height="80dp" android:layout_alignParentRight="true"
+                    android:layout_marginRight="38dp" android:id="@+id/rlBtnLanguageMenu">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="55dp"
+                        android:background="@drawable/kidpower_languagemenubuttonbg"
+                        android:id="@+id/rlLanguageMenuBackground">
+            <ImageView android:layout_width="47dp" android:layout_height="match_parent" android:id="@+id/ivDownArrow"
+                       android:layout_alignParentLeft="true" android:src="@drawable/downarrow_white"/>
+            <ImageView android:layout_width="48dp" android:layout_height="match_parent" android:id="@+id/ivFlag"
+                       android:layout_toRightOf="@+id/ivDownArrow" android:src="@drawable/usa"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:id="@+id/rlBtnBack"
+            >
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="55dp">
+            <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icon_back"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ivIconBack"
+                    />
+            <TextView
+                    android:layout_marginLeft="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/layout_navigation_back"
+                    android:textSize="@dimen/kidpower_backbuttonfontsize"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/textBack"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
+

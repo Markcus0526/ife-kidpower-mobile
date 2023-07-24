@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<ImageView
+		android:id="@+id/iv_triangle"
+		android:layout_width="@dimen/dimen_margin_15"
+		android:layout_height="@dimen/dimen_margin_10"
+		android:layout_marginStart="@dimen/dimen_margin_13"
+		android:background="@drawable/popup_triangle"/>
+
+	<org.unicefkidpower.kid_power.View.CustomControls.KPHRoundRectLinearLayout
+		android:id="@+id/layout_family_accounts"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/kph_drawable_white_all_corner"
+		android:orientation="vertical">
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txt_switch_to_family_account"
+			style="@style/style_textview_heading"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_navigation_bar_height"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center"
+			android:text="@string/switch_to_family_account"
+			android:textColor="@color/kph_color_brownish_grey"
+			android:textSize="@dimen/dimen_font_size_heading_base"/>
+
+		<ImageView
+			android:id="@+id/iv_split_line"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_margin_1"
+			android:alpha="0.2"
+			android:background="@android:color/black"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/lv_family_accounts"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:scrollbars="vertical"/>
+
+			<ImageView
+				android:id="@+id/title_bar_shadow"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/shadow_height"
+				android:alpha="0.3"
+				android:background="@drawable/shadow_bottom"/>
+		</RelativeLayout>
+	</org.unicefkidpower.kid_power.View.CustomControls.KPHRoundRectLinearLayout>
+</LinearLayout>

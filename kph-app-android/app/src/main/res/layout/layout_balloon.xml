@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_text"
+        style="draw"
+        android:background="@drawable/kph_drawable_ballon_general_background"
+        android:paddingStart="@dimen/dimen_margin_30"
+        android:paddingEnd="@dimen/dimen_margin_30"
+        android:paddingTop="@dimen/dimen_margin_15"
+        android:paddingBottom="@dimen/dimen_margin_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username_tip_text_for_family_account"
+            android:id="@+id/txtHints"
+            android:textColor="@android:color/white"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_margin_30"
+        android:id="@+id/imageView"
+        android:src="@drawable/tooltip_black_main_arrow"
+        android:alpha="0.6"
+        android:layout_alignEnd="@+id/layout_text"
+        android:layout_below="@+id/layout_text" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_content"
+    android:paddingRight="@dimen/margin_4"
+    android:paddingLeft="@dimen/margin_4"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_subcontent">
+
+        <org.unicefkidpower.schools.ui.KPTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:id="@+id/txt_label"
+            android:layout_toRightOf="@+id/iv_item"
+            android:layout_toEndOf="@+id/ivItem"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize_normal"
+            style="@style/style_textview_heading"
+            android:layout_centerVertical="true"
+            android:textAllCaps="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_item"
+            android:src="@drawable/sync_white"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/kidpower_inputboxpadding" />
+    </RelativeLayout>
+
+</RelativeLayout>

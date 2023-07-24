@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>missionId</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Global Mission with Alex Morgan</string>
+		<key>description</key>
+		<string>Alex Morgan introduces the UNICEF Kid Power Team, and lets you know how you can help end global malnutrition.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>5000</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve completed your first mission and unlocked 10 RUTF packets! Great job!</string>
+		<key>delights</key>
+		<array>
+			<integer>1</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>4</integer>
+			<integer>5</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>901</integer>
+		<key>title</key>
+		<string>Global Mission with Alex Morgan</string>
+		<key>description</key>
+		<string>Alex Morgan introduces the UNICEF Kid Power Team, and lets you know how you can help end global malnutrition.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_short_briefing.mp4</string>
+		<key>completeVideoURL</key>
+        <string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/001_short_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>1000</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve completed your first mission and unlocked 2 RUTF packets! Great job!</string>
+		<key>delights</key>
+		<array>
+			<integer>101</integer>
+			<integer>102</integer>
+			<integer>103</integer>
+			<integer>104</integer>
+			<integer>105</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>902</integer>
+		<key>title</key>
+		<string>Global Mission with Alex Morgan</string>
+		<key>description</key>
+		<string>Alex Morgan introduces the UNICEF Kid Power Team, and lets you know how you can help end global malnutrition.</string>
+		<key>introVideoURL</key>
+		<string>http://f8bd07b4748a8dffd409-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/902_briefing.mp4</string>
+		<key>completeVideoURL</key>
+        <string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/902_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve completed your first mission and unlocked 5 RUTF packets! Great job!</string>
+		<key>delights</key>
+		<array>
+			<integer>178</integer>
+			<integer>179</integer>
+			<integer>180</integer>
+			<integer>181</integer>
+			<integer>182</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Mission: Haiti with Maya Moore</string>
+		<key>description</key>
+		<string>Maya Moore takes us to Haiti to see how a girl and her mother overcame severe malnutrition.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/002_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/002_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve completed Mission: Haiti with Maya Moore and unlocked five RUTF packets! Great job!</string>
+		<key>delights</key>
+		<array>
+			<integer>6</integer>
+			<integer>7</integer>
+			<integer>8</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>Mission: Uganda with Tyson Chandler</string>
+		<key>description</key>
+		<string>Tyson Chandler takes us to Uganda to meet Gloria, a girl who helps her family stay healthy.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/003_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/003_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve completed Mission: Uganda with Tyson Chandler and unlocked five RUTF packets! Awesome!</string>
+		<key>delights</key>
+		<array>
+			<integer>9</integer>
+			<integer>10</integer>
+			<integer>11</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Mission: Burkina Faso with David Ortiz</string>
+		<key>description</key>
+		<string>David Ortiz takes us to Burkina Faso to meet two kids who are studying hard to help their families and live their dreams.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/004_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/004_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve completed Mission: Burkina Faso with David Ortiz and unlocked five RUTF packets. You&apos;re doing your part to end global malnutrition!</string>
+		<key>delights</key>
+		<array>
+			<integer>12</integer>
+			<integer>13</integer>
+			<integer>14</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Mission: Uganda with Meryl Davis</string>
+		<key>description</key>
+		<string>Visit Uganda with Meryl Davis to meet an entire family working to end malnutrition, especially big brother Mugisha.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/005_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/005_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You&apos;ve earned 50 Kid Power Points to unlock RUTF for kids in Uganda. Meryl Davis calls that a perfect six!</string>
+		<key>delights</key>
+		<array>
+			<integer>86</integer>
+			<integer>87</integer>
+			<integer>88</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>6</integer>
+		<key>title</key>
+		<string>Global Mission: Play Around the World</string>
+		<key>description</key>
+		<string>Running, volleyball, dancing--getting active unites kids around the world. Join members of the UNICEF Kid Power Team to learn how kids everywhere play.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/006_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/006_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You played your way to 50 Kid Power points and unlocked five packets of therapeutic food for kids around the world. Mission Complete!</string>
+		<key>delights</key>
+		<array>
+			<integer>89</integer>
+			<integer>90</integer>
+			<integer>91</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>7</integer>
+		<key>title</key>
+		<string>Star Wars: Force For Change Kid Power Mission One</string>
+		<key>description</key>
+		<string>With UNICEF Kid Power, you can be a Force for Change!  Join Ashley Eckstein, voice of Ahsoka on Star Wars Rebels as she joins the UNICEF Kid Power Team to get active and save lives with UNICEF Kid Power.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/007_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You just earned 50 Kid Power points and unlocked five packets of therapeutic food. Not only are you a stand out member of the UNICEF Kid Power Team, but you are a Force for Change. Thank you, Star Wars fan!</string>
+		<key>delights</key>
+		<array>
+			<integer>92</integer>
+			<integer>93</integer>
+			<integer>94</integer>
+			<integer>95</integer>
+			<integer>96</integer>
+			<integer>97</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>8</integer>
+		<key>title</key>
+		<string>Special Mission to Haiti with P!nk</string>
+		<key>description</key>
+		<string>Get active, rock out and save lives with GRAMMY®-winning Recording Artist P!nk, our UNICEF Kid Power National Spokesperson. P!nk takes us to Haiti to see how music empowers members of the Kid Power Team.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/008_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/008_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>P!nk is sending you a special high give for finishing your special Mission to Haiti. Awesome job getting active, rocking out and saving lives--and unlocking five packets of RUTF for kids in Haiti!</string>
+		<key>delights</key>
+		<array>
+			<integer>106</integer>
+			<integer>107</integer>
+			<integer>108</integer>
+			<integer>109</integer>
+			<integer>110</integer>
+			<integer>111</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>9</integer>
+		<key>title</key>
+		<string>Global Mission with Aly Raisman</string>
+		<key>description</key>
+		<string>Three time Olympic medalist Aly Raisman shares what some of the 30 million children currently on the run as refugees need to stay happy and healthy.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/009_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/009_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You just earned 50 Kid Power points and unlocked five packets of therapeutic food. Aly Raisman and all your fellow members of the Kid Power Team think you are awesome. Thanks!</string>
+		<key>delights</key>
+		<array>
+			<integer>112</integer>
+			<integer>113</integer>
+			<integer>114</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>10</integer>
+		<key>title</key>
+		<string>Mission: Burkina Faso with Dartanyon Crockett</string>
+		<key>description</key>
+		<string>Visit Burkina Faso with Dartanyon Crockett and see how practice makes him a part of the UNICEF Kid Power Team and the 2016 Paralympic Games for Judo.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/010_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>Way to go! You got active and saved lives for kids in Burkina Faso! You are a dedicated team member, just like Dartanyon Crockett!</string>
+		<key>delights</key>
+		<array>
+			<integer>118</integer>
+			<integer>119</integer>
+			<integer>120</integer>
+			<integer>121</integer>
+			<integer>122</integer>
+			<integer>123</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>11</integer>
+		<key>title</key>
+		<string>Global Mission: How RUTF is Made</string>
+		<key>description</key>
+		<string>Members of the UNICEF Kid Power Team get active to unlock packets of Ready-To-Use Therapeutic Food. Get a firsthand look at how these lifesaving packets are made, and how they are helping kids around the world survive and thrive.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/011_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/011_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>So not only did you learn how RUTF is made, you unlocked five packets. Awesome job!</string>
+		<key>delights</key>
+		<array>
+			<integer>124</integer>
+			<integer>125</integer>
+			<integer>126</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>12</integer>
+		<key>title</key>
+		<string>Mission: Uganda with Laurent Duvillier</string>
+		<key>description</key>
+		<string>Visit Uganda with UNICEF staff member Laurent Duvillier, and see Hassan's story—from child with severe malnutrition to a boy who can do it all!</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/012_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/012_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You finished your Mission! As Laurent would say, "Kudos!" Keep this up and kids like Hassan will be drawing a picture of YOU someday!</string>
+		<key>delights</key>
+		<array>
+			<integer>127</integer>
+			<integer>128</integer>
+			<integer>129</integer>
+		</array>
+	</dict>
+
+	<dict>
+		<key>missionId</key>
+		<integer>13</integer>
+		<key>title</key>
+		<string>Mission: Haiti The Friendship Games</string>
+		<key>description</key>
+		<string>See how sports and getting active bring people together (just like UNICEF Kid Power!) when Haiti and the Dominican Republic compete in the Friendship Games.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/013_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/013_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>Mission complete, and the games have come to an end! You are an excellent teammate for the UNICEF Kid Power Team.</string>
+		<key>delights</key>
+		<array>
+			<integer>130</integer>
+			<integer>131</integer>
+			<integer>132</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>14</integer>
+		<key>title</key>
+		<string>Global Mission: Girls and School</string>
+		<key>description</key>
+		<string>Denise Shepherd-Johnson works with UNICEF in Afghanistan. In this Mission she shares how getting an education is an important part of being on the UNICEF Kid Power Team for girls around the world.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/014_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/014_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string></string>
+		<key>delights</key>
+		<array>
+			<integer>133</integer>
+			<integer>134</integer>
+			<integer>135</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>15</integer>
+		<key>title</key>
+		<string>Trick-or-Treat for UNICEF Kid Power Mission</string>
+		<key>description</key>
+		<string>UNICEF Kid Power and Trick-or-Treat for UNICEF are two awesome ways for kids to help kids. Learn about the history of Trick-or-Treat for UNICEF while you get active and save lives!</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/015_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>3500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You did it! Great work – and now you're part of the historic Trick-or-Treat for UNICEF legacy.</string>
+		<key>delights</key>
+		<array>
+			<integer>136</integer>
+			<integer>137</integer>
+			<integer>138</integer>
+			<integer>139</integer>
+			<integer>140</integer>
+			<integer>141</integer>
+			<integer>142</integer>
+			<integer>143</integer>
+			<integer>144</integer>
+			<integer>145</integer>
+			<integer>146</integer>
+			<integer>147</integer>
+			<integer>148</integer>
+			<integer>149</integer>
+			<integer>150</integer>
+			<integer>151</integer>
+			<integer>152</integer>
+			<integer>153</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>16</integer>
+		<key>title</key>
+		<string>Star Wars: Force for Change Kid Power Mission Two</string>
+		<key>description</key>
+		<string>Join Ashley Eckstein, voice of Ahsoka Tano on Star Wars Rebels, as she leads the UNICEF Kid Power Team to get active and save lives, while unlocking exclusive content, including badges, souvenirs and more from Star Wars Rebels Season 3!</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/016_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>2500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>The crew of the Ghost always has each other&apos;s back, just like the UNICEF Kid Power Team. Great job doing your part by getting active and saving lives!</string>
+		<key>delights</key>
+		<array>
+			<integer>154</integer>
+			<integer>155</integer>
+			<integer>156</integer>
+			<integer>157</integer>
+			<integer>158</integer>
+			<integer>159</integer>
+			<integer>160</integer>
+			<integer>161</integer>
+			<integer>162</integer>
+		</array>
+	</dict>
+	<dict>
+		<key>missionId</key>
+		<integer>17</integer>
+		<key>title</key>
+		<string>Global Mission: Together for Holidays</string>
+		<key>description</key>
+		<string>Holidays are all about families coming together. Join Bethany Mota&apos;s Mission to discover how UNICEF helps reunite families separated by conflict and emergencies, and learn about the holidays they&apos;ll come home to.</string>
+		<key>introVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_briefing.mp4</string>
+		<key>completeVideoURL</key>
+		<string>http://fa481d6d80b29b2af0c4-374695414de4d3cc1ac23b0ebbc01f34.r4.cf1.rackcdn.com/017_complete.mp4</string>
+		<key>calorieGoal</key>
+		<string>3500</string>
+		<key>caloriesPerPacket</key>
+		<string>500</string>
+		<key>creditsRequired</key>
+		<integer>1</integer>
+		<key>missionCompleteText</key>
+		<string>You got active, saved lives, and learned about some of the many holidays members of the UNICEF Kid Power Team celebrate. GREAT job!</string>
+		<key>delights</key>
+		<array>
+			<integer>163</integer>
+			<integer>164</integer>
+			<integer>165</integer>
+			<integer>166</integer>
+			<integer>167</integer>
+			<integer>168</integer>
+			<integer>169</integer>
+			<integer>170</integer>
+			<integer>171</integer>
+			<integer>172</integer>
+			<integer>173</integer>
+			<integer>174</integer>
+			<integer>175</integer>
+			<integer>176</integer>
+			<integer>177</integer>
+		</array>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:background="@drawable/kph_drawable_list_item_general_background"
+			  android:id="@+id/item_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_padding_size_large"
+        android:paddingBottom="@dimen/dimen_padding_size_medium"
+        android:paddingTop="@dimen/dimen_padding_size_medium"
+        android:id="@+id/layout_mission">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/ivMissionCountry"
+            android:src="@drawable/country"
+            android:layout_marginEnd="@dimen/dimen_padding_size_large" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_right_arrow_width"
+            android:layout_height="@dimen/dimen_right_arrow_height"
+            android:id="@+id/ivDisclosure"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_white"
+            android:layout_marginEnd="@dimen/dimen_12dp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_marginEnd="@dimen/dimen_padding_size_large"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:id="@+id/txtStatus"
+				style="@style/style_textview_heading"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="Start now!"
+				android:textColor="@color/kph_color_orange"
+				android:textSize="@dimen/dimen_font_size_heading_base"/>
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:id="@+id/txtMissionName"
+				style="@style/style_textview_heading"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="Far Eastern Nepal"
+				android:textColor="@android:color/white"
+				android:textSize="@dimen/dimen_font_size_heading_base"/>
+
+			<LinearLayout
+				android:id="@+id/layout_missionInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="30dp"
+				android:layout_marginTop="@dimen/dimen_margin_5"
+				android:orientation="horizontal">
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+					android:id="@+id/ivPacket"
+					style="@style/kph_style_image_text_button_general"
+					android:layout_width="90dp"
+					android:layout_height="match_parent"
+					app:customImageResourceId="@drawable/packet"
+					app:customImageSize="30dp"
+					app:customImageTextButtonFont="@string/font_mikado_bold"
+					app:customText="0"/>
+
+				<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+					android:id="@+id/ivPowerpoint"
+					style="@style/kph_style_image_text_button_general"
+					android:layout_width="90dp"
+					android:layout_height="match_parent"
+					app:customImageResourceId="@drawable/powerpoint"
+					app:customImageSize="30dp"
+					app:customImageTextButtonFont="@string/font_mikado_bold"
+					app:customText="0"/>
+			</LinearLayout>
+		</LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/kph_color_dark_blue_30">
+    </LinearLayout>
+
+</LinearLayout>

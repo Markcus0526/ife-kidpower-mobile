@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/kidpower_light_grey_1"
+    android:id="@+id/layout_parent"
+    android:padding="@dimen/margin_16">
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:gravity="center"
+        style="@style/style_textview_general"
+        android:textSize="@dimen/dimen_text_normal" />
+
+    <org.unicefkidpower.schools.ui.KPTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_description"
+        android:gravity="center"
+        style="@style/style_textview_general"
+        android:layout_marginTop="@dimen/margin_12"
+        android:textSize="@dimen/dimen_text_desc"
+        android:lineSpacingMultiplier="1.3"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_button_height"
+        android:id="@+id/layout_buttons"
+        android:layout_marginTop="@dimen/margin_16">
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/button_cancel"
+            android:id="@+id/btn_cancel"
+            android:layout_weight="1"
+            style="@style/style_button_general"
+            android:background="@color/kidpower_light_grey_2"
+            android:textColor="@color/kidpower_brownish_grey"
+            android:textSize="@dimen/dimen_text_normal"
+            android:textAllCaps="true"/>
+
+        <org.unicefkidpower.schools.ui.KPButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/btn_OK"
+            android:id="@+id/btn_ok"
+            android:layout_weight="1"
+            style="@style/style_button_general"
+            android:background="@color/kidpower_light_blue"
+            android:textSize="@dimen/dimen_text_normal"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+</LinearLayout>

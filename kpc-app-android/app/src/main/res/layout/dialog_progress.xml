@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:background="#F8F8F8">
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/title_layout">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:id="@+id/title_text"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="20dp"
+			android:textColor="#2c8df9"
+			android:textSize="20dp"/>
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="80dp">
+
+		<com.wang.avi.AVLoadingIndicatorView
+			android:id="@+id/progress_wheel"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginStart="20dp"
+			android:layout_centerVertical="true"
+			app:indicatorName="BallPulseIndicator"
+			app:indicatorColor="#2c8df9"/>
+
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:id="@+id/content_text"
+			android:layout_marginStart="26dp"
+			android:layout_marginEnd="20dp"
+			android:textColor="#2c8df9"
+			android:textSize="17dp"
+			android:text="Please wait..."
+			android:layout_toRightOf="@+id/progress_wheel"/>
+
+	</RelativeLayout>
+
+</LinearLayout>

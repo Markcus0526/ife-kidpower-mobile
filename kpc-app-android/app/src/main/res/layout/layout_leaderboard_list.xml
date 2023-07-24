@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/no_favorites_layout"
+			android:layout_marginTop="50dp"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:scaleType="centerInside"
+				android:src="@drawable/ic_star"/>
+
+			<org.unicefkidpower.schools.ui.KPTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/kidpower_teamgradetext"
+				style="@style/style_textview_general"
+				android:layout_marginTop="14dp"
+				android:textSize="18dp"
+				android:layout_marginStart="20dp"
+				android:layout_marginEnd="20dp"
+				android:text="@string/you_don_t_have_any_favorites_yet"
+				android:gravity="center"/>
+
+			<org.unicefkidpower.schools.ui.KPTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/kidpower_teamgradetext"
+				android:layout_marginTop="14dp"
+				android:textSize="13dp"
+				android:layout_marginStart="20dp"
+				android:layout_marginEnd="20dp"
+				android:text="@string/build_your_favorites"
+				android:gravity="center"/>
+		</LinearLayout>
+
+		<android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/progressListVIew"
+            android:divider="@null"/>
+    </RelativeLayout>
+
+</RelativeLayout>

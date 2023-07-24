@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+				android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutHeader">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeAvatar"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:id="@+id/ivBackground"
+            android:src="@drawable/anim_sync_band"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:id="@+id/ivAvatar"
+            android:src="@drawable/avatar_large_archery"
+            android:visibility="visible"
+            android:layout_centerInParent="true" />
+
+		<ImageView
+			android:id="@+id/ivGoogleFit"
+			android:layout_width="@dimen/dimen_40dp"
+			android:layout_height="@dimen/dimen_40dp"
+			android:layout_alignEnd="@+id/ivAvatar"
+			android:layout_alignTop="@+id/ivAvatar"
+			android:scaleType="centerInside"
+			android:src="@drawable/google_fit"/>
+
+    </RelativeLayout>
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annoying Alien"
+        android:id="@+id/txtName"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        style="@style/FONT_HEADING_BASE"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeAvatar" />
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        style="@style/FONT_BASE"
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/txtName"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:text="Syncing"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

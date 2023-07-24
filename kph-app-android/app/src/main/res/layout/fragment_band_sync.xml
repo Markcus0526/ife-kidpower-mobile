@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kph_color_main_background"
+    android:id="@+id/layout_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHSyncMark
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/syncMark" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:id="@+id/layoutBody"
+                android:visibility="visible"
+                android:gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutBodyPage1"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unlocking RUTF packets with"
+                        android:id="@+id/tvStatus"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        style="@style/FONT_BASE_TITLE"
+                        android:layout_marginTop="@dimen/dimen_8dp" />
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="238"
+                        android:id="@+id/tvPowerPoints"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        style="@style/FONT_HEADING_COUNT_BIG"
+                        android:layout_marginTop="@dimen/dimen_8dp" />
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POWER POINTS"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        style="@style/FONT_BASE_TITLE"
+                        android:layout_marginTop="@dimen/dimen_8dp"
+                        android:id="@+id/tvPPUnits" />
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="into life-saving food packagets"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@android:color/white"
+                        style="@style/FONT_BASE"
+                        android:layout_marginTop="@dimen/dimen_4dp"
+                        android:visibility="gone"/>
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHPacketView
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/syncRUTF"
+                        android:layout_margin="@dimen/dimen_16dp"
+                        app:packetStatus="0%"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layoutBodyPage2"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Well done!"
+                        android:layout_gravity="center_horizontal"
+						android:maxWidth="280dp"
+                        android:textColor="@android:color/white"
+                        style="@style/FONT_BASE_TITLE"
+                        android:id="@+id/resultStatus"
+                        android:gravity="center_horizontal" />
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/resultSummary"
+						style="@style/FONT_BASE"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginBottom="@dimen/dimen_8dp"
+						android:layout_marginTop="@dimen/dimen_4dp"
+						android:gravity="center_horizontal"
+						android:maxWidth="280dp"
+						android:text="@string/sync_no_activities"
+						android:textColor="@android:color/white"
+						/>
+
+					<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+						android:id="@+id/resultReadmore"
+						style="@style/FONT_BASE"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginBottom="@dimen/dimen_8dp"
+						android:layout_marginTop="@dimen/dimen_4dp"
+						android:gravity="center_horizontal"
+						android:maxWidth="280dp"
+						android:text="@string/sync_band_not_seem_right_read_more"
+						android:textColor="@android:color/white"
+						/>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPackets"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dimen_4dp"
+                        android:layout_marginStart="@dimen/dimen_16dp"
+                        android:layout_marginEnd="@dimen/dimen_16dp"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/llDelight1"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/dimen_8dp"
+                            android:gravity="center_horizontal"
+                            >
+
+                            <org.unicefkidpower.kid_power.View.CustomControls.KPHPacketView
+                                android:id="@+id/earnedRUTF"
+                                android:orientation="vertical"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:paddingStart="@dimen/dimen_8dp"
+                                android:paddingEnd="@dimen/dimen_8dp"
+                                app:packetImage="@drawable/packet_synced"
+                                />
+
+                            <org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+                                android:id="@+id/unlockedDelight1"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                app:customImageSize="140dp"
+                                app:customImageResourceId="@drawable/souvenir_placeholder"
+                                android:visibility="visible"
+                                />
+
+                            <org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+                                android:id="@+id/unlockedDelight2"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                app:customImageSize="140dp"
+                                app:customImageResourceId="@drawable/souvenir_placeholder"
+                                android:visibility="visible"/>
+
+                            <org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+                                android:id="@+id/unlockedDelight3"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                app:customImageSize="140dp"
+                                app:customImageResourceId="@drawable/souvenir_placeholder"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llDelight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            >
+
+                            <org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+                                android:id="@+id/unlockedDelight4"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                app:customImageSize="140dp"
+                                app:customImageResourceId="@drawable/souvenir_placeholder"
+                                android:visibility="visible"/>
+
+							<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+								android:id="@+id/unlockedDelight5"
+								android:layout_width="100dp"
+								android:layout_height="match_parent"
+								app:customImageResourceId="@drawable/souvenir_placeholder"
+								app:customImageSize="140dp"
+								/>
+
+							<org.unicefkidpower.kid_power.View.CustomControls.KPHImageTextButton
+                                android:id="@+id/unlockedDelight6"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                app:customImageSize="140dp"
+                                app:customImageResourceId="@drawable/souvenir_placeholder"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+            android:id="@+id/btnGoto"
+            style="@style/style_button_general"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_button_general_height"
+            android:layout_marginStart="@dimen/dimen_margin_30"
+            android:layout_marginEnd="@dimen/dimen_margin_30"
+            android:layout_marginTop="@dimen/dimen_margin_20"
+            android:layout_marginBottom="@dimen/dimen_margin_20"
+            android:layout_gravity="bottom"
+            android:text="@string/my_passport"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

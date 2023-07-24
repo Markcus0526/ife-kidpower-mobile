@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llDialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_onboarding_margin"
+        android:layout_marginEnd="@dimen/dimen_onboarding_margin"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+        android:alpha="1">
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_onboarding_double"
+            android:layout_marginBottom="@dimen/dimen_onboarding_margin"
+            android:text="@string/whose_band_are_you_linking"
+            android:gravity="center"
+            style="@style/style_textview_general"
+            android:textSize="@dimen/dimen_font_size_heading_count"
+            android:textColor="@android:color/black"
+            android:paddingStart="@dimen/dimen_10dp"
+            android:paddingEnd="@dimen/dimen_10dp"/>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:background="#D7D7D7"
+			>
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:id="@+id/tvDefault"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="1dp"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="@drawable/kph_drawable_button_white_background"
+                android:textColor="@color/kph_color_share_background"
+                style="@style/style_textview_general"
+                android:text="@string/ok"
+                android:textSize="@dimen/dimen_font_size_heading_count" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:id="@+id/tvOther"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:padding="12dp"
+				android:gravity="center"
+				android:background="@drawable/kph_drawable_button_white_background"
+				android:textColor="@color/kph_color_share_background"
+				android:text="@string/open_settings"
+				style="@style/style_textview_general"
+				android:textSize="@dimen/dimen_font_size_heading_count"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/logo_with_white_background"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/llDialog"
+        android:layout_marginBottom="-32dp"
+        android:id="@+id/iv_logo" />
+
+</RelativeLayout>

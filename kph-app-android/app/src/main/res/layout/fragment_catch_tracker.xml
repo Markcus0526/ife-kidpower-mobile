@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@null">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/kph_color_main_background"
+		android:id="@+id/layout_parent">
+
+		<ImageButton
+			android:layout_width="@dimen/dimen_48dp"
+			android:layout_height="@dimen/dimen_48dp"
+			android:id="@+id/btnClose"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			android:background="@null"
+			android:src="@drawable/lightbox_close_white"
+			android:scaleType="fitCenter"
+			android:padding="@dimen/dimen_16dp" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_centerInParent="true"
+			android:paddingStart="@dimen/dimen_32dp"
+			android:paddingEnd="@dimen/dimen_32dp"
+			android:paddingBottom="@dimen/dimen_32dp">
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="70dp"
+				android:scaleType="centerInside"
+				android:src="@drawable/google_fit"/>
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				style="@style/style_textview_heading"
+				android:textSize="@dimen/dimen_font_size_base_title"
+				android:gravity="center"
+				android:text="@string/use_google_fit"
+				android:textColor="@android:color/white"/>
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				style="@style/style_textview_general"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:text="@string/participate_by_connecting"
+				android:textColor="@android:color/white"/>
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="@dimen/dimen_margin_20"
+				style="@style/style_textview_general"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:text="@string/google_fit_can_count_steps_with_this_device_or_another_activity_tracker"
+				android:textColor="@android:color/white"/>
+		</LinearLayout>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_button_general_height"
+			android:layout_marginStart="@dimen/dimen_margin_15"
+			android:layout_marginEnd="@dimen/dimen_margin_15"
+			android:layout_marginBottom="@dimen/dimen_12dp"
+			android:layout_above="@+id/text_link"
+			android:id="@+id/btn_connect_googlefit"
+			style="@style/style_button_general"
+			android:text="@string/connect_to_google_fit"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/text_link"
+			style="@style/style_textview_general"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="@dimen/dimen_12dp"
+			android:gravity="center"
+			android:paddingStart="@dimen/dimen_10dp"
+			android:paddingEnd="@dimen/dimen_10dp"
+			android:paddingBottom="@dimen/dimen_10dp"
+			android:paddingTop="@dimen/dimen_10dp"
+			android:text="@string/or_link_a_kid_power_band_or_buy_one"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"/>
+
+	</RelativeLayout>
+</RelativeLayout>

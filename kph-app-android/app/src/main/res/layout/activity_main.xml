@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Activities.Main.MainActivity"
+    android:id="@+id/layout_parent"
+    android:background="@color/kph_color_main_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_tabbar"
+        android:id="@+id/layout_fragment"
+        android:layout_alignParentTop="true"></FrameLayout>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_navigation_bar_height"
+        android:id="@+id/layout_success_notification"
+        android:background="@color/kph_color_success_green"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_font_size_base_subtitle"
+                android:layout_height="@dimen/dimen_font_size_base_subtitle"
+                android:id="@+id/iv_success_check"
+                android:src="@drawable/check_white_small"
+                android:scaleType="fitCenter" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_notification"
+                style="@style/style_textview_general"
+                android:textSize="@dimen/dimen_font_size_base_title"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="@dimen/dimen_margin_5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/shadow_height"
+		android:background="@drawable/shadow_top"
+		android:id="@+id/tab_bar_shadow"
+		android:layout_above="@+id/layout_tabbar"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/activity_tab_bar_height"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/layout_tabbar"
+		android:background="@color/kph_color_dark_blue">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/layoutBtnPassport">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTabItem
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/tabPassport"
+				app:customTabItemImage="@drawable/kph_drawable_passport_icon"
+				app:customTabItemLabel="@string/passport"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/layoutBtnTravelLog">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTabItem
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/tabTravelLog"
+				app:customTabItemImage="@drawable/kph_drawable_travel_log_icon"
+				app:customTabItemLabel="@string/travel_log"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/layoutBtnFollow">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTabItem
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/tabFollow"
+				app:customTabItemImage="@drawable/kph_drawable_follow_icon"
+				app:customTabItemLabel="@string/friends"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:id="@+id/layoutBtnMore">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTabItem
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/tabMore"
+				app:customTabItemImage="@drawable/kph_drawable_more_icon"
+				app:customTabItemLabel="@string/more"/>
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

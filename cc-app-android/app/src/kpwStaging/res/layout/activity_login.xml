@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/cc_login_background"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:contentDescription="@string/calorie_cloud_logo"
+        android:src="@drawable/kpw_logostack"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"/>
+
+    <org.caloriecloud.android.ui.CCEditText
+        android:id="@+id/emailField"
+        android:hint="@string/email_placeholder"
+        android:textSize="18sp"
+        android:alpha="0.9"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="6dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/cc_input"
+        android:textColorHint="@color/colorTextGrey"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:drawableStart="@drawable/ic_mail_outline_gray"
+        android:drawableLeft="@drawable/ic_mail_outline_gray"
+        android:layout_width="294dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" android:textStyle="italic"/>
+
+    <org.caloriecloud.android.ui.CCEditText
+        android:id="@+id/passwordField"
+        android:hint="@string/password_placeholder"
+        android:alpha="0.9"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:drawablePadding="6dp"
+        android:inputType="textPassword"
+        android:background="@drawable/cc_input"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorTextGrey"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:drawableStart="@drawable/ic_lock_outline_gray"
+        android:drawableLeft="@drawable/ic_lock_outline_gray"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content" android:textStyle="italic"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/loginButton"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:background="@drawable/cc_button"
+        android:layout_width="294dp"
+        android:layout_height="42dp"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/forgotPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:textSize="15sp"
+        android:textColor="@color/colorFullWhite"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorFullWhite"
+        android:fontFamily="SourceSansPro_It.otf"
+        android:textSize="15sp"
+        android:text="@string/join_challenge"
+    />
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/registerEventCode"
+        android:layout_width="294dp"
+        android:layout_height="42dp"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorFullWhite"
+        android:background="@drawable/cc_button_alt"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:textAllCaps="true"
+        android:text="@string/enter_event_code"
+    />
+
+</LinearLayout>

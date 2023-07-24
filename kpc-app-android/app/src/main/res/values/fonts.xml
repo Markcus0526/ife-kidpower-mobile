@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_mikado_bold">Mikado_bold.otf</string>
+    <string name="font_pfdindisplaypro_regular">PFDinDisplayPro_regular.otf</string>
+    <string name="font_pfdindisplaypro_italic">PFDinDisplayPro_italic.otf</string>
+    <string name="font_awesome_webfont">fontawesome-webfont.ttf</string>
+</resources>

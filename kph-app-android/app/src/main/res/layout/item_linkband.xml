@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_content"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/color_list_divider"
+        android:visibility="visible"/>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:paddingStart="@dimen/dimen_16dp"
+        android:paddingEnd="@dimen/dimen_16dp"
+        android:paddingTop="@dimen/dimen_4dp"
+        android:paddingBottom="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_1dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivBand"
+            android:src="@drawable/item_band"
+            android:scaleType="fitCenter"
+            android:layout_alignParentStart="true" />
+
+        <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:id="@+id/txtBand"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/ivBand"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/ivEncloser"
+            android:paddingStart="@dimen/dimen_16dp"
+            android:paddingEnd="@dimen/dimen_16dp"
+            android:textSize="@dimen/dimen_font_size_base_title"
+            android:textColor="@android:color/white"
+            style="@style/FONT_BASE_TITLE" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_right_arrow_width"
+            android:layout_height="@dimen/dimen_right_arrow_height"
+            android:id="@+id/ivEncloser"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow_white"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:src="@drawable/cc_tracking_enabled"
+        android:layout_width="120dp"
+        android:layout_height="100dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:text="@string/success"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/colorTextGrey"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_marginTop="17dp"
+        android:textAlignment="center"
+        android:text="@string/pre_dashboard_text"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="17sp"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:textAlignment="center"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="18sp"
+        android:fontFamily="SourceSansPro_BoldIt.otf"
+        android:text="@string/login_subheader"
+        android:layout_marginTop="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:text="@string/next"
+        android:id="@+id/visitDashboardButton"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="20dp"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:background="@drawable/cc_button"
+        android:layout_width="280dp"
+        android:layout_height="42dp"/>
+
+
+</LinearLayout>

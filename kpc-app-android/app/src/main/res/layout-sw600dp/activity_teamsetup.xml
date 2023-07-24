@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+    android:id="@+id/layout_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- center -->
+        <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="67dp"
+                android:layout_width="575dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kidpower_generalroundgrayframe"
+                android:id="@+id/rlCenter"
+                >
+
+            <!-- team name & grade -->
+            <LinearLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/llSetupTeamNameAndGrade"
+                    android:visibility="visible"
+                    >
+                <!-- space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:orientation="vertical"
+                        >
+                </LinearLayout>
+
+                <!-- header -->
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:visibility="gone"
+                        >
+                    <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            style="@style/kidpower_secondarytext"
+                            android:text="We "
+                            android:gravity="right|center_vertical"
+                            />
+                    <ImageView
+                            android:layout_height="23dp"
+                            android:layout_width="23dp"
+                            android:layout_marginTop="6dp"
+                            android:background="@drawable/heart"/>
+                    <TextView android:layout_width="247dp"
+                              android:layout_height="fill_parent"
+                              style="@style/kidpower_secondarytext"
+                              android:text="St. Peter High School"
+                              android:layout_marginLeft="5dp"
+                              android:gravity="left|center_vertical"/>
+                </LinearLayout>
+
+                <!-- space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:orientation="vertical"
+                        >
+                </LinearLayout>
+
+                <EditText
+                        android:id="@+id/editTeamName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.5"
+						android:textColor="@color/kidpower_brownish_grey"
+                        style="@style/kidpower_inputboxnormal"
+                        android:inputType="textPersonName"
+                        android:hint="@string/layout_activityteamsetup_hint"
+                        />
+                <!-- space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="vertical"
+                        >
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="35dp"
+                              android:orientation="horizontal"
+                              android:layout_gravity="center_horizontal"
+                              android:id="@+id/llChooseGrade"
+                              android:background="@drawable/kidpower_inputboxbg"
+                        >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="match_parent"
+                              android:text="Grade"
+                              android:gravity="center"
+                              android:paddingLeft="10dp"
+                              android:paddingRight="10dp"
+                              style="@style/kidpower_primarytext"
+                              android:id="@+id/textGrade"
+                            />
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:src="@drawable/downarrow"
+                               android:paddingLeft="10dp"
+                               android:paddingRight="10dp"
+                            />
+                </LinearLayout>
+
+
+                <!-- space -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="vertical"
+                        >
+                </LinearLayout>
+
+                <!-- button -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnNext"
+                        android:layout_width="400dp"
+                        android:text="@string/btnnext_title"
+                        style="@style/kidpower_buttonnormal"
+                        android:enabled="false" />
+                </RelativeLayout>
+
+                <!-- bottom space -->
+                <LinearLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="vertical"
+                        >
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- roster & state -->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- hint arrow -->
+
+    <!-- list view for items-->
+    <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="178dp"
+            android:id="@+id/rlGradeItems"
+            android:visibility="gone"
+            >
+        <ListView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/listGradeItems"
+                >
+        </ListView>
+    </RelativeLayout>
+
+    <!-- navigation bar-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlNavigationBar"
+            >
+    </RelativeLayout>
+</RelativeLayout>
+

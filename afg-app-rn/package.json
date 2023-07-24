@@ -1,0 +1,17 @@
+{
+	"name": "AFG",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start"
+	},
+	"dependencies": {
+		"eases": "1.0.8",
+		"lottie-react-native": "^2.3.0",
+		"moment": "^2.19.2",
+		"react": "^16.1.1",
+		"react-native": "^0.50.4",
+		"react-native-code-push": "^5.2.0-beta",
+		"react-native-swiper": "1.5.13",
+		"wordwrap": "1.0.0"
+	}
+}

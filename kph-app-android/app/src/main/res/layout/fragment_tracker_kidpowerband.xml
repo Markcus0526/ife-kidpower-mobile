@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/kph_color_main_background">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerInParent="true"
+		android:paddingStart="@dimen/dimen_margin_30"
+		android:paddingEnd="@dimen/dimen_margin_30">
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:scaleType="centerInside"
+			android:src="@drawable/orange_band"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/style_textview_heading"
+			android:textSize="@dimen/dimen_font_size_base_title"
+			android:gravity="center"
+			android:id="@+id/band_name_text"
+			android:text="@string/kid_power_band"
+			android:textColor="@android:color/white"/>
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:id="@+id/description_textview"
+			android:layout_marginTop="@dimen/dimen_margin_20"
+			style="@style/style_textview_general"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"
+			android:text="@string/get_steps_from_this_kid_power_band"
+			android:textColor="@android:color/white"/>
+	</LinearLayout>
+
+	<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_button_general_height"
+		android:layout_marginStart="@dimen/dimen_margin_30"
+		android:layout_marginEnd="@dimen/dimen_margin_30"
+		android:layout_marginBottom="@dimen/dimen_margin_30"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/btn_unlink"
+		style="@style/style_button_general"
+		android:text="@string/un_link_band"/>
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@null">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBackground"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+		</RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

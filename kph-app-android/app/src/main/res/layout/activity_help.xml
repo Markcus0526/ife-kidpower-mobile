@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/layout_parent"
+    android:background="@color/kph_color_main_background">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/layout_navigation_bar" >
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBackground"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+		</RelativeLayout>
+	</RelativeLayout>
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_navigation_bar"
+		android:padding="@dimen/dimen_margin_30"
+		android:layout_centerInParent="false"
+		android:layout_above="@+id/txt_app_version">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_description"
+                android:id="@+id/txt_help_description"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/dimen_font_size_base_title"
+                style="@style/style_textview_general"
+                android:layout_below="@+id/iv_header" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_button_general_height"
+                android:text="@string/faq"
+                android:id="@+id/btn_faq"
+                style="@style/style_button_general"
+                android:layout_marginTop="@dimen/dimen_margin_30" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_button_general_height"
+                android:text="@string/send_us_a_message"
+                android:id="@+id/btn_send_us_a_message"
+                style="@style/style_button_general"
+                android:layout_marginTop="@dimen/dimen_margin_15" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_version_number"
+        android:id="@+id/txt_app_version"
+        style="@style/style_textview_general"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_size_base"
+		android:paddingTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_margin_30"
+        android:layout_marginStart="@dimen/dimen_margin_30"
+        android:layout_marginEnd="@dimen/dimen_margin_30" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/authStepsImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ukp_android_auth"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextGrey"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:text="@string/onboarding_auth_header"
+        android:textAlignment="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+    />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:id="@+id/challengeDisclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextGrey"
+        android:textAlignment="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:layout_marginTop="25dp"
+        android:text="@string/onboarding_auth_description"
+    />
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/authorizeButton"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:stateListAnimator="@null"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:text="@string/authorize"
+        android:background="@drawable/cc_button_alt"
+        android:textColor="@color/colorFullWhite"
+        android:layout_width="294dp"
+        android:layout_height="42dp"/>
+
+</LinearLayout>

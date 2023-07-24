@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/item_content"
+    android:paddingTop="@dimen/dimen_edittext_general_padding"
+    android:paddingBottom="@dimen/dimen_edittext_general_padding"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_MissionAvatar"
+        android:src="@drawable/icon_country_stamp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMissionStatus"
+        android:layout_below="@+id/img_MissionAvatar"
+        android:layout_centerHorizontal="true"
+        android:text="Mission Started"
+        android:textSize="@dimen/dimen_font_size_base_small"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white" />
+
+    <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPlace"
+        android:layout_below="@+id/txtMissionStatus"
+        android:layout_centerHorizontal="true"
+        android:text="Far Eastern Nepal"
+        android:textSize="@dimen/dimen_font_size_base_title"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

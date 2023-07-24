@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kph_color_main_background"
+    android:id="@+id/layout_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/layout_contents">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/ivBackground" />
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/ivShareMission"
+			android:src="@drawable/video_generic_black_overlay"
+			android:scaleType="fitCenter"
+			android:layout_centerHorizontal="true"
+			android:layout_marginStart="@dimen/dimen_margin_30"
+			android:layout_marginEnd="@dimen/dimen_margin_30"
+			android:layout_above="@+id/layout_mission_info"
+			android:layout_alignParentTop="true"
+			android:layout_marginTop="@dimen/dimen_margin_65" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_alignParentBottom="true"
+			android:paddingTop="@dimen/dimen_margin_10"
+			android:id="@+id/layout_mission_info">
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvMissionName"
+				style="@style/style_textview_heading"
+				android:text="UNICEF KID POWER BAND"
+				android:textColor="@android:color/white"
+				android:textSize="@dimen/dimen_font_size_base_title"
+				android:gravity="center_horizontal"
+				android:layout_marginStart="@dimen/dimen_margin_30"
+				android:layout_marginEnd="@dimen/dimen_margin_30" />
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvDescription"
+				android:text="Get Active, Save Lives! Remember to sync daily so every step counts."
+				android:textColor="@android:color/white"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:layout_marginTop="@dimen/dimen_4dp"
+				android:gravity="center_horizontal"
+				android:textColorLink="@android:color/white"
+				android:layout_marginStart="@dimen/dimen_margin_30"
+				android:layout_marginEnd="@dimen/dimen_margin_30" />
+
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_button_general_height"
+				android:text="Share"
+				android:id="@+id/btnShare"
+				style="@style/style_button_general"
+				android:layout_marginStart="@dimen/dimen_margin_15"
+				android:layout_marginEnd="@dimen/dimen_margin_15"
+				android:layout_marginBottom="@dimen/dimen_margin_15"
+				android:layout_marginTop="@dimen/dimen_margin_5" />
+
+		</LinearLayout>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBack"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/back_title_textview"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/ivBack"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_title_top_padding"
+				android:textColor="@color/kph_color_navigation_bar_title"
+				android:textSize="@dimen/dimen_font_size_heading_base"
+				android:text="@string/share"
+				style="@style/style_textview_heading"/>
+		</RelativeLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

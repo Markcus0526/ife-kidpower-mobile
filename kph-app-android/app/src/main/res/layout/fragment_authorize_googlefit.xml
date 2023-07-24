@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/kph_color_main_background">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/layout_user_info"
+		android:background="@color/kph_color_translucent_blue"
+		android:paddingBottom="@dimen/dimen_margin_5"
+		android:clickable="true"
+		android:paddingTop="@dimen/dimen_24dp">
+
+		<ImageView
+			android:id="@+id/ivAvatar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/dimen_avatar_size"
+			android:src="@drawable/avatar_placeholder" />
+
+		<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+			android:id="@+id/txt_username"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			style="@style/style_textview_heading"
+			android:text="Username"
+			android:textSize="@dimen/dimen_font_size_base_subtitle"
+			android:textColor="@android:color/white"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/dimen_margin_5" />
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/layout_titlebar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@null">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentStart="true"
+			android:id="@+id/btnBack"
+			android:layout_centerVertical="true">
+
+			<ImageView
+				android:layout_width="@dimen/dimen_navigation_bar_transparent_backarrow_width"
+				android:layout_height="@dimen/dimen_navigation_bar_transparent_backarrow_height"
+				android:id="@+id/ivBackground"
+				android:layout_centerVertical="true"
+				android:src="@drawable/back_arrow"
+				android:paddingStart="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_start"
+				android:paddingEnd="@dimen/dimen_navigation_bar_back_arrow_padding_end"
+				android:paddingTop="@dimen/dimen_navigation_bar_transparent_back_arrow_padding_top"
+				android:paddingBottom="@dimen/dimen_navigation_bar_back_arrow_padding_bottom"
+				android:scaleType="fitCenter" />
+
+		</RelativeLayout>
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/layout_user_info"
+		android:layout_above="@+id/btn_close"
+		android:layout_marginBottom="@dimen/dimen_40dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_centerVertical="true">
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/dimen_band_input_height"
+				android:scaleType="centerInside"
+				android:src="@drawable/google_fit"/>
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="@dimen/dimen_margin_8"
+				android:text="@string/authorize_google_fit"
+				android:textColor="@android:color/white"
+				android:textStyle="bold"
+				android:textSize="@dimen/dimen_font_size_base_title"
+				/>
+			<org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="@dimen/dimen_8dp"
+				android:text="@string/enable_setting_in_google_fit_settings"
+				android:textColor="@android:color/white"
+				android:id="@+id/permission_text"
+				style="@style/style_textview_general"
+				android:textSize="@dimen/dimen_font_size_base_subtitle"
+				android:paddingStart="@dimen/dimen_margin_30"
+				android:paddingEnd="@dimen/dimen_margin_30"/>
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<org.unicefkidpower.kid_power.View.CustomControls.KPHButton
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_button_general_height"
+		android:layout_marginStart="@dimen/dimen_margin_30"
+		android:layout_marginEnd="@dimen/dimen_margin_30"
+		android:layout_marginBottom="@dimen/dimen_margin_30"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/btn_close"
+		style="@style/style_button_general"
+		android:text="@string/close"/>
+</RelativeLayout>

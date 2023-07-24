@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorLightGrey"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/trackerIcon"
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tracker_ccapp"
+            android:scaleType="fitCenter"
+        />
+
+        <org.caloriecloud.android.ui.CCTextView
+            android:id="@+id/defaultDeviceLabel"
+            android:layout_toRightOf="@id/trackerIcon"
+            android:textSize="16sp"
+            android:fontFamily="SourceSansPro_Semibold.otf"
+            android:textColor="@color/colorTextBlack"
+            android:text="@string/loading"
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"/>
+
+        <org.caloriecloud.android.ui.CCTextView
+            android:layout_toRightOf="@id/trackerIcon"
+            android:layout_below="@id/defaultDeviceLabel"
+            android:id="@+id/lastSyncedLabel"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextBlack"
+            android:layout_marginBottom="15dp"
+            android:text="@string/last_synced"
+            android:layout_width="wrap_content"
+            android:fontFamily="SourceSansPro_Regular.otf"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"/>
+        
+        <RelativeLayout 
+            android:id="@+id/connectedSection"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+
+            <org.caloriecloud.android.ui.CCTextView
+                android:id="@+id/connectedDeviceLabel"
+                android:textSize="16sp"
+                android:text="@string/connected"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/colorGreen"
+                android:fontFamily="SourceSansPro_Bold.otf"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <ImageView
+                android:id="@+id/connectedDeviceIcon"
+                android:layout_toRightOf="@id/connectedDeviceLabel"
+                android:layout_width="22dp"
+                android:src="@drawable/cc_green_check"
+                android:layout_height="22dp"/>
+            
+        </RelativeLayout>
+
+        <org.caloriecloud.android.ui.CCButton
+            android:id="@+id/authorizeButton"
+            android:textSize="18sp"
+            android:stateListAnimator="@null"
+            android:layout_below="@id/trackerIcon"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:textColor="@drawable/cc_grey_outline_button_text"
+            android:fontFamily="SourceSansPro_Bold.otf"
+            android:background="@drawable/cc_button_grey_outline"
+            android:visibility="gone"
+            android:text="@string/authorize"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:layout_width="280dp"
+            android:layout_height="42dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/colorTextGrey" />
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="15sp"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:layout_width="280dp"
+        android:text="@string/view_dashboard_description"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/visitDashboardButton"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorFullWhite"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:background="@drawable/cc_button"
+        android:text="@string/view_challenge"
+        android:textAllCaps="true"
+        android:layout_width="280dp"
+        android:layout_height="42dp"/>
+
+    <org.caloriecloud.android.ui.CCTextView
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="@color/colorTextGrey"
+        android:textSize="15sp"
+        android:fontFamily="SourceSansPro_Regular.otf"
+        android:layout_width="280dp"
+        android:text="@string/manage_trackers_description"
+        android:layout_height="wrap_content"/>
+
+    <org.caloriecloud.android.ui.CCButton
+        android:id="@+id/manageTrackersButton"
+        android:textSize="18sp"
+        android:stateListAnimator="@null"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorFullWhite"
+        android:background="@drawable/cc_button_grey"
+        android:text="@string/manage_trackers"
+        android:fontFamily="SourceSansPro_Bold.otf"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textAllCaps="true"
+        android:layout_width="280dp"
+        android:layout_height="42dp"/>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:contentDescription="@string/calorie_cloud_logo"
+            android:layout_width="60dp"
+            android:src="@drawable/cc_app_icon"
+            android:layout_height="60dp"/>
+
+        <org.caloriecloud.android.ui.CCTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:fontFamily="SourceSansPro_It.otf"
+            android:layout_marginTop="10dp"
+            android:text="@string/time_to_get_active_for_good"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

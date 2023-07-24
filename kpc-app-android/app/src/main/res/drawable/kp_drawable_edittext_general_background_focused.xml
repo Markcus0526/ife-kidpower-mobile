@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@android:color/white"/>
+
+    <corners android:radius="@dimen/kidpower_inputboxcorner"/>
+
+    <stroke android:color="@color/kidpower_color_orange" android:width="2dp"/>
+
+    <padding android:left="@dimen/kidpower_inputboxpadding"
+             android:top="0dp"
+             android:right="@dimen/kidpower_inputboxpadding"
+             android:bottom="0dp" />
+
+</shape>

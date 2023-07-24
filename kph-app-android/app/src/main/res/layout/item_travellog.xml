@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:background="@drawable/kph_drawable_list_item_general_background"
+			  android:id="@+id/item_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_margin_15"
+        android:paddingEnd="@dimen/dimen_margin_15"
+        android:paddingTop="@dimen/dimen_margin_10"
+        android:paddingBottom="@dimen/dimen_margin_10">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_avatar_size"
+            android:layout_height="@dimen/dimen_avatar_size"
+            android:id="@+id/iv_delight"
+            android:scaleType="fitCenter"
+            android:src="@drawable/souvenir_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_headerview"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/iv_delight"
+            android:layout_marginStart="@dimen/dimen_margin_10"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iv_disclosure"
+            android:layout_marginEnd="@dimen/dimen_margin_10">
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_timestamp"
+                android:text="July 23, 2015 at 2.15 pm in Far Eastern Nepal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base_small" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_delight_name"
+                android:text="Marina cheered you"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base_subtitle"
+                android:layout_marginTop="@dimen/dimen_margin_2" />
+
+            <org.unicefkidpower.kid_power.View.CustomControls.KPHTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_delight_description"
+                android:text="Cheer Received"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_font_size_base_small"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/dimen_margin_2" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_right_arrow_width"
+            android:layout_height="@dimen/dimen_right_arrow_height"
+            android:id="@+id/iv_disclosure"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow_white" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:background="@color/kph_color_dark_blue_30"
+        android:id="@+id/iv_splitter" />
+
+</LinearLayout>

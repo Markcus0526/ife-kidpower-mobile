@@ -1,0 +1,135 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">Zq2O7g_In86b79K4ZBgu2iBUjxnUac0fea22-7301-48f3-bab4-2677fb7e6567</string>
+
+    <!-- Application/Misc Strings -->
+    <string name="app_name">Active for Good</string>
+    <string name="ZENDESK_URL">https://caloriecloud.zendesk.com</string>
+    <string name="ZENDESK_APP_ID">33e09348084a9fc6a82b069c26013e657b3a719e784f40e9</string>
+    <string name="ZENDESK_CLIENT_ID">mobile_sdk_client_eb6153ee6354556bce48</string>
+    <string name="ZENDESK_FAQ_ID">205542167</string>
+    <string name="calorie_cloud_logo">Calorie Cloud Logo</string>
+    <string name="cancel">Cancel</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="okay">Okay</string>
+    <string name="logout_message">Are you sure you want to logout? Note: This will prevent the application from sending data to your account.</string>
+    <string name="no_internet">Unable to establish an internet connection. Please try again later!</string>
+
+    <!-- Navigation Menu -->
+    <string name="dashboard">My Stats</string>
+    <string name="about">About</string>
+    <string name="tracker">Trackers</string>
+    <string name="support">Get Help</string>
+    <string name="logout">Logout</string>
+    <string name="active_for_good">#ActiveForGood</string>
+
+
+    <!-- First Time Launch Activity -->
+    <string name="okay_got_it_button">Okay, Got It!</string>
+    <string name="get_more_info"><u>Get more info</u></string>
+    <string name="login_to_account">Log In To My Account</string>
+    <string name="first_time_launch_text">This application requires an event code or active account to join a challenge.</string>
+    <string name="click_get_more_info"><u>Click here to get more info</u></string>
+
+
+    <!-- Login Activity -->
+    <string name="login">Log In</string>
+    <string name="email_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="error_message">An error has occurred! Please try again later.</string>
+    <string name="error">Error</string>
+    <string name="unauthorized_message">Unauthorized! Please try again with a valid email and password.</string>
+    <string name="logging_in">Logging In...</string>
+    <string name="login_header">Welcome!</string>
+    <string name="login_subheader">Time to Get Active for Good!</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_message">We\'ll send a link to your email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="join_challenge">Looking to join a challenge?</string>
+    <string name="register_event_code">Join with Event Code</string>
+    <string name="register_external"><u>Click here to create your account via a web browser then come back to this app to log in.</u></string>
+    <string name="already_have_account"><u>Already have an account?</u></string>
+
+    <!-- Register Activity -->
+    <string name="already_part_of_challenge">You are already part of this challenge</string>
+    <string name="enter_event_code">Enter Event Code</string>
+    <string name="event_code">Event Code</string>
+    <string name="loading">Loading...</string>
+    <string name="next_join_challenge">Join Challenge</string>
+    <string name="view_challenge">View Challenge</string>
+    <string name="next_pick_team">Next: Pick Team</string>
+    <string name="challenge_not_found">Challenge Not Found!</string>
+    <string name="challenge_disclaimer">Active calories you burn during this challenge will be converted into life-saving food packets for malnourished kids.</string>
+    <string name="challenge_disclaimer_unicef">The Power Points you earn in this challenge will be converted into life-saving food packets for malnourished kids.</string>
+    <string name="join_now">Join Now</string>
+    <string name="yes_lets_get_started">Yes. Let\'s get started</string>
+    <string name="donation_rate" formatted="false">Donation Rate - %s:1</string>
+    <string name="donation_rate_unicef" formatted="false">Donation Rate - %s:5</string>
+    <string name="challenge_sponsor" formatted="false">%s is donating %s calorie(s) for every one calorie(s) burned in this challenge.</string>
+    <string name="challenge_sponsor_unicef" formatted="false">%s is donating %s packet(s) of therapeutic food for every five Power Point(s) earned in this challenge.</string>
+    <string name="create_account_header">Is this your first challenge?</string>
+    <string name="create_account_info">Start by creating a new Calorie Cloud account.</string>
+    <string name="username_placeholder">Username</string>
+    <string name="pick_team_disclaimer">Pick a team to get active with.</string>
+    <string name="pick_your_team">Select a Team</string>
+    <string name="pick_your_region">Select a Region</string>
+    <string name="use_phone_as_tracker">Use this phone as a tracker</string>
+    <string name="choose_your_team">Choose your team</string>
+    <string name="challenge_logo">Challenge Logo</string>
+    <string name="create_account">Create Account</string>
+    <string name="select_team">Please select a team to join the challenge!</string>
+    <string name="select_region_team">Please select a region and a team to join the challenge!</string>
+    <string name="step_indicator" formatted="false">Step %d of %d</string>
+    <string name="join_challenge_success">You have joined the challenge. The last step is to authorize your phone as an activity tracker. Don\'t worry, you can switch trackers later.</string>
+    <string name="time_to_get_active_for_good">It\'s Time to Get Active For Good!</string>
+
+    <!-- Default Tracker Authorization Activity -->
+    <string name="authorization_needed">Authorization Needed!</string>
+    <string name="authorization_description">This application requires access to your activity data from Google Fit.\n\nPlease click on the button below, select your Google account, and allow this application to connect to Google Fit. Please make sure your Google Fit account is set up.</string>
+    <string name="authorization_note">Note, this will set your device as the default activity tracker in your account.</string>
+    <string name="authorize">Authorize</string>
+
+    <!-- Pre Dashboard Activity -->
+    <string name="success">Success!</string>
+    <string name="pre_dashboard_text">This device is now linked to your account as your current activity tracker.</string>
+    <string name="visit_dashboard">Visit Dashboard</string>
+
+
+    <!-- Tracker Fragment -->
+    <string name="tracker_status_enabled">Device is connected</string>
+    <string name="tracker_status_disabled">Connect device as a tracker</string>
+    <string name="tracker_description_enabled">This application is sending activity data from Google Fit to your account.</string>
+    <string name="tracker_description_disabled">Allow this application to send active calorie and step data from Google Fit to your account.</string>
+    <string name="tracker_button_enabled">Disconnect</string>
+    <string name="tracker_button_disabled">Connect</string>
+    <string name="manage_trackers">Manage Trackers</string>
+    <string name="connect_tracker_description">Connect as many trackers as you like. Your connected tracker will sync data to your challenges.</string>
+    <string name="other_trackers_description">We will be adding the ability to manage other tracking devices via our mobile app very soon, but for today please click on the button below to use your web browser to manage trackers other than your phone.</string>
+    <string name="manage_trackers_description">Want to use a different activity tracker? Tap to manage trackers online</string>
+    <string name="view_dashboard_description">To view progress visit the challenge dashboard (will open in a web browser)</string>
+    <string name="googlefit">Google Fit</string>
+    <string name="last_synced">Last Synced: </string>
+    <string name="def">Default</string>
+    <string name="connected">Connected</string>
+    <string name="view_dashboard">View Dashboard</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+    <string name="syncing_data">Syncing data. We\'re preparing your stats\nbut you can still get active!</string>
+    <string name="authorization_missing">You still need to authorize your phone as\nan activity tracker or add another tracker</string>
+
+    <!-- Existing Account Activity -->
+    <string name="no_account_back"><u>Don\'t have an account?\nGo back and create one.</u></string>
+    <string name="login_to_join_challenge">Login to your account\n to join this challenge</string>
+
+    <!-- Onboarding Authorization Fragment -->
+    <string name="onboarding_auth_header">Calorie Cloud uses Google Fit\nto collect your active calories</string>
+    <string name="onboarding_auth_description">On the next screen you will need to choose\nan account and allow Calorie Cloud to read data</string>
+    <string name="auth_success_message">You are in the challenge! The first sync may take a little while. In the meantime, why not enjoy getting active?</string>
+
+
+</resources>
