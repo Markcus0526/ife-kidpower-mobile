@@ -1,0 +1,232 @@
+﻿#ninja-slider
+{
+    width:100%;
+    margin:0 auto; /*center aligned*/
+    background:#FFF;
+}
+#ninja-slider > ul
+{
+    padding:0;
+    margin:0;
+}
+
+    #ninja-slider li > div > h3 {
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        top: auto;
+        bottom: 0px;
+        text-align: center;
+        color: #aaa;
+        background: rgba(0,0,0,0.25);
+    }
+#wrap {
+    float: left;
+    position:relative;
+    height: 40px;
+    width: 100%;
+    opacity:0.6;
+    padding:0px;  
+    margin:0px;
+    color: #fff;
+    text-align:right
+}
+
+div.mc-caption-bg {
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+}
+div.mc-caption-bg, div.mc-caption-bg2 {
+    position: absolute;
+    width: 470px;
+    height: auto;
+    padding: 10px;
+    right: 1px;
+    bottom: 10px;
+    z-index: 3;
+    overflow: hidden;
+    font-size: 0;
+}
+
+/* slide */
+#ninja-slider li > div, #ninja-slider li > a
+{
+    max-width:960px;
+    margin:0 auto; /* center each slide */
+    border-radius:0px;
+    /*background:#999;*/
+    position: relative;
+    display:block;
+    box-shadow: 0 1px 5px rgba(0,0,0,.8),inset 0 0 1px rgba(255,255,255,.4);
+    transition:none!important;
+}
+
+
+
+/* loading image indicator */    
+#ninja-slider div.preload 
+{
+    background: black url(loading.gif) no-repeat center center;
+}
+
+/*----- video -----*/
+#ninja-slider a.video 
+{
+    position:absolute;
+    border:0;top:0;left:0;
+    width:100%;height:100%;
+    background:transparent url(video.png) no-repeat 50% 50%;
+    transition:none!important;
+}
+  
+/*------ pager ------*/      
+/* The pager id should be: slider id + "-pager" */    
+#ninja-slider-pager
+{ 
+    padding-top:0px; /* set the distance away from the slider */
+    margin:0; /* center align */
+    text-align:center;
+    display:table;
+    font-size:0;
+    position:relative;
+    margin-top:-40px;
+    margin-bottom:5px;
+    margin-left:5px;
+   display:none!important; /* Controls are broken so we will not use them */
+}
+         
+#ninja-slider-pager a 
+{
+    display:inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #eee;
+    font-size:0;
+    margin:2px 6px;
+    cursor:pointer;
+    border-radius:0px;
+    box-shadow:inset 0 1px 3px #666666;
+}
+#ninja-slider-pager a:hover 
+{
+    opacity:0.6;
+}
+#ninja-slider-pager a.active 
+{
+    background-color:#1293dc;
+    /*box-shadow:inset 0 1px 3px -1px #28b4ea,0 1px 1px rgba(0,0,0,.5);*/
+    background-image:linear-gradient(top,#1293dc,#0f6297);
+}
+ 
+/* --------- navigation controls ------- */   
+/* The nav id should be: slider id + ("-prev", "-next", and "-pause-play") */    
+#ninja-slider-prev, #ninja-slider-next
+{
+    position: absolute;
+    top: 40%;
+    width:50px;
+    height:60px;
+    display:inline-block;
+    margin:0;
+    background-image: url(navs.png);
+    background-repeat:no-repeat;
+    background-color:rgba(0,0,0,0.4);
+    transition:width 0.5s;
+    line-height:50px;
+    color:white;
+    overflow:hidden;
+    display:none;
+    font-size:13px;
+}
+#ninja-slider-prev {
+    left: 0;
+    border-radius:0 4px 4px 0;
+    background-position:0 0;
+}
+
+#ninja-slider-next {
+    right: 0;
+    border-radius:4px 0 0 4px;
+    background-position:100% -60px;
+}
+
+#ninja-slider-prev:hover, #ninja-slider-next:hover {width:100px;}
+
+/*pagination within the prev/next buttons*/
+#ninja-slider-prev div {margin-left:60px;white-space:nowrap;}
+#ninja-slider-next div {float:right;margin-right:60px;white-space:nowrap;}
+
+
+#ninja-slider-pause-play { display:none;}
+
+/* Other settings
+-------------------------------------------- */   
+#ninja-slider h2 {
+    position:absolute;font-size:110px;width:100%;font-family:Arial;font-weight:bold;top:30%;text-align:center;color:#FFF;
+}
+
+#ninja-slider h3 {
+    position:absolute;font-size:30px;width:100%;font-family:Arial;font-weight:lighter;top:30%;text-align:center;color:#FFF;padding-top:180px;
+}
+
+/*styles for mobile*/
+@media only screen and (max-width: 600px) { 
+    #ninja-slider h2 {
+        top:22%;
+        font-size:40px;
+    }
+
+    #ninja-slider h3 {
+        top:22%;
+        font-size:20px;
+        padding-top:60px;
+    }
+}
+
+/* Usually you don't need to change the following settings
+---------------------------------------------------------- */
+#ninja-slider > ul
+{
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#ninja-slider-pager, #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pause-play
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#ninja-slider
+{
+    position: relative;
+    overflow: hidden;
+    /*visibility: hidden;*/
+    padding:0;
+}
+#ninja-slider > ul
+{
+    overflow: hidden;
+    position: relative;
+    list-style:none;
+    margin:0;
+    transform: none!important;
+}
+
+#ninja-slider > ul > li
+{
+    float: left;
+    width: 100%;
+    position: relative;
+    list-style:none;
+    padding:0;margin:0;
+}

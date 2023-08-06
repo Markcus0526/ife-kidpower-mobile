@@ -1,0 +1,3105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.bluetooth.com/specifications/adopted-specifications -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check out the latest adopted specifications from the Bluetooth SIG.">
+    
+    <meta name="author" content="Bluetooth">
+    <meta name="robots" content="all">
+    <title>Adopted Specifications | Bluetooth Technology Website</title>
+    <script type="text/javascript" async="" src="./Adopted Specifications_files/analytics.js"></script><script async="" src="./Adopted Specifications_files/gtm.js"></script><script src="./Adopted Specifications_files/jquery-2.1.3.min.js" data-semver="2.1.3" data-require="jquery"></script>
+    <!-- font awesome -->
+    <link rel="icon" href="https://www.bluetooth.com/css/BluetoothFavIcon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="./Adopted Specifications_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Adopted Specifications_files/ninja-slider.css">
+    <link rel="stylesheet" href="./Adopted Specifications_files/style.css">
+    <script src="./Adopted Specifications_files/ninja-slider.js"></script>
+    <script src="./Adopted Specifications_files/jquery.cookie.js"></script>
+    <script src="./Adopted Specifications_files/script.js"></script>
+    
+    <script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="./Adopted Specifications_files/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "6ad666d9-0ae6-4319-b1f8-ee6c18a99b34", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+ 
+<script type="text/javascript" src="./Adopted Specifications_files/getAllAppDefault.esi"></script><link rel="stylesheet" type="text/css" href="./Adopted Specifications_files/buttons-secure.css"></head>
+<body>
+<!-- After body start tag script: -->
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-5R8NDW"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5R8NDW');</script>
+<!-- End Google Tag Manager -->
+   
+    <div class="top">
+        <div class="top-content">
+            <div class="column-50">
+
+<p class="link-list">
+            <a href="https://www.bluetooth.com/about-us">About Us</a>
+            <span class="pipe">|</span>
+            <a href="https://www.bluetooth.com/about-us/contact-us">Contact Us</a>
+            <span class="pipe">|</span>
+            <a href="https://www.bluetooth.com/about-us/careers">Careers</a>
+            <span class="pipe">|</span>
+            <a href="https://www.bluetooth.com/media">Media </a>
+            <span class="pipe">|</span>
+<a href="https://www.bluetooth.com/support?kb=1" target="_blank" class="external-link">Help &amp; Support</a>            <span class="pipe">|</span>
+<a href="https://www.bluetooth.org/login/register/" target="_blank" class="external-link">Join the SIG</a>
+
+</p>
+
+</div>
+<div class="column-50">
+
+<!-- DEBUG:
+Username: Sitecore.Security.Accounts.User
+Roles: btcom\BTEveryone
+;
+-->
+    <div class="login-group">
+        <a href="https://www.bluetooth.com/log-in"><button class="primary-btn" type="button" id="login">Login</button></a> or
+        <a href="https://www.bluetooth.org/login/register/">Create an Account</a>
+    </div>
+<script language="javascript">
+    function insertPopup() {
+        var divelement = "<div class=\"pop-up-BG\"><div class=\"redirecting\"><div class=\"waiting\"><div class=\"column-33\"><i class=\"fa fa-spinner fa-pulse fa-3x\"></i></div><div class=\"column-66\"><p></p><h2>Redirecting</h2></div></div></div></div>"
+        $(divelement).insertBefore("footer");
+    }
+
+    function CheckDownloadURL(doredirectValue) {
+        var dlUrl = decodeURIComponent(decodeURIComponent(doredirectValue));
+        var dlUrlExtn = dlUrl.substr(dlUrl.lastIndexOf('.') + 1);
+        if (['docx', 'doc', 'pptx', 'pdf', 'ppt', 'xlsx', 'xls', 'zip'].indexOf(dlUrlExtn) >= 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+</script>
+
+<script>
+</script>
+</div>
+
+        </div>
+    </div>
+<header>
+    <div class="content-fluid">
+        <div class="column-33">
+<a href="https://www.bluetooth.com/" title="Bluetooth Website Home">
+    <div class="logo" style="background-image: url(&#39;/~/media/bluetooth/homepage/smalllogo.ashx&#39;)">toplogo</div>
+</a>
+
+</div>
+<div class="column-66">
+<script type="text/javascript">
+    function searchKeyPress(e) {
+        // look for window.event in case event isn't passed in
+        e = e || window.event;
+        if (e.keyCode == 13) {
+            document.getElementById('btnSearch').click();
+            return false;
+        }
+        return true;
+    }
+    function goToSearch() {
+        var xurl = location.host;
+        var searchValue = document.getElementById("searchbox").value;
+        var resultValue = encodeURIComponent(searchValue);  
+        window.location.href = "/search-results" + "?q=" + resultValue;
+    }
+
+    function customsearchKeyPress(e) {
+        // look for window.event in case event isn't passed in
+        e = e || window.event;
+        if (e.keyCode == 13) {
+            document.getElementById('btnCustomSearch').click();
+            return false;
+        }
+        return true;
+    }
+    function goToCustomSearch() {
+        var xurl = location.host;
+        var searchValue = document.getElementById("customsearchbox").value;
+        window.location.href = "/search-results" + "?q=" + searchValue;
+    }
+
+</script>
+
+<div class="search-group">
+    <input type="text" id="searchbox" class="input" placeholder="Search" onkeypress="return searchKeyPress(event);">
+    <button id="btnSearch" class="search-btn" onclick="goToSearch()" type="button"><i class="fa fa-search"></i></button>
+</div> 
+<p class="languages">
+    
+
+</p>
+</div>
+
+    </div>
+</header>
+<nav>
+    
+
+<div class="menu-title-bar">
+    <h4>Menu</h4>
+    <button class="menu-btn"><i class="fa fa-bars"></i></button>
+</div>
+<ul class="navigation">
+                <li class="dd-left">
+        <a href="https://www.bluetooth.com/what-is-bluetooth-technology">What is Bluetooth Technology 
+ </a>
+
+                    <div class="mega-dd">
+
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/what-is-bluetooth-technology/bluetooth">Bluetooth 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/what-is-bluetooth-technology/bluetooth-technology-basics">Bluetooth Technology Basics 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/what-is-bluetooth-technology/bluetooth-devices">Bluetooth Devices 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/what-is-bluetooth-technology/advice-how-to">Advice &amp; How-to 
+ </a>
+                                </li></ul>
+                        </div>
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/what-is-bluetooth-technology/bluetooth-fact-or-fiction">Bluetooth: Fact or Fiction? 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/what-is-bluetooth-technology/why-build-with-bluetooth">Why Build with Bluetooth Technology 
+ </a>
+                                </li></ul>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="dd-left">
+        <a href="https://www.bluetooth.com/membership-working-groups">Membership &amp; Groups 
+ </a>
+
+                    <div class="mega-dd">
+
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                            <a href="https://www.bluetooth.org/login/register/" target="_blank" class="external-link">Join the SIG</a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/why-how-to-become-a-member">Why &amp; How to Become a Bluetooth SIG Member 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/membership-types-levels">Membership Types/Levels 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/membership-types-levels/upgrade-your-membership">Upgrade Your Membership 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/membership-benefits">Membership Benefits 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/volunteer-with-the-sig">Volunteer with the SIG 
+ </a>
+                                </li></ul>
+                        </div>
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/get-started-as-a-new-member">Get Started as a New Member 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/member-directory">Member Directory 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/working-groups">Working Groups 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/membership-working-groups/donating-your-device-to-the-sig">Donating Your Device to the SIG 
+ </a>
+                                </li></ul>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="dd-center">
+        <a href="https://www.bluetooth.com/develop-with-bluetooth">Develop With Bluetooth 
+ </a>
+
+                    <div class="mega-dd">
+
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/step-by-step-guide-to-product-development">Step-by-Step Guide to Product Development 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/qualification-listing">Qualification &amp; Listing 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/qualification-listing/do-i-need-to-list-qualify-my-product">Do I Need to List and/or Qualify My Product? 
+ </a>
+                                        </li><li>
+                                            <a href="https://www.bluetooth.org/en-us/members/innovation-incentive-program" target="_blank" class="external-link">Innovation Incentive Program</a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/test-tools">Test Tools 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/developer-resources-tools">Developer Resources &amp; Tools 
+ </a>
+                                </li></ul>
+                        </div>
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                            <a href="https://www.bluetooth.org/tpg/My_Listings.cfm" target="_blank" class="external-link">My Listings</a>
+                                        </li><li>
+                                            <a href="https://www.bluetooth.org/tpg/my_projects.cfm" target="_blank" class="external-link">My Projects</a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/software-license">Software License 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/white-papers">White Papers 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/develop-with-bluetooth/developer-resources-tools/service-providers">Service Providers 
+ </a>
+                                        </li><li>
+                                            <a href="http://developer.bluetooth.cn/" target="_blank" class="external-link">China Developer Portal</a>
+                                </li></ul>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="dd-center">
+        <a href="https://www.bluetooth.com/specifications">Specifications 
+ </a>
+
+                    <div class="mega-dd">
+
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/specifications/bluetooth-core-specification">Bluetooth Core Specification 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/specifications/adopted-specifications">Adopted Specifications 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/specifications/adopted-specifications/enhancements">New &amp; Enhanced Specifications 
+            <i class="fa fa-lock"></i>
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/specifications/deprecated-specifications">Deprecated Specifications 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                            <a href="https://www.bluetooth.org/errata/index.cfm" target="_blank" class="external-link">Errata</a>
+                                        </li><li>
+                                            <a href="https://www.bluetooth.org/tse/index.cfm" target="_blank" class="external-link">Test Specification Errata</a>
+                                </li></ul>
+                        </div>
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/specifications/qualification-test-requirements">Qualification Test Requirements 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/specifications/submit-an-idea-for-a-specification">Submit Idea for a Specification 
+            <i class="fa fa-lock"></i>
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                            <a href="https://specworkspace.bluetooth.com/" target="_blank" class="external-link">Check the Status of In-progress Specifications</a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/specifications/profiles-overview">Profiles Overview 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/specifications/assigned-numbers/generic-attribute-profile">​Generic Attribute Profile (GATT) 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/specifications/assigned-numbers">Assigned Numbers 
+ </a>
+                                </li></ul>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="dd-right">
+        <a href="https://www.bluetooth.com/marketing-branding">Marketing &amp; Branding 
+ </a>
+
+                    <div class="mega-dd">
+
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/market-your-bluetooth-product">Market Your Bluetooth Product 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/step-by-step-guide-to-the-bluetooth-brand">Step-by-Step Guide to the Bluetooth Brand 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/brand-best-practices-guidelines">Brand Best Practices &amp; Guidelines 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/brand-enforcement-program">Brand Enforcement Program 
+ </a>
+                                </li></ul>
+                        </div>
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/how-the-sig-promotes-the-brand">How the SIG Promotes the Bluetooth Brand 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/markets">Markets 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/marketing-branding/marketing-research">Marketing Research 
+            <i class="fa fa-lock"></i>
+ </a>
+                                </li></ul>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="dd-right">
+        <a href="https://www.bluetooth.com/news-events">News &amp; Events 
+ </a>
+
+                    <div class="mega-dd">
+
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/news-events/upcoming-events">Upcoming Events 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/news-events/upcoming-events/testing-events">Testing Events 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/news-events/bluetooth-world">Bluetooth World 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/news-events/upcoming-events/working-group-summit">Working Group Summit 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/news-events/upcoming-events/webinars">Webinars 
+ </a>
+                                        </li><li>
+                                            <a title="Events Calendar" href="https://www.bluetooth.org/Lists/Events/Calendar.aspx" target="_blank" class="external-link">Events Calendar</a>
+                                </li></ul>
+                        </div>
+
+                        <div class="column-50">
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/news-events/sponsor-bluetooth-events">Sponsor Bluetooth Events 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/news-events/past-events">Past Events 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                                    <a href="https://www.bluetooth.com/news-events/awards">Awards 
+ </a>
+                                        </li><li>
+                                                    <a href="https://www.bluetooth.com/news-events/press-releases">Press Releases 
+ </a>
+                                </li></ul>
+                                <ul>
+                                        <li>
+                                            <a title="Blog" href="http://blog.bluetooth.com/">Blog</a>
+                                </li></ul>
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+</ul>
+
+</nav>
+<div class="content-fluid">
+    <div class="breadcrumb"><a href="https://www.bluetooth.com/">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://www.bluetooth.com/specifications">Specifications</a>&nbsp;&nbsp;/&nbsp;&nbsp;Adopted Specifications</div>
+
+
+
+    <section>
+        <div class="column-25">
+
+<ul class="left-nav">
+    <li class="nav-header-item">
+        Specifications
+                <ul>
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/bluetooth-core-specification">Bluetooth Core Specification</a>                                        
+                   </li>                    
+                    <li>                
+                        <a href="https://www.bluetooth.com/specifications/adopted-specifications" class="active">Adopted Specifications</a>
+                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/adopted-specifications/enhancements">New &amp; Enhanced Specifications</a>                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/qualification-test-requirements">Qualification Test Requirements</a>                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/deprecated-specifications">Deprecated Specifications</a>                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/submit-an-idea-for-a-specification">Submit Idea for a Specification</a>                                        
+                   </li>                    
+                    <li>                
+<a href="https://www.bluetooth.org/errata/index.cfm" target="_blank" class="external-link">Errata</a>                                        
+                   </li>                    
+                    <li>                
+<a href="https://www.bluetooth.org/tse/index.cfm" target="_blank" class="external-link">Test Specification Errata</a>                                        
+                   </li>                    
+                    <li>                
+<a href="https://specworkspace.bluetooth.com/" target="_blank" class="external-link">Check the Status of In-progress Specifications</a>                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/profiles-overview">Profiles Overview</a>                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/assigned-numbers/generic-attribute-profile">​Generic Attribute Profile (GATT)</a>                                        
+                   </li>                    
+                    <li>                
+        <a href="https://www.bluetooth.com/specifications/assigned-numbers">Assigned Numbers</a>                                        
+                   </li>                    
+               </ul>
+
+
+</li>
+</ul>
+</div>
+<div class="column-75">
+        <div class="content-banner">
+            <img src="./Adopted Specifications_files/landingpage-specifications-banners.ashx" alt="Bluetooth SIG Specifications">
+        </div>
+
+    <h1> Adopted Specifications</h1>
+    <subhead></subhead>
+
+    <p class="content-intro">
+        Bluetooth Core Specification 4.2 is an important update to the Bluetooth Core Specification delivering exciting new features and benefits for Bluetooth Smart. 
+    </p>
+    <div class="table-time">
+<h4><em>Bluetooth<span style="line-height: 19.09px; font-weight: bold;"><sup>®</sup> </span></em>Core Specification 4.2
+</h4>
+<p>This will create significant advantages for developers and manufacturers, while providing a better user experience for their customers. Bluetooth 4.2 makes Bluetooth Smart even smarter, faster and the ideal wireless technology for the Internet of Things (IoT).</p>
+<p><strong>Links to tools and information:</strong></p>
+<ul>
+    <li>
+    <a href="https://www.bluetooth.com/~/media/files/specification/bluetooth-quic-ref-guide.ashx?la=en">Quick Reference Guide</a></li>
+    <li>
+    <a href="https://www.bluetooth.com/~/media/files/specification/bluetooth-faq.ashx?la=en">Frequently Asked Questions</a></li>
+    <li>
+    <a href="https://www.bluetooth.com/~/media/files/specification/bluetoothbrandguide.ashx?la=en">Bluetooth Brand Guide</a></li>
+    <li>
+    <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439" target="_blank" class="external-link">Download the Core Specification</a></li>
+</ul>
+<div><strong><span>Bluetooth Qualification Test Requirements</span></strong></div>
+<p>If you are looking for more information about t​he Bluetooth Qualification Testing Requirements, please visit the <a href="https://www.bluetooth.com/specifications/qualification-test-requirements">Testing Requirements page</a>.</p>
+<h2 id="core">Adopted Bluetooth&nbsp;Core Specification</h2>
+<table width="100%" style="height: 467px;">
+    <tbody>
+        <tr>
+            <th style="width: 25%;">Specification​ </th>
+            <th style="width: 20%;">Date Ad​opted</th>
+            <th style="width: 100px;">Status</th>
+            <th>Date Deprecated</th>
+            <th>Date Withdrawn</th>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735&amp;_ga=1.94340564.838841863.1449713366">Core Specification Supplement (CSS) v6</a><br>
+            </td>
+            <td rowspan="1" style="width: 20%;">​14 July 2015</td>
+            <td rowspan="1" style="width: 100px;">​Active</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439&amp;_ga=1.60268900.838841863.1449713366">Core Version 4.2</a><br>
+            </td>
+            <td rowspan="1" style="width: 20%;">​02 Decem​ber 2014</td>
+            <td rowspan="1" style="width: 100px;">​Active​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=282159&amp;_ga=1.60268900.838841863.1449713366">​Core Version 4.1</a><br>
+            </td>
+            <td rowspan="1" style="width: 20%;">​03 December 2013</td>
+            <td rowspan="1" style="width: 100px;">​Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=310375&amp;_ga=1.169388648.838841863.1449713366">Core Specification Addendum (CSA) 5</a></td>
+            <td style="width: 20%;">15 December 2015</td>
+            <td style="width: 100px;">Active</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=269452&amp;_ga=1.55691874.838841863.1449713366">Core Specification Addendum (CSA) 4</a>&nbsp;&nbsp;<sup>1</sup></td>
+            <td style="width: 20%;">12 February 2013</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260932&amp;_ga=1.127377732.838841863.1449713366">Core Specification Addendum (CSA) 3</a>&nbsp;&nbsp;<sup>1</sup></td>
+            <td style="width: 20%;">24 July 2012</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245127&amp;_ga=1.268935736.838841863.1449713366">Core Specification Addendum (CSA) 2</a>&nbsp;&nbsp;<sup>1</sup></td>
+            <td style="width: 20%;">27 December 2011</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=229737&amp;_ga=1.160532084.838841863.1449713366">Core Version 4.0</a><br>
+            </td>
+            <td style="width: 20%;">30 June 2010</td>
+            <td style="width: 100px;">
+            Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=174214">Core Version 3.0 + HS</a>&nbsp;&nbsp;</td>
+            <td style="width: 20%;">21 April 2009&nbsp;</td>
+            <td style="width: 100px;">
+            Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=119993">Core Specification Addendum (CSA) 1</a>&nbsp;<sup>2</sup></td>
+            <td style="width: 20%;">26 June 2008</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241363">Core Version 2.1 + EDR</a><br>
+            </td>
+            <td style="width: 20%;">26 July 2007</td>
+            <td style="width: 100px;">
+            Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=40560">Core Version 2.0 + EDR​</a><br>
+            </td>
+            <td style="width: 20%;">05 November 2004</td>
+            <td style="width: 100px;">
+            Deprecated</td>
+            <td>13 November 2014​ </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41266">Volume 4: HCI Transports</a><br>
+            </td>
+            <td style="width: 20%;">01 January 2006</td>
+            <td style="width: 100px;">
+            Active​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<sup>&nbsp;1</sup> Refer to the Mixing of Specification Versions Part for applicability<br>
+<sup>&nbsp;2</sup> Applicable to v2.0 + EDR and&nbsp;v2.1 + EDR </p>
+<p>
+<a href="https://www.bluetooth.com/specifications/adopted-specifications#top">Top of Page</a></p>
+<h2>Adopted Bluetooth Profiles, Services, Protocols and Transports</h2>
+<p>To view the&nbsp;structure of definitions that are used in the adopted GATT profiles, services, and characteristics use the &nbsp;<a href="http://developer.bluetooth.org/gatt/Pages/Definition-Browser.aspx"></a><a href="http://developer.bluetooth.org/gatt/Pages/Definition-Browser.aspx">XML Definition Browser</a>. You can also download the definitions in an XML format.</p>
+<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <th rowspan="1" id="gattprofile" colspan="7" style="text-align: left;">GATT-Based Specifications</th>
+        </tr>
+        <tr>
+            <th rowspan="1" colspan="2">Profi​le ​​Specification​</th>
+            <th rowspan="1" colspan="1">Version</th>
+            <th rowspan="1" colspan="1">Status​</th>
+            <th rowspan="1" colspan="1">Date Adopted</th>
+            <th rowspan="1" colspan="1">Date Deprecated​</th>
+            <th rowspan="1" colspan="1">Date Withdrawn</th>
+        </tr>
+        <tr>
+            <td style="width: 7%;">ANP​</td>
+            <td style="width: 26%;">Alert Notification ​​Profile​</td>
+            <td style="width: 7%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=242286">1.0</a><br>
+            </td>
+            <td style="width: 9%;">Active</td>
+            <td style="text-align: left; width: 17%;">13 September&nbsp;2011</td>
+            <td style="width: 17%;">​<br>
+            </td>
+            <td style="width: 17%;">​</td>
+        </tr>
+        <tr>
+            <td>A​NS​​</td>
+            <td>Alert Notification Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=242287">1.​0</a>​<br>
+            </td>
+            <td>​Active</td>
+            <td style="text-align: left;">
+            13 September&nbsp;2011​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​AIOP​</td>
+            <td rowspan="1">​Automation IO Profile</td>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=304971">​1.0</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1" style="text-align: left;">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​AIOS​</td>
+            <td rowspan="1">​Automation IO Service</td>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=304972">1.0</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1" style="text-align: left;">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td>BAS​</td>
+            <td>Battery Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245138">1.0</a>​<br>
+            </td>
+            <td>
+            Active​</td>
+            <td style="text-align: left;">​​27 December 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>​BCS</td>
+            <td>Body Composition Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293523">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">21 October 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>BLP</td>
+            <td>Blood Pressure Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=243125"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=243125">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">25 October 2011​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>BLS</td>
+            <td>Blood Pressure Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=243126"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=243126">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">25 October 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>BMS</td>
+            <td>Bond Management Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293524"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294793"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293524">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">21 October 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CGMP</td>
+            <td>Continuous Glucose Monitoring Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294793" target="_blank" class="external-link">1.0</a></td>
+            <td>
+            Active</td>
+            <td>
+            <div style="text-align: left;">18 November 2014</div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CGMP<br>
+            </td>
+            <td>Continuous Glucose Monitoring Profile<br>
+            </td>
+            <td><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=310501" target="_blank" class="external-link">1.0.1</a></td>
+            <td>Active</td>
+            <td>15 December 2015&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>CGMS</td>
+            <td>Continuous Glucose Monitoring Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294794">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: center;">
+            <div style="text-align: left;">18 November 2014</div>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CGMS<br>
+            </td>
+            <td>Continuous Glucose Monitoring Service<br>
+            </td>
+            <td><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=310502" target="_blank" class="external-link">1.0.1</a><br>
+            </td>
+            <td>&nbsp;</td>
+            <td style="text-align: center;">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​CPP</td>
+            <td rowspan="1">​Cycling Power Profile</td>
+            <td rowspan="1">​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=271994">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">30 April 2013</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​CPS</td>
+            <td rowspan="1">​Cycling Power Service</td>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=271995">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">30 April 2013</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CSCP</td>
+            <td>Cycling Speed and Cadence Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261449">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td style="text-align: left;">21 August 2012</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CSCS</td>
+            <td>Cycling Speed and Cadence Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261450">1.0</a><br>
+            </td>
+            <td>
+            Active​</td>
+            <td style="text-align: left;">21 August 2012​<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CTS</td>
+            <td>Current Tim​​e Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241871">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>13 September 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>CTS</td>
+            <td>Current Tim​​e Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292957">1.1</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>07 October 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>DIS</td>
+            <td>Device Information Service</td>
+            <td> 1.0</td>
+            <td>Withdrawn</td>
+            <td>24 May 2011</td>
+            <td>29 November 2011</td>
+            <td>03 December 2013</td>
+        </tr>
+        <tr>
+            <td>DIS</td>
+            <td>Device Information Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=244369">1.1</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>29 November 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>ESP</td>
+            <td>Environmental Sensing Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294796">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>18 November 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>ESS</td>
+            <td>Environmental Sensing Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=294797">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>18 November 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>FMP</td>
+            <td>Find Me Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239389"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239389">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 June 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>GLP</td>
+            <td>Glucose Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=248025">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>10 April 2012</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>GLS</td>
+            <td>Glucose Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=248025"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=248026">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>10 April&nbsp;2012​<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>​HIDS</td>
+            <td>HID Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245140">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>27 December 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">HOGP</td>
+            <td>HID over GATT Profile</td>
+            <td>​​<a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245141">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>27 December 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">​HPS</td>
+            <td rowspan="1">​HTTP Proxy Service</td>
+            <td rowspan="1"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=308344">1.0</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​​06 October 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td>HRP</td>
+            <td>Heart Rate Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239865">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>12 July 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>HRS</td>
+            <td>Heart Rate Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239866">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>12 July 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>HTP</td>
+            <td>Health Thermometer Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=238687">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>24 May 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>HTS</td>
+            <td>Health Thermometer Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=238688">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>24 May 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>IAS</td>
+            <td>Immediate Alert Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239390">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 June 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​IPS</td>
+            <td rowspan="1">​Indoor Positioning Service</td>
+            <td rowspan="1"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=302114">1.0</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​19 May 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td>IPSP</td>
+            <td>Internet Protocol Support Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=296307">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>16 December 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>LLS​</td>
+            <td>Link Loss Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239391">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 June 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​LLS​</td>
+            <td rowspan="1">​Link Loss Service</td>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=303198">1.0.1</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​LNP</td>
+            <td rowspan="1">​Location and Navigation Profile</td>
+            <td rowspan="1">​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=271996">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>30 April 2013</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​LNS</td>
+            <td rowspan="1">​Location and Navigation Service</td>
+            <td rowspan="1">​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=271997">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>30 April 2013</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>NDCS</td>
+            <td>Next DST Change Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241872">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>13 September 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">OTP<br>
+            </td>
+            <td style="width: 183px;">Object Transfer Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309936" target="_blank" class="external-link">1.0</a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>17 November 2015<br>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">OTS​<br>
+            </td>
+            <td style="width: 183px;">Object Transfer Service<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309937" target="_blank" class="external-link">1.0</a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>17 November 2015<br>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>​PASP</td>
+            <td>Phone Alert Status Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241861">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>13 September 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>PASS</td>
+            <td>Phone Alert Status Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241862">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>13 September 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>PXP</td>
+            <td>Proximity Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239392">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 June 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​PXP</td>
+            <td rowspan="1">​Proximity Profile</td>
+            <td rowspan="1"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=303199">1.0.1</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​PLXP​​</td>
+            <td rowspan="1">​Pulse Oximeter Profile</td>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=304923">1.0​</a>​</td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​PLXS​</td>
+            <td rowspan="1">​Pulse Oximeter Service</td>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=304965">1.0</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td>RSCP</td>
+            <td>Running Speed and Cadence Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261266">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>07 August 2012</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>RSCS</td>
+            <td>Running Speed and Cadence Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261265">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>07 August 2012</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>RTUS</td>
+            <td>Reference Time Update Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241873" style="box-sizing: content-box; color: #0063a9; outline: 0px; font-family: Arial, Helvetica, sans-serif; line-height: 18px; background-image: initial; background-attachment: initial; background-color: #ffffff; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0px 0px; background-repeat: initial;"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241873">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>13 September 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>ScPP</td>
+            <td>Scan ​Parameters Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245142"></a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245142">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>27 December 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">ScPS​​​</td>
+            <td>Scan Parameters Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245143">1.0</a>​<br>
+            </td>
+            <td>
+            Active</td>
+            <td>27 December 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">​​TDS​</td>
+            <td rowspan="1">​Transport Discovery Service</td>
+            <td rowspan="1"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=309929">1.0</a><br>
+            </td>
+            <td rowspan="1">​Active</td>
+            <td rowspan="1">​​17 November 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td>​TIP</td>
+            <td>Time Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241874">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>13 September 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>TPS</td>
+            <td>Tx Power Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=239393">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 June 2011</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">​UDS</td>
+            <td rowspan="1">​User Data Service</td>
+            <td rowspan="1"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=288352">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>27 May 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>WSP</td>
+            <td>Weight Scale Profile</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293525">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 October 2014</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1">WSS​</td>
+            <td>Weight Scale Service</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=293526">1.0</a><br>
+            </td>
+            <td>
+            Active</td>
+            <td>21 October 2014​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<a href="https://www.bluetooth.com/specifications/adopted-specifications#top">Top of Page</a></p>
+<table width="100%" style="height: 783px;">
+    <tbody>
+        <tr>
+            <th rowspan="1" id="tradprofiles" colspan="7" style="text-align: left;">Traditional Profiles</th>
+        </tr>
+        <tr>
+            <th rowspan="1" colspan="2">Profile ​​Specification​</th>
+            <th rowspan="1" colspan="1" style="width: 54px;">Version</th>
+            <th rowspan="1" colspan="1" style="width: 68px;">Status​</th>
+            <th rowspan="1" colspan="1">Date Adopted</th>
+            <th rowspan="1" colspan="1">Date Deprecated​</th>
+            <th rowspan="1" colspan="1">Date Withdrawn</th>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​3D​SP</td>
+            <td style="width: 183px;">3D Synchronizati​on Profile</td>
+            <td style="width: 54px;">
+            ​<a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=271498">1.0</a>​​<br>
+            </td>
+            <td colspan="1" style="width: 68px;"> Deprecated </td>
+            <td>12 March 2013</td>
+            <td>
+            29 April 2014</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​3D​SP​</td>
+            <td style="width: 183px;">3D Synchronizati​on Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=280584">1.0.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;"> Active </td>
+            <td> 22 October 2013<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​3DSP​</td>
+            <td rowspan="1" style="width: 183px;">​​3D Synchronization Profile</td>
+            <td rowspan="1" style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=303200">1.0.2</a><br>
+            </td>
+            <td rowspan="1" colspan="1" style="width: 68px;">​Active</td>
+            <td rowspan="1">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">3DSP​<br>
+            </td>
+            <td style="width: 183px;">3D Synchronization Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=308939">1.0.3</a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>&nbsp;15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​A2DP</td>
+            <td style="width: 183px;">Advanced Audi​​o Distribution Profile​​​</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8236">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>27 May 2003</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​A2DP</td>
+            <td style="width: 183px;">Advanced Audi​​o Distribution Profile​​​</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=66605">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>16 April 2007</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​A2DP​</td>
+            <td style="width: 183px;">Advanced Audi​​o Distribution Profile​​​</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260859&amp;vId=290074">1.3</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​A2DP​</td>
+            <td rowspan="1" style="width: 183px;">​Advanced Audio Distribution Profile</td>
+            <td rowspan="1" style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=303201">1.3.1</a><br>
+            </td>
+            <td rowspan="1" colspan="1" style="width: 68px;">​Active</td>
+            <td rowspan="1">​14 July 2015</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​AVRCP</td>
+            <td style="width: 183px;">A/V Remote Control Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8321">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td> 28 May 2003<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​AVRCP</td>
+            <td style="width: 183px;">A/V Remote Control Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=66609">1.3</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td> 16 April 2007<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​AVRCP</td>
+            <td style="width: 183px;">A/V Remote Control Profile</td>
+            <td style="width: 54px;">
+            ​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=119996">1.4</a>​​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Deprecated<br>
+            </td>
+            <td>26 June 2008</td>
+            <td>
+            01 August 2013</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​AVRCP</td>
+            <td style="width: 183px;">A/V Remote Control Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260861">1.5</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​AVRCP</td>
+            <td style="width: 183px;">A/V Remote Control Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=292286">1.6</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td> 18 September 2014<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">AVRCP<br>
+            </td>
+            <td style="width: 183px;">A/V Remote Control Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309020">1.6.1</a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">BIP</td>
+            <td style="width: 183px;">Basic Imaging Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=6394">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td> 25 July 2003<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">BIP</td>
+            <td style="width: 183px;">Basic Imaging Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=230892">1.1</a>​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Deprecated<br>
+            </td>
+            <td> 26 August 2010<br>
+            </td>
+            <td>
+            ​​01 August 2013</td>
+            <td>
+            <br>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">BIP</td>
+            <td style="width: 183px;">Basic Imaging Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260862&amp;vId=290088">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td> 24 July 2012<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">BPP</td>
+            <td style="width: 183px;">Basic Printing Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=40707">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>10 February 2005</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">BPP</td>
+            <td style="width: 183px;">Basic Printing Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41501">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>27 April 2006</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">CTN</td>
+            <td style="width: 183px;">Calendar, Task, and Notes Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292290">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>18 September 2014</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">DI</td>
+            <td style="width: 183px;">Device ID Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41500">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>27 April 2006</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">DI</td>
+            <td style="width: 183px;">Device ID Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=75536">1.3</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>26 March 2007</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">DUN</td>
+            <td style="width: 183px;">Dial-Up Networking Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8702">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>22 February 2001</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">DUN</td>
+            <td style="width: 183px;">Dial-Up Networking Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=263755">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>06 November 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">FTP</td>
+            <td style="width: 183px;">File Transfer Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8707">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td>22 February 2001</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">FTP</td>
+            <td style="width: 183px;">File Transfer Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=230915">1.2</a>​​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Deprecated<br>
+            </td>
+            <td> 26 August 2010<br>
+            </td>
+            <td>
+            ​01 August 2013</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">FTP</td>
+            <td style="width: 183px;">File Transfer Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260863">1.3</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td> 24 July 2012<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">FTP<br>
+            </td>
+            <td style="width: 183px;">File Transfer Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309003" target="_blank" class="external-link">1.3.1</a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GAVDP</td>
+            <td style="width: 183px;">Generic A/V Distribution Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8329">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>26 May 2003​</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GAVDP</td>
+            <td style="width: 183px;">Generic A/V Distribution Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=66608">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>16 April 2007</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GAVDP</td>
+            <td style="width: 183px;">Generic A/V Distribution Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=260865">1.3</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GNSS</td>
+            <td style="width: 183px;">Global Navigation Satellite System Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=247374">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>13 March 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GOEP</td>
+            <td style="width: 183px;">Generic Object Exchange Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8705">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>
+            <br>
+            </td>
+            <td>
+            <br>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​GOEP</td>
+            <td style="width: 183px;">Generic Object Exchange Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=230912">2.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Deprecated</td>
+            <td>26 August 2010</td>
+            <td>01 August 2013</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​GOEP</td>
+            <td style="width: 183px;">Generic Object Exchange Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260870&amp;vId=290093">2.1</a>​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GOEP<br>
+            </td>
+            <td style="width: 183px;">Generic Object Exchange Profile</td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309051&amp;amp;vId=346766" target="_blank" class="external-link">2.1.1</a><br>
+            <br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GPP</td>
+            <td style="width: 183px;">Generic PIM Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292288">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>18 September 2014</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">GPP<br>
+            </td>
+            <td style="width: 183px;">Generic PIM Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=309004&amp;amp;vId=346769" target="_blank" class="external-link">1.0.1</a><br>
+            </td>
+            <td style="width: 68px;">​Active<br>
+            </td>
+            <td>15 December 2015<br>
+            </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HCRP</td>
+            <td style="width: 183px;">Hardcopy Cable Replacement Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=6559">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>23 January 2003</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HCRP</td>
+            <td style="width: 183px;">Hardcopy Cable Replacement Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41502">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>27 April 2006</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HDP</td>
+            <td style="width: 183px;">Health Device Profile</td>
+            <td style="width: 54px;">
+            ​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=119999">1.0</a>​​​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Deprecated<br>
+            </td>
+            <td>26 June 2008</td>
+            <td>
+            ​01 August 2013</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HDP</td>
+            <td style="width: 183px;">Health Device Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260864&amp;vId=290095">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HFP</td>
+            <td style="width: 183px;">Hands-Free Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41181">1.5</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>25 November 2005</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HFP</td>
+            <td style="width: 183px;">Hands-Free Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=238193">1.6</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>17 May 2011</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HFP</td>
+            <td style="width: 183px;">Hands-Free Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=292287">1.7</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>18 September 2014</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HFP<br>
+            </td>
+            <td style="width: 183px;">Hands-Free Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=309005" target="_blank" class="external-link">1.7.1</a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HID</td>
+            <td style="width: 183px;">Human Interface Device Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=7108">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>25 November 2005</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HID</td>
+            <td style="width: 183px;">Human Interface Device Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=246761">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>21 February 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HID<br>
+            </td>
+            <td style="width: 183px;">Human Interface Device Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=309012" target="_blank" class="external-link">1.1.1</a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=246761"></a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HSP</td>
+            <td style="width: 183px;">Headset Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8701">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>22 February 2001</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">HSP</td>
+            <td style="width: 183px;">Headset Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=158743">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>18 December 2008</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">MAP</td>
+            <td style="width: 183px;">Message Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=215400">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">Deprecated</td>
+            <td>04 June 2009</td>
+            <td>23 July 2015</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">MAP</td>
+            <td style="width: 183px;">Message Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=274478">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>02 July 2013</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">MA​P​</td>
+            <td style="width: 183px;">Message Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=274479">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>
+            02 July 2013​</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">​MAP​</td>
+            <td rowspan="1" style="width: 183px;">​Message Access Profile</td>
+            <td rowspan="1" style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=303202">​1.2.1</a><br>
+            </td>
+            <td rowspan="1" colspan="1" style="width: 68px;">​Active</td>
+            <td rowspan="1">​<span>14 July 2015</span></td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">MAP​<br>
+            </td>
+            <td style="width: 183px;">Message Access Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=309006&amp;amp;vId=346842" target="_blank" class="external-link">1.2.2</a><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=303202"></a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 49px;">​MPS</td>
+            <td rowspan="1" style="width: 183px;">​Multi Profile Specification</td>
+            <td rowspan="1" style="width: 54px;">​​<a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=274256">1.0</a>​<br>
+            </td>
+            <td rowspan="1" colspan="1" style="width: 68px;">​Active</td>
+            <td>
+            02 July 2013​</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">OPP</td>
+            <td style="width: 183px;">Object Push Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8706">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>22 February 2001</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1" style="width: 49px;">OPP​​​​​</td>
+            <td style="width: 183px;">Object Push Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=230913">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>26 August 2010</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">OPP​​​​​<br>
+            </td>
+            <td style="width: 183px;">Object Push Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=309007&amp;amp;vId=346844" target="_blank" class="external-link">1.2.1</a><a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=230913"></a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">PAN</td>
+            <td style="width: 183px;">Personal Area Networking Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=6554">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>20 February 2003</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">PBAP</td>
+            <td style="width: 183px;">Phone Book Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41503">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Deprecated</td>
+            <td>27 April 2006</td>
+            <td>04 December 2015</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">PBAP</td>
+            <td style="width: 183px;">Phone Book Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=230887">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Deprecated</td>
+            <td>26 August 2010</td>
+            <td>04 December 2015</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">PBAP</td>
+            <td style="width: 183px;">Phone Book Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=281298">1.1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>05 November 2013</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">PBAP</td>
+            <td style="width: 183px;">Phone Book Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=281299">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>
+            05 November 2013​</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">PBAP<br>
+            </td>
+            <td style="width: 183px;">Phone Book Access Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=310561">1.2.1</a><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=281299"></a><br>
+            </td>
+            <td style="width: 68px;">Active</td>
+            <td>15 December 2015&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SAP</td>
+            <td style="width: 183px;">SIM Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=40826">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>12 May 2005</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SAP</td>
+            <td style="width: 183px;">SIM Access Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=158740">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>18 December 2008</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SAP<br>
+            </td>
+            <td style="width: 183px;">SIM Access Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=309010&amp;amp;vId=346847">1.1.1</a><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=158740"></a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SPP</td>
+            <td style="width: 183px;">Serial Port Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8700">1.1</a>​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Deprecated</td>
+            <td>22 February 2001</td>
+            <td>
+            ​​01 August 2013</td>
+            <td>
+            <br>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SPP</td>
+            <td style="width: 183px;">Serial Port Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260866&amp;vId=290097">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td>24 July 2012<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SYNCH</td>
+            <td style="width: 183px;">Synchronization Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8710">1.1</a>​​<br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Deprecated</td>
+            <td>22 February 2001</td>
+            <td>
+            ​​01 August 2013​​</td>
+            <td>
+            <br>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SYNCH</td>
+            <td style="width: 183px;">Synchronization Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260867&amp;vId=290099">1.2</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">
+            Active<br>
+            </td>
+            <td>24 July 2012<br>
+            </td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">SYNCH<br>
+            </td>
+            <td style="width: 183px;">Synchronization Profile<br>
+            </td>
+            <td style="width: 54px;"><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309011&amp;amp;vId=346849">1.2.1</a><a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260867&amp;vId=290099"></a><br>
+            </td>
+            <td style="width: 68px;">Active<br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 49px;">VDP</td>
+            <td style="width: 183px;">Video Distribution Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=40481">1.0</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active</td>
+            <td>09 September 2004</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td rowspan="1" colspan="1" style="width: 49px;">​​​VDP​</td>
+            <td style="width: 183px;">Video Distribution Profile</td>
+            <td style="width: 54px;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260869&amp;vId=290101">1.1</a><br>
+            </td>
+            <td colspan="1" style="width: 68px;">​Active​</td>
+            <td>24 July 2012​</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<a href="https://www.bluetooth.com/specifications/adopted-specifications#top">Top of Page</a></p>
+<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <th rowspan="1" id="protocols" colspan="7" style="text-align: left;">Protocols</th>
+        </tr>
+        <tr>
+            <th rowspan="1" colspan="2">Protocol Specification</th>
+            <th rowspan="1" colspan="1" style="width: 54px;">Version</th>
+            <th rowspan="1" colspan="1" style="width: 68px;">Status​</th>
+            <th rowspan="1" colspan="1">Date Adopted</th>
+            <th rowspan="1" colspan="1">Date Deprecated​</th>
+            <th rowspan="1" colspan="1">Date Withdrawn</th>
+        </tr>
+        <tr>
+            <td>​AVCTP</td>
+            <td style="width: 200px;">A/V ​​Control Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8245">1.0</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>25 May 2003</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>​AVCTP</td>
+            <td style="width: 200px;">A/V ​​Control Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=66606">1.2</a><br>
+            </td>
+            <td colspan="1">
+            Active<br>
+            </td>
+            <td>16 April 2007</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>​AVCTP</td>
+            <td style="width: 200px;">A/V ​​Control Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=119994">1.3</a>​​<br>
+            </td>
+            <td colspan="1">Deprecated</td>
+            <td>26 June 2008</td>
+            <td>01 August 2013</td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>​AVCTP</td>
+            <td style="width: 200px;">A/V ​​Control Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260858&amp;vId=290076">1.4</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>AVDTP</td>
+            <td style="width: 200px;">A/V Distribution Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=8241">1.0</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>24 May 2003</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>AVDTP</td>
+            <td style="width: 200px;">A/V Distribution Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=66607">1.2</a>&nbsp;<br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>16 April 2007</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>AVDTP</td>
+            <td style="width: 200px;">A/V Distribution Transport</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260860&amp;vId=290084">1.3</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>24 July 2012</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>BNEP</td>
+            <td style="width: 200px;">Bluetooth Network Encapsulation Protocol</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=6552">1.0</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>20 February 2003</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>IrDA</td>
+            <td style="width: 200px;">IrDA&nbsp;Interoperability</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=40966">1.1</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>22 February 2001</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>IrDA</td>
+            <td style="width: 200px;">IrDA&nbsp;Interoperability</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=230888">2.0</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>26 August 2010</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>MCAP</td>
+            <td style="width: 200px;">Multi-Channel Adaptation&nbsp;Protocol</td>
+            <td>
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=119995">1.0</a><br>
+            </td>
+            <td colspan="1">​Active</td>
+            <td>26 June 2008</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>RFCOMM</td>
+            <td style="width: 200px;">RFCOMM</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=40909">1.1</a><br>
+            </td>
+            <td colspan="1">​Active​</td>
+            <td>22 February 2001</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+        <tr>
+            <td>RFCOMM</td>
+            <td style="width: 200px;">RFCOMM</td>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=263754">1.2</a><br>
+            </td>
+            <td colspan="1">​Active​</td>
+            <td>06 November 2012​</td>
+            <td>
+            </td>
+            <td>​</td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<a href="https://www.bluetooth.com/specifications/adopted-specifications#top">Top of Page</a></p>
+<h2 id="adopterrata">Adopted Bluetooth Errata Service Releases</h2>
+<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <th>Release</th>
+            <th>Adopted Date </th>
+            <th> Notes </th>
+        </tr>
+        <tr>
+            <td><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=308424">ESR09</a><br>
+            </td>
+            <td>15 December 2015</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=295801">ESR08</a><br>
+            </td>
+            <td rowspan="1">​02 December 2014</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1">​<a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=280848">ESR07</a><br>
+            </td>
+            <td rowspan="1">​03 December 2013</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=280585">Erratum 5256</a><br>
+            </td>
+            <td rowspan="1">​22 October 2013</td>
+            <td rowspan="1">​Mandatory when claiming compliance to 3DS Synchronization Profile v1.0</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=261781">ESR06</a><br>
+            </td>
+            <td>04 December 2012</td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245776">Erratum 4656</a><br>
+            </td>
+            <td>07 February 2012</td>
+            <td>Mandatory when claiming compliance to v2.0 + EDR and later</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=231555">ESR05</a><br>
+            </td>
+            <td>23 August 2011</td>
+            <td>​​ </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=144836">ESR04</a><br>
+            </td>
+            <td>18 December 2008</td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=92050">ESR03</a><br>
+            </td>
+            <td>06 February 2008</td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41188">Erratum 747</a><br>
+            </td>
+            <td>25 November 2005</td>
+            <td>Enabling Boot Mode Only (HID Lite) Hosts</td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=40858">ESR02</a><br>
+            </td>
+            <td>21 June 2005</td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=11052">ESR01</a><br>
+            </td>
+            <td>25 August 2003</td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<a href="https://www.bluetooth.com/specifications/adopted-specifications#top">Top of Page</a>​</p>
+</div>
+<div id="radePasteHelper" style="position: absolute; left: -10000px; border: 0px solid red; top: 864.545px; width: 1px; height: 1px; overflow: hidden;">
+<table style="width: 1146.36px;">
+    <tbody>
+        <tr>
+            <td>Continuous Glucose Monitoring Service</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="radePasteHelper" style="position: absolute; left: -10000px; border: 0px solid red; top: 858.182px; width: 1px; height: 1px; overflow: hidden;">
+<table style="width: 1146.36px;">
+    <tbody>
+        <tr>
+            <td>Continuous Glucose Monitoring Service</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="radePasteHelper" style="position: absolute; left: -10000px; border: 0px solid red; top: 1540.91px; width: 1px; height: 1px; overflow: hidden;">
+<table style="width: 1146.36px;">
+    <tbody>
+        <tr>
+            <td rowspan="1" style="width: 183px;">​Object Transfer Service</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="radePasteHelper" style="position: absolute; left: -10000px; border: 0px solid red; top: 1534.55px; width: 1px; height: 1px; overflow: hidden;">
+<table style="width: 1146.36px;">
+    <tbody>
+        <tr>
+            <td rowspan="1" style="width: 54px;">​<a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=309936" style="color: #0063a9; box-sizing: content-box; outline: 0px; font-family: Arial, Helvetica, sans-serif; line-height: 18px; background-image: initial; background-attachment: initial; background-color: #ffffff; background-size: initial; background-origin: initial; background-clip: initial; background-position: 0px 0px; background-repeat: initial;">1.0</a>​</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+    
+    <div class="social-media">
+        Share: <span class="st_sharethis_large" displaytext="ShareThis" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/sharethis_32.png&quot;);"></span></span></span>
+<span class="st_facebook_large" displaytext="Facebook" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/facebook_32.png&quot;);"></span></span></span>
+<span class="st_twitter_large" displaytext="Tweet" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/twitter_32.png&quot;);"></span></span></span>
+<span class="st_linkedin_large" displaytext="LinkedIn" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/linkedin_32.png&quot;);"></span></span></span>
+<span class="st_pinterest_large" displaytext="Pinterest" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/pinterest_32.png&quot;);"></span></span></span>
+<span class="st_email_large" displaytext="Email" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span class="stLarge" style="background-image: url(&quot;https://ws.sharethis.com/images/email_32.png&quot;);"></span></span></span>
+    </div>
+        <div class="related-content">
+        <div class="related-title">You might also like:</div>
+        <ul class="related-list">
+                <li><a href="https://www.bluetooth.com/membership-working-groups/working-groups">Working Groups</a></li>
+                <li><a href="https://www.bluetooth.com/develop-with-bluetooth/test-tools/validated-and-recognized-test-equipment/pre-adoption-test-system-recognition">Pre-adoption Test System Recognition</a></li>
+                <li><a href="https://www.bluetooth.com/membership-working-groups/working-groups/working-group-templates-documents">Working Group Templates and Documents</a></li>
+
+        </ul>
+    </div>
+
+
+
+</div>
+
+    </section>
+</div>
+<!-- end div class="home-main container-fluid" -->
+    <!--the pop up html in layout -->
+    <div id="popup" class="pop-up-BG" style="display:none">
+        <div class="pop-up">
+            <div class="pop-up-content">
+                <div class="pop-up-header">
+                    <h3 id="popuptitle"></h3>
+                    <button class="pop-up-close"><i class="fa fa-times-circle"></i></button>
+                </div>
+                <div class="pop-up-body">
+                    <p id="popupcontent"></p>
+                </div>
+                <div class="pop-up-footer">
+                    <button id="btnclose">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ends here -->
+    
+
+ 
+
+<footer>
+    <div class="content-fluid">
+        <div class="column-33">
+
+<div>© 2016 Bluetooth SIG, Inc. All rights reserved</div>
+</div>
+<div class="column-66">
+
+
+<div class="align-right">
+       <a href="https://www.facebook.com/Bluetooth" target="_blank" class="">
+               <img src="./Adopted Specifications_files/fb.ashx" alt="fb"> 
+                  </a>
+       <a href="http://twitter.com/BluetoothSIG" target="_blank" class="">
+               <img src="./Adopted Specifications_files/twitterfollow.ashx" alt="tweet"> 
+                  </a>
+       <a href="https://plus.google.com/+bluetooth/videos" target="_blank" class="">
+               <img src="./Adopted Specifications_files/gplus.ashx" alt="googleplus"> 
+                  </a>
+           <img src="./Adopted Specifications_files/divider.ashx" alt="divider">
+       <a href="http://developer.bluetooth.cn/" target="_blank" class="external-link">
+           developer.bluetooth.cn       </a>
+           <img src="./Adopted Specifications_files/divider.ashx" alt="divider">
+       <a href="https://www.bluetooth.com/about-us/terms-of-use" target="_blank" class="external-link">
+           Terms of Use       </a>
+           <img src="./Adopted Specifications_files/divider.ashx" alt="divider">
+       <a href="https://www.bluetooth.com/about-us/privacy" target="_blank" class="external-link">
+           Privacy Policy       </a>
+    </div>
+</div>
+
+    </div>
+</footer>
+
+<script>
+
+    var banner = $('#cta-column').height();
+    $('#home-banner').css({
+        'max-height': banner + 'px'
+    });
+
+    $('a[target="_blank"]').addClass('external-link');
+    $('img').parent().removeClass('external-link');
+
+   
+
+    $('a[target="_blank"]').addClass('external-link');
+    $('img').parent().removeClass('external-link');
+
+
+    $(".select").click(function () {
+        $(this).toggleClass("selected");
+    });
+
+    $("#login").click(function () {
+        $('.login-group').addClass("hide");
+        $('.logged-in').removeClass("hide");
+    });
+  
+</script>
+
+
+
+
+<div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px;"><h2 id="core">Adopted Bluetooth&nbsp;Core Specification</h2>
+<table width="100%" style="height: 467px;">
+    <tbody>
+        <tr>
+            <th style="width: 25%;">Specification​ </th>
+            <th style="width: 20%;">Date Ad​opted</th>
+            <th style="width: 100px;">Status</th>
+            <th>Date Deprecated</th>
+            <th>Date Withdrawn</th>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=302735&amp;_ga=1.94340564.838841863.1449713366">Core Specification Supplement (CSS) v6</a><br>
+            </td>
+            <td rowspan="1" style="width: 20%;">​14 July 2015</td>
+            <td rowspan="1" style="width: 100px;">​Active</td>
+            <td rowspan="1">​</td>
+            <td rowspan="1">​</td>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=286439&amp;_ga=1.60268900.838841863.1449713366">Core Version 4.2</a><br>
+            </td>
+            <td rowspan="1" style="width: 20%;">​02 Decem​ber 2014</td>
+            <td rowspan="1" style="width: 100px;">​Active​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1" style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=282159&amp;_ga=1.60268900.838841863.1449713366">​Core Version 4.1</a><br>
+            </td>
+            <td rowspan="1" style="width: 20%;">​03 December 2013</td>
+            <td rowspan="1" style="width: 100px;">​Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"><a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=310375&amp;_ga=1.169388648.838841863.1449713366">Core Specification Addendum (CSA) 5</a></td>
+            <td style="width: 20%;">15 December 2015</td>
+            <td style="width: 100px;">Active</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=269452&amp;_ga=1.55691874.838841863.1449713366">Core Specification Addendum (CSA) 4</a>&nbsp;&nbsp;<sup>1</sup></td>
+            <td style="width: 20%;">12 February 2013</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=260932&amp;_ga=1.127377732.838841863.1449713366">Core Specification Addendum (CSA) 3</a>&nbsp;&nbsp;<sup>1</sup></td>
+            <td style="width: 20%;">24 July 2012</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=245127&amp;_ga=1.268935736.838841863.1449713366">Core Specification Addendum (CSA) 2</a>&nbsp;&nbsp;<sup>1</sup></td>
+            <td style="width: 20%;">27 December 2011</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=229737&amp;_ga=1.160532084.838841863.1449713366">Core Version 4.0</a><br>
+            </td>
+            <td style="width: 20%;">30 June 2010</td>
+            <td style="width: 100px;">
+            Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=174214">Core Version 3.0 + HS</a>&nbsp;&nbsp;</td>
+            <td style="width: 20%;">21 April 2009&nbsp;</td>
+            <td style="width: 100px;">
+            Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=119993">Core Specification Addendum (CSA) 1</a>&nbsp;<sup>2</sup></td>
+            <td style="width: 20%;">26 June 2008</td>
+            <td style="width: 100px;">
+            Active<br>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=241363">Core Version 2.1 + EDR</a><br>
+            </td>
+            <td style="width: 20%;">26 July 2007</td>
+            <td style="width: 100px;">
+            Active</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/DocMan/handlers/DownloadDoc.ashx?doc_id=40560">Core Version 2.0 + EDR​</a><br>
+            </td>
+            <td style="width: 20%;">05 November 2004</td>
+            <td style="width: 100px;">
+            Deprecated</td>
+            <td>13 November 2014​ </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%;">
+            <a href="https://www.bluetooth.org/docman/handlers/DownloadDoc.ashx?doc_id=41266">Volume 4: HCI Transports</a><br>
+            </td>
+            <td style="width: 20%;">01 January 2006</td>
+            <td style="width: 100px;">
+            Active​</td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+<sup>&nbsp;1</sup> Refer to the Mixing of Specification Versions Part for applicability<br>
+<sup>&nbsp;2</sup> Applicable to v2.0 + EDR and&nbsp;v2.1 + EDR</p> - See more at: https://www.bluetooth.com/specifications/adopted-specifications#sthash.KZpxNGmG.dpuf</div><iframe id="stSegmentFrame" name="stSegmentFrame" src="./Adopted Specifications_files/getSegment.html" frameborder="0" scrolling="no" width="0px" height="0px" style="display:none;"></iframe><div id="stwrapper" class="stwrapper stwrapper5x" style="display: none;"><iframe allowtransparency="true" id="stLframe" class="stLframe" name="stLframe" frameborder="0" scrolling="no" src="./Adopted Specifications_files/index.html"></iframe></div><div id="stOverlay" onclick="javascript:stWidget.closeWidget();"></div></body></html>
