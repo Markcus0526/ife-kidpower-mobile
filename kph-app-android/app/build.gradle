@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.21.2'
+        classpath 'io.fabric.tools:gradle:1.22.1'
     }
 }
 apply plugin: 'com.android.application'
@@ -26,12 +26,12 @@ android {
 			storePassword 'caloriecloud!1'
 		}
 	}
-	compileSdkVersion 25
-	buildToolsVersion '25.0.2'
+	compileSdk 29
+	buildToolsVersion '28.0.3'
 	defaultConfig {
 		applicationId 'org.unicefkidpower.kph'
 		minSdkVersion 24
-		targetSdkVersion 25
+		targetSdkVersion 29
 		versionCode 45
 		versionName '1.6.3'
 		multiDexEnabled true
@@ -70,22 +70,22 @@ android {
 }
 
 dependencies {
-	compile fileTree(include: ['*.jar'], dir: 'libs')
-	compile 'com.android.support:appcompat-v7:25.2.0'
-	compile 'com.android.support:support-v4:25.2.0'
-	compile 'com.android.support:design:25.2.0'
-	compile 'com.squareup.retrofit:retrofit:1.9.0'
-	compile 'com.squareup.okhttp:okhttp:2.2.0'
-	compile 'org.greenrobot:eventbus:+'
-	compile 'com.stripe:stripe-android:1.0.4'
-	compile 'com.facebook.android:facebook-android-sdk:4.20.0'
-	compile('com.twitter.sdk.android:twitter:1.6.0@aar') { transitive = true; }
-	compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') { transitive = true; }
-	compile 'com.jaredrummler:android-device-names:1.0.7'
-	compile 'com.swrve.sdk.android:swrve:4.6.1'
-	compile 'com.google.android.gms:play-services-fitness:10.2.1'
-	compile 'com.google.android.gms:play-services:10.2.1'
-	compile 'com.wang.avi:library:+'
-	compile 'com.appsflyer:af-android-sdk:4.7.1@aar'
-	compile 'com.android.support:multidex:1.0.1'
+	implementation fileTree(include: ['*.jar'], dir: 'libs')
+	implementation 'com.android.support:appcompat-v7:25.2.0'
+	implementation 'com.android.support:support-v4:25.2.0'
+	implementation 'com.android.support:design:25.2.0'
+	implementation 'com.squareup.retrofit:retrofit:1.9.0'
+	implementation 'com.squareup.okhttp:okhttp:2.2.0'
+	implementation 'org.greenrobot:eventbus:+'
+	implementation 'com.stripe:stripe-android:1.0.4'
+	implementation 'com.facebook.android:facebook-android-sdk:4.20.0'
+	implementation('com.twitter.sdk.android:twitter:1.6.0@aar') { transitive = true; }
+	implementation('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') { transitive = true; }
+	implementation 'com.jaredrummler:android-device-names:1.0.7'
+	implementation 'com.swrve.sdk.android:swrve:4.6.1'
+	implementation 'com.google.android.gms:play-services-fitness:10.2.1'
+	implementation 'com.google.android.gms:play-services:10.2.1'
+	implementation 'com.wang.avi:library:+'
+	implementation 'com.appsflyer:af-android-sdk:4.7.1@aar'
+	implementation 'com.android.support:multidex:1.0.1'
 }
