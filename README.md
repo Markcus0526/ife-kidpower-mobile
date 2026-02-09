@@ -4,6 +4,13 @@
 <img src="https://img.shields.io/badge/monorepo-multi--platform-blue" alt="monorepo">
 <img src="https://img.shields.io/badge/status-maintained-yellow" alt="status">
 
+
+<img width="113" height="156" alt="UNICEFUSA_KP" src="https://github.com/user-attachments/assets/1c6a33cd-4f9e-4835-8c33-f4b97ee9d81d">
+<img width="250" height="234" alt="KID BAND" src="https://github.com/user-attachments/assets/fb2b02e9-405f-4cfd-80f0-f7a095f6bcdb">
+
+
+
+
 One repository containing multiple mobile apps and components used by the Kid Power / Calorie Cloud family of apps:
 - A React Native app (Active for Good / AFG)
 - Native Android apps (Calorie Cloud, Kid Power Home, Kid Power Community)
