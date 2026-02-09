@@ -1,4 +1,4 @@
-# ife-kidpower-mobile (monorepo)
+# IFE-KIDPOWER-MOBILE.GIT
 
 <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
 <img src="https://img.shields.io/badge/monorepo-multi--platform-blue" alt="monorepo">
