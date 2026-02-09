@@ -1,280 +1,215 @@
-# ife-kidpower-mobile (monorepo)
+# IFE-KIDPOWER-MOBILE
 
 <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
 <img src="https://img.shields.io/badge/monorepo-multi--platform-blue" alt="monorepo">
 <img src="https://img.shields.io/badge/status-maintained-yellow" alt="status">
 
-One repository containing multiple mobile apps and components used by the Kid Power / Calorie Cloud family of apps:
-- A React Native app (Active for Good / AFG)
-- Native Android apps (Calorie Cloud, Kid Power Home, Kid Power Community)
-- Native iOS app (Calorie Cloud)
-- Platform integrations: Bluetooth PowerBand engine, HealthKit, Google Fit, Lottie animations, CodePush
+<img src="afg-app-rn/assets/images/1.png" alt="App screenshot" width="280">
 
-This README gives a quick developer guide, highlights the Kid Power Band engine, and documents how authentication works across the codebase.
+About
+-----
+A monorepo of mobile apps and components for the UNICEF Kid Power / Calorie Cloud family:
+- React Native app: Active For Good (afg-app-rn)
+- Native Android: Calorie Cloud, Kid Power Home, Kid Power Community (cc-app-android, kph-app-android, kpc-app-android)
+- Native iOS: Calorie Cloud (cc-app-ios)
+- Integrations: Bluetooth PowerBand engine (BLE), HealthKit (iOS), Google Fit (Android), Lottie animations, CodePush
 
-Table of contents
-- Quick start
-  - Prerequisites
-  - React Native (AFG)
-  - Android (native)
-  - iOS (native)
-- Kid Power Band engine (what, where, how)
-- User authentication (how tokens are used and where)
-- Configuration & Environment
-- Developer notes (BLE, HealthKit, Google Fit, CodePush)
-- Tech Stack
-- Future Table
-- Contributing
-- License
+This README is a developer-first guide: quick start instructions, where core systems live, and a deep highlight of the Kid Power Band (BLE) engine so you can extend, port, or debug it.
 
----
+Quick navigation
+- Kid Power Band (BLE) engine — see "Kid Power Band (BLE) engine" below
+- React Native entry — afg-app-rn/index.js
+- RN API usage — afg-app-rn/app/api/APIManager.js (uses X-Access-Token)
+- Android PowerBand engine — kph-app-android/.../powerband
+- iOS HealthKit — cc-app-ios/Calorie Cloud/HealthKitManager.swift
 
-## Quick start
+Screenshot
+----------
+<img src="afg-app-rn/assets/images/Step3.png" alt="Onboarding / screenshot" width="480">
 
-Important: this is a large monorepo with multiple apps. Pick the app you need to run/develop and follow the relevant section.
+Quick Start (developer)
+-----------------------
 
 Prerequisites
-- Node.js (LTS recommended)
-- npm or yarn
-- Android SDK (for Android builds)
-- Xcode and CocoaPods (for iOS builds)
-- Java 8 / JDK compatible with Android Gradle plugin used in each app
-- For RN debugging: react-native CLI and a running Metro packager
+- Node.js (LTS) + npm or yarn
+- Android SDK & Android Studio
+- Xcode & CocoaPods
+- Java 8 (or JDK compatible with Gradle plugin used in apps)
+- For RN debugging: react-native CLI (optional) and Metro running
 
-### React Native app (afg-app-rn)
-This is the React Native portion used by Active for Good.
-
-1. Install dependencies
-   ```
-   cd afg-app-rn
-   npm install
-   ```
-   or
-   ```
-   yarn
-   ```
-
-2. Start Metro
-   ```
-   npm start
-   # or
-   yarn start
-   ```
-
-3. Run on simulator/device
-   - Android: open the Android subproject in Android Studio (or use gradlew), or run react-native run-android from the repo root (ensure correct working directory).
-   - iOS: open the workspace after running Pod install (see iOS section) and run from Xcode or react-native run-ios.
+React Native (AFG)
+- Install deps:
+  - cd afg-app-rn
+  - npm install   # or yarn
+- Start Metro:
+  - npm start
+- Run (example):
+  - Android (from afg-app-rn or repo root): react-native run-android
+  - iOS: cd cc-app-ios && pod install && open Calorie\ Cloud.xcworkspace && run from Xcode or react-native run-ios
 
 Notes:
-- Entry point: afg-app-rn/index.js (registers Onboarding, Dashboard, Tracker components)
-- API calls: afg-app-rn/app/api/APIManager.js uses endpoints and expects X-Access-Token in headers.
+- RN entry: afg-app-rn/index.js registers Onboarding, Dashboard, Tracker.
+- RN API: afg-app-rn/app/api/APIManager.js (expects BASE_URL + uses "X-Access-Token" header).
 
-### Android native apps (cc-app-android, kph-app-android, kpc-app-android)
-The repo contains multiple Android applications (Calorie Cloud variants and Kid Power apps). Each is a standard Android Gradle project.
+Android (native)
+- Build:
+  - ./cc-app-android/gradlew assembleDebug
+- Install:
+  - adb install -r cc-app-android/app/build/outputs/apk/debug/app-debug.apk
+- Key files:
+  - Manifest & permissions: cc-app-android/app/src/main/AndroidManifest.xml
+  - Network API: cc-app-android/app/src/main/java/org/caloriecloud/android/util/APIManager.java
 
-Build (example for cc-app-android)
-1. Open in Android Studio or use Gradle wrapper:
-   ```
-   ./cc-app-android/gradlew assembleDebug
-   ```
-2. Install on device:
-   ```
-   adb install -r cc-app-android/app/build/outputs/apk/debug/app-debug.apk
-   ```
+iOS (native)
+- Install CocoaPods:
+  - cd cc-app-ios
+  - pod install
+- Open workspace:
+  - open "Calorie Cloud.xcworkspace"
+- Build & Run from Xcode
 
-Notes:
-- Top-level Gradle config: cc-app-android/build.gradle
-- Manifest and permissions: cc-app-android/app/src/main/AndroidManifest.xml
-- For KPH (Kid Power Home) the BLE/PowerBand engine lives under: kph-app-android/app/src/main/java/.../powerband (see "Kid Power Band engine" below)
+Authentication / Example API call
+--------------------------------
+Apps use token-based auth. The header name encountered across RN/Android/iOS is X-Access-Token (case varies in code: X-Access-Token or x-access-token).
 
-### iOS native app (cc-app-ios)
-1. Install CocoaPods for the iOS target(s):
-   ```
-   cd cc-app-ios
-   pod install
-   ```
-2. Open the generated workspace:
-   ```
-   open "Calorie Cloud.xcworkspace"
-   ```
-3. Build & Run in Xcode (choose target scheme)
+React Native usage (example)
+- In afg-app-rn/app/api/APIManager.js, requests include:
+  headers: { "X-Access-Token": accessToken }
 
-Notes:
-- Podfile at cc-app-ios/Podfile lists React, lottie, CodePush and native deps.
-- AppDelegate.swift contains native initialization (React bridge, CodePush bundle selection, HealthKit/Help center initialization).
+curl example
+- Replace BASE_URL and ACCESS_TOKEN:
+  curl -H "X-Access-Token: ACCESS_TOKEN" "https://api.example.org/api/v2/challenges/user/current"
 
----
+Kid Power Band (BLE) engine — highlight
+--------------------------------------
+The Kid Power Band is a BLE device. The canonical engine/implementation lives in the Android Kid Power app and is the reference implementation you should study or mirror when porting to another platform.
 
-## Kid Power Band engine
-The Kid Power Band is a BLE device with a local engine implemented primarily in the Android Kid Power app. The code for the PowerBand engine provides:
-- BLE scanning/connection and GATT
-- Command and response parsing for the band protocol
-- Higher-level services to request daily summary, firmware info, device time, etc.
-- Bridging so the native app can send sync packets to the backend
-
-Where to look
-- kph-app-android/app/src/main/java/.../powerband
-  - PowerBandDevice.java
-  - powerband/command/* — BandCommand, BandCommandResponse, Cmd* classes (CmdGetDailyData, CmdDeviceTimeGet, CmdSetDeviceTime, etc.)
+Where it lives (Android)
+- kph-app-android/app/src/main/java/org/unicefkidpower/kid_power/Model/MicroService/Bluetooth/Powerband/
+  - PowerBandDevice.java — device lifecycle, high-level orchestration
+  - powerband/command/* — BandCommand, BandCommandResponse, Cmd* classes (CmdGetDailyData, CmdGetFirmwareVersion, CmdSetDeviceTime, etc.)
   - powerband/service/* — BatteryService.java, BleService.java, DataService.java, DeviceInformationService.java
-  - powerband/command/Parser classes (e.g., BandCommandResponseParser.java)
+  - command parsers (e.g., CmdGetFirmwareVersionParser) — binary parsing logic
 
 How it works (high-level)
-1. BleScanner finds devices and uses PowerBandDevice wrapper to manage state.
-2. Commands (BandCommand subclasses) are built and sent to the band via the BLE write characteristic.
-3. Responses are parsed by the BandCommandResponseParser and delivered to command callbacks or services.
-4. DataService aggregates sensor summaries (daily summaries) and uploads via the app's REST endpoints (see APIManager patterns).
-5. The Android code includes linking helpers and sync helpers under sync/ and powerband/command/Cmd* classes to coordinate upload tasks.
+1. Scanning: BleScanner finds BLE peripherals, returns BlePeripheral/PowerBandDevice wrappers.
+2. Command construction: each Cmd* builds a fixed-length byte[] packet with framing and checksum (see CmdGetDailyData.getBytes()).
+3. Send & receive: Commands are written to the device's GATT write characteristic; responses are received, framed and parsed by BandCommandResponseParser into BandCommandResponse objects.
+4. Higher-level services: DataService aggregates daily summaries and uploads them via the app REST APIs (APIManager pattern).
+5. Sync & retry: Engine contains helpers for retries, chunking (block-based reads), and upload coordination.
 
-If you are integrating a new platform:
-- You will need to implement the BLE command/response flow and mirror the command definitions to your target platform.
-- Pay attention to the command parsers: they define binary layout and framing; reusing these exactly is required to interoperate with the band.
+Porting guidance / gotchas
+- The protocol is binary: precise byte order, framing and checksums are required. Reuse the command formats exactly.
+- Implement robust reconnect and retry strategies: BLE writes may fail; the Android engine contains retries and state machines (see PowerBandDevice).
+- Responses may be chunked / multi-block — follow parsers’ assumptions about block numbering.
+- If adding iOS support, implement a compatible BLE layer (CBCentralManager/CBPeripheral) and map Cmd* packet building/parsing directly.
 
----
+Representative code (Java example)
+- Command to get daily data (Android): kph-app-android/.../CmdGetDailyData.java has getBytes() building 16-byte packet with checksum.
 
-## User authentication (overview & details)
-Authentication across the apps is token-based. The common pattern:
-- Apps obtain an access token after login and supply it to backend requests via an HTTP header: X-Access-Token
-- The React Native API layer (afg-app-rn/app/api/APIManager.js) uses this header for GETs:
-  - Example: fetch(BASE_URL + APIManager.CURRENT_CHALLENGES, { headers: { "X-Access-Token": accessToken } })
-- Native Android code typically sends the same X-Access-Token header (see network / APIManager classes in the Android subprojects)
-- iOS (Swift) saves a serialized User and retrieves it via CCStatics.getSavedUser() — AppDelegate and other controllers use the saved user object and its accessToken when making Alamofire requests.
+Project structure (deep table)
+------------------------------
+Below is a practical, focused view of the repository structure (deep levels for the most important areas). Use this as an index — many more files exist in each module.
 
-Where to look
-- React Native: afg-app-rn/app/api/APIManager.js — shows endpoints and header usage (X-Access-Token)
-- iOS: cc-app-ios/Calorie Cloud/AppDelegate.swift and CCStatics.getSavedUser() usages; HealthKit sync code demonstrates authenticated requests using savedUser.accessToken
-- Android: cc-app-android and kph-app-android have LoginActivity.java and APIManager-like classes in server/apimanage which set the token in request headers
+| Path | Description |
+|---|---|
+| / | Root of monorepo (multiple mobile apps & assets) |
+| LICENSE | MIT license |
+| README.md | This file |
+| afg-app-rn/ | React Native app (Active For Good) |
+| afg-app-rn/index.js | RN entry points (Onboarding, Dashboard, Tracker) |
+| afg-app-rn/package.json | RN dependencies & scripts |
+| afg-app-rn/app/api/APIManager.js | RN API helper — endpoints and X-Access-Token usage |
+| afg-app-rn/app/screens/Onboarding.js | RN onboarding screen |
+| afg-app-rn/assets/images/* | RN images & Lottie animations |
+| cc-app-android/ | Calorie Cloud Android app (native) |
+| cc-app-android/app/src/main/AndroidManifest.xml | App permissions & activities |
+| cc-app-android/app/src/main/java/org/caloriecloud/android/util/APIManager.java | Android API calls (OkHttp-based), token handling |
+| cc-app-android/app/src/main/res/* | Android layouts, drawables, assets |
+| cc-app-ios/ | iOS (Calorie Cloud) |
+| cc-app-ios/Calorie Cloud/AppDelegate.swift | App lifecycle, React bridge, CodePush, HealthKit initialization |
+| cc-app-ios/Calorie Cloud/HealthKitManager.swift | HealthKit queries, daily aggregation & background delivery |
+| cc-app-ios/Podfile | CocoaPods list (React, lottie, CodePush, Alamofire) |
+| kph-app-android/ | Kid Power Home Android — contains canonical PowerBand engine |
+| kph-app-android/app/src/main/java/org/unicefkidpower/kid_power/Model/MicroService/Bluetooth/Powerband/PowerBandDevice.java | Core BLE device manager & orchestration |
+| kph-app-android/.../powerband/command/ | BandCommand, CmdGetDailyData, CmdSetDeviceTime, response parsers |
+| kph-app-android/.../powerband/service/ | BatteryService.java, DataService.java, DeviceInformationService.java |
+| kph-app-android/app/src/main/res/* | Many assets (avatars, missions, etc.) used by the app |
+| kpc-app-android/ | Kid Power Community Android — additional Android app in repo |
+| play-store images & assets | Located under each Android app folder (play store images) |
+| tools/scripts | (if present) build or helper scripts — search repo for automation |
 
-Practical notes for developers
-- To test API calls locally, set BASE_URL to your staging API and use a valid access token (tokens are bearer-like but in the custom header X-Access-Token).
-- When performing end-to-end testing, make sure your test user exists on the backend and has valid accessToken and userId.
-- The apps persist users locally (Android: SharedPreferences or serialized file, iOS: CCStatics). On React Native, the app passes tokens as props to components (see Dashboard / Onboarding props usage).
+Tech Stack
+----------
+- React Native (Hybrid JS + native) <img src="https://img.shields.io/badge/React%20Native-0.50-blue?logo=react" alt="React Native">
+- iOS (Swift + CocoaPods): Alamofire, HealthKit <img src="https://img.shields.io/badge/iOS-Swift-orange?logo=swift" alt="iOS">
+- Android (Java + Gradle): OkHttp, BLE stacks <img src="https://img.shields.io/badge/Android-Java-brightgreen?logo=android" alt="Android">
+- BLE / PowerBand engine (native Android reference) <img src="https://img.shields.io/badge/BLE-PowerBand-blue" alt="BLE">
+- Animations: Lottie (RN & iOS) <img src="https://img.shields.io/badge/Lottie-animation-purple" alt="Lottie">
+- CodePush (React Native OTA) <img src="https://img.shields.io/badge/CodePush-live-yellow" alt="CodePush">
+- Crash & Support: Crashlytics/Fabric, Zendesk SDK
 
-Security note (important)
-- This repository currently contains keystore (*.jks) files in Android subprojects and API keys in Podfile / manifests. These are sensitive assets; in production workflows:
-  - Keep keystores and sensitive keys out of source control.
-  - Use secure secrets management or CI-based protected variables.
-  - Replace exposed keys if this repository has been made public.
+Developer notes & examples
+--------------------------
+- Example RN fetch in APIManager.js (afg-app-rn) — shows header usage:
+  fetch(BASE_URL + "/api/v2/challenges/user/current", { method: "GET", headers: { "X-Access-Token": accessToken } })
 
----
+- Android OkHttp example (cc-app-android util/APIManager.java):
+  Request request = new Request.Builder().url(url).header("x-access-token", accessToken).get().build();
 
-## Configuration & environment
-Common configuration items you will need:
-- BASE_URL — backend base url, used by APIManager implementations
-- userId and accessToken — obtained after login; passed to API endpoints (X-Access-Token)
-- Android keystores (for production signing) — do not commit in public repos; they exist in this repo for convenience
-- iOS: Pods and CodePush keys (in Podfile references and CCStatics)
+- iOS HealthKit upload flow:
+  1. HealthKitManager computes daily summaries
+  2. AppDelegate (or other controllers) fetches last sync date from backend using x-access-token header
+  3. Uploads results to ActivitySummariesURL with `x-access-token` header via Alamofire
 
-Example (React Native) environment:
-- Set the base URL in your native config or pass it to components from native bridge. The RN APIManager expects BASE_URL + endpoints.
+- Testing / local API:
+  - Use staging BASE_URL and a valid access token; tokens are passed via X-Access-Token header.
+  - To simulate data uploads, call the endpoints with a test user's accessToken.
 
-API endpoints (React Native sample)
-- CURRENT_CHALLENGES = /api/v2/challenges/user/current
-- UPCOMING_CHALLENGES = /api/v2/challenges/user/upcoming
-- PREVIOUS_CHALLENGES = /api/v2/challenges/user/completed
-- CHALLENGE_SUMMARY = /api/v2/userSummary/challenge/:challengeId/user/:userId
-- LAST_SYNC_DATE_DEVICE = /api/v2/getLastSyncDate/user/:userId
-- LATEST_CHALLENGE = /api/v2/challenges/latest/user/:userId
-
-Always include header:
-- X-Access-Token: <accessToken>
-
----
-
-## Developer notes
-
-Bluetooth & PowerBand
-- The engine expects binary command packets and a deterministic response parser. See kph-app-android powerband code for the canonical implementation.
-- On Android, BleScanner and BlePeripheral classes manage scanning and connection lifecycle.
-- On iOS you will need to implement a compatible BLE layer if you want to perform the same low-level PowerBand flows.
-
-HealthKit / Google Fit
-- iOS uses HealthKitManager.swift to read active calories and step counts, and uploads via ActivitySummariesURL (see AppDelegate and getCalorieData/getStepData).
-- Android integrates Google Fit (play-services-fitness) and uses a wrapper activity GoogleFitWrapperActivity to authorize and sync.
-
-Animations & OTA
-- Lottie is used for animations (lottie-react-native + lottie-ios).
-- CodePush is included for JS bundle hot updates in the React Native app.
-
-Crash & Support
-- Crashlytics/Fabric and Zendesk SDK are integrated for crash reporting and support.
-
----
-
-## Tech Stack
-
-- React Native
-  <img src="https://img.shields.io/badge/React%20Native-0.50-blue?logo=react" alt="React Native">
-- Node / Package management
-  <img src="https://img.shields.io/badge/Node.js-%E2%98%A5-339933?logo=node.js" alt="Node.js">
-- Android (Java, Gradle)
-  <img src="https://img.shields.io/badge/Android-Java-brightgreen?logo=android" alt="Android">
-- iOS (Swift, CocoaPods)
-  <img src="https://img.shields.io/badge/iOS-Swift-orange?logo=swift" alt="iOS">
-- BLE / Bluetooth Low Energy
-  <img src="https://img.shields.io/badge/BLE-Bluetooth-blue" alt="BLE">
-- HealthKit & Google Fit
-  <img src="https://img.shields.io/badge/HealthKit-Apple-red" alt="HealthKit">
-  <img src="https://img.shields.io/badge/Google%20Fit-Google-lightgrey" alt="Google Fit">
-- Lottie (animations)
-  <img src="https://img.shields.io/badge/Lottie-animation-purple" alt="Lottie">
-- CodePush (RN updates)
-  <img src="https://img.shields.io/badge/CodePush-live-yellow" alt="CodePush">
-
-(Icons are provided as inline badges for quick recognition.)
-
----
-
-## Future Table (roadmap / planned improvements)
-
+Future roadmap (table)
+----------------------
 | Icon | Feature | ETA | Status |
-|---|---:|:---:|:---|
-| <img src="https://img.shields.io/badge/🔒-Auth-blue" alt="auth"> | Centralize auth SDK & token refresh | Q2 | Planning |
-| <img src="https://img.shields.io/badge/📶-BLE-improvement-blue" alt="ble"> | Harden PowerBand reconnection & retry logic | Q2 | In progress |
-| <img src="https://img.shields.io/badge/⚙️-CI-green" alt="ci"> | Add CI pipelines for Android/iOS unit and lint checks | Q3 | Proposed |
-| <img src="https://img.shields.io/badge/🧪-tests-red" alt="tests"> | Add E2E tests for RN flows (login/dashboard) | Q3 | Backlog |
-| <img src="https://img.shields.io/badge/📦-modularize-orange" alt="modularize"> | Split reusable modules (PowerBand SDK, auth lib) into packages | Q4 | Backlog |
+|---:|---|:---:|---|
+| 🔒 | Centralize auth SDK & token refresh (unified token management) | Q2 | Planning |
+| 📶 | Harden PowerBand reconnection & retry logic (BLE reliability) | Q2 | In progress |
+| ⚙️ | CI: Android/iOS builds + lint + unit tests | Q3 | Proposed |
+| 🧪 | E2E tests for RN flows (login -> dashboard -> sync) | Q3 | Backlog |
+| 📦 | Modularize: PowerBand SDK & auth client as separate packages | Q4 | Backlog |
 
-Legend: ETA = target quarter, Status = current planning stage.
+Contributing
+------------
+- Pick the subproject you want to work on (afg-app-rn, cc-app-android, kph-app-android, cc-app-ios).
+- Standard flow:
+  1. Fork repository
+  2. Create a topic branch
+  3. Run linters and tests for the target platform
+  4. Open PR with description and include testing instructions
+- Before PR:
+  - Remove or do not include keystore files / secrets.
+  - Do not commit API keys or production credential files.
+  - If you find exposed credentials in this repo, rotate them in your backend and notify the owners.
 
----
+Security & sensitive data
+-------------------------
+This repository contains keystore (*.jks) files and some credentials. For public or forked copies:
+- Remove or rotate keystores / API keys.
+- Use CI secret stores or environment variables for sensitive values.
 
-## Contributing
-- Check the subproject you want to work on (afg-app-rn, cc-app-android, kph-app-android, cc-app-ios).
-- Follow each platform's standard contribution flow:
-  - Fork, create topic branch, run tests and linters, push changes, open PR.
-- Before submitting PR:
-  - Remove or redact any secrets/keystores from patches.
-  - Ensure no hard-coded API keys or passwords are committed.
-  - Provide a short description and steps to reproduce/test your changes.
+Where to look for quick tasks
+----------------------------
+- To add a new RN screen: afg-app-rn/app/screens/
+- To debug BLE / PowerBand flows (Android): kph-app-android/.../powerband/PowerBandDevice.java and command classes
+- To add an iOS HealthKit change: cc-app-ios/Calorie Cloud/HealthKitManager.swift
+- To adjust API endpoints: search APIManager.js (RN) and APIManager.java (Android)
 
-Security & private data
-- This repo contains keystore files and API keys in some subfolders. If you are forking or publishing, rotate and remove these before public sharing.
-- Manage secrets using environment variables or CI secret stores.
+License
+-------
+MIT License — see LICENSE file.
 
----
+Acknowledgements
+----------------
+This monorepo contains work and assets from the UNICEF Kid Power / Calorie Cloud project. Thank you to contributors and maintainers.
 
-## Where to find things (important files)
-- React Native app: afg-app-rn/
-  - Entry: index.js
-  - API: app/api/APIManager.js
-  - Screens: app/screens/Onboarding.js, Dashboard.js
-- iOS app: cc-app-ios/
-  - AppDelegate: Calorie Cloud/AppDelegate.swift
-  - Podfile: cc-app-ios/Podfile
-- Android apps:
-  - Calorie Cloud: cc-app-android/
-  - Kid Power Home: kph-app-android/
-  - PowerBand engine: kph-app-android/app/src/main/java/.../powerband/
-- License: LICENSE (MIT)
-
----
-
-## License
-This project is licensed under the MIT License — see the LICENSE file for details.
-
----
-
-If you'd like, I can:
-- Extract a minimal README for a single subproject (e.g., afd-app-rn) with more detailed RN build, debugging and troubleshooting steps.
-- Add a small authentication demo (script) showing how to call one of the API endpoints with X-Access-Token for local testing.
+If you want, I can:
+- Extract a single-subproject README (e.g., afg-app-rn) with step-by-step debugging, environment variables, and common gotchas.
+- Produce a small script to call the API endpoints using a test access token for local testing (curl or node script).
